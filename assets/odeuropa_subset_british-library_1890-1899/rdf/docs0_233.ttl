@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "putrid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/putrid_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4> .
+
+<http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "putrid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/putrid_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c> crm:P165_incorporates <http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c/fragment/68d99da7-cac6-5fb8-a0c6-c07469ab5e77> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/88a5d91a-54a1-5578-90cc-bd4c0f4f2320>,
+        <http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4>,
+        <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c/fragment/68d99da7-cac6-5fb8-a0c6-c07469ab5e77> crm:P67_refers_to <http://data.odeuropa.eu/emission/88a5d91a-54a1-5578-90cc-bd4c0f4f2320> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c/fragment/68d99da7-cac6-5fb8-a0c6-c07469ab5e77> crm:P67_refers_to <http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c/fragment/68d99da7-cac6-5fb8-a0c6-c07469ab5e77> crm:P67_refers_to <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c> crm:P67_refers_to <http://data.odeuropa.eu/emission/88a5d91a-54a1-5578-90cc-bd4c0f4f2320> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c> crm:P67_refers_to <http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c> crm:P67_refers_to <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1d9d30ed-b052-5b0d-881c-bbb871f2f17c/fragment/68d99da7-cac6-5fb8-a0c6-c07469ab5e77> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "carcases"@en,
+        "putrid"@en,
+        "the room under his dungeon"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/88a5d91a-54a1-5578-90cc-bd4c0f4f2320>,
+        <http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4>,
+        <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> ;
+    rdf:value "Accordingly , seating him upon a mole - hill , they took water cold from a ditch and shaved him .He burst into In order to kill him by harassing agony the room under his dungeon was filled with putrid carcases .The unfortunate ex - King bitterly complained of it at the window to some carpenters at work upon the castle ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/putrid_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "putrid"@en .
+
+<http://data.odeuropa.eu/emission/88a5d91a-54a1-5578-90cc-bd4c0f4f2320> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/460> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/0c9207b2-608f-5e11-9c25-ee402c6c8988> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/place/0c9207b2-608f-5e11-9c25-ee402c6c8988> a crm:E53_Place ;
+    rdfs:label "the room under his dungeon" .
+
+<http://data.odeuropa.eu/experience/0d5f17bb-fc1f-51ec-9565-4e49353efaf4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/0c9207b2-608f-5e11-9c25-ee402c6c8988> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/075e66d7-5909-52b7-820c-3da427576702> a od:L11_Smell ;
+    rdfs:label "putrid"@en .
+

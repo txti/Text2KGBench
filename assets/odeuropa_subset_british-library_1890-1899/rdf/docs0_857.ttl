@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P165_incorporates <http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ad5ec9e8-c4e9-5ae3-8e34-becd5da94c52> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ad5ec9e8-c4e9-5ae3-8e34-becd5da94c52> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ad5ec9e8-c4e9-5ae3-8e34-becd5da94c52> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ad5ec9e8-c4e9-5ae3-8e34-becd5da94c52> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/actor/b89d1720-5245-501f-8e4f-330b93b33551> a crm:E39_Actor ;
+    rdfs:label "247" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ad5ec9e8-c4e9-5ae3-8e34-becd5da94c52> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "247"@en,
+        "in the"@en,
+        "odor"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    rdf:value "THE GA UCHO A T HOME .247 are stampeded by the odor , because in the old days the Indians were predatory .They say that pampa deer kill a venomous snake by running around it and exhaling an odor from the leg glands that eventually suffocates the reptile ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/48a36c00-ad9f-59e1-a0e2-c8a637899ae0> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b89d1720-5245-501f-8e4f-330b93b33551> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/48a36c00-ad9f-59e1-a0e2-c8a637899ae0> .
+
+<http://data.odeuropa.eu/time/48a36c00-ad9f-59e1-a0e2-c8a637899ae0> a time:TemporalEntity ;
+    rdfs:label "in the" .
+
+<http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> a od:L11_Smell ;
+    rdfs:label "odor"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

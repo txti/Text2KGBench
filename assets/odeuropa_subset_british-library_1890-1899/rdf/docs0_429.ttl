@@ -1,0 +1,79 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "the faintest"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/the%20faintest_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/329ee9a8-52ff-5c1a-8af1-6fe69a2e9999> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P165_incorporates <http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/5a9ad82b-ab35-5eae-b3a6-cb44fb0d8e14> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f>,
+        <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8>,
+        <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/5a9ad82b-ab35-5eae-b3a6-cb44fb0d8e14> crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/5a9ad82b-ab35-5eae-b3a6-cb44fb0d8e14> crm:P67_refers_to <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/5a9ad82b-ab35-5eae-b3a6-cb44fb0d8e14> crm:P67_refers_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/attribute/the%20faintest_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "the faintest"@en .
+
+<http://data.odeuropa.eu/object/06795276-0eb5-573c-95ad-2c37d6305a96> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Jaffa"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/5a9ad82b-ab35-5eae-b3a6-cb44fb0d8e14> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "her"@en,
+        "of Jaffa"@en,
+        "the faintest"@en,
+        "the wind"@en,
+        "whiff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f>,
+        <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8>,
+        <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    rdf:value "It was here the poor lady was chained ; but it was not the sea monster she feared , but a change in the wind .If the wind had blown from shore , and brought to her the faintest whiff of Jaffa , she could not have lived to tell her tale .When you land here — which you can accomplish accomplish only when the sea is calm — you find yourself in a narrow , mean , muddy street , filled with freighted camels , Iiamals , and burros , through which you are marched for a quarter of a mile before you come to a road wide enough to hold a carriage ; then you look across the street , see Howard ' s Hotel , dismiss the carriage for which you have paid a tourist agency a dollar , and walk to your stopping place ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/329ee9a8-52ff-5c1a-8af1-6fe69a2e9999> a crm:E39_Actor ;
+    rdfs:label "her" .
+
+<http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/06795276-0eb5-573c-95ad-2c37d6305a96> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/379> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/329ee9a8-52ff-5c1a-8af1-6fe69a2e9999> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> a od:L11_Smell ;
+    rdfs:label "whiff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P165_incorporates <http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/c35216a9-f4c1-5ff5-b47e-ec3ed19a378a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1>,
+        <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895>,
+        <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/c35216a9-f4c1-5ff5-b47e-ec3ed19a378a> crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/c35216a9-f4c1-5ff5-b47e-ec3ed19a378a> crm:P67_refers_to <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/c35216a9-f4c1-5ff5-b47e-ec3ed19a378a> crm:P67_refers_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/object/e9c81bcc-68ec-56ec-a8c4-ddd9dd69d155> a crmsci:S10_Material_Substantial ;
+    rdfs:label "blossoming trees"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/c35216a9-f4c1-5ff5-b47e-ec3ed19a378a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "From the near coast"@en,
+        "blossoming trees"@en,
+        "from the gardens and"@en,
+        "of flowers"@en,
+        "perfume"@en,
+        "the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1>,
+        <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895>,
+        <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    rdf:value "300 DARKNESS AND DAWN the rhythmic strokes of the rowers the sea flashed into brighter phosphorescence in the shadow of the boat , aud the waves rolled away in molten gold .From the near coast , as they steered northwards , the air seemed to come laden with the perfume of flowers from the gardens and blossoming trees .Countless spectators watched the gilded barque , and their torches glimmered along the crowded sands , and the music of their gay songs and serenades came to the happy voyagers ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e9c81bcc-68ec-56ec-a8c4-ddd9dd69d155>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/09374660-2bd5-50f6-8255-a1c7abce6b33>,
+        <http://data.odeuropa.eu/place/693ec43f-acdc-52d8-9620-47227e3e0fd6> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/09374660-2bd5-50f6-8255-a1c7abce6b33>,
+        <http://data.odeuropa.eu/place/693ec43f-acdc-52d8-9620-47227e3e0fd6> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/place/09374660-2bd5-50f6-8255-a1c7abce6b33> a crm:E53_Place ;
+    rdfs:label "from the gardens and" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/27> .
+
+<http://data.odeuropa.eu/place/693ec43f-acdc-52d8-9620-47227e3e0fd6> a crm:E53_Place ;
+    rdfs:label "From the near coast" .
+
+<http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

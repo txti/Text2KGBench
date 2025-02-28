@@ -1,0 +1,82 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "- smelling"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/-%20smelling_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "smelling"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/smelling_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P165_incorporates <http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/17ad7fae-c0b7-51ce-9772-209a2b6f4bdc> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/17ad7fae-c0b7-51ce-9772-209a2b6f4bdc> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/17ad7fae-c0b7-51ce-9772-209a2b6f4bdc> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/17ad7fae-c0b7-51ce-9772-209a2b6f4bdc> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/attribute/-%20smelling_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "- smelling"@en .
+
+<http://data.odeuropa.eu/attribute/smelling_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/object/c9a34db8-29a6-5e41-b252-4db0010ee72f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "plaster"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/17ad7fae-c0b7-51ce-9772-209a2b6f4bdc> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "- smelling"@en,
+        "office"@en,
+        "plaster"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    rdf:value "AVickfield and Uriah Heep .I found Uriah in possession of a new , plaster - smelling office , built out in the garden ; looking extraordinarily mean , in the midst of a quantity of books and papers .He received me in his usual fawning way , and pretended not to have heard of my arrival from Mr ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c9a34db8-29a6-5e41-b252-4db0010ee72f>,
+        <http://data.odeuropa.eu/vocabulary/fragrant-spaces/52> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+

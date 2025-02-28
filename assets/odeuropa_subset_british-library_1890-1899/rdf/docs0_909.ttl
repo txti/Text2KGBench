@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "false"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/false_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fc971db6-2436-5ecc-85e6-22b77865207e> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P165_incorporates <http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/5342251f-b251-5dee-9fd3-c3c60cf7fc4d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/5342251f-b251-5dee-9fd3-c3c60cf7fc4d> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/5342251f-b251-5dee-9fd3-c3c60cf7fc4d> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/5342251f-b251-5dee-9fd3-c3c60cf7fc4d> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/attribute/false_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "false"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/5342251f-b251-5dee-9fd3-c3c60cf7fc4d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "X bathing season"@en,
+        "false"@en,
+        "scents"@en,
+        "we"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    rdf:value "I was always in the habit of taking a short cut on my way home across the ' Gurt na brocha , ' the priest ' s meadows , as they call them , — it saved nearly half a mile ; although on the present PREFACE .X bathing season , the false scents on which we sent him , and the absurd enterprises on which we embarked him , even to the extent of a mock address which induced him to stand for the borough ( the address to the constituency constituency being our joint production ) , — all these follies , I say , more less disposed me , I feel sure , to that incessant incessant flow of absurd incident which runs through this volume , volume , and which , after all , was really little other than the reflex of our daily plottings and contrivings .I believe my old friend the colonel is still living ; if he be , and if he should read these lines , let him also read that I have other memories of him than those of mere jest and pleasantry , — memories of his cordial hospitality and genial good - nature , — and that there are few things I would like better than to meet and talk with him over bygones , knowing no one more likely to relish a pleasant reminiscence than himself , nor more certain to forgive a long - past liberty taken with him ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/fc971db6-2436-5ecc-85e6-22b77865207e> a crm:E39_Actor ;
+    rdfs:label "we" .
+
+<http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac>,
+        <http://data.odeuropa.eu/time/ccaa9e25-a8e6-5f9d-a72b-2c559f2c3c73> .
+
+<http://data.odeuropa.eu/time/ccaa9e25-a8e6-5f9d-a72b-2c559f2c3c73> a time:TemporalEntity ;
+    rdfs:label "X bathing season" .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fc971db6-2436-5ecc-85e6-22b77865207e> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac>,
+        <http://data.odeuropa.eu/time/ccaa9e25-a8e6-5f9d-a72b-2c559f2c3c73> .
+
+<http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> a od:L11_Smell ;
+    rdfs:label "scents"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

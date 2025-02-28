@@ -1,0 +1,85 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P165_incorporates <http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/c76479dd-48f3-5a94-a6fc-b4df2b7dae84> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/c76479dd-48f3-5a94-a6fc-b4df2b7dae84> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/c76479dd-48f3-5a94-a6fc-b4df2b7dae84> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/c76479dd-48f3-5a94-a6fc-b4df2b7dae84> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/object/044a8fb4-ac86-5056-9e70-17cc8cf81882> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/object/7f3356eb-0ccf-5796-865c-61492d8ee3d2> a crmsci:S10_Material_Substantial ;
+    rdfs:label "all the air"@en .
+
+<http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the piled - up logs"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/c76479dd-48f3-5a94-a6fc-b4df2b7dae84> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "all the air"@en,
+        "as they approached"@en,
+        "fragrance"@en,
+        "in the sandal - wood sheds"@en,
+        "its"@en,
+        "odour"@en,
+        "of the piled - up logs"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    rdf:value "The winter was undoubtedly the best time to see it , for in the hot season the scarcity of water makes everything parched and bare , the flowers droop and die , and the fields are covered with a hot and stifling © dust .As Ludlow had warned them , there was not much to see in the sandal - wood sheds , but the odour of the piled - up logs greeted them as they approached , and seemed to fill all the air with its fragrance .Why is there such a scent from the wood ? asked Edith as he broke off some splinters and handed to them ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/044a8fb4-ac86-5056-9e70-17cc8cf81882>,
+        <http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/7f3356eb-0ccf-5796-865c-61492d8ee3d2> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/d13e20a7-c32e-5c44-99b6-edc7d0af3b97> ;
+    time:hasTime <http://data.odeuropa.eu/time/3ba22e8a-71dc-5c02-9aee-7eeb7d1b8c61>,
+        <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/d13e20a7-c32e-5c44-99b6-edc7d0af3b97> ;
+    time:hasTime <http://data.odeuropa.eu/time/3ba22e8a-71dc-5c02-9aee-7eeb7d1b8c61>,
+        <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/place/d13e20a7-c32e-5c44-99b6-edc7d0af3b97> a crm:E53_Place ;
+    rdfs:label "in the sandal - wood sheds" .
+
+<http://data.odeuropa.eu/time/3ba22e8a-71dc-5c02-9aee-7eeb7d1b8c61> a time:TemporalEntity ;
+    rdfs:label "as they approached" .
+
+<http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> a od:L11_Smell ;
+    rdfs:label "fragrance"@en,
+        "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

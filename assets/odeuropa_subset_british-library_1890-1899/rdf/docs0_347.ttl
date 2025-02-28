@@ -1,0 +1,55 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P165_incorporates <http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/74a161a6-a423-5246-b189-a27059a7eb9f> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1>,
+        <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317>,
+        <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/74a161a6-a423-5246-b189-a27059a7eb9f> crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/74a161a6-a423-5246-b189-a27059a7eb9f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/74a161a6-a423-5246-b189-a27059a7eb9f> crm:P67_refers_to <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P67_refers_to <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/74a161a6-a423-5246-b189-a27059a7eb9f> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "my"@en,
+        "of hay"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1>,
+        <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317>,
+        <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> ;
+    rdf:value "Then all at once I seemed to be Deep in the ruts of my own track , And shapes seemed dimly to appear ; And that old dread came close to me And laid its hand upon my back And whispered ' Darkness ! ' in my ear .A Dream 39 Then drifting came the scent of hay , And meadows stretched before my eyes , Stirred where the horse ' s feet had trod ; And voices sounded far away Whose words I could not realize , And someone passed and spoke of God .ACROSS THE WAY ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/87> .
+
+<http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

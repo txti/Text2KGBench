@@ -1,0 +1,75 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "rich rank"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/rich%20rank_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P165_incorporates <http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3462fd4a-424d-527c-9627-6a1edaa6f602> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3462fd4a-424d-527c-9627-6a1edaa6f602> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3462fd4a-424d-527c-9627-6a1edaa6f602> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3462fd4a-424d-527c-9627-6a1edaa6f602> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/attribute/rich%20rank_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "rich rank"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3462fd4a-424d-527c-9627-6a1edaa6f602> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "everything"@en,
+        "odour"@en,
+        "of petroleum"@en,
+        "rich rank"@en,
+        "the streets"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    rdf:value "As we steamed into the station the Imperial train was just steaming out on the way to visit the natural fire temple of the ancient fire - worshippers at Sulhakhane , Sulhakhane , which had been arranged in its ancient style with some Parsees specially imported for the occasion .Wonderful was the crowd which thronged the streets ; the rich rank odour of petroleum , as might be expected , pervaded everything ; Bussian officers and officials of every grade in uniform ; Georgians Georgians and Transcaucasians in picturesque attire , with long hair , several daggers in the belt , and a row of ammunition pockets across the breast ; Turkomans with great sheepskin bonnets ; and Persians in tall black lambswool hats .In the evening the town was illuminated , the letters A M being almost the sole and universal design ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/383> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/20b38f32-8cca-5ab1-a6fe-db1ccfe5a56b> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/place/20b38f32-8cca-5ab1-a6fe-db1ccfe5a56b> a crm:E53_Place ;
+    rdfs:label "the streets" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/64> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/20b38f32-8cca-5ab1-a6fe-db1ccfe5a56b> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

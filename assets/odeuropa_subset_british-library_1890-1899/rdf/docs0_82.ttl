@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "too disgusting"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/too%20disgusting_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> ;
+    rdfs:comment "too"@en .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P165_incorporates <http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/871449ee-ada8-5354-851b-b54905ae5fcd> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1>,
+        <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc>,
+        <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/871449ee-ada8-5354-851b-b54905ae5fcd> crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/871449ee-ada8-5354-851b-b54905ae5fcd> crm:P67_refers_to <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/871449ee-ada8-5354-851b-b54905ae5fcd> crm:P67_refers_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/attribute/too%20disgusting_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "too disgusting"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/871449ee-ada8-5354-851b-b54905ae5fcd> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "smells"@en,
+        "through prettily wooded and cultivated cultivated country"@en,
+        "too disgusting"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1>,
+        <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc>,
+        <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    rdf:value "It was a lovely sight .In the autumn , when the leaves had turned and the tallow - trees were wearing their handsomest coats , it CHUN TI - KUNG 188 before it got dark , through prettily wooded and cultivated cultivated country , reminding me a little of Devonshire , but the smells were too disgusting .At one time we were following a lot of buckets which the coolies were carrying , carrying , and as the smell seemed to come from them , I got angry , and told Chun he was stupid not to make them stop , and go in front of them ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/6c72c0ed-6dfb-5e03-b70a-3a1b8d3b79c6> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/place/6c72c0ed-6dfb-5e03-b70a-3a1b8d3b79c6> a crm:E53_Place ;
+    rdfs:label "through prettily wooded and cultivated cultivated country" .
+
+<http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/6c72c0ed-6dfb-5e03-b70a-3a1b8d3b79c6> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> a od:L11_Smell ;
+    rdfs:label "smells"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

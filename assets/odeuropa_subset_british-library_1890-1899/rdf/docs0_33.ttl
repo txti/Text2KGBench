@@ -1,0 +1,67 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P165_incorporates <http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/a6ea7f95-f5b5-5f18-9f13-36b945b214e7> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/a6ea7f95-f5b5-5f18-9f13-36b945b214e7> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/a6ea7f95-f5b5-5f18-9f13-36b945b214e7> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/a6ea7f95-f5b5-5f18-9f13-36b945b214e7> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/object/de0bb0f5-924e-5031-8e8d-2fd81ae97d79> a crmsci:S10_Material_Substantial ;
+    rdfs:label "decaying wood"@en .
+
+<http://data.odeuropa.eu/object/f1cac319-b295-5123-b411-16ca7654957d> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the cold , damp air"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/a6ea7f95-f5b5-5f18-9f13-36b945b214e7> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of earth and decaying wood"@en,
+        "smelling"@en,
+        "the cold , damp air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    rdf:value "A wooden chair stood in the middle of the room , and on it a bottle and teacup ; not another article was visible .Under the hole in the ceiling a hole was rotted in the floor , and the cold , damp air , smelling of earth and decaying wood , that filled the place , must come up there , he thought A few minutes ' rest and he would rise 1 He must come to himself a little first 1 — Now he THE LUMINOUS NIGHT .161 He would not have us think we know him before we do ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/de0bb0f5-924e-5031-8e8d-2fd81ae97d79>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/614> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/f1cac319-b295-5123-b411-16ca7654957d> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

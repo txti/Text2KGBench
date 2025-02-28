@@ -1,0 +1,89 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "faint"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/faint_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/d2bed81b-f36c-5635-8700-01c3b32ac602> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P165_incorporates <http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/414b7b41-fb82-53c7-9580-93448df84401> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/414b7b41-fb82-53c7-9580-93448df84401> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/414b7b41-fb82-53c7-9580-93448df84401> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/414b7b41-fb82-53c7-9580-93448df84401> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/attribute/faint_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "faint"@en .
+
+<http://data.odeuropa.eu/object/1dafd0e4-7528-52a1-aa9a-916b1a84afe4> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/414b7b41-fb82-53c7-9580-93448df84401> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "faint"@en,
+        "he"@en,
+        "his"@en,
+        "nostrils"@en,
+        "odour"@en,
+        "of spirits"@en,
+        "scented"@en,
+        "such as might be expected expected from a"@en,
+        "the"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    rdf:value "Old Chad is such a savage that I thought I ' d bring my I tell you I ' m not hurt , only wild with the abominable abominable said Dave ' s visitor ; you deserve it .Pretty sort of a scoundrel you must be , Dave Carey , to meddle with the poor old man ' s little ewe Moral censure doesn ' t come very well from you , Doctor said Dave , distending his nostrils as if he scented something of which he did not approve ; and the fact was evident enough — the doctor of Enys did exhale a faint odour of spirits , such as might be expected expected from a man who indulged in a morning dram .The doctor grunted ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/5a80869a-e9bc-503a-a271-224800b9a732> a crm:E70_Thing ;
+    rdfs:label "such as might be expected expected from a"@en .
+
+<http://data.odeuropa.eu/actor/d2bed81b-f36c-5635-8700-01c3b32ac602> a crm:E39_Actor ;
+    rdfs:label "his|he|he" .
+
+<http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/155> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/1dafd0e4-7528-52a1-aa9a-916b1a84afe4> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/5a80869a-e9bc-503a-a271-224800b9a732> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/d2bed81b-f36c-5635-8700-01c3b32ac602> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> a od:L11_Smell ;
+    rdfs:label "nostrils"@en,
+        "odour"@en,
+        "scented"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

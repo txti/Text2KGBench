@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/39951bb9-6e95-5768-b8cb-3307e328ccac> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/39951bb9-6e95-5768-b8cb-3307e328ccac> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P165_incorporates <http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/92af53af-9683-52c1-8b80-35170c481079> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/92af53af-9683-52c1-8b80-35170c481079> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/92af53af-9683-52c1-8b80-35170c481079> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/92af53af-9683-52c1-8b80-35170c481079> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/92af53af-9683-52c1-8b80-35170c481079> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Dick"@en,
+        "scented"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    rdf:value "' How lonely , grieved , and terrified Melanie must be without without him ! And Reggie , too — helpless Reggie ! How lonely he was himself , poor boy ! As he thought of it all a few natural tears escaped him ; and he drew Bingo , his only friend and comrade , close to his side .And when the dog , chilled with rain , shivered and whined , Dick thought vangefully of his aunt Chillington ' s pet poodle , which slept in a mother - of - pearl basket , that was lined with blue satin , stuffed with down , and had scented pockets round it ; and which dined off macaroons and cream , or chicken and meat , minced by the hands of his pampered mistress , or her odious French maid , Clochette .At last Dick slept , and so passed the first night after he ran away from ' home ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/actor/39951bb9-6e95-5768-b8cb-3307e328ccac> a crm:E39_Actor ;
+    rdfs:label "Dick" .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/39951bb9-6e95-5768-b8cb-3307e328ccac> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+

@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P165_incorporates <http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/a6a4d6d5-ba83-5b1b-9d9b-d6d179a0a454> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c>,
+        <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e>,
+        <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/a6a4d6d5-ba83-5b1b-9d9b-d6d179a0a454> crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/a6a4d6d5-ba83-5b1b-9d9b-d6d179a0a454> crm:P67_refers_to <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/a6a4d6d5-ba83-5b1b-9d9b-d6d179a0a454> crm:P67_refers_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/a6a4d6d5-ba83-5b1b-9d9b-d6d179a0a454> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "from afar"@en,
+        "scenting"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c>,
+        <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e>,
+        <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    rdf:value "He had given worlds to burst his bonds , to break his prison , and cut his way through the enemy ' s ranks , or die in harness as a brave man should .Anything better than to remain helpless ! — like a war - horse scenting the battle from afar , unable to move a step , to stir a hand , in the For a King ! 192 Shrewsbury was the emporium ; sometimes also took an airing in a coach in the environs of the town , or made a visit of ceremony to ( strictly neutral ) friends ; and most often ( and Maud liked this better than almost anything , as seeming to bring her within reach of Roland ) took gentle exercise along the broad promenade in front of the market - house — a promenade promenade not of great length certainly , but considered fashionable ; and where they were most likely to meet with friends , and become acquainted with the gossip of the day .But though for a time it was very pleasant , there came an awakening , and as days passed on in swift succession , and brought her no nearer to her hope ' s fulfilment , Maud ' s spirits flagged visibly , and her eyes grew wistful almost as before ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    crm:P7_took_place_at <https://sws.geonames.org/224132/> .
+
+<http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    crm:P7_took_place_at <https://sws.geonames.org/224132/> .
+
+<https://sws.geonames.org/224132/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> a od:L11_Smell ;
+    rdfs:label "scenting"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

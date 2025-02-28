@@ -1,0 +1,67 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P165_incorporates <http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/2725a743-2efd-5b62-a043-75819b24e991> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/2725a743-2efd-5b62-a043-75819b24e991> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/2725a743-2efd-5b62-a043-75819b24e991> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/2725a743-2efd-5b62-a043-75819b24e991> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/actor/85984d02-e30b-5e15-9646-d4c6c7fb6a33> a crm:E39_Actor ;
+    rdfs:label "she" .
+
+<http://data.odeuropa.eu/object/f4247a2d-b02a-57f0-865e-f6433a26a37b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "a bunch of deep red roses"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/2725a743-2efd-5b62-a043-75819b24e991> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "a bunch of deep red roses"@en,
+        "into the damsel ' s cheeks"@en,
+        "she"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    rdf:value "Well , it ' s a matter of considerable impor tance to To you or to me ? more particularly to Miss she rejoined impatiently , and with a frown .134 A TALE OF THE THAMES into the damsel ' s cheeks which she tried to hide by smelling a bunch of deep red roses she had beside her plate .But who knows , Mrs ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f4247a2d-b02a-57f0-865e-f6433a26a37b> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/85984d02-e30b-5e15-9646-d4c6c7fb6a33> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

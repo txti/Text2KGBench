@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P165_incorporates <http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/d1a396f2-fbb8-5e40-b8bd-bff08aea6c39> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a>,
+        <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6>,
+        <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/d1a396f2-fbb8-5e40-b8bd-bff08aea6c39> crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/d1a396f2-fbb8-5e40-b8bd-bff08aea6c39> crm:P67_refers_to <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/d1a396f2-fbb8-5e40-b8bd-bff08aea6c39> crm:P67_refers_to <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P67_refers_to <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P67_refers_to <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/d1a396f2-fbb8-5e40-b8bd-bff08aea6c39> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "scented"@en,
+        "tobacco"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a>,
+        <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6>,
+        <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    rdf:value "Ne ' er mind , she said , it ' s an ill wind ' at blows noabry ony good .Tha ' ll be able ta tak ' me an th ' childer a walk a bit i ' th ' The next Friday she brought him a fancy pipe and a quarter of scented tobacco from Duxbury , and poor Johnty , though his heart was sad , was so entirely under the influence of this little wife of his that at her bidding he smoked the new pipe and tobacco the same night , feeling all the time as if it would choke him .Mule - minding is piecework , and so , as she never thought of asking , Susy did not know exactly what her husband earned , and the Minder was strongly tempted to keep back CLOG SHOP CHRONICLES 168 more of his wages than he had previously done , and save it up for the dark day he felt sure was coming ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/227> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

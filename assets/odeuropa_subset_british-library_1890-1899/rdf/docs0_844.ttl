@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "evil - smelling"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/evil%20-%20smelling_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "smelling"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/smelling_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P165_incorporates <http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/d7da8822-2c4a-51c1-9012-859acf3ccb49> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/d7da8822-2c4a-51c1-9012-859acf3ccb49> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/d7da8822-2c4a-51c1-9012-859acf3ccb49> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/d7da8822-2c4a-51c1-9012-859acf3ccb49> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/attribute/evil%20-%20smelling_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "evil - smelling"@en .
+
+<http://data.odeuropa.eu/attribute/smelling_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/d7da8822-2c4a-51c1-9012-859acf3ccb49> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "evil - smelling"@en,
+        "houses"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    rdf:value "293 OF A GOLDSMITH I had not proceeded to such a rencontre Avithout Avithout a provision of arms .But the dark night , the ill neighbourhood , the evil - smelling houses , and my friend in the bright leggings gave me a sensation sensation of insecurity , too sensible to be much appeased by any means of personal defence .There Avas , nevertheless , in the man ' s manner a certain deference ; and to my surprise , he mentioned mentioned the name of the lord , of Avhose letter I Avas the carrier , and Avhen he saAv my start of recognition , recognition , bowed exceeding low ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/fragrant-spaces/69> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+

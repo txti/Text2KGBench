@@ -1,0 +1,58 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P165_incorporates <http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/252c151f-645c-53e7-90f3-dc19de5fc51b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/252c151f-645c-53e7-90f3-dc19de5fc51b> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/252c151f-645c-53e7-90f3-dc19de5fc51b> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/252c151f-645c-53e7-90f3-dc19de5fc51b> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/object/2b0d8e38-b779-54fa-b742-49aaf3b9c088> a crmsci:S10_Material_Substantial ;
+    rdfs:label "from slime"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/252c151f-645c-53e7-90f3-dc19de5fc51b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "from slime"@en,
+        "reek"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    rdf:value "MARY OF SINS .FROM the wayside ' s dust , from reek and from slime God maketh a man , a maid or a flower , To endure a year , a day or an hour , Or to outlast death and all worlds and time ! As from a singer ' s soul is born a rhyme Of the glad sun and the sky and the shower , So by the spirit of God and his power Was born in the fervent Judean clime , That fair Mary of Sins from whom were cast Seven fiends of the Pit by the Master ' s word ; Seven sins they were of the gray world ' s old past , Of that ancient night where life coldly stirred , When heaven ' s fiat lux ! all chaos heard And God ' s lightnings flashed through the blackness vast MARY OF SORROWS .NOT in Time ' s stretch nor out beyond the years In the vast void where Time has ceased to be , Is there a deeper , holier mystery Than God ' s deep secret of the bitter tears Sad mothers still must shed while to his ears Comes from the cross the everlasting cry : Eloi , eloi lama sabachthani ! Echoing far out to his remotest spheres ! Mother of sorrows , Mary of the Cross , Of Calvary ' s secrets still thy sons are fain ! No tear of thine was ever shed in vain ; For without tears , love ' s finest gold were dross , Since every living soul has birth through pain And new life comes not but by old life ' s loss ! ■ 5 THE GLORY OF THE GARDEN ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/2b0d8e38-b779-54fa-b742-49aaf3b9c088> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> a od:L11_Smell ;
+    rdfs:label "reek"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

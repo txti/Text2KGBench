@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> .
+
+<http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P165_incorporates <http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/ff08551e-ad39-521e-925b-36f78ce16889> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7>,
+        <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22>,
+        <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/ff08551e-ad39-521e-925b-36f78ce16889> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/ff08551e-ad39-521e-925b-36f78ce16889> crm:P67_refers_to <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/ff08551e-ad39-521e-925b-36f78ce16889> crm:P67_refers_to <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P67_refers_to <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P67_refers_to <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> .
+
+<http://data.odeuropa.eu/object/8aa9e68c-feef-5c6b-bccb-fce7efa25f39> a crmsci:S10_Material_Substantial ;
+    rdfs:label "inanimate"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/ff08551e-ad39-521e-925b-36f78ce16889> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant"@en,
+        "inanimate"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7>,
+        <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22>,
+        <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    rdf:value "It was a very pretty habit , too , and a wise one , thus to press a flower from each young friendship .Not that the autographs were always wise — how wed I remember the boys who to be and the gdls who were dolefudy sentimental , and the budding budding geniuses who tottered under thoughts palpably too heavy for the unformed handwriting , in the thumbed red morocco books of twenty years ago ! But the older those grimy albums grow , the more fudy I feel that they were worth whde , and that it is a pity we do not keep more of the boy greenness into the later years ; for there are more plants than the inanimate ones whose lde is dearest and most fragrant whde they are green .I shad never forget the supreme momente when the good gray Longfedow and cheerful , rheumatic Mrs ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/8aa9e68c-feef-5c6b-bccb-fce7efa25f39> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> a od:L11_Smell ;
+    rdfs:label "fragrant"@en .
+

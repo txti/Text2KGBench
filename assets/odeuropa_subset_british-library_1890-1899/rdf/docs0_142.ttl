@@ -1,0 +1,90 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/0cf5d966-c1e2-55a9-a25b-fedc51e91b4b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/0cf5d966-c1e2-55a9-a25b-fedc51e91b4b> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/0cf5d966-c1e2-55a9-a25b-fedc51e91b4b> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/0cf5d966-c1e2-55a9-a25b-fedc51e91b4b> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "rose leaves"@en .
+
+<http://data.odeuropa.eu/object/ec8fbbc0-b977-59a0-940a-740c0d0e036a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the logs"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/0cf5d966-c1e2-55a9-a25b-fedc51e91b4b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "about the bed"@en,
+        "fragrant"@en,
+        "of rose leaves"@en,
+        "of the logs"@en,
+        "on the hearth"@en,
+        "scent"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "The window had been closed , and the white dimity curtain drawn acr6ss it .I suppose the evenings had become chilly , for a small wood fire was burning on the hearth , and the fragrant smell of the logs mingled pleasantly with the scent of rose leaves that hung about the bed .A kettle was singing on one hob , a little saucepan stood on the other , evidently containing food for an invalid ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e>,
+        <http://data.odeuropa.eu/object/ec8fbbc0-b977-59a0-940a-740c0d0e036a> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/752e0bc2-a82c-5929-9805-bd02f4093f01>,
+        <http://data.odeuropa.eu/place/e80f64e0-9f74-569e-9bbf-02ba5dadb83d> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/place/752e0bc2-a82c-5929-9805-bd02f4093f01> a crm:E53_Place ;
+    rdfs:label "on the hearth" .
+
+<http://data.odeuropa.eu/place/e80f64e0-9f74-569e-9bbf-02ba5dadb83d> a crm:E53_Place ;
+    rdfs:label "about the bed" .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/752e0bc2-a82c-5929-9805-bd02f4093f01>,
+        <http://data.odeuropa.eu/place/e80f64e0-9f74-569e-9bbf-02ba5dadb83d> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "scent"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

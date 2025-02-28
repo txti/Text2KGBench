@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P165_incorporates <http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/3411f7ae-021c-5662-b3ba-942f800fd312> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f>,
+        <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9>,
+        <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/3411f7ae-021c-5662-b3ba-942f800fd312> crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/3411f7ae-021c-5662-b3ba-942f800fd312> crm:P67_refers_to <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/3411f7ae-021c-5662-b3ba-942f800fd312> crm:P67_refers_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/3411f7ae-021c-5662-b3ba-942f800fd312> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "scented"@en,
+        "scented breezes"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f>,
+        <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9>,
+        <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    rdf:value "A miserable , forlorn Christmas to Lucilla , and a strange and rather sad one to most of the English residents , although they tried to disguise their feelings by much pretence of festivities .Home - sickness is apt to attack even the best seasoned Colonial officials at such times of year , and they Avould willingly have bartered all their golden sunshine and Avealth of tropical floAvers , their blue skies and scented breezes , for one sight of home — fogs and snow , sleet and frost notwithstanding .notwithstanding ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> a od:L11_Smell ;
+    rdfs:label "scented"@en,
+        "scented breezes"@en .
+

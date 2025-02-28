@@ -1,0 +1,58 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P165_incorporates <http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/408b2e7c-f3c8-5ba9-abe2-8f9ae28bdd55> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/408b2e7c-f3c8-5ba9-abe2-8f9ae28bdd55> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/408b2e7c-f3c8-5ba9-abe2-8f9ae28bdd55> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/408b2e7c-f3c8-5ba9-abe2-8f9ae28bdd55> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/408b2e7c-f3c8-5ba9-abe2-8f9ae28bdd55> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of powder smoke"@en,
+        "smell"@en,
+        "will set the pampa birds running away"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    rdf:value "everywhere the avowed and open enemies of innocent bird life .These took guns to slay the ostrich , and straightway a man afoot once more became an object of terror , while the smell of powder smoke , it is said , will set the pampa birds running away when the gun is at a distance of two miles .Further than that , a ranch owner is found here and there Avho will not permit ostrich hunting on his grounds ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/132> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,79 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P165_incorporates <http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/852abb48-24d0-5b41-99ac-e44b43d6f8c8> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/852abb48-24d0-5b41-99ac-e44b43d6f8c8> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/852abb48-24d0-5b41-99ac-e44b43d6f8c8> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/852abb48-24d0-5b41-99ac-e44b43d6f8c8> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> a crm:E39_Actor ;
+    rdfs:label "He" .
+
+<http://data.odeuropa.eu/object/6ddd84e8-0153-5748-850f-032e1dcdb083> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba> a crmsci:S10_Material_Substantial ;
+    rdfs:label "her handkerchief handkerchief"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/852abb48-24d0-5b41-99ac-e44b43d6f8c8> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "He"@en,
+        "for some time"@en,
+        "her handkerchief handkerchief"@en,
+        "inhaled"@en,
+        "its"@en,
+        "perfume"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    rdf:value "As the cab crossed the Seine , flowing darkly and drearily along , the unhappy man looked down into the ALL OR NOTHING 275 water and thought , ' How easy it would be to end it all ! ' After this movement of despair he felt in his pocket for Suzanne ' s letter , as if to convince himself of the reality of his grief .He also took out her handkerchief handkerchief and inhaled its perfume — for some time ; then he gazed at her gloves , and saw in them the shape of the fingers he had loved so well .He felt that he had exhausted all his energy in resisting temptation , and as soon as he was alone in his room after this fresh and painful crisis he cried aloud , ' I cannot bear it any longer ! ' Calmly , almost mechanically , he opened a drawer and took out of a leather case a small revolver his sister had given him to carry in his pocket when coming home late from the theatre ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/6ddd84e8-0153-5748-850f-032e1dcdb083> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a>,
+        <http://data.odeuropa.eu/time/abd9ebad-486c-525f-ba4c-806915d1e765> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a>,
+        <http://data.odeuropa.eu/time/abd9ebad-486c-525f-ba4c-806915d1e765> .
+
+<http://data.odeuropa.eu/time/abd9ebad-486c-525f-ba4c-806915d1e765> a time:TemporalEntity ;
+    rdfs:label "for some time" .
+
+<http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> a od:L11_Smell ;
+    rdfs:label "inhaled"@en,
+        "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

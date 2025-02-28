@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P165_incorporates <http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/04b0e54b-90c4-54b0-a0fa-c17d21968aad> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/04b0e54b-90c4-54b0-a0fa-c17d21968aad> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/04b0e54b-90c4-54b0-a0fa-c17d21968aad> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/04b0e54b-90c4-54b0-a0fa-c17d21968aad> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/actor/0287bfa5-db14-5da6-a5be-d13402f8b484> a crm:E39_Actor ;
+    rdfs:label "our" .
+
+<http://data.odeuropa.eu/object/5dae0ddd-3d57-54e0-8bcf-f4ae1e8d1ae1> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the wild geraniums"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/04b0e54b-90c4-54b0-a0fa-c17d21968aad> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "of the wild geraniums"@en,
+        "our"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    rdf:value "Anson , and ran : ' Dear Rose , ' What an age it is since we met ! Can you imagine that your grief and undeserved mis - 284 AN AUSTRALIAN GIRL .the fragrance of the wild geraniums that our horses crushed under their hoofs in one place ? It comes floating in with the moonbeams at this moment .But to be the elixir of life it must be accompanied with the sound of a voice — the voice which in all God ' s wide universe But is this what one writes to a friend ? And what is the use of trying to make a pen say all that rises in the heart ? ' Oh , you little cold , good creature ! I say to it ; you are sometimes wonderfully cunning ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5dae0ddd-3d57-54e0-8bcf-f4ae1e8d1ae1> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/0287bfa5-db14-5da6-a5be-d13402f8b484> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

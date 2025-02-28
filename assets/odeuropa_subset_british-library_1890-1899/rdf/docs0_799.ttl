@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P165_incorporates <http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/18a26339-0bc1-5455-b8d9-e01c2747e1bd> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d>,
+        <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f>,
+        <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/18a26339-0bc1-5455-b8d9-e01c2747e1bd> crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/18a26339-0bc1-5455-b8d9-e01c2747e1bd> crm:P67_refers_to <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/18a26339-0bc1-5455-b8d9-e01c2747e1bd> crm:P67_refers_to <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P67_refers_to <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P67_refers_to <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/18a26339-0bc1-5455-b8d9-e01c2747e1bd> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "smell"@en,
+        "stink"@en,
+        "sweet"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d>,
+        <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f>,
+        <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    rdf:value ".Instead of sweet smell there shall be stink , and there shall be burning instead of said the prophet .' And they came away ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> a od:L11_Smell ;
+    rdfs:label "smell"@en,
+        "stink"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

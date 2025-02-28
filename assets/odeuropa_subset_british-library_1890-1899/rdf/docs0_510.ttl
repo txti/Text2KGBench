@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "keen"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/keen_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/23f78dcf-19f5-5a02-946f-d8b5aa18ff0b> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P165_incorporates <http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3b32d415-a327-5d77-8a67-cd5b99bfb616> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3b32d415-a327-5d77-8a67-cd5b99bfb616> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3b32d415-a327-5d77-8a67-cd5b99bfb616> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3b32d415-a327-5d77-8a67-cd5b99bfb616> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/attribute/keen_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "keen"@en .
+
+<http://data.odeuropa.eu/object/4b72a58d-0685-5f41-a3ac-86361089e2cb> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/3b32d415-a327-5d77-8a67-cd5b99bfb616> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The animals"@en,
+        "keen"@en,
+        "scent"@en,
+        "their"@en,
+        "us"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    rdf:value "from some branch with a low hiss and a thud .The animals had winded us with their keen powers of scent , or had heard us , and the deep lane they had made behind them showed them to have left somewhat hurriedly .The track they had ploughed up led downwards into the forest on the opposite side of the ridge to our camp , and caused me to reflect as to how in the world we were to ascend again through such deep snow if we once left the ridge , until I remembered remembered it would be possible to make a circuit round the mountain from below ; so down we plunged along the deep rut left by the barasingh , and very soon the same coolie sighted them again ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/23f78dcf-19f5-5a02-946f-d8b5aa18ff0b> a crm:E39_Actor ;
+    rdfs:label "The animals|us" .
+
+<http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/4b72a58d-0685-5f41-a3ac-86361089e2cb> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/23f78dcf-19f5-5a02-946f-d8b5aa18ff0b> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

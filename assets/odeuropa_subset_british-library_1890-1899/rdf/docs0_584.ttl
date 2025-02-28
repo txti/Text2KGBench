@@ -1,0 +1,79 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "unknown"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/unknown_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P165_incorporates <http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/d15cd5ee-aaf2-5798-8cf7-cda940b87609> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/d15cd5ee-aaf2-5798-8cf7-cda940b87609> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/d15cd5ee-aaf2-5798-8cf7-cda940b87609> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/d15cd5ee-aaf2-5798-8cf7-cda940b87609> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/attribute/unknown_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "unknown"@en .
+
+<http://data.odeuropa.eu/object/4d0d7a2d-ba97-5cf1-9bf5-99e8ef97e944> a crmsci:S10_Material_Substantial ;
+    rdfs:label "blossoms blossoms"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/d15cd5ee-aaf2-5798-8cf7-cda940b87609> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "he"@en,
+        "perfume"@en,
+        "trees"@en,
+        "unknown"@en,
+        "with blossoms blossoms"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    rdf:value "After casting an astonished look upon the soft obscurity which reigned in the wood , Meyrick entered with hesitation , as if he feared he were treading on forbidden ground .As he advanced , the forest became larger , he found trees covered with blossoms blossoms which exhaled an unknown perfume ; it had nothing enervating in it like those of earth , but was , as it were a sort of moral emanation which embalmed the soul , it was strengthening and delicious at the same time , like the sight of a good action .At length he perceived farther on a glade , radiant with a marvellous light ; he sat down to enjoy the prospect , and then suddenly suddenly the song of a bird overhead fell upon his ear — sounds so sweet as to defy description — gentler than the fall of oars upon a lake in summer , than the murmur of a breeze among weeping willows , or the sigh of a sleeping sleeping infant ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/4d0d7a2d-ba97-5cf1-9bf5-99e8ef97e944>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/200> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

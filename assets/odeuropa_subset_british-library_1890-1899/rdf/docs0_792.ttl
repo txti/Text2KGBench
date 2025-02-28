@@ -1,0 +1,86 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "faint"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/faint_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1f51f805-98fd-543f-a762-de44d9b07e37> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P165_incorporates <http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/eb175bc8-3fc1-5291-ba1f-7aa55c6140f5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/eb175bc8-3fc1-5291-ba1f-7aa55c6140f5> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/eb175bc8-3fc1-5291-ba1f-7aa55c6140f5> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/eb175bc8-3fc1-5291-ba1f-7aa55c6140f5> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/attribute/faint_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "faint"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/eb175bc8-3fc1-5291-ba1f-7aa55c6140f5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "about Madame von Waldorf ' s possessions"@en,
+        "faint"@en,
+        "he"@en,
+        "him"@en,
+        "now"@en,
+        "of roses"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    rdf:value "A pretty trinket , he decided , and of value , doubtless , though he knew little about such things .The faint scent of roses that clung about Madame von Waldorf ' s possessions greeted him now ; but he perceived perceived it for once without offence .The perfume , the necklace , seemed to him a rich suggestion of three hundred a year hanging , possibly hanging , should he care to grasp it , within his reach ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/1f51f805-98fd-543f-a762-de44d9b07e37> a crm:E39_Actor ;
+    rdfs:label "him|he" .
+
+<http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/138> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/2c079bb7-d56b-5bd6-b86d-a639612da63e> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5>,
+        <http://data.odeuropa.eu/time/e30b218a-ac00-5cea-aa12-3219c44ed541> .
+
+<http://data.odeuropa.eu/place/2c079bb7-d56b-5bd6-b86d-a639612da63e> a crm:E53_Place ;
+    rdfs:label "about Madame von Waldorf ' s possessions" .
+
+<http://data.odeuropa.eu/time/e30b218a-ac00-5cea-aa12-3219c44ed541> a time:TemporalEntity ;
+    rdfs:label "now" .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1f51f805-98fd-543f-a762-de44d9b07e37> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/2c079bb7-d56b-5bd6-b86d-a639612da63e> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5>,
+        <http://data.odeuropa.eu/time/e30b218a-ac00-5cea-aa12-3219c44ed541> .
+
+<http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

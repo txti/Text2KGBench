@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/50237368-d5a0-56be-8275-85773ffd7b7b> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P165_incorporates <http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/fd26a2a3-409c-59c5-9aeb-eba2f48ed38d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1>,
+        <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda>,
+        <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/fd26a2a3-409c-59c5-9aeb-eba2f48ed38d> crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/fd26a2a3-409c-59c5-9aeb-eba2f48ed38d> crm:P67_refers_to <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/fd26a2a3-409c-59c5-9aeb-eba2f48ed38d> crm:P67_refers_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/fd26a2a3-409c-59c5-9aeb-eba2f48ed38d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of ", tears came into her eyes"@en,
+        "Lucy"@en,
+        "of the flowers"@en,
+        "perfume"@en,
+        "smelt"@en,
+        "sweet"@en,
+        "the poor lonely invalid"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1>,
+        <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda>,
+        <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    rdf:value "Margaret was lying alone as usual , her face this afternoon a sad one .Lucy presented her little offering ; and when the poor lonely invalid saw the tempting fruit , and smelt the sweet perfume of the flowers , tears came into her eyes .have brought all this to brighten me , Lucy ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/50237368-d5a0-56be-8275-85773ffd7b7b> a crm:E39_Actor ;
+    rdfs:label "Lucy|the poor lonely invalid" .
+
+<http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> .
+
+<http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/50237368-d5a0-56be-8275-85773ffd7b7b> .
+
+<http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> a od:L11_Smell ;
+    rdfs:label "perfume"@en,
+        "smelt"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

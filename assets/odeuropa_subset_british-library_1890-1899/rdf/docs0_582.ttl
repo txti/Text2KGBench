@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P165_incorporates <http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/ebcbf476-6aa5-5e62-aa42-55577812da91> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/ebcbf476-6aa5-5e62-aa42-55577812da91> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/ebcbf476-6aa5-5e62-aa42-55577812da91> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/ebcbf476-6aa5-5e62-aa42-55577812da91> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/object/10f5138e-c68c-5315-abac-206c9560df80> a crmsci:S10_Material_Substantial ;
+    rdfs:label "tresses"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/ebcbf476-6aa5-5e62-aa42-55577812da91> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "scented"@en,
+        "tresses"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    rdf:value "And fear not with me to talk .' So saying , she ' d shake her mantle white , And strike him dumb with terror quite , As he saw a lovely head Held under her ami so soft and sweet , With scented tresses that flowed to her feet , — He ' d wish himself safe in This fair one , who carried her head in such a peculiar manner , like others of her kindred spirits , delighted to walk at the midnight hour , and would vanish at the first blush of early dawn ; and the great service she sought to have performed was to unearth A great and precious store Of sparkling goms and of golden ore , Close undor the sacred The beautiful fay was very generous in her promises , for she would say : — And you shall bo rich for evermore , For yours shall be all the golden store , And my necklace will fasten my But if he refused to help in such a dubious undertaking , Ho felt a fierce buffet upon his ear , And as ho shouted in rage and fear , ' I teavoE send bhee to thy place .' The lady sprang , burning like furnace spark , And left him there in the fearful dark , To run a desperate Whether the lady has found some willing wight , and has thus been restored to her rightful place , or whether she still perambulates the road in search of help , I know not but such is the legend of the Goblin Well of Maesgarmon ' BANDY GUIDE TO MOLD ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/10f5138e-c68c-5315-abac-206c9560df80> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+

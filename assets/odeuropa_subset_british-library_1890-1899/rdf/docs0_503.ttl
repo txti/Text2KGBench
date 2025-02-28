@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P165_incorporates <http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/191e3eb5-46d3-555f-a861-ad1d722b9132> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/191e3eb5-46d3-555f-a861-ad1d722b9132> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/191e3eb5-46d3-555f-a861-ad1d722b9132> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/191e3eb5-46d3-555f-a861-ad1d722b9132> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/object/4b72a58d-0685-5f41-a3ac-86361089e2cb> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the bilge - water"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/191e3eb5-46d3-555f-a861-ad1d722b9132> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of the bilge - water"@en,
+        "stench"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    rdf:value "companions .For days together the wheel was lashed , and we lay , with hardly a stitch of canvas showing , hove - to in furious hurricanes of wind , shut in below with the stench of the bilge - water .How thankful I was at last to arrive at San Francisco , after a passage passage which seemed a lifetime , but endured in reality for just fifteen days ! With reference to the murder the following extract is from a San Francisco evening paper : — company company consisted of Messrs ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/4b72a58d-0685-5f41-a3ac-86361089e2cb> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> a od:L11_Smell ;
+    rdfs:label "stench"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

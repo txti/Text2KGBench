@@ -1,0 +1,86 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/062951dc-1e5c-5fc0-ae10-c57275a5d114> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/062951dc-1e5c-5fc0-ae10-c57275a5d114> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P165_incorporates <http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/9cdeb2fe-c97e-5701-8f78-98af5afa0243> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/9cdeb2fe-c97e-5701-8f78-98af5afa0243> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/9cdeb2fe-c97e-5701-8f78-98af5afa0243> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/9cdeb2fe-c97e-5701-8f78-98af5afa0243> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/9cdeb2fe-c97e-5701-8f78-98af5afa0243> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "causing"@en,
+        "him"@en,
+        "perfume"@en,
+        "rose"@en,
+        "sweet"@en,
+        "their"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    rdf:value "' Whatever you please , ' she said , rising to get the book , and placing it on her ivy - mantled desk .She got everything ready for him to make his task easier — opened the ink - pot with its silver top and put a fresh pen in the ivory and gold penholder ; in doing this she contrived to touch Rene lightly in passing to and fro , enveloping him with her sweet perfume and causing his hand to tremble as he copied on the fly - sheet of the 118 A LIVING LIE book the two verses which kind Madame Ethorel had called a sonnet : The phantom of a day long dead Appeared , with hand stretched out to show A fair white rose whose bloom was fled , And in my ear it whispered low , ' Where is thy heart of long ago ? Where is that hope thy fond heart chose So like this rose in days of yore ? Dear was the hope and dear the rose : How sweet their perfume heretofore When once they bloomed ! They bloom no more .' When he had finished writing Madame Moraines took the book from his hands , and , standing behind him , recited the verses in a low , almost inaudible , voice , as if to herself ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/138> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/actor/062951dc-1e5c-5fc0-ae10-c57275a5d114> a crm:E39_Actor ;
+    rdfs:label "him" .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/062951dc-1e5c-5fc0-ae10-c57275a5d114> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+

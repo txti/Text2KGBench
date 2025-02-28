@@ -1,0 +1,96 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "perfume"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/perfume_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fbf2247d-6208-519e-8a15-202b79abe63e> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "perfume"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/perfume_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fbf2247d-6208-519e-8a15-202b79abe63e> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P165_incorporates <http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/cfeea60a-bc6e-5a92-97e7-2607fc77f4cc> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1>,
+        <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda>,
+        <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/cfeea60a-bc6e-5a92-97e7-2607fc77f4cc> crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/cfeea60a-bc6e-5a92-97e7-2607fc77f4cc> crm:P67_refers_to <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/cfeea60a-bc6e-5a92-97e7-2607fc77f4cc> crm:P67_refers_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/object/90c1aded-8626-5de6-a0b1-fb3c85fdff15> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the fresh air through|through the|the open window"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/cfeea60a-bc6e-5a92-97e7-2607fc77f4cc> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Cleeve"@en,
+        "inhaling"@en,
+        "perfume"@en,
+        "perfume perfume"@en,
+        "the"@en,
+        "the fresh air through"@en,
+        "the open window"@en,
+        "through"@en,
+        "through the"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1>,
+        <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda>,
+        <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    rdf:value "Cleeve , or you will entangle the Thus rebuked , Mrs .Cleeve sat for some moments in silence , inhaling the fresh air through the open window , and the perfume perfume of the late floAvers .The mignonette seemed intending to bloom on until Avinter ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/perfume_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/90c1aded-8626-5de6-a0b1-fb3c85fdff15> ;
+    crm:P7_took_place_at <https://sws.geonames.org/3573374/>,
+        <https://sws.geonames.org/5774023/> .
+
+<https://sws.geonames.org/3573374/> a crm:E53_Place .
+
+<https://sws.geonames.org/5774023/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/actor/fbf2247d-6208-519e-8a15-202b79abe63e> a crm:E39_Actor ;
+    rdfs:label "Cleeve" .
+
+<http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fbf2247d-6208-519e-8a15-202b79abe63e> ;
+    crm:P7_took_place_at <https://sws.geonames.org/3573374/>,
+        <https://sws.geonames.org/5774023/> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> a od:L11_Smell ;
+    rdfs:label "inhaling"@en,
+        "perfume"@en,
+        "perfume perfume"@en .
+

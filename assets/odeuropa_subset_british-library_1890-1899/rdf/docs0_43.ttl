@@ -1,0 +1,60 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P165_incorporates <http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/81b57920-da10-571e-9da5-fd99e6397b97> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/81b57920-da10-571e-9da5-fd99e6397b97> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/81b57920-da10-571e-9da5-fd99e6397b97> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/81b57920-da10-571e-9da5-fd99e6397b97> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/81b57920-da10-571e-9da5-fd99e6397b97> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "he"@en,
+        "stinks"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    rdf:value "189 She gangs whiles to the doctor ' s .He ' s a kin ' o ' a freen ' o ' the yerl ' s : he likes stinks .That ' s the yoong doctor , I Does the earl never take her with him anywhere AA ' haur sud that be ? There ' s naebody cares a bodle aboot his lordship i ' the haill country - side ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> a od:L11_Smell ;
+    rdfs:label "stinks"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

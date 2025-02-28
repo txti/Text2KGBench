@@ -1,0 +1,96 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "few"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/few_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/4> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P165_incorporates <http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/49ee967b-ef38-5940-b098-87b451b5def5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/49ee967b-ef38-5940-b098-87b451b5def5> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/49ee967b-ef38-5940-b098-87b451b5def5> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/49ee967b-ef38-5940-b098-87b451b5def5> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/attribute/few_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "few"@en .
+
+<http://data.odeuropa.eu/object/e09b727b-9045-5684-b1b3-51deece3c05b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "aromatic vinegar"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/49ee967b-ef38-5940-b098-87b451b5def5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aromatic"@en,
+        "aromatic vinegar"@en,
+        "few"@en,
+        "of aromatic"@en,
+        "whiffs"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    rdf:value "Miss Lavinia looked consciously at Miss Clarissa , and heaved a little sigh .said Miss Clarissa , take my Miss Lavinia revived herself with a few whiffs of aromatic vinegar — Traddles and I looking on with great solicitude the while ; and then went on to say , rather faintly : My sister and myself have been in great doubt , Mr .Traddles , what course we ought to take in reference to the likings , or imaginary likings , of such very young people as your friend Mr ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e09b727b-9045-5684-b1b3-51deece3c05b>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/653> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> a od:L11_Smell ;
+    rdfs:label "aromatic"@en,
+        "whiffs"@en .
+

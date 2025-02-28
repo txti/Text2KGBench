@@ -1,0 +1,99 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "melodious"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/melodious_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/cc72a975-1cda-52dc-9943-270319337748> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odorous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odorous_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/cc72a975-1cda-52dc-9943-270319337748> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odorous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odorous_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/cc72a975-1cda-52dc-9943-270319337748> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P165_incorporates <http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/6ba8bc28-29c7-5599-89de-96c0abc43715> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/6ba8bc28-29c7-5599-89de-96c0abc43715> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/6ba8bc28-29c7-5599-89de-96c0abc43715> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/6ba8bc28-29c7-5599-89de-96c0abc43715> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/attribute/melodious_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "melodious"@en .
+
+<http://data.odeuropa.eu/object/10f5138e-c68c-5315-abac-206c9560df80> a crmsci:S10_Material_Substantial ;
+    rdfs:label "through|through the"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/6ba8bc28-29c7-5599-89de-96c0abc43715> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "his"@en,
+        "melodious"@en,
+        "odorous"@en,
+        "through"@en,
+        "through the"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    rdf:value "66 veil between you and creation , and makes you blind and deaf ; and so it was now with Brother Meyrick , for thus reflecting , the monk walked on , his eyes fixed on the ground , but seeing nothing , and his arms folded on his breast , he descended into the valley , crossed the stream , passed through the woods and over the hills , the tower of the convent was lost in the distance , and at length he stopped ; he was on the verge of a vast forest , which extended as far as the eye could reach , like an ocean of verdure .A thousand melodious sounds met his ears from every side , and an odorous breeze sighed through the leaves .After casting an astonished look upon the soft obscurity which reigned in the wood , Meyrick entered with hesitation , as if he feared he were treading on forbidden ground ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/odorous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "odorous"@en .
+
+<http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/10f5138e-c68c-5315-abac-206c9560df80> ;
+    crm:P7_took_place_at <https://sws.geonames.org/5774023/> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<https://sws.geonames.org/5774023/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/actor/cc72a975-1cda-52dc-9943-270319337748> a crm:E39_Actor ;
+    rdfs:label "his" .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/cc72a975-1cda-52dc-9943-270319337748> ;
+    crm:P7_took_place_at <https://sws.geonames.org/5774023/> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> a od:L11_Smell ;
+    rdfs:label "odorous"@en .
+

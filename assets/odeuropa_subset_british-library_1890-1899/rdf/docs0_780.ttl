@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "peculiarly fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/peculiarly%20fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> ;
+    rdfs:comment "peculiarly"@en .
+
+<http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P165_incorporates <http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/156bced0-8500-5946-90fe-eda18c5c5f35> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708>,
+        <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f>,
+        <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/156bced0-8500-5946-90fe-eda18c5c5f35> crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/156bced0-8500-5946-90fe-eda18c5c5f35> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/156bced0-8500-5946-90fe-eda18c5c5f35> crm:P67_refers_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/attribute/peculiarly%20fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "peculiarly fragrant"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/156bced0-8500-5946-90fe-eda18c5c5f35> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "bouquet"@en,
+        "fragrant"@en,
+        "peculiarly fragrant"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708>,
+        <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f>,
+        <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    rdf:value "Well , though you never did , ' The Legacy ' ran into its forty - seventh thousand : there were eightyseven eightyseven foolscap pages of manuscript , it took me nearly a week to write , and I invested the proceeds in this suit of dittoes , three flannel shirts , and a billycock hat .The Laureate couldn ' t have written ' The Legacy ' if he ' d tried , while as for Tennysonian Tennysonian sonnets , I ' d do one in ten minutes with a Walker ' s Rhyming Dictionary , every bit equal to the real article — body , crust , flavour , peculiarly fragrant bouquet , and all .Jardyne ' s Wife ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/18> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> a od:L11_Smell ;
+    rdfs:label "fragrant"@en .
+

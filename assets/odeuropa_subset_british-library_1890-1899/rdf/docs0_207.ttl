@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P165_incorporates <http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/ffc8e0dd-325d-5bef-b3bc-7ef051a2cc58> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/ffc8e0dd-325d-5bef-b3bc-7ef051a2cc58> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/ffc8e0dd-325d-5bef-b3bc-7ef051a2cc58> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/ffc8e0dd-325d-5bef-b3bc-7ef051a2cc58> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "they"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/ffc8e0dd-325d-5bef-b3bc-7ef051a2cc58> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "smell"@en,
+        "they"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    rdf:value "But if you like you can see the sheds where we keep the logs when they are brought in ; we wait till we have got a load before we take them down to sell .There is not much to see of course , but they smell very Olive felt a new interest in her patient when she guessed that thoughts of her had helped to soften the rough bushman ' s heart .There was something very gentle in her manner that seemed hardly what one would have expected from a girl brought up in the wildness of such a life ; but she had a pure loving soul that all her rough surroundings could not spoil , and Olive rejoiced to think that his choice had fallen upon one who seemed fitted to be a true helpmate to him ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

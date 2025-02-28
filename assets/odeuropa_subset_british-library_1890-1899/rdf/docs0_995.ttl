@@ -1,0 +1,67 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P165_incorporates <http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/02281dd9-0e9f-56fe-a134-ca7ac6eea1f6> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/02281dd9-0e9f-56fe-a134-ca7ac6eea1f6> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/02281dd9-0e9f-56fe-a134-ca7ac6eea1f6> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/02281dd9-0e9f-56fe-a134-ca7ac6eea1f6> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/actor/1b0675b4-157f-509b-85b6-bbe91ae6b18a> a crm:E39_Actor ;
+    rdfs:label "Lonsdale|he|he" .
+
+<http://data.odeuropa.eu/object/b275c180-0b36-56fd-8e6a-a2aa40522400> a crmsci:S10_Material_Substantial ;
+    rdfs:label "a half - smoked cigar"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/02281dd9-0e9f-56fe-a134-ca7ac6eea1f6> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Lonsdale"@en,
+        "a half - smoked cigar"@en,
+        "aroma"@en,
+        "he"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    rdf:value "103 sound ceased , and both thought it must be fancy .But fancy it was not ; someone had been there — an eavesdroppe eavesdroppe — for , soon after , Lonsdale ' s quick eye detected a half - smoked cigar , as if tossed away in haste , still smouldering smouldering among the long grass , and he thought that he recognised recognised the aroma and the brand thereof .The circumstance , however , was soon dismissed from their minds , full as the latter were of a subject nearer and dearer ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b275c180-0b36-56fd-8e6a-a2aa40522400> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1b0675b4-157f-509b-85b6-bbe91ae6b18a> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> a od:L11_Smell ;
+    rdfs:label "aroma"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

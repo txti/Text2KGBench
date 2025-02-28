@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P165_incorporates <http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/05a52acb-0aa0-56cb-ad2c-e06286d71ba7> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7>,
+        <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22>,
+        <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/05a52acb-0aa0-56cb-ad2c-e06286d71ba7> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/05a52acb-0aa0-56cb-ad2c-e06286d71ba7> crm:P67_refers_to <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/05a52acb-0aa0-56cb-ad2c-e06286d71ba7> crm:P67_refers_to <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P67_refers_to <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33> crm:P67_refers_to <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> .
+
+<http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> a crm:E39_Actor ;
+    rdfs:label "He" .
+
+<http://data.odeuropa.eu/object/8972008b-a958-51af-bbea-96bbdb609f2b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "every particle of smoke"@en .
+
+<http://data.odeuropa.eu/object/8aa9e68c-feef-5c6b-bccb-fce7efa25f39> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/15959571-247b-5f4c-9dec-e89403c7ed33/fragment/05a52acb-0aa0-56cb-ad2c-e06286d71ba7> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "He"@en,
+        "every particle of smoke"@en,
+        "inhale"@en,
+        "its"@en,
+        "whiff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7>,
+        <http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22>,
+        <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    rdf:value "The we er can be dgbted only at the sacred fire ; and having kindled his at the coals , Refugio began to puff slowly , as he had been ddected .This smoke - trying is always the first duty of a candidate , and it is no mean test of the earnestness of his desde to take the He must smoke the weer down to its last whiff and inhale every particle of smoke , not a suspicion suspicion of which must escape from his mouth .The first three or four whiffs adnost invariably make him deathly sick , but it is very rarely indeed that he fails to smoke to the end ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cb1885e-63e3-5a00-8ee4-0b5d78dcb0f7> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/8972008b-a958-51af-bbea-96bbdb609f2b>,
+        <http://data.odeuropa.eu/object/8aa9e68c-feef-5c6b-bccb-fce7efa25f39> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/d6721c18-5985-5648-a92e-fd4ae7086a22> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/ab4f24a9-c1af-5d34-b4bc-e6d736174420> a od:L11_Smell ;
+    rdfs:label "inhale"@en,
+        "whiff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

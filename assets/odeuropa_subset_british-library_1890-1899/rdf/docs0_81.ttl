@@ -1,0 +1,67 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P165_incorporates <http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/6395b1fe-9638-5434-b898-db0c9db5d7b7> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1>,
+        <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc>,
+        <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/6395b1fe-9638-5434-b898-db0c9db5d7b7> crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/6395b1fe-9638-5434-b898-db0c9db5d7b7> crm:P67_refers_to <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/6395b1fe-9638-5434-b898-db0c9db5d7b7> crm:P67_refers_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/actor/3501a1d9-f158-57c6-b14a-7e180e2aba29> a crm:E39_Actor ;
+    rdfs:label "one of the wretched Chinese dogs|I" .
+
+<http://data.odeuropa.eu/object/5a47ffa6-350f-5f70-8a3c-e30408ce753f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "my foreign blood"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/6395b1fe-9638-5434-b898-db0c9db5d7b7> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "I"@en,
+        "my foreign blood"@en,
+        "one of the wretched Chinese dogs"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1>,
+        <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc>,
+        <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    rdf:value "I have sent to Shanghai for the netting to keep out the fowls and dogs when the door has to be opened , and for other things that I had overlooked , but you must not forget that you are my wife and in China , where a husband ' s rights are greater than in England .I am not scolding or threatening , but I cannot have a constantly complaining complaining wife at home to add to my other worries , which are by no means You know the effect that the touch of his small hands has on my nerves , and as they tightened on my wrists to an almost painful pressure while he was speaking , I found myself thinking that I had been mean ; and then , with his black eyes still holding mine , he seemed to read my thoughts ; he released my wrists , and added much more gaily , As I have said before , it is only a matter of three months ; o CHUN TI - KUNG 192 one of the wretched Chinese dogs upset the birds on the door sill and sprang in , I suppose smelling my foreign blood ( as I am told they can ) ; it began making jumps forward and backwards , so that I was really frightened .Before Chun had managed to drive the brute and the hens out , and shut the door again , I was almost hysterical ; Chun tried to soothe me by saying that we must have some wire netting and some windows opened to the back , but all my appetite was gone , and the only thing I could do was to go up - stairs and lie down , and oh , how steep the stairs seemed ! Chun sent me up some soup and fowl for tiffin ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5a47ffa6-350f-5f70-8a3c-e30408ce753f> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/3501a1d9-f158-57c6-b14a-7e180e2aba29> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

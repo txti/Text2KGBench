@@ -1,0 +1,60 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4> crm:P165_incorporates <http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4/fragment/223fd7a7-b17e-5ef0-a854-08422be7c81f> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/97a86b0a-4074-5564-ae41-0c94aad82b41>,
+        <http://data.odeuropa.eu/experience/c7e3093e-549f-53a3-b878-fd90221d3864>,
+        <http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4/fragment/223fd7a7-b17e-5ef0-a854-08422be7c81f> crm:P67_refers_to <http://data.odeuropa.eu/emission/97a86b0a-4074-5564-ae41-0c94aad82b41> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4/fragment/223fd7a7-b17e-5ef0-a854-08422be7c81f> crm:P67_refers_to <http://data.odeuropa.eu/experience/c7e3093e-549f-53a3-b878-fd90221d3864> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4/fragment/223fd7a7-b17e-5ef0-a854-08422be7c81f> crm:P67_refers_to <http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4> crm:P67_refers_to <http://data.odeuropa.eu/emission/97a86b0a-4074-5564-ae41-0c94aad82b41> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4> crm:P67_refers_to <http://data.odeuropa.eu/experience/c7e3093e-549f-53a3-b878-fd90221d3864> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4> crm:P67_refers_to <http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/9551748c-677f-5dd6-8af8-af7682ffc4c4/fragment/223fd7a7-b17e-5ef0-a854-08422be7c81f> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "he"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/97a86b0a-4074-5564-ae41-0c94aad82b41>,
+        <http://data.odeuropa.eu/experience/c7e3093e-549f-53a3-b878-fd90221d3864>,
+        <http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> ;
+    rdf:value "Meanwhile , Smith , left alone with the excise officer , took the accusation laid against him in the coolest possible manner , merely saying in answer , It was a poor state of things that he could not come to see his young woman without being followed and watched by a parcel of lazy , idle fellows who had to show themselves themselves over - officious to enable them to earn the King ' s The exciseman , nettled at the tone and words of Smith , ordered him to hold his tongue and to be civil and candid in his answers to his questions .said he , got scent to - day of your coming from Cove .You were seen to enter Auld Lachie ' s house late last night and to leave the creek early this morning ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/97a86b0a-4074-5564-ae41-0c94aad82b41> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/c7e3093e-549f-53a3-b878-fd90221d3864> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/2647cdaf-baf5-53cb-b3d4-960be1d3391a> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

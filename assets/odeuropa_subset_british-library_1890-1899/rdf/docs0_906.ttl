@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P165_incorporates <http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/41671e58-4459-53c6-83f6-17463d589036> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/41671e58-4459-53c6-83f6-17463d589036> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/41671e58-4459-53c6-83f6-17463d589036> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/41671e58-4459-53c6-83f6-17463d589036> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/41671e58-4459-53c6-83f6-17463d589036> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "snuffing"@en,
+        "the candles"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    rdf:value "So true is it , as he himself used , no less pathetically than poetically , to express it , Misfortune will find you out if ye were hid in a tay It happened that in Mrs .Clanfrizzle ' s establishment the enfant bleu already mentioned was the only individual of his sex retained ; and without for a moment disparaging the ability or attentions of this gifted person , yet it may reasonably be credited that in - waiting on a party of twentyfive twentyfive or thirty persons at dinner , all of whom he had admitted admitted as porter and announced as maitre d ' hotel , with the subsequent detail of bis duties in the drawing - room , Peter , — Blue Peter , his boarding - house sobriquet , — not enjoying the bird - like privilege of in two places at gave one rather the impression of a person of hasty and fidgety habits , for which nervous tendency the treatment he underwent was certainly injudicious , — it being the invariable custom for each guest to put his services in requisition , perfectly irrespective of all other claims upon him , from whatsoever quarter coming ; and then at the precise precise moment that the luckless valet was snuffing the candles , he was abused by one for not bringing coal ; by another for having carried off his teacup , sent on an expedition for LIFE AT CALLONBY .35 fauteuils which seemed to invite sleep without the trouble of lying down for it ; and , last of all , the ample and luxurious luxurious bed , upon whose rich purple hangings the ruddy glare of the fire threw a most mellow light , — were all a pleasing exchange for the garniture of the Harry said 1 , as I threw myself upon a small ottoman before the fire , in all the slippered ease and abandon of a man who has changed a dress - coat for a morning gown , — thou art destined for great things ; even here , where fate had seemed ' to do its worst ' to thee , a little paradise opens , and what to ordinary mor - tals had proved but a ' flat , stale , and most unprofitable ' quarter , presents to thee all the accumulated delight of an hospitable mansion , a kind , almost friendly host , a conde - scending Madame Mere , and daughers too ! ah , ye gods ! — But what is And here for the first time lifting up my eyes , I perceived a beautiful water - color drawing in the style of which was placed above the chimney - piece ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/25> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> a od:L11_Smell ;
+    rdfs:label "snuffing"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

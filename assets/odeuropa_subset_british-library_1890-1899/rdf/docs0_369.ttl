@@ -1,0 +1,90 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P165_incorporates <http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/728f35e1-12d2-53f1-a6c0-c0362dabfb6b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/728f35e1-12d2-53f1-a6c0-c0362dabfb6b> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/728f35e1-12d2-53f1-a6c0-c0362dabfb6b> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/728f35e1-12d2-53f1-a6c0-c0362dabfb6b> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/object/64ad5df5-6e48-5383-b7bf-fa326e74b765> a crmsci:S10_Material_Substantial ;
+    rdfs:label "kale"@en .
+
+<http://data.odeuropa.eu/object/afad3e0b-f1a5-50f7-bded-b109adfe1dd7> a crmsci:S10_Material_Substantial ;
+    rdfs:label "mallow"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/728f35e1-12d2-53f1-a6c0-c0362dabfb6b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aromatic"@en,
+        "celery"@en,
+        "chickweed"@en,
+        "garlic"@en,
+        "kale"@en,
+        "mallow"@en,
+        "seeds"@en,
+        "verbena"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    rdf:value "What else did the cupboard contain , in locked drawer and secret recess ? — a bit of cord , or a link of the old chain with wdiich a man had been hung ; the beard of a goat ; the head of a bat ; the eyes of a wolf ; a purse made of a black cat ' s skin ? Were there not other packets of herbs stowed away for use — endive , St .John ' s wort , verbena , chickweed , mallow , and garlic ? Surely the mistress of this piece of furniture distilled dyes , and was familiar wdth the virtues of the nettle tribe , hellebore , nightshade , nightshade , celery , kale , and aromatic seeds , even if she did not raise the spirits of the dead , mutter Ctatiel .18 ■ n » * 1 r ' C ' T J * ~ By the Rev ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/64ad5df5-6e48-5383-b7bf-fa326e74b765>,
+        <http://data.odeuropa.eu/object/afad3e0b-f1a5-50f7-bded-b109adfe1dd7>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/194>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/308>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/370>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/670>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/79> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> a od:L11_Smell ;
+    rdfs:label "aromatic"@en .
+

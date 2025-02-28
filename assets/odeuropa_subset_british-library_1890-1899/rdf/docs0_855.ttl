@@ -1,0 +1,55 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371> crm:P165_incorporates <http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371/fragment/e439d23d-6538-5851-9ccd-f5d916b94ba4> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c6bbb407-d9ee-5ee0-92c7-f79e94913380>,
+        <http://data.odeuropa.eu/experience/033f0d4b-8b9e-5fd9-ba3b-54af9fa704f5>,
+        <http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371/fragment/e439d23d-6538-5851-9ccd-f5d916b94ba4> crm:P67_refers_to <http://data.odeuropa.eu/emission/c6bbb407-d9ee-5ee0-92c7-f79e94913380> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371/fragment/e439d23d-6538-5851-9ccd-f5d916b94ba4> crm:P67_refers_to <http://data.odeuropa.eu/experience/033f0d4b-8b9e-5fd9-ba3b-54af9fa704f5> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371/fragment/e439d23d-6538-5851-9ccd-f5d916b94ba4> crm:P67_refers_to <http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371> crm:P67_refers_to <http://data.odeuropa.eu/emission/c6bbb407-d9ee-5ee0-92c7-f79e94913380> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371> crm:P67_refers_to <http://data.odeuropa.eu/experience/033f0d4b-8b9e-5fd9-ba3b-54af9fa704f5> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371> crm:P67_refers_to <http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/24946824-de3c-56b8-9230-78bbef603371/fragment/e439d23d-6538-5851-9ccd-f5d916b94ba4> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aromas"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c6bbb407-d9ee-5ee0-92c7-f79e94913380>,
+        <http://data.odeuropa.eu/experience/033f0d4b-8b9e-5fd9-ba3b-54af9fa704f5>,
+        <http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> ;
+    rdf:value "Et esto se entienda con los judios que ovieren • edad de catorce annos , et non los que ovieren menor edat ; • et los estrados segun manda el Fuero de alli do fuere la - cosa fecha .• Otrosi , mando que todo omme tenga Ja ballesta et aromas , aromas , et esté guisado segun manda nuestro Fuero .Et manado manado que todas estas cosas sobredichas , « pie sean tenudas ; et pie dure esta postura tanto quanto Yo toviere por bien ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/c6bbb407-d9ee-5ee0-92c7-f79e94913380> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/033f0d4b-8b9e-5fd9-ba3b-54af9fa704f5> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/62250b96-0e72-5617-95c7-51fceb2795de> a od:L11_Smell ;
+    rdfs:label "aromas"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

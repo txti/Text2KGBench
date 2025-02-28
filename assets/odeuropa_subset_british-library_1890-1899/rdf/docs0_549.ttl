@@ -1,0 +1,70 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P165_incorporates <http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/28316f3c-7ba3-5a4d-a5e3-5563274b58d3> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1>,
+        <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895>,
+        <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/28316f3c-7ba3-5a4d-a5e3-5563274b58d3> crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/28316f3c-7ba3-5a4d-a5e3-5563274b58d3> crm:P67_refers_to <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/28316f3c-7ba3-5a4d-a5e3-5563274b58d3> crm:P67_refers_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/actor/ac0e5788-8264-5ce1-8512-a00c93ac598b> a crm:E39_Actor ;
+    rdfs:label "Nero|his guests" .
+
+<http://data.odeuropa.eu/object/7551fc7c-deaa-565c-b973-8ae45bc71a16> a crmsci:S10_Material_Substantial ;
+    rdfs:label "liquid essences"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/28316f3c-7ba3-5a4d-a5e3-5563274b58d3> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Nero"@en,
+        "essences"@en,
+        "his guests"@en,
+        "liquid essences"@en,
+        "perfumes"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1>,
+        <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895>,
+        <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    rdf:value "The Romans were devoted to delicious odours .Nero had ordered perfumes to be sprinkled on the hair of his guests : but after this had been done to those who reclined at Otho ' s banquet , the boys who stood behind them took off their loose slippers aud bathed tlieir feet also in liquid essences — a device of which , up to this time , the luxury of au Apicius had never dreamed .And while the guests were still admiring this daring innovation , Otho made a sign with his jewelled hand to Polytimus , the chief favourite among his slaves , who immediately turned two taps of ivory and gold , and then , to the soft breathing of flutes , two fountains sprang into the air , from silver basins , aud refreshed the banqueters with a fine dew of the most exquisite fragrance ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/7551fc7c-deaa-565c-b973-8ae45bc71a16>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/621> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/ac0e5788-8264-5ce1-8512-a00c93ac598b> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> a od:L11_Smell ;
+    rdfs:label "essences"@en,
+        "perfumes"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

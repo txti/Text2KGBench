@@ -1,0 +1,84 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "keen"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/keen_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/4895c4da-f01b-5673-a7ce-7417344c5087> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P165_incorporates <http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/f784473a-bffd-56c6-ae22-1ef209504326> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341>,
+        <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad>,
+        <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/f784473a-bffd-56c6-ae22-1ef209504326> crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/f784473a-bffd-56c6-ae22-1ef209504326> crm:P67_refers_to <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/f784473a-bffd-56c6-ae22-1ef209504326> crm:P67_refers_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/attribute/keen_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "keen"@en .
+
+<http://data.odeuropa.eu/object/98764177-fede-543b-bee0-0493caee9725> a crmsci:S10_Material_Substantial ;
+    rdfs:label "birds of prey"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/f784473a-bffd-56c6-ae22-1ef209504326> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "gamblers"@en,
+        "in the early 20 ' s"@en,
+        "keen"@en,
+        "of birds of prey"@en,
+        "other adventurers"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341>,
+        <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad>,
+        <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    rdf:value "LIFE IN THE DIGGINGS .With the keen scent of birds of prey , gamblers and other adventurers flocked to the lead diggings of Southwestern Wisconsin during the great mining excitement that occurred in the early 20 ' s .As was the case later in California , gambling dens and grog shops were constructed in the midst of the cabins of the miners , and the fruit of the prospector ' s thrift often went into the coffers of the card shark ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/4895c4da-f01b-5673-a7ce-7417344c5087> a crm:E39_Actor ;
+    rdfs:label "gamblers|other adventurers" .
+
+<http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/98764177-fede-543b-bee0-0493caee9725> ;
+    time:hasTime <http://data.odeuropa.eu/time/2ce94d85-e91f-5b92-8046-71880c130a0e>,
+        <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/time/2ce94d85-e91f-5b92-8046-71880c130a0e> a time:TemporalEntity ;
+    rdfs:label "in the early 20 ' s" .
+
+<http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/4895c4da-f01b-5673-a7ce-7417344c5087> ;
+    time:hasTime <http://data.odeuropa.eu/time/2ce94d85-e91f-5b92-8046-71880c130a0e>,
+        <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

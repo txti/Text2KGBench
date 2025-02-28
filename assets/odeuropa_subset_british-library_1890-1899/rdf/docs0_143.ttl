@@ -1,0 +1,63 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5fb4d288-6f04-5328-b127-259b3ad5986e> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5fb4d288-6f04-5328-b127-259b3ad5986e> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5fb4d288-6f04-5328-b127-259b3ad5986e> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5fb4d288-6f04-5328-b127-259b3ad5986e> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5fb4d288-6f04-5328-b127-259b3ad5986e> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "from the garden beneath the windows"@en,
+        "of many flowers"@en,
+        "perfume"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "Soft rustlings were heard from amid the branches of the trees , myriads of insects were whirring amongst the leaves .Even the stately palms made a music of their own as their great spikes waved majestically to and fro ; and from the garden beneath the windows came the perfume of many flowers , mingled with the 212 PRINCESS ARIANE it to see the long line of black - robed figures as they slowly entered , and prostrating themselves humbly before the altar , their motionless forms became absorbed absorbed in the deep gloom around .Infinitely tender were the voices that chanted the service , the quivering , plaintive tones having lost all trace of earthly joy , dead as they were to all the world holds dear ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/673> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/751e0914-1a11-5271-8490-1e35a7027408> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/751e0914-1a11-5271-8490-1e35a7027408> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/place/751e0914-1a11-5271-8490-1e35a7027408> a crm:E53_Place ;
+    rdfs:label "from the garden beneath the windows" .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,135 @@
+{
+    "ont_5_monument_test_1": [
+        "ont_5_monument_train_68",
+        "ont_5_monument_train_50",
+        "ont_5_monument_train_4",
+        "ont_5_monument_train_54",
+        "ont_5_monument_train_66"
+    ],
+    "ont_5_monument_test_2": [
+        "ont_5_monument_train_40",
+        "ont_5_monument_train_55",
+        "ont_5_monument_train_45",
+        "ont_5_monument_train_31",
+        "ont_5_monument_train_51"
+    ],
+    "ont_5_monument_test_3": [
+        "ont_5_monument_train_68",
+        "ont_5_monument_train_50",
+        "ont_5_monument_train_54",
+        "ont_5_monument_train_4",
+        "ont_5_monument_train_46"
+    ],
+    "ont_5_monument_test_4": [
+        "ont_5_monument_train_68",
+        "ont_5_monument_train_50",
+        "ont_5_monument_train_4",
+        "ont_5_monument_train_6",
+        "ont_5_monument_train_66"
+    ],
+    "ont_5_monument_test_5": [
+        "ont_5_monument_train_40",
+        "ont_5_monument_train_55",
+        "ont_5_monument_train_31",
+        "ont_5_monument_train_34",
+        "ont_5_monument_train_45"
+    ],
+    "ont_5_monument_test_6": [
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_23",
+        "ont_5_monument_train_25",
+        "ont_5_monument_train_26"
+    ],
+    "ont_5_monument_test_7": [
+        "ont_5_monument_train_25",
+        "ont_5_monument_train_26",
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_28",
+        "ont_5_monument_train_22"
+    ],
+    "ont_5_monument_test_8": [
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_25",
+        "ont_5_monument_train_28",
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_22"
+    ],
+    "ont_5_monument_test_9": [
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_15",
+        "ont_5_monument_train_14",
+        "ont_5_monument_train_27"
+    ],
+    "ont_5_monument_test_10": [
+        "ont_5_monument_train_23",
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_15"
+    ],
+    "ont_5_monument_test_11": [
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_23",
+        "ont_5_monument_train_15"
+    ],
+    "ont_5_monument_test_12": [
+        "ont_5_monument_train_55",
+        "ont_5_monument_train_40",
+        "ont_5_monument_train_45",
+        "ont_5_monument_train_51",
+        "ont_5_monument_train_31"
+    ],
+    "ont_5_monument_test_13": [
+        "ont_5_monument_train_55",
+        "ont_5_monument_train_40",
+        "ont_5_monument_train_45",
+        "ont_5_monument_train_51",
+        "ont_5_monument_train_38"
+    ],
+    "ont_5_monument_test_14": [
+        "ont_5_monument_train_23",
+        "ont_5_monument_train_15",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_26",
+        "ont_5_monument_train_13"
+    ],
+    "ont_5_monument_test_15": [
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_15",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_14",
+        "ont_5_monument_train_27"
+    ],
+    "ont_5_monument_test_16": [
+        "ont_5_monument_train_25",
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_26",
+        "ont_5_monument_train_28",
+        "ont_5_monument_train_22"
+    ],
+    "ont_5_monument_test_17": [
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_15",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_14",
+        "ont_5_monument_train_27"
+    ],
+    "ont_5_monument_test_18": [
+        "ont_5_monument_train_25",
+        "ont_5_monument_train_26",
+        "ont_5_monument_train_27",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_13"
+    ],
+    "ont_5_monument_test_19": [
+        "ont_5_monument_train_13",
+        "ont_5_monument_train_23",
+        "ont_5_monument_train_22",
+        "ont_5_monument_train_15",
+        "ont_5_monument_train_27"
+    ]
+}

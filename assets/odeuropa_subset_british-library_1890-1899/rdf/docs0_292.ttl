@@ -1,0 +1,81 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P165_incorporates <http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/ebe4fca4-1ea6-532e-8d48-0d18227ac78b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/ebe4fca4-1ea6-532e-8d48-0d18227ac78b> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/ebe4fca4-1ea6-532e-8d48-0d18227ac78b> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/ebe4fca4-1ea6-532e-8d48-0d18227ac78b> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/object/562e25d9-5019-5ec5-a3cc-ef3c75bb2572> a crmsci:S10_Material_Substantial ;
+    rdfs:label "hawthorn - blossoms"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/ebe4fca4-1ea6-532e-8d48-0d18227ac78b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant"@en,
+        "hawthorn - blossoms"@en,
+        "odours"@en,
+        "smell"@en,
+        "sweet"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    rdf:value "But now no longer shall my muse prolong The lover ' s passion or the linnet ' s song ; Awhile I leave them , for I fain would tell The glowing beauties in my native dell ; And how the truant , on its bank , I ' ve play ' d , With school companions in its sunny shade ; Such be my thoughts ; my muse will swell the strain , And gladness echo back its notes again .Bloom , then , ye flowers on the moss - bank side ; Bloom , hawthorn - blossoms , in your rural pride ; Shed fragrant odours , for the smell is sweet ; Ye busy townsmen do they not ye greet ? Do not the meadows when the sky is clear , Invite your daughters forth to ramble there ? Where daisies , buttercups , and cowslips blow Amongst the herbage ; and the nigh hills glow With orient brightness ; o ' er my vale distend , Gold eastern sunbeams : peacefully they blend With quiet waters , in the stagnant pool ; And milk - maids tripping with their kit and stool , Sing as they pass ; right tuneful is their lay ; The plough boy listens to their notes so gay , That softly fall ; while from the woods rebound Melodious accents , music in the sound .From yonder village comes the farmer ' s team , And wakes the townsmen from their morning dream ; Some for the fields prepare , while others view The cloudless ether of the sky ' s bright hue ; Or watch returning , on the causeway stray ' d , 1 1 On the causeway stray ' d , & # 34 ; i ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/562e25d9-5019-5ec5-a3cc-ef3c75bb2572> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> a od:L11_Smell ;
+    rdfs:label "odours"@en,
+        "smell"@en .
+

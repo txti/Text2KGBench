@@ -1,0 +1,91 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "rich"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/rich_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/a5306a64-ff52-5e64-a725-3ed7c9a332f1> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/a5306a64-ff52-5e64-a725-3ed7c9a332f1> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/a5306a64-ff52-5e64-a725-3ed7c9a332f1> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/a5306a64-ff52-5e64-a725-3ed7c9a332f1> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/attribute/rich_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "rich"@en .
+
+<http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the breezes|the heated air"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/a5306a64-ff52-5e64-a725-3ed7c9a332f1> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of orange - blossoms"@en,
+        "of the hot summer ' s evening"@en,
+        "of the ripening grasses"@en,
+        "perfume"@en,
+        "rich"@en,
+        "scent"@en,
+        "the breezes"@en,
+        "the heated air"@en,
+        "through the open windows"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "Dreary in the extreme , therefore , therefore , is the vast , carpetless , curtainless room , the tarnished gilding of the massive furniture , and the distorted likenesses of the chairs and tables reflected and re - reflected from the many dim and damp - stained mirrors giving a weird ugliness to the desolate space .But through the open windows comes the rich scent of orange - blossoms , for many orange and citron trees still remain in the neglected gardens , and the breezes from the great river that intersects a considerable portion of the flat country around , not only cool the heated air of the hot summer ' s evening , but bring upon their wings the perfume of the ripening grasses that cover for unnumbered versts the vast extent of steppes that surround the villa .Beyond the garden , however , the view is as dreary as that within the saloon ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/449>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/551> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/e87fcae4-30e3-5fa0-912c-8741f650eb39> ;
+    time:hasTime <http://data.odeuropa.eu/time/0cba8ff3-bd8d-584e-b48a-7818aa91b216>,
+        <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/place/e87fcae4-30e3-5fa0-912c-8741f650eb39> a crm:E53_Place ;
+    rdfs:label "through the open windows" .
+
+<http://data.odeuropa.eu/time/0cba8ff3-bd8d-584e-b48a-7818aa91b216> a time:TemporalEntity ;
+    rdfs:label "XXXX-22" ;
+    rdfs:comment "evening"@en .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/e87fcae4-30e3-5fa0-912c-8741f650eb39> ;
+    time:hasTime <http://data.odeuropa.eu/time/0cba8ff3-bd8d-584e-b48a-7818aa91b216>,
+        <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "perfume"@en,
+        "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P165_incorporates <http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/6d1e5078-1160-59fb-82c1-cf01c06a8198> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d>,
+        <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f>,
+        <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/6d1e5078-1160-59fb-82c1-cf01c06a8198> crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/6d1e5078-1160-59fb-82c1-cf01c06a8198> crm:P67_refers_to <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/6d1e5078-1160-59fb-82c1-cf01c06a8198> crm:P67_refers_to <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P67_refers_to <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c> crm:P67_refers_to <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> .
+
+<http://data.odeuropa.eu/object/b766f6ad-4746-5be7-8117-2cf4387b1225> a crmsci:S10_Material_Substantial ;
+    rdfs:label "He"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/666977b0-91f2-5c25-8ee9-d678d90a4e9c/fragment/6d1e5078-1160-59fb-82c1-cf01c06a8198> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "He"@en,
+        "a"@en,
+        "scented"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d>,
+        <http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f>,
+        <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    rdf:value "How much did she mean by the words ' some money ? ' The Junonian quality of her form and manner made him throw himself by an impulse into harmony with her , and he responded regally .He scented a romance .He handed her five pounds ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/b184b9fd-0ec1-5866-8da5-3975e7d2dfca> a crm:E70_Thing ;
+    rdfs:label "a"@en .
+
+<http://data.odeuropa.eu/emission/d1b5f42b-85c1-55a6-aaed-7a70e9a1fb5d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b766f6ad-4746-5be7-8117-2cf4387b1225> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/0e349405-26b5-5a14-bd0c-be019e9a035f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/b184b9fd-0ec1-5866-8da5-3975e7d2dfca> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/aba170d5-0444-5d48-9118-f64ec8659733> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

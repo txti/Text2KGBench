@@ -1,0 +1,82 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "curious mixed"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/curious%20mixed_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/e77ac448-446d-5aa0-8e64-19efda173f59> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P165_incorporates <http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/f9043796-f9b7-5050-8dc6-27c483ace07d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708>,
+        <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f>,
+        <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/f9043796-f9b7-5050-8dc6-27c483ace07d> crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/f9043796-f9b7-5050-8dc6-27c483ace07d> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/f9043796-f9b7-5050-8dc6-27c483ace07d> crm:P67_refers_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/attribute/curious%20mixed_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "curious mixed"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/f9043796-f9b7-5050-8dc6-27c483ace07d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Pottinger"@en,
+        "curious mixed"@en,
+        "odours"@en,
+        "of camphor and tobacco"@en,
+        "only on Saturdays"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708>,
+        <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f>,
+        <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    rdf:value "on the Saturday that ended the week of Rupert ' s installation installation in Kensington , Mr .Pottinger sat down to his work , shaven , brushed , and clothed in his poor best — an old - fashioned broadcloth suit lustrous with age , and smelling of the curious mixed odours of camphor and tobacco , his we may call them , worn only on Saturdays .At his right hand there lay on his table a pile of newspapers ; at his left stood a large teapot , Jardyne s Wife ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/e77ac448-446d-5aa0-8e64-19efda173f59> a crm:E39_Actor ;
+    rdfs:label "Pottinger" .
+
+<http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/227>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/24> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4>,
+        <http://data.odeuropa.eu/time/86a2de58-5515-5d7a-8f8d-ee9330a71210> .
+
+<http://data.odeuropa.eu/time/86a2de58-5515-5d7a-8f8d-ee9330a71210> a time:TemporalEntity ;
+    rdfs:label "only on Saturdays" .
+
+<http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/e77ac448-446d-5aa0-8e64-19efda173f59> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4>,
+        <http://data.odeuropa.eu/time/86a2de58-5515-5d7a-8f8d-ee9330a71210> .
+
+<http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> a od:L11_Smell ;
+    rdfs:label "odours"@en,
+        "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

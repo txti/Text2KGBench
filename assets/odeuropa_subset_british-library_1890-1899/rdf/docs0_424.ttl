@@ -1,0 +1,63 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P165_incorporates <http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/a8d659c9-422b-584d-a31a-2913e8b31f1b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f>,
+        <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8>,
+        <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/a8d659c9-422b-584d-a31a-2913e8b31f1b> crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/a8d659c9-422b-584d-a31a-2913e8b31f1b> crm:P67_refers_to <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/a8d659c9-422b-584d-a31a-2913e8b31f1b> crm:P67_refers_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/actor/92d491f6-384b-52a7-9dd9-6050ed1f89e6> a crm:E39_Actor ;
+    rdfs:label "He|to him" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/a8d659c9-422b-584d-a31a-2913e8b31f1b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "He"@en,
+        "of roses"@en,
+        "smell"@en,
+        "to him"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f>,
+        <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8>,
+        <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    rdf:value "A vase of fresh - cut roses stood upon the table , and he knew that he had a friend somewhere .He remembered afterwards that the smell of roses was the first thing that was quite clear to him .Have I been ill ? he asked of the attendant who now entered the room , for , being an official and able to pay extra , Goodlough had not been placed in the open ward ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/138> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/92d491f6-384b-52a7-9dd9-6050ed1f89e6> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

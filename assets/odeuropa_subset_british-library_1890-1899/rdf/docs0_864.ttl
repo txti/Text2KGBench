@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "rank"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/rank_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P165_incorporates <http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ba559ced-ab3b-562d-9d87-c9202afc656a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ba559ced-ab3b-562d-9d87-c9202afc656a> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ba559ced-ab3b-562d-9d87-c9202afc656a> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ba559ced-ab3b-562d-9d87-c9202afc656a> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/attribute/rank_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "rank"@en .
+
+<http://data.odeuropa.eu/object/b22b1c2b-671a-5e43-acff-667f46dca33a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "They"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/ba559ced-ab3b-562d-9d87-c9202afc656a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "They"@en,
+        "odor"@en,
+        "rank"@en,
+        "said to be fatal to the desert snakes"@en,
+        "that"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    rdf:value "is only near the forests .They emit a rank odor from the leg glands that is said to be fatal to the desert snakes .The gray fox flourishes everyAvhere and grows to a rather larger size than in the United States , but he is remarkable remarkable for being very short - winded ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b22b1c2b-671a-5e43-acff-667f46dca33a> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> a od:L11_Smell ;
+    rdfs:label "odor"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

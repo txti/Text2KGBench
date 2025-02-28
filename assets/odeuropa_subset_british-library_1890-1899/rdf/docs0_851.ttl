@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "last"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/last_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P165_incorporates <http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/9d93924e-6718-5b7a-8641-2c2814218482> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341>,
+        <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad>,
+        <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/9d93924e-6718-5b7a-8641-2c2814218482> crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/9d93924e-6718-5b7a-8641-2c2814218482> crm:P67_refers_to <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/9d93924e-6718-5b7a-8641-2c2814218482> crm:P67_refers_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/attribute/last_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "last"@en .
+
+<http://data.odeuropa.eu/object/98764177-fede-543b-bee0-0493caee9725> a crmsci:S10_Material_Substantial ;
+    rdfs:label "his pipe"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/9d93924e-6718-5b7a-8641-2c2814218482> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "last"@en,
+        "of his pipe"@en,
+        "whiff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341>,
+        <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad>,
+        <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    rdf:value "Longfellow ' s version is substantially the same .Catlin Catlin concludes the legend thus : the last whiff of his pipe , his head went into a great cloud , and the whole surface of the rock for several miles was melted and glazed ; two great ovens were opened beneath , and two women entered entered them in a blaze of fire .They are heard there yet answering to the invocations of high priests or medicine men , who consult them when they are visitors to this sacred In Emerson ' s is given the Winnebago tradition of the origin of man : created the earth and the grass and the trees , the Great Spirit took a piece out of his heart , near which had been taken the earth , and formed the fragmant into a man ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/98764177-fede-543b-bee0-0493caee9725> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> a od:L11_Smell ;
+    rdfs:label "whiff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

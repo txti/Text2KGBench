@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P165_incorporates <http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2c491ab9-ab47-5af8-b56b-c9a30d73a997> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2c491ab9-ab47-5af8-b56b-c9a30d73a997> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2c491ab9-ab47-5af8-b56b-c9a30d73a997> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2c491ab9-ab47-5af8-b56b-c9a30d73a997> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/object/0f06900b-65f1-5384-9ea3-783dddd0083f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the homely flowers"@en .
+
+<http://data.odeuropa.eu/object/de0bb0f5-924e-5031-8e8d-2fd81ae97d79> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/object/f1cac319-b295-5123-b411-16ca7654957d> a crmsci:S10_Material_Substantial ;
+    rdfs:label "It"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2c491ab9-ab47-5af8-b56b-c9a30d73a997> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "It"@en,
+        "of the homely flowers"@en,
+        "on the chimney - piece"@en,
+        "scent"@en,
+        "their"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    rdf:value "But what ! was I traitor enough to call such a dinner a poor one ! Truth and Scotland forgive ' me , for I know none so good ? And after dinner — immediately , for the laird had long ago given up his toddy — they went to the drawingroom , drawingroom , an altogether pleasant place now in the summer .It was full of the scent of the homely flowers Grizzie had stuck in the old vases on the chimney - piece , and their scent harmonized strangely with the slow - vanishing colours of the room .The laird laid himself himself down on the brocade - covered sofa , and Cosmo sat close beside him on a low chair , and talked , and told him this and that , and read to him , till at last the old man fell asleep , and then Cosmo , having softly spread a covering over him , sat brooding upon things sad yet pleasant , until he too fell asleep , and went to Joan in his dreams ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/0f06900b-65f1-5384-9ea3-783dddd0083f>,
+        <http://data.odeuropa.eu/object/de0bb0f5-924e-5031-8e8d-2fd81ae97d79> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/f1cac319-b295-5123-b411-16ca7654957d> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/0c4e848d-c280-585b-a4a3-e735c42233db> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/0c4e848d-c280-585b-a4a3-e735c42233db> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/place/0c4e848d-c280-585b-a4a3-e735c42233db> a crm:E53_Place ;
+    rdfs:label "on the chimney - piece" .
+
+<http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

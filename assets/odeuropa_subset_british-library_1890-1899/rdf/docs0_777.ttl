@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P165_incorporates <http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/fbede73f-0cde-525c-82ac-07d348a6198b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/fbede73f-0cde-525c-82ac-07d348a6198b> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/fbede73f-0cde-525c-82ac-07d348a6198b> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/fbede73f-0cde-525c-82ac-07d348a6198b> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/fbede73f-0cde-525c-82ac-07d348a6198b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aromatic"@en,
+        "bodies"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    rdf:value ", on gas inclusions in the Wieliczka salt , 128 , 129 petroleum , apparatuses for firing boilers with , 608 - 620 petroleum , apparatuses for firing hearth with , 634 - 636 petroleum , apparatuses for firing locomotives with , 627 - 634 Rosin oil , determination of , 541 - 543 mixture of , with petroleum , 10 , 11 soaps , 055 Rotatory method , drilling tools for , 170 - 173 Roumania crude oil , analyses of , 243 favorable influence of the anti - petroleum , apparatuses for firing steamers with , 620 - 627 clinals upon the oil regions of , 101 Caucasian , gradual increase in the specific gravity of distil - lates from , 364 mode of obtaining oil in , 167 petroleum industry in , 32 , 33 Rozet , theory7 of , 123 Ruduew , analysis of oil gas by , 668 Russia , absence of color industry in , .595 cooling of , 347 evaporative power of , 600 firing stills with , 337 for the manufacture of lubricat - ing oils , 348 , 349 Galician , oil from , 365 lubrication with , 592 - 594 production of aromatic bodies from , 594 - 599 and the Caucasus , petroleum in - dustry in , 20 - 30 aniline and alizarine manufac - tories in , 596 birth ofthe oil industry in , 24 decline in the price of petroleum in , 28 , 29 properties of , 346 pulverization of , 602 , 603 INDEX 709 Russia , early use of tank vessels in , 210 .211 Schaal , C , investigations of , 52 saponification of petroleum products according to the method of , 652 - 054 Scheererite , 62 Scheurer - Kestner , experiments of , with coal , 604 exhaustion of petroleum in , 27 experiments with liquid fuel in , 600 export of petroleum and petro - leum products from , 28 first pipe line , 235 , 236 monopoly of working oil springs in , 23 Schiltz ' s motor , 574 Schlesinger ' s engine , 575 Schmelck , researches on the intensity ofthe flame by , 580 , 581 Schmidt , 80 , 596 Schneider , Dr ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/533> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> a od:L11_Smell ;
+    rdfs:label "aromatic"@en .
+

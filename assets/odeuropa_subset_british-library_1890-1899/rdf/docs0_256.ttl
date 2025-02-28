@@ -1,0 +1,89 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "pervading"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/pervading_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P165_incorporates <http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/e6cedaf9-3441-5886-8038-2d4334aab785> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/e6cedaf9-3441-5886-8038-2d4334aab785> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/e6cedaf9-3441-5886-8038-2d4334aab785> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/e6cedaf9-3441-5886-8038-2d4334aab785> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/attribute/pervading_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "pervading"@en .
+
+<http://data.odeuropa.eu/object/b1dd5646-f1ee-5e8e-8701-8421b9cf01c9> a crmsci:S10_Material_Substantial ;
+    rdfs:label "new - mown hay"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/e6cedaf9-3441-5886-8038-2d4334aab785> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "apples"@en,
+        "aroma"@en,
+        "fragrance"@en,
+        "he"@en,
+        "of currants"@en,
+        "of new - mown hay"@en,
+        "of roses and orangetrees"@en,
+        "orangetrees"@en,
+        "pervading"@en,
+        "the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    rdf:value "There was always a little flippant flutter among them , and he wondered what their chattering was all about .And what a fragrance there was in the air ! he never forgot it , that pervading aroma of roses and orangetrees , orangetrees , of new - mown hay that was almost all flowers , of currants and apples that came from the orchard .He lay and dreamt all the long summer day on the edge of the river - bank ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b1dd5646-f1ee-5e8e-8701-8421b9cf01c9>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/138>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/441>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/443>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/483> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> a od:L11_Smell ;
+    rdfs:label "aroma"@en,
+        "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

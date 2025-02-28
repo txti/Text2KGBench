@@ -1,0 +1,83 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/4ca9f042-765c-550f-91b5-11df032d22d3> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/4ca9f042-765c-550f-91b5-11df032d22d3> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P165_incorporates <http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/9dd6c6dd-ac65-5594-b7cd-914136cc092f> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b>,
+        <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9>,
+        <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/9dd6c6dd-ac65-5594-b7cd-914136cc092f> crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/9dd6c6dd-ac65-5594-b7cd-914136cc092f> crm:P67_refers_to <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/9dd6c6dd-ac65-5594-b7cd-914136cc092f> crm:P67_refers_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P67_refers_to <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P67_refers_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/9dd6c6dd-ac65-5594-b7cd-914136cc092f> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "ever"@en,
+        "in the nostrils of men and women"@en,
+        "stinking"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b>,
+        <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9>,
+        <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    rdf:value "Transatlantic Traits 6 who think that the Irish are rather too much to the front there , and I have heard of one critic who said that America would be well rid of two nuisances if every Irishman killed a nigger and was hanged for it .But who is to blame for either ? We know that the negroes did not go there of their own free will , but that , on the contrary , they were violently transported from their own homes and lashed into the country in order that they might cultivate the tobacco - plant , and thereby fill the pockets of their masters with those illgotten illgotten gains that have been stinking in the nostrils of men and women ever since .And , as to the immense Irish population , I would ask the Americans , — why did they send us over the potato ? Because , as Edmund Burke says , ' man breeds at the mouth , ' and it is therefore their own prolific root , the potato , that is to a large extent responsible for our over - population , and consequently consequently for the necessity to emigrate ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/stinking_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "stinking"@en .
+
+<http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    time:hasTime <http://data.odeuropa.eu/time/6dd73ac8-55dc-5b82-9d27-ce969f277414>,
+        <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/time/6dd73ac8-55dc-5b82-9d27-ce969f277414> a time:TemporalEntity ;
+    rdfs:label "ever" .
+
+<http://data.odeuropa.eu/actor/4ca9f042-765c-550f-91b5-11df032d22d3> a crm:E39_Actor ;
+    rdfs:label "in the nostrils of men and women" .
+
+<http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/4ca9f042-765c-550f-91b5-11df032d22d3> ;
+    time:hasTime <http://data.odeuropa.eu/time/6dd73ac8-55dc-5b82-9d27-ce969f277414>,
+        <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> a od:L11_Smell ;
+    rdfs:label "stinking"@en .
+

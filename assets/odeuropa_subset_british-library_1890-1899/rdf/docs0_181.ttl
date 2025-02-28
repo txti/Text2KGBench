@@ -1,0 +1,81 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fetid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fetid_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fetid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fetid_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P165_incorporates <http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/f96d5db1-e86c-58b9-8e35-44e5e9150138> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/f96d5db1-e86c-58b9-8e35-44e5e9150138> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/f96d5db1-e86c-58b9-8e35-44e5e9150138> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/f96d5db1-e86c-58b9-8e35-44e5e9150138> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/object/d8f9923b-abc8-57f5-bcf0-eed428b8f9f2> a crmsci:S10_Material_Substantial ;
+    rdfs:label "wards"@en .
+
+<http://data.odeuropa.eu/object/f34c7955-2a9e-5700-b7e7-5bdc68af1ce9> a crmsci:S10_Material_Substantial ;
+    rdfs:label "field - tents"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/f96d5db1-e86c-58b9-8e35-44e5e9150138> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fetid"@en,
+        "field - tents"@en,
+        "wards"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    rdf:value "Sweet and bitter commingled , as it is , we clasp it to our heart of hearts and know — that were it bitterer a thousand fold — it is ours still ! So I may not leave the field of southern song , unnoting its noblest strain — its funeral hymn ! Father Ryan ' s Conquered Ban is so complete in fulfillment of its mission , that we can not spare one word , while yet no word is wanting ! Every syllable there finds it echo far down in every southern heart .Every syllable syllable has added significance , as coming from a man of peace ; — a priest of that church which ever held forth free and gentle hand to aid the cause of struggling freedom ! In hottest flashings of the sight ; in toilsome marches of winter ; in fearful famine of the trenches — the Catholic soldiers of the Confederacy Confederacy ever acted the motto of the Douglas ; their deeds ever said — aye , And , in fetid wards of fever hospital ; in field - tents , where the busy knife shears through quivering flesh ; on battle - ground , where shattered manhood lies mangled almost past semblance of itself ; at hurried burial , where gory blanket , or rough board , makes final rest for some without a name ; — there ever , and ever tender and tireless , the priest of Rome works on his labor of love and consolation consolation ! And the gentlest daughter of the eldest church was there as well .All southern soldiers were brothers , in her eyes ; children of the One Father ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fetid_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fetid"@en .
+
+<http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/d8f9923b-abc8-57f5-bcf0-eed428b8f9f2>,
+        <http://data.odeuropa.eu/object/f34c7955-2a9e-5700-b7e7-5bdc68af1ce9> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> a od:L11_Smell ;
+    rdfs:label "fetid"@en .
+

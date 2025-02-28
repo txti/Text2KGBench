@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P165_incorporates <http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/e9bb3fe0-95d0-5175-9f06-47f820dcc9a6> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8>,
+        <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725>,
+        <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/e9bb3fe0-95d0-5175-9f06-47f820dcc9a6> crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/e9bb3fe0-95d0-5175-9f06-47f820dcc9a6> crm:P67_refers_to <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/e9bb3fe0-95d0-5175-9f06-47f820dcc9a6> crm:P67_refers_to <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/e9bb3fe0-95d0-5175-9f06-47f820dcc9a6> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "bottle"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8>,
+        <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725>,
+        <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    rdf:value "' O , Doris 212 THREE BRIGHT GIRLS .child ! ' she gasped faintly , ' if ever I get out of this boat alive I will never go into another , if I have to live all my life in France ! ' Well , I raised her up and placed her a little more comfortably , and in doing this her bonnet fell off , and — you girls won ' t beheve me , perhaps , but I daresay mother knows — there , as plain to see as anything , was a little bald patch , about as big as half - a - crown , on the top of her head ! Poor aunt ! she was in far too great misery to think about such trifles then , and only told me to put her feet a little higher and to bring her smelling - bottle .But I shall always think of it whenever anyone asks her to take her bonnet off ! By the by , aunt says she knows Mr ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/412> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

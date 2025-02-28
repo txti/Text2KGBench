@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P165_incorporates <http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/ae0ffa55-076a-5006-929e-a1aeaee5472e> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1>,
+        <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda>,
+        <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/ae0ffa55-076a-5006-929e-a1aeaee5472e> crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/ae0ffa55-076a-5006-929e-a1aeaee5472e> crm:P67_refers_to <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/ae0ffa55-076a-5006-929e-a1aeaee5472e> crm:P67_refers_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030> crm:P67_refers_to <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/actor/f6749c14-79c8-5077-bbc0-f2d86fee478a> a crm:E39_Actor ;
+    rdfs:label "We" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/c9ae44a0-bbf6-5006-84a7-901b73609030/fragment/ae0ffa55-076a-5006-929e-a1aeaee5472e> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "We"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1>,
+        <http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda>,
+        <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    rdf:value "He is a cool - judging , keen - sighted officer , and I do not myself think he could have been mistaken .We followed up the scent at once , but nothing has come of it .Salter , if it was he , had made good his Karl made no answer : he was considering ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ee1d091f-32c7-5d6b-bc91-e30131bc1da1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> .
+
+<http://data.odeuropa.eu/experience/34d329d8-c44f-5f46-9042-3c9721b3dbda> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/f6749c14-79c8-5077-bbc0-f2d86fee478a> .
+
+<http://data.odeuropa.eu/smell/495f9ee0-e661-573f-bfa5-fa69cf0e5154> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

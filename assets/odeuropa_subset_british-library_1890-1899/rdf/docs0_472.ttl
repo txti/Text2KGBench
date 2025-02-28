@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fresh"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/23p> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P165_incorporates <http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/ecc85b2c-05ca-5fa3-bfa8-65848257d63e> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/ecc85b2c-05ca-5fa3-bfa8-65848257d63e> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/ecc85b2c-05ca-5fa3-bfa8-65848257d63e> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/ecc85b2c-05ca-5fa3-bfa8-65848257d63e> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/ecc85b2c-05ca-5fa3-bfa8-65848257d63e> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fresh"@en,
+        "me"@en,
+        "one evening"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    rdf:value "They occupy the space of years in my remembrance .The way in which I listened to all the incidents of the house that made themselves audible to me ; the ringing of bells , the opening and shutting of doors , the murmuring of voices , the footsteps on the stairs ; to any laughing , whistling , or singing , outside , which seemed more dismal than anything else to me in my solitude and disgrace — the uncertain pace of the hours , especially at night , when I would wake thiuking it was morning , and find that the family were not yet gone to bed , and that all the length of night had yet to come — the depressed dreams and nightmares I had — the return of day , noon , afternoon , evening , when the boys played in the churchyard , and I watched them from a distance within the room , being ashamed to show myself at the window lest they should know I was a prisoner — the strange sensation of never hearing myself speak — the fleeting intervals of something like cheerfulness , which came with eating and drinking , and went away with it — the setting iu of rain one evening , with a fresh smell , and its coining down faster and faster between me and the church , until it and gathering night seemed to quench me into gloom , and fear , and remorse — al ) this appears to have gone round and round for years instead of days , it is so vividly and strongly stamped on my remembrance .On the last night of my restraint , I was awakened by hearing my own name Bpoken in a whisper ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7>,
+        <http://data.odeuropa.eu/time/bceea79e-5b52-5daf-af53-d4eb15033dd3> .
+
+<http://data.odeuropa.eu/time/bceea79e-5b52-5daf-af53-d4eb15033dd3> a time:TemporalEntity ;
+    rdfs:label "one evening" ;
+    rdfs:comment "evening"@en .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7>,
+        <http://data.odeuropa.eu/time/bceea79e-5b52-5daf-af53-d4eb15033dd3> .
+
+<http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,99 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "long"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/long_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "easy"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/easy_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "angry"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/angry_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P165_incorporates <http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/c8d8a21d-9dde-52fd-a314-6c2fda48a81e> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/c8d8a21d-9dde-52fd-a314-6c2fda48a81e> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/c8d8a21d-9dde-52fd-a314-6c2fda48a81e> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/c8d8a21d-9dde-52fd-a314-6c2fda48a81e> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/attribute/angry_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "angry"@en .
+
+<http://data.odeuropa.eu/attribute/easy_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "easy"@en .
+
+<http://data.odeuropa.eu/attribute/long_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "long"@en .
+
+<http://data.odeuropa.eu/object/d8f9923b-abc8-57f5-bcf0-eed428b8f9f2> a crmsci:S10_Material_Substantial ;
+    rdfs:label "his cabana"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/c8d8a21d-9dde-52fd-a314-6c2fda48a81e> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "He"@en,
+        "angry"@en,
+        "easy"@en,
+        "his cabana"@en,
+        "long"@en,
+        "whiffs"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    rdf:value "Charles , and red fish at Pensacola ; coming on deck in a shooting jacket and glengary cap , that make him look like a jaunty Fosco .He leans over the stern rail , smoking his cabana in long , easy whiffs as we gain a length ; sending out short , angry puffs at the as she creeps up on us .Foot by foot , we gain steadily until the gap is widened to three or four boat - lengths , though the piles her fires till the shores behind her glow from their reflection ; and her decks — now black with anxious lookers - on — send up cheer after cheer , as she snorts defiantly after us ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/d8f9923b-abc8-57f5-bcf0-eed428b8f9f2> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> a crm:E39_Actor ;
+    rdfs:label "He" .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> a od:L11_Smell ;
+    rdfs:label "whiffs"@en .
+

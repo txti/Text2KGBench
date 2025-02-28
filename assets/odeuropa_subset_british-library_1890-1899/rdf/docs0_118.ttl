@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P165_incorporates <http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/f1a5d98a-8e8c-5c70-a7c3-1ef04ee7d31f> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c>,
+        <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758>,
+        <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/f1a5d98a-8e8c-5c70-a7c3-1ef04ee7d31f> crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/f1a5d98a-8e8c-5c70-a7c3-1ef04ee7d31f> crm:P67_refers_to <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/f1a5d98a-8e8c-5c70-a7c3-1ef04ee7d31f> crm:P67_refers_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/object/aa062a49-8d66-58df-9cce-ee9deaee0ae6> a crmsci:S10_Material_Substantial ;
+    rdfs:label "shower"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/f1a5d98a-8e8c-5c70-a7c3-1ef04ee7d31f> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant"@en,
+        "shower"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c>,
+        <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758>,
+        <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    rdf:value "Recumbent at her ease , ere long , And lull ' d by her own hum - drum song , SONGS AND STORIES OF ANIMAL LIFE .411 Bird , beast , and insect hail Warm sun and fragrant shower .The sheep in Bethlehem ' s thy my dale , In Blessed Mary ' s bower The ox and ass — to them was given To see our Lord : the light of Heaven Fell on them in that hour ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/aa062a49-8d66-58df-9cce-ee9deaee0ae6> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> a od:L11_Smell ;
+    rdfs:label "fragrant"@en .
+

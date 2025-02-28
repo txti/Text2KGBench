@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "exquisite"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/exquisite_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P165_incorporates <http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/7948e7de-6fd3-5286-8b2c-4c39fccee645> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/7948e7de-6fd3-5286-8b2c-4c39fccee645> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/7948e7de-6fd3-5286-8b2c-4c39fccee645> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/7948e7de-6fd3-5286-8b2c-4c39fccee645> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/attribute/exquisite_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "exquisite"@en .
+
+<http://data.odeuropa.eu/object/5dae0ddd-3d57-54e0-8bcf-f4ae1e8d1ae1> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/7948e7de-6fd3-5286-8b2c-4c39fccee645> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "breath"@en,
+        "exquisite"@en,
+        "the"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    rdf:value "' CHAPTER VIII A few days later the two friends met again by the Oolloolloo , a couple of hours before sunset , where Stella was wandering with some of the children , noting the triumphant way in which spring was making its presence known .There were some tan wattles fully out in perfect arcs of blossom like great globes of spun gold , embalming the air all round with their exquisite breath .Surely no tree in the world flowers more generously , or pours its whole life out in fragrance more unreservedly , than the Australian wattle ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/5dae0ddd-3d57-54e0-8bcf-f4ae1e8d1ae1> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> a od:L11_Smell ;
+    rdfs:label "breath"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

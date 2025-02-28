@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238> crm:P165_incorporates <http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238/fragment/ca8eaffe-ae41-5628-beef-7d69e5ceae89> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/1362ebc5-af84-58c6-a2e2-b741d5bd43e3>,
+        <http://data.odeuropa.eu/experience/f79ede65-f48b-5107-b7a6-3618906c568c>,
+        <http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238/fragment/ca8eaffe-ae41-5628-beef-7d69e5ceae89> crm:P67_refers_to <http://data.odeuropa.eu/emission/1362ebc5-af84-58c6-a2e2-b741d5bd43e3> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238/fragment/ca8eaffe-ae41-5628-beef-7d69e5ceae89> crm:P67_refers_to <http://data.odeuropa.eu/experience/f79ede65-f48b-5107-b7a6-3618906c568c> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238/fragment/ca8eaffe-ae41-5628-beef-7d69e5ceae89> crm:P67_refers_to <http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238> crm:P67_refers_to <http://data.odeuropa.eu/emission/1362ebc5-af84-58c6-a2e2-b741d5bd43e3> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238> crm:P67_refers_to <http://data.odeuropa.eu/experience/f79ede65-f48b-5107-b7a6-3618906c568c> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238> crm:P67_refers_to <http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> .
+
+<http://data.odeuropa.eu/object/2d6c6f07-9d1f-54f1-b93a-5f03a0c88348> a crmsci:S10_Material_Substantial ;
+    rdfs:label "aroma delle piante"@en .
+
+<http://data.odeuropa.eu/object/2df7ada8-978e-5d83-8e4c-ca93cfd2629f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "aroma"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/5c12e505-e69d-59b8-98dd-1d1a7a6a1238/fragment/ca8eaffe-ae41-5628-beef-7d69e5ceae89> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aroma"@en,
+        "aroma delle piante"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/1362ebc5-af84-58c6-a2e2-b741d5bd43e3>,
+        <http://data.odeuropa.eu/experience/f79ede65-f48b-5107-b7a6-3618906c568c>,
+        <http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> ;
+    rdf:value "disadorne .del piano , mentre l ' aroma delle piante dà conforto alla respirazione .Fasano è una fiorente cittadetta , in via di crescente crescente sviluppo , situata al piede d ' un colle gremito di ville ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/1362ebc5-af84-58c6-a2e2-b741d5bd43e3> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/2d6c6f07-9d1f-54f1-b93a-5f03a0c88348>,
+        <http://data.odeuropa.eu/object/2df7ada8-978e-5d83-8e4c-ca93cfd2629f> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/f79ede65-f48b-5107-b7a6-3618906c568c> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/27b44bbd-7d30-51f6-abb6-a9d1be707cf3> a od:L11_Smell ;
+    rdfs:label "aroma"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

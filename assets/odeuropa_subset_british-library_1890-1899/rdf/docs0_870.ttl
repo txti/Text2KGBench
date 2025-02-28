@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "very keen"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/very%20keen_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/40ffcf23-42b1-558f-8fe7-abb0a3d25f7d> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> ;
+    rdfs:comment "very"@en .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P165_incorporates <http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/aac2f5a7-5d7d-5d47-9938-826b34a7f367> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/aac2f5a7-5d7d-5d47-9938-826b34a7f367> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/aac2f5a7-5d7d-5d47-9938-826b34a7f367> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/aac2f5a7-5d7d-5d47-9938-826b34a7f367> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/attribute/very%20keen_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "very keen"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/aac2f5a7-5d7d-5d47-9938-826b34a7f367> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Their"@en,
+        "smell"@en,
+        "very keen"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    rdf:value "At times , however , the guanacos live in vast herds , and then all the older males remain on the higher knolls as sentinels .Their sense of smell is very keen .It is wellnigh wellnigh impossible to get Avithin half a mile of the sentinels by travelling down wind — some say they can smell a party of hunters that is a full mile away , and even more up wind ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/40ffcf23-42b1-558f-8fe7-abb0a3d25f7d> a crm:E39_Actor ;
+    rdfs:label "Their" .
+
+<http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/40ffcf23-42b1-558f-8fe7-abb0a3d25f7d> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

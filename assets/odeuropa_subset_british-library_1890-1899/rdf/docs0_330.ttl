@@ -1,0 +1,60 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P165_incorporates <http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/0f0314ce-df0d-511c-ad22-be9800280250> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8>,
+        <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725>,
+        <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/0f0314ce-df0d-511c-ad22-be9800280250> crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/0f0314ce-df0d-511c-ad22-be9800280250> crm:P67_refers_to <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/0f0314ce-df0d-511c-ad22-be9800280250> crm:P67_refers_to <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/0f0314ce-df0d-511c-ad22-be9800280250> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of the oils"@en,
+        "smell"@en,
+        "turn the child faint"@en,
+        "turpentine"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8>,
+        <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725>,
+        <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    rdf:value "Sometimes Daisy sits up there , cosily curled up in the most comfortable arm - chair .But this does not happen very often , as the smell of the oils and turpentine turn the child faint .Molly , however , who has taken to reading herself as she calls it , is often up there , and may be found in her favourite attitude when particularly absorbed in anything — her elbows planted on the table , and her fingers buried in her hair ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/109>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/275> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

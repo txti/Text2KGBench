@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P165_incorporates <http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/d3d10223-7033-56f2-8b00-1a0c2897a1bd> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/d3d10223-7033-56f2-8b00-1a0c2897a1bd> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/d3d10223-7033-56f2-8b00-1a0c2897a1bd> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/d3d10223-7033-56f2-8b00-1a0c2897a1bd> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/actor/8df815d4-ae76-573c-a048-20cf8cfebc7a> a crm:E39_Actor ;
+    rdfs:label "he|his|his" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/d3d10223-7033-56f2-8b00-1a0c2897a1bd> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "he"@en,
+        "his"@en,
+        "nostrils"@en,
+        "of the flowers"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    rdf:value "The sky was a region of endless hopes and ever recurrent recurrent despairs ; that the beloved earthly thing should rise there , gave him one homely fact concerning the unknown and appalling .But from the sky he was sent back to the earth in yet farther pursuit ; for whence came the rain , as his books told him , but from the sea ? The sea he had read of , though never yet beheld , and he knew it magnificent ; gladly , as he thought with himself under the wall , would he have hailed it an intermediate betwixt the sky and the earth , with the sky coming first , but , alas , the sea was before the sky in the order of the stream ' s genesis 1 And then , worse and worse ! how was the ocean fed but from the torrent ? How was the sky fed but from the ocean ? How was the dark fountain fed but from the sky ? How was the torrent fed but from the fountain ? As he sat in the hot garden , leaning against the old gray castle , the nest of his family for countless generations , with the scent of the flowers in his nostrils , and the sound of the bees in his ears , he became aware that he had lost the stream of his childhood — the mysterious , infinite idea of endless , inexplicable , original birth , of outflowing because of essential essential existence within .There was no production any more , nothing but the merest rushing around , like the ring - sea of Saturn , in a never ending circle of formal change ! Like a great dish , the mighty ocean was skimmed in particles invisible ; these were gathered aloft into sponges all water and no sponge ; and thence through many an airy , many an earthly channel , deflowered of its mystery , his ancient , self - producing fountain to a holy , merry river , was fed — only fed I It was but a cistern after all ! He grew very sad , and well he might ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/8df815d4-ae76-573c-a048-20cf8cfebc7a> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> a od:L11_Smell ;
+    rdfs:label "nostrils"@en,
+        "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

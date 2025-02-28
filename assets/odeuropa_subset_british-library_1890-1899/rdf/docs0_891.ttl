@@ -1,0 +1,91 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "faint"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/faint_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stuffy"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stuffy_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "oppressive"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/oppressive_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P165_incorporates <http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/975e807e-7d24-5404-983c-9fa9b9c4bc07> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/975e807e-7d24-5404-983c-9fa9b9c4bc07> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/975e807e-7d24-5404-983c-9fa9b9c4bc07> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/975e807e-7d24-5404-983c-9fa9b9c4bc07> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/attribute/faint_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "faint"@en .
+
+<http://data.odeuropa.eu/attribute/oppressive_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "oppressive"@en .
+
+<http://data.odeuropa.eu/attribute/stuffy_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "stuffy"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/975e807e-7d24-5404-983c-9fa9b9c4bc07> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "faint"@en,
+        "odour"@en,
+        "of the damp church"@en,
+        "oppressive"@en,
+        "stuffy"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    rdf:value "It seemed a long time to Dave , the moments drawn out to minutes ; and as he waited , everything was , as it were , magnified .The faint , stuffy odour of the damp church was oppressive .The chirping of a cricket was painfully loud ; the soft night breeze literally hummed through the louvres of the open belfry , and the striking of the clock on the bell which had proved too strong and heavy for Jake ' s attempt , came like a resonant echoing roar , which half deafened the listener ' s ears ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/2a5f1685-30a3-572c-b916-77f2aaba59b0> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/place/2a5f1685-30a3-572c-b916-77f2aaba59b0> a crm:E53_Place ;
+    rdfs:label "of the damp church" .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/2a5f1685-30a3-572c-b916-77f2aaba59b0> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+

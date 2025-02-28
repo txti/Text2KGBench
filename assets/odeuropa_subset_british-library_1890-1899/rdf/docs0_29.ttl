@@ -1,0 +1,83 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> .
+
+<http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P165_incorporates <http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/45b6e467-5977-5c00-b289-e992b652d008> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde>,
+        <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d>,
+        <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/45b6e467-5977-5c00-b289-e992b652d008> crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/45b6e467-5977-5c00-b289-e992b652d008> crm:P67_refers_to <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/45b6e467-5977-5c00-b289-e992b652d008> crm:P67_refers_to <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P67_refers_to <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P67_refers_to <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> .
+
+<http://data.odeuropa.eu/object/3d9f45d6-928b-5fcc-bc3d-bd0433eceb1a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/object/f581b768-7ce2-54d3-9c46-65a9db394058> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Avood ( Santalum Pyrularium"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/45b6e467-5977-5c00-b289-e992b652d008> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Avood ( Santalum Pyrularium"@en,
+        "fragrant"@en,
+        "incense"@en,
+        "their"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde>,
+        <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d>,
+        <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    rdf:value "In speaking of Chinese emigrants we should not omit those avIio have gone to the Sandwich Islands .These islands are known to the Chinese as the Wood for this fragrant Avood ( Santalum Pyrularium ) is much valued in China as one of the constituents of their incense as well as the material from which they make carved boxes , paper - knives , etc .The intercourse bet / ween China and these islands has existed for a century , and so many Chinese have settled there that it was stated a few years ago that the Chinese men Avere more numerous than the native HaAvaiian men ; of course there are more native Avomen , for feAv Chinese Avomen emigrate ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/3d9f45d6-928b-5fcc-bc3d-bd0433eceb1a>,
+        <http://data.odeuropa.eu/object/f581b768-7ce2-54d3-9c46-65a9db394058> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> a od:L11_Smell ;
+    rdfs:label "fragrant"@en,
+        "incense"@en .
+

@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P165_incorporates <http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/010f0313-6ebf-5e97-a542-2b30e74f67b0> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/010f0313-6ebf-5e97-a542-2b30e74f67b0> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/010f0313-6ebf-5e97-a542-2b30e74f67b0> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/010f0313-6ebf-5e97-a542-2b30e74f67b0> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/object/1013f578-b181-570a-922e-e77eafd73543> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the air from the sea"@en .
+
+<http://data.odeuropa.eu/object/e09b727b-9045-5684-b1b3-51deece3c05b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the punch - bowl full of dried rose - leaves"@en .
+
+<http://data.odeuropa.eu/object/fe5d0b2c-9f0b-589d-ae73-9fb101baf101> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/010f0313-6ebf-5e97-a542-2b30e74f67b0> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of the flowers"@en,
+        "perfume"@en,
+        "the"@en,
+        "the air from the sea"@en,
+        "the punch - bowl full of dried rose - leaves"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    rdf:value "The room was as neat as Janet or my aunt .As I laid down my pen , a moment since , to think of it , the air from the sea came blowing in again , mixed with the perfume of the flowers ; and I saw the old - fashioned furniture brightly rubbed and polished , my aunt ' s inviolable chair and table by the round green fan in the bowwindow , bowwindow , the drugget - covered carpet , the cat , the kettle - holder , the two canaries , the old china , the punch - bowl full of dried rose - leaves , the tall press guarding all sorts of bottles and pots , and , wonderfully out of keeping with the rest , my dusty self upon the sofa , taking note of everything .Janet had gone away to get the bath ready , when my aunt , to my great alarm , became in one moment rigid with indignation , and had hardly voice to cry out , Upon which , Janet came running up the stairs as if the house were in flames , darted out on a little piece of green in front , and warned off two saddle - donkeys , lady - ridden , that had presumed to set hoof upon it ; while myaunt , rushingoutof the house , seized the bridle of a third animal laden with a bestriding child , turned him , led him forth from those sacred precincts , and boxed the ears of the unlucky urchin in attendance who had dared to profane that hallowed ground ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e09b727b-9045-5684-b1b3-51deece3c05b>,
+        <http://data.odeuropa.eu/object/fe5d0b2c-9f0b-589d-ae73-9fb101baf101>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/1013f578-b181-570a-922e-e77eafd73543> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "matic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/matic_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P165_incorporates <http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/d2a66f5c-a894-54ef-8bea-6aacdde779d3> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/d2a66f5c-a894-54ef-8bea-6aacdde779d3> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/d2a66f5c-a894-54ef-8bea-6aacdde779d3> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/d2a66f5c-a894-54ef-8bea-6aacdde779d3> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/attribute/matic_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "matic"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/d2a66f5c-a894-54ef-8bea-6aacdde779d3> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "matic"@en,
+        "odors"@en,
+        "the forest"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    rdf:value "There myriads of weary toilers , whose dull , sterile lives have been devoid of intellectual enjoyment , should be convinced that well - used leisure and soul - culture in the afternoon afternoon of life may rightly form the aim of every man who has accumulated and family a for himself reasonable competence .a preparation itable years tirement , they to know from Moreover , as f or those profof profof calm reshould reshould be led personal exexaltation exexaltation of perience the the soul , not only from thefinestliterfrom thefinestliterfrom the min - which comes the perusal of atu re , but also istry of Nathe Nathe songs of ture of the ture , through birds , the rapbrook rapbrook in its to the sea , the glad journey music of the pines , the aroof aroof the forest , wind - swept matic odors DNE OF THE V1CTORIE the solemn grandeur of the mountains , and the limitless expanse of ocean ' s blue .Then would the world be spared the present melancholy sight of haggard men absorbed in merely adding to their bank accounts ; and that of gray - haired slaves of selfindulgent selfindulgent families , still struggling in the whirlpool of commercialism , commercialism , that sons may waste their patrimony , and wives and daughters lavishly outdo their social rivals ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/1cc2f982-964c-5d02-a797-dd2cc3be8802> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/place/1cc2f982-964c-5d02-a797-dd2cc3be8802> a crm:E53_Place ;
+    rdfs:label "the forest" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/19> .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/1cc2f982-964c-5d02-a797-dd2cc3be8802> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> a od:L11_Smell ;
+    rdfs:label "odors"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

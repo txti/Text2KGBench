@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P165_incorporates <http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/50896fd7-494a-5f2d-ae7a-bc3b34950a6e> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/50896fd7-494a-5f2d-ae7a-bc3b34950a6e> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/50896fd7-494a-5f2d-ae7a-bc3b34950a6e> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/50896fd7-494a-5f2d-ae7a-bc3b34950a6e> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/actor/9499a5ad-c4e7-5d19-9238-8d89bd1e9256> a crm:E39_Actor ;
+    rdfs:label "you|to some nostrils" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/50896fd7-494a-5f2d-ae7a-bc3b34950a6e> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of a"@en,
+        "perfume"@en,
+        "smell"@en,
+        "to some nostrils"@en,
+        "you"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    rdf:value "From many a spot you might look in all directions without seeing a sign of human or other habitation .Even then , however , you might , to be sure , most likely smell the perfume — to some nostrils it is nothing less than perfume — of a peat fire , although you might be long in finding out whence it came ; for the houses , if indeed the dwellings dwellings could be called houses , were often so difficult to distinguish from the ground on which they were built , that except the smoke of fresh peats were coming pretty freely from the wide - mouthed chimney , it required an experienced eye to discover the human nest .The valleys that opened northward produced little ; there in some years the snow might be seen lying on patches of oats yet 248 CASTLE WARLOCK ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/6ed67e19-ced9-554d-8eb3-a892edf6d120> a crm:E70_Thing ;
+    rdfs:label "a"@en .
+
+<http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/6ed67e19-ced9-554d-8eb3-a892edf6d120> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/9499a5ad-c4e7-5d19-9238-8d89bd1e9256> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> a od:L11_Smell ;
+    rdfs:label "perfume"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

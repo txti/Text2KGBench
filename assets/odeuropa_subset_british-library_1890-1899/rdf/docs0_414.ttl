@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P165_incorporates <http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/bf27e864-2638-5730-b5b4-ca2630ed8384> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/bf27e864-2638-5730-b5b4-ca2630ed8384> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/bf27e864-2638-5730-b5b4-ca2630ed8384> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/bf27e864-2638-5730-b5b4-ca2630ed8384> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/object/e397ebbf-f4da-50d5-a40f-0cd110b71a70> a crmsci:S10_Material_Substantial ;
+    rdfs:label "The breeze"@en .
+
+<http://data.odeuropa.eu/object/f4247a2d-b02a-57f0-865e-f6433a26a37b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the new - mown hay"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/bf27e864-2638-5730-b5b4-ca2630ed8384> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The breeze"@en,
+        "of the new - mown hay"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    rdf:value "It shall be ' Drifting down .' And with a wondrous prelude on the guitar , which seemed to thrill them all , she began — Drifting down in the grey - green twilight , Oh , the scent of the new - mown hay ! The oars drip in the mystic shy light , Oh , the charm of the dying day ! While fading flecks of bright opalescence But faintly dapple a saffron sky , The stream flows on with superb quiescence , The breeze is hushed to the softest sigh .Drifting down in the sweet still weather , Oh , how short is the summer day ! Love , my Love , when we drift together , Oh , how quickly we drift away ! During this song they found they had SUMMER SAILING 205 voice ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f4247a2d-b02a-57f0-865e-f6433a26a37b> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/e397ebbf-f4da-50d5-a40f-0cd110b71a70> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

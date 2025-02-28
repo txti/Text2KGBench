@@ -1,0 +1,112 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/08a3c7a3-251a-5253-adba-7b9b724b8e2a> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/08a3c7a3-251a-5253-adba-7b9b724b8e2a> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/08a3c7a3-251a-5253-adba-7b9b724b8e2a> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4/assignment/4> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/08a3c7a3-251a-5253-adba-7b9b724b8e2a> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P165_incorporates <http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/1deab306-3a1e-59eb-a993-27f196292195> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/1deab306-3a1e-59eb-a993-27f196292195> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/1deab306-3a1e-59eb-a993-27f196292195> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/1deab306-3a1e-59eb-a993-27f196292195> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/object/c076b1bc-9f24-59ef-a44a-3d8e7bb86bcc> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/object/c57b5e49-4872-5ef5-a511-eb95ee72b79e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "orchards"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/1deab306-3a1e-59eb-a993-27f196292195> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "bathed"@en,
+        "fragrant"@en,
+        "her"@en,
+        "her throbbing temples"@en,
+        "its"@en,
+        "orchards"@en,
+        "scented"@en,
+        "vinegar"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    rdf:value "The bride of a month returning to her father ' s hearth and hitherto unsullied home ! What would be thought — what said of her ? She was neither wife nor widow ! How to face the world — society — that brutal , selfish , and unreasoning unreasoning bugbear ? She was cut off from both for ever now .While Digby was telegraphing to his solicitor at Lincoln ' s Inn Fields , Claire , rising from the bed on which she had thrown herself without undressing , and where she had lain in speechless misery , bathed her throbbing temples with scented vinegar , gathered together a few jewels that were strictly her own , put a certain sum in her purse , clothed herself in a dark and plain costume , and with a few necessary necessary articles in a handbag , stole away from the scene of her past happiness ; and pausing only to take a tear - blurred and brief farewell glance at the cottage , embosomed amid its fragrant orchards , she went forth into the darkness of the early morning ; and when Digby returned , all trace of her was lost , and he never saw her face again .After a long and painful search , after putting the telegraph to work in every direction , after writing and advertising till his heart grew sick and sore with direst apprehension , after all manner of wild ideas about the waterfalls , torrents , and cascades that abound in the vicinity of Lynmouth , he had to give up all hope of unravelling the mystery that covered the flight or fate of Claite ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c076b1bc-9f24-59ef-a44a-3d8e7bb86bcc>,
+        <http://data.odeuropa.eu/object/c57b5e49-4872-5ef5-a511-eb95ee72b79e>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/165> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/actor/08a3c7a3-251a-5253-adba-7b9b724b8e2a> a crm:E39_Actor ;
+    rdfs:label "her|her" .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/08a3c7a3-251a-5253-adba-7b9b724b8e2a> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> a od:L11_Smell ;
+    rdfs:label "bathed"@en,
+        "fragrant"@en,
+        "scented"@en .
+

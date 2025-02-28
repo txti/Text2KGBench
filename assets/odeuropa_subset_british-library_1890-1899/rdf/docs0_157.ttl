@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5338ceb2-b089-5a45-ae2c-e073cc8d3c51> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5338ceb2-b089-5a45-ae2c-e073cc8d3c51> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5338ceb2-b089-5a45-ae2c-e073cc8d3c51> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5338ceb2-b089-5a45-ae2c-e073cc8d3c51> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> a crmsci:S10_Material_Substantial ;
+    rdfs:label "in the air"@en .
+
+<http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/5338ceb2-b089-5a45-ae2c-e073cc8d3c51> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "in the air"@en,
+        "their"@en,
+        "those flowers"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "Is it still growing , I wonder ? its flowers w - ere very sweet , and he loved them much .Sometimes now , when the wind is howling down from the North Pole , and the ice blast is sweeping over thousands of versts of ice and snow , the thought of those flowers comes vividly before me , and their fragrance seems mingled in the air around .Should I ever be in England again , my first visit will be to that humble grave ; perhaps I may still find a rose upon that now aged tree ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

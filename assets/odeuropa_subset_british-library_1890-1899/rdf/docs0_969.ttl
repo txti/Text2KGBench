@@ -1,0 +1,80 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "nasty"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/nasty_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P165_incorporates <http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/23060996-98a6-50f6-924c-2d04aa12d729> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/23060996-98a6-50f6-924c-2d04aa12d729> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/23060996-98a6-50f6-924c-2d04aa12d729> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/23060996-98a6-50f6-924c-2d04aa12d729> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/attribute/nasty_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "nasty"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/23060996-98a6-50f6-924c-2d04aa12d729> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "nasty"@en,
+        "stinking"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    rdf:value "They also had but little to say , for they knew themselves in a fault .The Giant , therefore , drove them before him , and put them into his castle , into a very dark dungeon , nasty and stinking to the spirit of these two men .Here then they lay , from Wednesday morning till Saturday night , without one bit of bread , or drop of drink , or any light , or any to ask how they did ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/stinking_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "stinking"@en .
+
+<http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> a od:L11_Smell ;
+    rdfs:label "stinking"@en .
+

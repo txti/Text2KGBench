@@ -1,0 +1,100 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P165_incorporates <http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/6130bed4-8eaa-5c88-9e4c-1f12222113b1> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993>,
+        <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657>,
+        <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/6130bed4-8eaa-5c88-9e4c-1f12222113b1> crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/6130bed4-8eaa-5c88-9e4c-1f12222113b1> crm:P67_refers_to <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/6130bed4-8eaa-5c88-9e4c-1f12222113b1> crm:P67_refers_to <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P67_refers_to <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P67_refers_to <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> .
+
+<http://data.odeuropa.eu/actor/77318fdf-e773-5d18-a49a-ae679e382706> a crm:E39_Actor ;
+    rdfs:label "She|her" .
+
+<http://data.odeuropa.eu/object/31a39c1d-b666-590c-8093-9bbaf52b955f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "soil"@en .
+
+<http://data.odeuropa.eu/object/877146b0-d036-5236-8a07-eb9e00e089df> a crmsci:S10_Material_Substantial ;
+    rdfs:label "spilt coffee - grains"@en .
+
+<http://data.odeuropa.eu/object/92bd8fc9-64a1-50b6-a854-e0b2205c660f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "a soft inland breeze|by|by a|a jealous|jealous ocean|ocean breeze|breeze"@en .
+
+<http://data.odeuropa.eu/object/e99985f4-c055-57c7-9b02-99f9a20f080f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the fresh coat of paint"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/6130bed4-8eaa-5c88-9e4c-1f12222113b1> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "She"@en,
+        "a jealous"@en,
+        "a soft inland breeze"@en,
+        "around the hatches"@en,
+        "breeze"@en,
+        "by"@en,
+        "by a"@en,
+        "from her"@en,
+        "her"@en,
+        "jealous ocean"@en,
+        "ocean breeze"@en,
+        "odour"@en,
+        "odours"@en,
+        "of spilt coffee - grains"@en,
+        "of the fresh coat of paint"@en,
+        "of tree and soil"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993>,
+        <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657>,
+        <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> ;
+    rdf:value "The steamer Santiago , carrying ' passengers , bullion , and coffee , ' was headed to pass Porto Rico by mi d night , Avhen she would be free of land until she anchored at the quarantine station of the green hills of Staten Island .She had not yet shaken off the contamination of the earth ; a soft inland breeze still tantalized her with odours of tree and soil , the smell of the fresh coat of paint that had followed her coaling rose from her sides , and the odour of spilt coffee - grains that hung around the hatches had yet to be blown away by a jealous ocean breeze , or washed by a welcoming cross - sea .The captain stopped at the open entrance of the Social Hall ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/31a39c1d-b666-590c-8093-9bbaf52b955f>,
+        <http://data.odeuropa.eu/object/877146b0-d036-5236-8a07-eb9e00e089df>,
+        <http://data.odeuropa.eu/object/e99985f4-c055-57c7-9b02-99f9a20f080f>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/200> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/92bd8fc9-64a1-50b6-a854-e0b2205c660f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/bc922db4-8c65-577f-93d9-caab66b68ed8> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/77318fdf-e773-5d18-a49a-ae679e382706> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/bc922db4-8c65-577f-93d9-caab66b68ed8> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/place/bc922db4-8c65-577f-93d9-caab66b68ed8> a crm:E53_Place ;
+    rdfs:label "around the hatches" .
+
+<http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> a od:L11_Smell ;
+    rdfs:label "odour"@en,
+        "odours"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

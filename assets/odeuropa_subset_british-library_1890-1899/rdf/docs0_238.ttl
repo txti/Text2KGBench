@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "far from agreeable"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/far%20from%20agreeable_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P165_incorporates <http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/38e9d8ee-6626-5d65-b72d-5f0ca8f783e5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2>,
+        <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9>,
+        <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/38e9d8ee-6626-5d65-b72d-5f0ca8f783e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/38e9d8ee-6626-5d65-b72d-5f0ca8f783e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/38e9d8ee-6626-5d65-b72d-5f0ca8f783e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P67_refers_to <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P67_refers_to <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> .
+
+<http://data.odeuropa.eu/attribute/far%20from%20agreeable_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "far from agreeable"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/38e9d8ee-6626-5d65-b72d-5f0ca8f783e5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "far from agreeable"@en,
+        "odour"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2>,
+        <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9>,
+        <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    rdf:value "Aye , I can tell them their fortunes , the little dears ! I read their speaking faces ; the face is the key to the mind — it ' s easy to read a young girl ' s face when she ' s thinkin ' of her lover , or the jealousy in the eyes of a neglected neglected wife ; it ' s easy to stir the serpent Envy , or to awaken sleeping hate — I like to make them pale and tremble when I tell them their hidden thoughts ! She paused and looked at him with an evil smile , then lowering her voice EVIL DEPTHS 73 she added , but I don ' t tell them all I see in the cards , oh no , not all ! Then the herbs to cure their aches and pains ! Give them a stir , Mundy , ye are nimbler than A pot of herbs , from which came a heavy , sickly smell , stood on the hob simmering .Mundy obeyed , with a grimace of disgust ; the odour was far from agreeable .Only some poppy - heads to deaden their little pains ; but what is it ye want , Mundy ? Professor ' s dead , and he asked me , when he was dying , to take some papers to his Oh ! — she regarded him keenly — what ' s in the papers ? That ' s just what I want to find out , so that I can send them to his She laughed and gave him a queer look ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

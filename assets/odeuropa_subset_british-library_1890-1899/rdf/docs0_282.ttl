@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P165_incorporates <http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/94992324-550e-5979-aede-cf7381aa8194> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/94992324-550e-5979-aede-cf7381aa8194> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/94992324-550e-5979-aede-cf7381aa8194> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/94992324-550e-5979-aede-cf7381aa8194> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/object/176ea60e-8c15-5be7-8197-0a21c78b03a6> a crmsci:S10_Material_Substantial ;
+    rdfs:label "it"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/94992324-550e-5979-aede-cf7381aa8194> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "it"@en,
+        "of Englishmen"@en,
+        "stinks"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    rdf:value "' ' And so I should , nephew , and so I should , if I had not been detained .Surely you do not suppose that I would linger in the accursed place ? Bah , ' and he spat upon the ground , ' it stinks of Englishmen .I cannot get the taste of them out of my mouth ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/251b7f64-371a-5e81-b2cd-0cdffb78ecb3> a crm:E70_Thing ;
+    rdfs:label "englishmen"@en .
+
+<http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/176ea60e-8c15-5be7-8197-0a21c78b03a6> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/251b7f64-371a-5e81-b2cd-0cdffb78ecb3> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> a od:L11_Smell ;
+    rdfs:label "stinks"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

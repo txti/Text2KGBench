@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P165_incorporates <http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/f001c16b-0694-5a81-9151-cc76859b2ed3> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993>,
+        <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657>,
+        <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/f001c16b-0694-5a81-9151-cc76859b2ed3> crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/f001c16b-0694-5a81-9151-cc76859b2ed3> crm:P67_refers_to <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/f001c16b-0694-5a81-9151-cc76859b2ed3> crm:P67_refers_to <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P67_refers_to <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17> crm:P67_refers_to <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> .
+
+<http://data.odeuropa.eu/actor/0287bfa5-db14-5da6-a5be-d13402f8b484> a crm:E39_Actor ;
+    rdfs:label "our" .
+
+<http://data.odeuropa.eu/object/814d7808-2a1d-5160-8878-29a259c13090> a crmsci:S10_Material_Substantial ;
+    rdfs:label "wallpaper"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/6fa2ee6f-24b9-522b-bc2c-53e282091c17/fragment/f001c16b-0694-5a81-9151-cc76859b2ed3> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "our"@en,
+        "smells"@en,
+        "the passages"@en,
+        "wallpaper"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993>,
+        <http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657>,
+        <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> ;
+    rdf:value "The house , for instance , where Marr died , the lodgings and the landlady of the heroine , are described with a force and a vividness , with a poignant and semi - humorous precision , which recalls the art of Balzac more than that of any other writer .The furniture , the wallpaper , wallpaper , the smells that haunt the passages , — all these details are brought home to our senses , and leave on the mind an impression not unlike that produced by the boarding - house in Pere Goriot .' London : AVILLIAM HEINEMANN , 21 Bedford Street , W ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ecc71b85-08b3-5173-8bc4-69f497e48993> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/814d7808-2a1d-5160-8878-29a259c13090> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/1c9ca5b0-7bda-54fd-a61f-d5849868ccb6> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/bc08640a-b98a-52ac-9af8-e6ae4473b657> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/0287bfa5-db14-5da6-a5be-d13402f8b484> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/1c9ca5b0-7bda-54fd-a61f-d5849868ccb6> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/place/1c9ca5b0-7bda-54fd-a61f-d5849868ccb6> a crm:E53_Place ;
+    rdfs:label "the passages" .
+
+<http://data.odeuropa.eu/smell/74ba2fc4-8eb5-5d32-9096-0c1dc47b1a1c> a od:L11_Smell ;
+    rdfs:label "smells"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

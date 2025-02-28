@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "most grateful"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/most%20grateful_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/6399889b-f136-5572-8208-023b7179a433> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> ;
+    rdfs:comment "most"@en .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P165_incorporates <http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/4bfec2af-5a27-5eee-841b-03dd48444df4> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a>,
+        <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97>,
+        <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/4bfec2af-5a27-5eee-841b-03dd48444df4> crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/4bfec2af-5a27-5eee-841b-03dd48444df4> crm:P67_refers_to <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/4bfec2af-5a27-5eee-841b-03dd48444df4> crm:P67_refers_to <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P67_refers_to <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P67_refers_to <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> .
+
+<http://data.odeuropa.eu/attribute/most%20grateful_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "most grateful"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/4bfec2af-5a27-5eee-841b-03dd48444df4> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aroma"@en,
+        "most grateful"@en,
+        "the nostrils of the hungry boys"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a>,
+        <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97>,
+        <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    rdf:value "Close enough to the fire to keep its contents warm was a moderate - sized , stout - made iron saucepan .The man took off the lid , and a most grateful aroma saluted the nostrils of the hungry boys .Metal platters were brought The Missing Million 44 out , and a hearty meal of stewed river turtle and vegetables was speedily partaken of ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/6399889b-f136-5572-8208-023b7179a433> a crm:E39_Actor ;
+    rdfs:label "the nostrils of the hungry boys" .
+
+<http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/6399889b-f136-5572-8208-023b7179a433> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> a od:L11_Smell ;
+    rdfs:label "aroma"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

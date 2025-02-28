@@ -1,0 +1,91 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "strong"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-intensity/4> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/intensity> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "pervading"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/pervading_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "pervading"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/pervading_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P165_incorporates <http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/b10a8245-182e-5962-8820-3921213aa1e1> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/b10a8245-182e-5962-8820-3921213aa1e1> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/b10a8245-182e-5962-8820-3921213aa1e1> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/b10a8245-182e-5962-8820-3921213aa1e1> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/object/6869dd39-5de1-51c0-841b-1834b7312eec> a crmsci:S10_Material_Substantial ;
+    rdfs:label "in a pervading|pervading atmosphere"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/b10a8245-182e-5962-8820-3921213aa1e1> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "in a pervading"@en,
+        "liqueurs"@en,
+        "me"@en,
+        "odour"@en,
+        "of essences"@en,
+        "pervading"@en,
+        "pervading atmosphere"@en,
+        "strong"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    rdf:value "But neither art nor subdued richness of taste could save the room from its dissipated appearance .It struck me keenly , entering as I did from the afternoon afternoon sun , and the air of heaA - en , whilst here the odour of an exquisite cuisine and of strong liqueurs hung upon everything , betraying long prolonged festivities , in a pervading atmosphere of essences .While I was pondering over , and observing my surroundings , Marguerite entered through a halfdraAvn halfdraAvn portiere , folloAAred closely by the vicomte ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/pervading_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "pervading"@en .
+
+<http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/621> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/6869dd39-5de1-51c0-841b-1834b7312eec> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> a od:L11_Smell ;
+    rdfs:label "liqueurs"@en,
+        "odour"@en .
+

@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P165_incorporates <http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/471eceb7-f136-5d90-8562-53e9afe8aec7> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/471eceb7-f136-5d90-8562-53e9afe8aec7> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/471eceb7-f136-5d90-8562-53e9afe8aec7> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/471eceb7-f136-5d90-8562-53e9afe8aec7> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/actor/f68368f4-1192-58ca-8924-7f4a8bc9f5db> a crm:E39_Actor ;
+    rdfs:label "the assembled guests" .
+
+<http://data.odeuropa.eu/object/b065ec8d-b2d2-5887-96b9-73f096b19281> a crmsci:S10_Material_Substantial ;
+    rdfs:label "betel leaves"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/471eceb7-f136-5d90-8562-53e9afe8aec7> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "betel leaves"@en,
+        "cocoanuts"@en,
+        "flowers"@en,
+        "nuts"@en,
+        "perfumes"@en,
+        "the assembled guests"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    rdf:value "STATES .50 Money presents are given to the priests , and cocoanuts , betel leaves and nuts , flowers , and perfumes are handed among the assembled guests , who take their leave .At noon Brahmans and married women are feasted ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b065ec8d-b2d2-5887-96b9-73f096b19281>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/292>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/520>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/f68368f4-1192-58ca-8924-7f4a8bc9f5db> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> a od:L11_Smell ;
+    rdfs:label "perfumes"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

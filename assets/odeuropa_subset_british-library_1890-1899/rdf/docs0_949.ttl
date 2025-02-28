@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "Jasmine"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/Jasmine_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P165_incorporates <http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/56418998-463c-5c98-bd8c-8f5c73dbfb50> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/56418998-463c-5c98-bd8c-8f5c73dbfb50> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/56418998-463c-5c98-bd8c-8f5c73dbfb50> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/56418998-463c-5c98-bd8c-8f5c73dbfb50> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/attribute/Jasmine_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "Jasmine"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/56418998-463c-5c98-bd8c-8f5c73dbfb50> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Jasmine"@en,
+        "odors"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    rdf:value "PHILOMELA .A SOUL of tuneful sweetness doth prevail 4V Throughout heaven ' s dream - filled depths of starlit blue ! This I know well because long since I knew The song with which the South ' s gray nightingale Salutes the dawn when gleaming stars grow pale , As day ' s first light glows stronger and the hue Of morn on rose - bright skies calls forth anew The choral song of life on hill and dale ! Who knows the art by which the mocking bird Pours all her subtle soul upon the night , In tune with Jasmine odors and the light Of the still moon ? Surely her breast is stirred By memories of spirit choir - chants heard In skies where every melody is sung aright ! STUDIES IN VERSE .48 SYRINX ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> a od:L11_Smell ;
+    rdfs:label "odors"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

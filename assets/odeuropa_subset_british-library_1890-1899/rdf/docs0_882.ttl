@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P165_incorporates <http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/ca445162-d8b0-5aaa-baf9-da71d8e7ddb2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/ca445162-d8b0-5aaa-baf9-da71d8e7ddb2> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/ca445162-d8b0-5aaa-baf9-da71d8e7ddb2> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/ca445162-d8b0-5aaa-baf9-da71d8e7ddb2> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/ca445162-d8b0-5aaa-baf9-da71d8e7ddb2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "like that of a freshly - watered hot - house"@en,
+        "reeked"@en,
+        "the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    rdf:value "In January 1874 , about 1500 British , armed with the Snider rifle , and a few hundred native troops , marched up the country to encounter foes of unknown numbers , and to strive to complete their work within the cooler months , before the climate should begin to operate with deadly and inevitable effect .After some vain negotiations with the Ashantee king , Koffee Kalkalli , the river Prah was crossed , and the invading force then plunged into a jungle , where the lofty trees , entwined and hung with a dense growth of creeping plants , made all below a twilight , while the air reeked with a steam like that of a freshly - watered hot - house .The brief campaign was a triumph of sanitary care and strategic skill ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/cef25f06-acbe-5971-998a-ac0329599532> a crm:E70_Thing ;
+    rdfs:label "that of a freshly - watered hot - house"@en .
+
+<http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/cef25f06-acbe-5971-998a-ac0329599532> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> a od:L11_Smell ;
+    rdfs:label "reeked"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

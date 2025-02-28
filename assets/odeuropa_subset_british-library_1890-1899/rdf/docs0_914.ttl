@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "pretty keenly"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/pretty%20keenly_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> ;
+    rdfs:comment "pretty"@en .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P165_incorporates <http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/7a411761-0967-5f48-9fef-d1ba5ea1fa39> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/7a411761-0967-5f48-9fef-d1ba5ea1fa39> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/7a411761-0967-5f48-9fef-d1ba5ea1fa39> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/7a411761-0967-5f48-9fef-d1ba5ea1fa39> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/attribute/pretty%20keenly_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "pretty keenly"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/7a411761-0967-5f48-9fef-d1ba5ea1fa39> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "pretty keenly"@en,
+        "scented"@en,
+        "the fox"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    rdf:value "No wonder Robert Hunter had thought the rock sounded hollow just there ! Ah , Mr .Kyne had scented the fox pretty keenly .But THE RED COURT FARM ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/594> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "big pat"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/big%20pat_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P165_incorporates <http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/f79133ff-b253-5c31-a04d-02b4d39f0a90> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/f79133ff-b253-5c31-a04d-02b4d39f0a90> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/f79133ff-b253-5c31-a04d-02b4d39f0a90> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/f79133ff-b253-5c31-a04d-02b4d39f0a90> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/attribute/big%20pat_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "big pat"@en .
+
+<http://data.odeuropa.eu/object/fd089e2e-82f8-5cd5-8223-a556ffef2a48> a crmsci:S10_Material_Substantial ;
+    rdfs:label "The gauzy mist"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/f79133ff-b253-5c31-a04d-02b4d39f0a90> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The gauzy mist"@en,
+        "big pat"@en,
+        "reek"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    rdf:value "MAY WASHING .221 The gauzy mist began to streek Owre haugh an ' howe sae fair , And mixing wi ' the big pat reek , Soom ' d up the caller air .Our lassies then for boyne an ' tub Their coats began to breek , Lads , haud aback ! for sic a sight Has spoilt my rest a week ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/fd089e2e-82f8-5cd5-8223-a556ffef2a48> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> a od:L11_Smell ;
+    rdfs:label "reek"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

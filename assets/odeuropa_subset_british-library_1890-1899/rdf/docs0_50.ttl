@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P165_incorporates <http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/123f5dc8-1f65-57b0-8c75-bbd58c6adb14> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/123f5dc8-1f65-57b0-8c75-bbd58c6adb14> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/123f5dc8-1f65-57b0-8c75-bbd58c6adb14> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/123f5dc8-1f65-57b0-8c75-bbd58c6adb14> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/actor/1261dd26-8517-5588-9f74-918e0173aaf8> a crm:E39_Actor ;
+    rdfs:label "those" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/123f5dc8-1f65-57b0-8c75-bbd58c6adb14> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of a city"@en,
+        "scent"@en,
+        "those"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    rdf:value "The spirits with which our three representatives of immortal immortal mendicity , Edie Ochiltree , Jinglin Jock , and the Lang Linker , bad adieu to Edina , Scotia ' s darling seat , A PILGRIMAGE TO THE LAND OF BURNS .12 can only be rightly appreciated by those whose senses have been long familiarised to the smoke , sound , and scent of a city , but to which their spirits stubbornly refuse ever to naturalise , from an inborn love of Nature , or perhaps perhaps from the circumstance of having spent their most susceptible days where Wild woods grow and rivers row , Wi ' mony a hill The general appearance which our pilgrims exhibited , both as to equipage and equipment , on the 23rd June , 1820 , as at daybreak they bore away into the high road that leads to Lanark , though it had little in common with the dashing of modern tourists , seemed to a considerable extent to wear the uniform of their purpose .Their vehicle , vehicle , a machine of the curricle family , more notable for its capacity and convenience than for the flourish of its trappings or the freshness of its fancy , was kept rapidly and steadily in motion by a noble aiver that had frequently , frequently , with more lumber behind him , run fifty miles beneath one sun ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/fragrant-spaces/14> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1261dd26-8517-5588-9f74-918e0173aaf8> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

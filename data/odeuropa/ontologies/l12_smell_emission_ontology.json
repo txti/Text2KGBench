@@ -1,0 +1,78 @@
+{
+  "title": "Smell Emission Ontology",
+  "id": "ont_l12_smell_emission",
+  "concepts": [
+    {
+      "qid": "Smell_Word",
+      "label": "Smell Word"
+    },
+    {
+      "qid": "Smell_Source",
+      "label": "Smell Source"
+    },
+    {
+      "qid": "Quality",
+      "label": "Quality"
+    },
+    {
+      "qid": "Odour_Carrier",
+      "label": "Odour Carrier"
+    },
+    {
+      "qid": "Evoked_Odorant",
+      "label": "Evoked Odorant"
+    },
+    {
+      "qid": "Location",
+      "label": "Location"
+    },
+    {
+      "qid": "Perceiver",
+      "label": "Perceiver"
+    },
+    {
+      "qid": "Time",
+      "label": "Time"
+    },
+    {
+      "qid": "Circumstances",
+      "label": "Circumstances"
+    },
+    {
+      "qid": "Effect",
+      "label": "Effect"
+    }
+  ],
+  "relations": [
+    {
+      "pid": "F1_generated",
+      "label": "generated",
+      "domain": "Smell_Source",
+      "range": "Smell_Word"
+    },
+    {
+      "pid": "F3_had_source",
+      "label": "had source",
+      "domain": "Smell_Source",
+      "range": "Smell_Source"
+    },
+    {
+      "pid": "F4_had_carrier",
+      "label": "had carrier",
+      "domain": "Smell_Source",
+      "range": "Odour_Carrier"
+    },
+    {
+      "pid": "P7_took_place_at",
+      "label": "took place at",
+      "domain": "Smell_Source",
+      "range": "Location"
+    },
+    {
+      "pid": "hasTime",
+      "label": "has time",
+      "domain": "Smell_Source",
+      "range": "Time"
+    }	
+  ]
+}

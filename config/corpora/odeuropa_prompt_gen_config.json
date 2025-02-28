@@ -1,0 +1,13 @@
+{
+  "onto_list": [
+    "l12_smell_emission",
+    "l13_olfactory_experience"
+  ],
+  "path_patterns": {
+    "onto": "./data/odeuropa/ontologies/$$onto$$_ontology.json",
+    "test": "./data/odeuropa/test/ont_$$onto$$_test.jsonl",
+    "train": "./data/odeuropa/train/ont_$$onto$$_train.jsonl",
+    "sent_sim": "./data/odeuropa/test_train_sent_similarity/$$onto$$_test_train_similarity.json",
+    "prompt": "./data/odeuropa/prompts/ont_$$onto$$_prompts.jsonl"
+  }
+}

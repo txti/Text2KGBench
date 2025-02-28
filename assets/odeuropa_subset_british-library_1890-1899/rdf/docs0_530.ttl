@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P165_incorporates <http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/383abd11-0980-5636-afe6-340d28b667d0> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a>,
+        <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97>,
+        <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/383abd11-0980-5636-afe6-340d28b667d0> crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/383abd11-0980-5636-afe6-340d28b667d0> crm:P67_refers_to <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/383abd11-0980-5636-afe6-340d28b667d0> crm:P67_refers_to <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P67_refers_to <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16> crm:P67_refers_to <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> .
+
+<http://data.odeuropa.eu/object/98cde2d3-b7cb-5e58-926b-d5aeba839e39> a crmsci:S10_Material_Substantial ;
+    rdfs:label "tan - water"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bc79494f-d25b-5971-a782-bd1ed2342d16/fragment/383abd11-0980-5636-afe6-340d28b667d0> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of tan - water"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a>,
+        <http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97>,
+        <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    rdf:value "The End of a Busy Life 11 Nor was there anything in the office to account for it .No empty bottle , no cup or glass , beyond the one smelling of tan - water , to throw light on the grim affair .He ' s been complaining of his chest lately , said Mrs ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2309b11f-d6eb-5ded-8862-1d2f320fd16a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/98cde2d3-b7cb-5e58-926b-d5aeba839e39> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/7db05579-0b1e-569e-9a56-0bd2c96aee97> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/866f85fc-88a0-5ac6-a61e-f1878fb72d5a> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

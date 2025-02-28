@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/ee047caf-38cb-5c0e-8b23-da93913187ba> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/ee047caf-38cb-5c0e-8b23-da93913187ba> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/ee047caf-38cb-5c0e-8b23-da93913187ba> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/ee047caf-38cb-5c0e-8b23-da93913187ba> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> a crmsci:S10_Material_Substantial ;
+    rdfs:label "stale tobacco"@en .
+
+<http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "kwass"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/ee047caf-38cb-5c0e-8b23-da93913187ba> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "it"@en,
+        "kwass"@en,
+        "of garlic"@en,
+        "reeked"@en,
+        "stale tobacco"@en,
+        "the atmosphere"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "The windows also were large , though they admitted but little light , so thickly were they covered with mud and dust .But the atmosphere ! How it reeked of garlic , kwass , and stale tobacco ! For a few seconds I was staggered , but seeing my kind husband ' s eyes fixed anxiously upon me , I regained courage , and speedily became hopeful and happy , cheered by the reflection that mud can be washed and dust brushed away .Later on , however , what battles did I not have with Anitscka about the mud and dust , and those evil smells ! She was so neat and clean herself ; her chemise , with its puffed sleeves , was so white , her red bodice and embroidered petticoat were so pretty and trim , that I found it difficult to understand her con - BENEATH THE DARK SHADOW 290 and prevent the dread necessity of obliging the law to take its Alas , alas ! full well I knew how vain my words would be ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217>,
+        <http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/79> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "reeked"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

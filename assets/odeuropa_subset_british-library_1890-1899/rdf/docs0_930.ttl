@@ -1,0 +1,54 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P165_incorporates <http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/2f486db3-2b96-5363-a926-776e824bf02a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/2f486db3-2b96-5363-a926-776e824bf02a> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/2f486db3-2b96-5363-a926-776e824bf02a> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/2f486db3-2b96-5363-a926-776e824bf02a> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/2f486db3-2b96-5363-a926-776e824bf02a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "breath"@en,
+        "of flowers"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    rdf:value "6 HELEN .THE glow of sunlight on the morning sea ; The play of shadows on the woodland grass ; The gleam of clouds across the moon that pass ; The breath of flowers upon the springtime lea — These bring thy memory , Helen , back to me And all who seek ( is it in vain , alas ! ) The gold of sunset from the skies to amass And buy the knowledge of life ' s mystery .From age to age throughout all change of days , Enduring and undying , ne ' er to fade , Thy spirit lives in all that heaven has made And souls of all men still thy beauty sways ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> a od:L11_Smell ;
+    rdfs:label "breath"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

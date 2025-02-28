@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant resinous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant%20resinous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P165_incorporates <http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/25eca7a1-a2d8-5bb2-881e-ed85c563c47d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86>,
+        <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af>,
+        <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/25eca7a1-a2d8-5bb2-881e-ed85c563c47d> crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/25eca7a1-a2d8-5bb2-881e-ed85c563c47d> crm:P67_refers_to <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/25eca7a1-a2d8-5bb2-881e-ed85c563c47d> crm:P67_refers_to <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> .
+
+<http://data.odeuropa.eu/attribute/fragrant%20resinous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant resinous"@en .
+
+<http://data.odeuropa.eu/object/b7e67010-22b4-5a9c-8ae2-b88ffd025482> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/object/f215ed4c-2906-5f3a-b779-35625bdd8a14> a crmsci:S10_Material_Substantial ;
+    rdfs:label "diddledee bushes"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/25eca7a1-a2d8-5bb2-881e-ed85c563c47d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant resinous"@en,
+        "its"@en,
+        "odour"@en,
+        "of diddledee bushes"@en,
+        "the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86>,
+        <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af>,
+        <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    rdf:value "The ride was a pleasant one , though longer than needful , owing to the broken hilly ground , tunnelled by innumerable rabbit - warrens , and crossed by neither road nor track , which they had to traverse , while every now and then they had to diverge out of the direct route in order to skirt round some impassable stone run or treacherous morass .Jean was guide , and led the way gallantly , with Keith on one side , and the two middies jostling each other for the post of honour on the other ; and by the time that they reached their halting - place , it was really not unpleasant to find the faithful Wanklyn there before them , with the luncheonhampers luncheonhampers planted in a bed of ferns under the sunny side of a great pile of rocks , and hard by a bright fire of diddledee bushes filling the air with its fragrant resinous odour , and supporting a couple of iron calderas ready AUTUMN ANNOUNCEMENTS .7 Merchant resident in London ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b7e67010-22b4-5a9c-8ae2-b88ffd025482>,
+        <http://data.odeuropa.eu/object/f215ed4c-2906-5f3a-b779-35625bdd8a14> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

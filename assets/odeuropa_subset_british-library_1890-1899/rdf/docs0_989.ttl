@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P165_incorporates <http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/b15f461a-905a-5134-9694-5aa18092c541> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d>,
+        <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c>,
+        <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/b15f461a-905a-5134-9694-5aa18092c541> crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/b15f461a-905a-5134-9694-5aa18092c541> crm:P67_refers_to <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/b15f461a-905a-5134-9694-5aa18092c541> crm:P67_refers_to <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P67_refers_to <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P67_refers_to <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> .
+
+<http://data.odeuropa.eu/object/01b93420-7736-54ae-9bf2-9bcb5fe9cc92> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Araby the Blest"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/b15f461a-905a-5134-9694-5aa18092c541> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of Araby the Blest"@en,
+        "smells"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d>,
+        <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c>,
+        <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> ;
+    rdf:value "You will have to go much further afield than this before you can even smell the Cairo .49 true urban smells of Araby the Blest .The place positively appears to be drained ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/01b93420-7736-54ae-9bf2-9bcb5fe9cc92> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> a od:L11_Smell ;
+    rdfs:label "smells"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

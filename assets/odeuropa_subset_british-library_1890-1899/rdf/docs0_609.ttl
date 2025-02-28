@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P165_incorporates <http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/b34ea2a2-79cd-53ee-ac42-6a8a7e816bbf> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/b34ea2a2-79cd-53ee-ac42-6a8a7e816bbf> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/b34ea2a2-79cd-53ee-ac42-6a8a7e816bbf> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/b34ea2a2-79cd-53ee-ac42-6a8a7e816bbf> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/actor/88280b77-1c2f-5b17-91f7-bf1d399915d3> a crm:E39_Actor ;
+    rdfs:label "I|I" .
+
+<http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/b34ea2a2-79cd-53ee-ac42-6a8a7e816bbf> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "I"@en,
+        "as of the grave"@en,
+        "fragrance"@en,
+        "inhale"@en,
+        "its"@en,
+        "my flower"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    rdf:value "My dear fellow , why have I COLETTE ' S SPITE 193 brought my battered old heart here of all places — here , where I feel it beat louder and stronger in the sweet stillness ? I must tell you that it is two o ' clock , that I have just breakfasted at Florian ' s under the arcades aftcr having been to San Giorgio in Bragora to look at a divine Cima , that I am to dine to - night with two ladies directly descended from the Doges — fair as the creations of Veronese — and some Russians as amusing as our friend Beyle ' s Korazoff , and that , instead of feeling elated , I have come home to look at Her Portrait — with a capital H and a capital P — the portrait of Colette ! Rene , Rend , why am I not seated in my stall at the Theatre Francais , gazing at her as Camille in On ne badine pas avec l ' amour — a divine play , as bitter as yet as sweet as the music of Mozart ? Do you remember her smile as she holds her pretty head on one side and says , Are you sure that a woman lies with all her soul when her tongue lies ? Do you remember Perdican aud these words : Pride , thou most fatal of human counsellors , why art thou come between this maid and me ? All my story — all our story lies in those few words .Only it happens that I am the real Perdican of the play , having in my soul that source of idealism and love , ever flowing in spite of experience , ever pure in spite of so many sins ! And she , my Camille , has been stained by so much shame that nought can wash her clean ! Alas ! how sadly the world treated my flower — when I wished to inhale its fragrance I found instead a smell as of the grave .' Come , come , it was not to write you such stuff that I sat down before my balcony , through the carving of which I can sec the gondolas pass ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/0d1d8528-c1bc-5cff-ba7b-dba5857f84b1> a crm:E70_Thing ;
+    rdfs:label "the grave"@en .
+
+<http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/0d1d8528-c1bc-5cff-ba7b-dba5857f84b1> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/88280b77-1c2f-5b17-91f7-bf1d399915d3> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> a od:L11_Smell ;
+    rdfs:label "fragrance"@en,
+        "inhale"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

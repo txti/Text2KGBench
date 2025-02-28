@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "decay"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/decay_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P165_incorporates <http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/0523325b-2dd4-5541-9c55-235a8016e327> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/0523325b-2dd4-5541-9c55-235a8016e327> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/0523325b-2dd4-5541-9c55-235a8016e327> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/0523325b-2dd4-5541-9c55-235a8016e327> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/attribute/decay_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "decay"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/0523325b-2dd4-5541-9c55-235a8016e327> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The interior"@en,
+        "decay"@en,
+        "smelling"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    rdf:value "beating it into its favourite model — a barn .The interior , is , if possible , more dismal — cold , damp , dark , and dirty ; looking dissolution , and smelling decay , and a fitter place one could hardly imagine for crying tidings of damnation damnation in .Besides the ground floor , it contains two wonderful - looking things called lofts ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/466f1581-67d0-50ee-aba5-bb60c50c7c54> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/place/466f1581-67d0-50ee-aba5-bb60c50c7c54> a crm:E53_Place ;
+    rdfs:label "The interior" .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/466f1581-67d0-50ee-aba5-bb60c50c7c54> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

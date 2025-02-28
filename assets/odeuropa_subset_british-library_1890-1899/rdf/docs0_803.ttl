@@ -1,0 +1,70 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P165_incorporates <http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/81739afb-f318-521c-be79-ecd357c50795> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/81739afb-f318-521c-be79-ecd357c50795> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/81739afb-f318-521c-be79-ecd357c50795> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/81739afb-f318-521c-be79-ecd357c50795> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/object/b69ed1a1-6733-592c-bf8c-48483d475003> a crmsci:S10_Material_Substantial ;
+    rdfs:label "on the air"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/81739afb-f318-521c-be79-ecd357c50795> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Wild flowers"@en,
+        "in the"@en,
+        "of flowers"@en,
+        "on the air"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    rdf:value "M WILL now follow the band of Red tj5 Revolver Rangers who went under their new lieutenant , Ethan Fontaine , into Mexico .Wild flowers covered the banks near , birds sang in the trees , tbe scent of flowers floated on the air , and the cozy cabin home , with its tiny piazza , lo ked to be the abode of love and happiness .It was a cabin of three rooms , and the eye of the visitor would have been startled at the scene that met one ' s gaze within , for a velvety carpet covered the floor , the windows were hung with silk curtains , the furniture was graceful and luxurious , and there were costly br scattered about in profusion ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/651>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/b69ed1a1-6733-592c-bf8c-48483d475003> ;
+    crm:P7_took_place_at <https://sws.geonames.org/3573374/> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    crm:P7_took_place_at <https://sws.geonames.org/3573374/> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<https://sws.geonames.org/3573374/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

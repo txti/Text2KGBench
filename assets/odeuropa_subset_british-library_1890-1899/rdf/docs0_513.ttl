@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P165_incorporates <http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/43c7cfc6-78ad-5b47-bec1-b4abfeb28422> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4>,
+        <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a>,
+        <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/43c7cfc6-78ad-5b47-bec1-b4abfeb28422> crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/43c7cfc6-78ad-5b47-bec1-b4abfeb28422> crm:P67_refers_to <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/43c7cfc6-78ad-5b47-bec1-b4abfeb28422> crm:P67_refers_to <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P67_refers_to <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P67_refers_to <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> .
+
+<http://data.odeuropa.eu/actor/08793a69-3809-53ee-9d9b-84cd250f2c57> a crm:E39_Actor ;
+    rdfs:label "the early settlers settlers" .
+
+<http://data.odeuropa.eu/object/0dc57c9d-eec5-5f99-be33-11b2492b0495> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the bloom"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/43c7cfc6-78ad-5b47-bec1-b4abfeb28422> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "in spring"@en,
+        "the bloom"@en,
+        "the early settlers settlers"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4>,
+        <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a>,
+        <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> ;
+    rdf:value "When they reached Crab Orchard their dangers were for the moment past ; all travellers greAV to regard with affection the station by this little grove of vsdld apple - trees .It is Avorthy of note that the early settlers settlers loved to build their homes near these natural orchards , moved by the fragrance and beauty of the bloom in spring .1 The tired Baptist was not overpleased with Harrodstown , Harrodstown , though he there listened to the preaching of one of his oavu sect ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/0dc57c9d-eec5-5f99-be33-11b2492b0495> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/c88bd6a3-c599-54c2-b044-a86785211854> .
+
+<http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/08793a69-3809-53ee-9d9b-84cd250f2c57> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/c88bd6a3-c599-54c2-b044-a86785211854> .
+
+<http://data.odeuropa.eu/time/c88bd6a3-c599-54c2-b044-a86785211854> a time:TemporalEntity ;
+    rdfs:label "XXXX-21" .
+
+<http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

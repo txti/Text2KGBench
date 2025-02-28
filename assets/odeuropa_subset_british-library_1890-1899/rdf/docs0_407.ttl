@@ -1,0 +1,79 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P165_incorporates <http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/593357a9-3c7a-541f-a7e9-fc23b9019395> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/593357a9-3c7a-541f-a7e9-fc23b9019395> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/593357a9-3c7a-541f-a7e9-fc23b9019395> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/593357a9-3c7a-541f-a7e9-fc23b9019395> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/593357a9-3c7a-541f-a7e9-fc23b9019395> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant"@en,
+        "inhale"@en,
+        "you"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    rdf:value "She sat on Q A TALE OF THE THAMES 2 agreeably mellowed by the warmth of July — when the beauty of blossom still lingers , and when the bright green of the pastures and the young life of the foliage seem to absolutely revel in the warmth of genial sunshine .It was a morning when the very fact of existence was a pleasure ; when you were quite content with simple surroundings ; when to bask in the bright sunshine , to inhale the fragrant breeze , to listen to the music of the leaves , to gaze on the cloud - flecked sky , to hear the song of the birds and the distant lowing of cattle gave you untold joy .It was an occasion when you had a pastoral symphony all to yourself , and wondered how you could experience such exquisite delight from materials so apparently simple , and derived derived the keenest pleasure from a rare harmony of colour , sound , and scent ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> a crm:E39_Actor ;
+    rdfs:label "you" .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> a od:L11_Smell ;
+    rdfs:label "fragrant"@en,
+        "inhale"@en .
+

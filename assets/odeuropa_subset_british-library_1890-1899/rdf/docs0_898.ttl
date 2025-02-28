@@ -1,0 +1,82 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "thyme - scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/thyme%20-%20scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P165_incorporates <http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/bd3a1d07-576d-5395-969d-bd79d991cdc3> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/bd3a1d07-576d-5395-969d-bd79d991cdc3> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/bd3a1d07-576d-5395-969d-bd79d991cdc3> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/bd3a1d07-576d-5395-969d-bd79d991cdc3> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/attribute/thyme%20-%20scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "thyme - scented"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/bd3a1d07-576d-5395-969d-bd79d991cdc3> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "air"@en,
+        "of the Uttle island"@en,
+        "scented"@en,
+        "thyme - scented"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    rdf:value "And it seemed to the young man that he could even hear the words spoken far back in the past , and the commandment , Thou shalt not steal ! rang heavily in his ears as he thought on and thought on , with a curiously intent look gathering in his face .Jake started out of his day - dream , for the beU in the little tower suddenly began to vibrate under the blows of the clock hammer , which worked hard to proclaim the hour , through the thyme - scented air of the Uttle island , the deep tenor notes on still days riding far away over the amethystine sea .The way in which that hammer worked jarred a sym - 155 CHAPTER XX THE VICAR ' S SKELETON Denis Gray had finished his sermon , and as he placed it in a drawer ready for use the next Sunday he stood up , looking a grave , handsome , thoughtful man ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/0ebcaef5-1256-5714-aa84-ee8d71ffcff8> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/place/0ebcaef5-1256-5714-aa84-ee8d71ffcff8> a crm:E53_Place ;
+    rdfs:label "of the Uttle island" .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/0ebcaef5-1256-5714-aa84-ee8d71ffcff8> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+

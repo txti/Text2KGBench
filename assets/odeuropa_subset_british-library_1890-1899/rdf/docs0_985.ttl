@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a> crm:P165_incorporates <http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a/fragment/1af626de-2e26-5d00-a078-9a27c98c55fa> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2761d1bd-c882-55dc-96b7-09be710a875b>,
+        <http://data.odeuropa.eu/experience/21185221-8aad-5629-9f8e-91d3929f2abb>,
+        <http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a/fragment/1af626de-2e26-5d00-a078-9a27c98c55fa> crm:P67_refers_to <http://data.odeuropa.eu/emission/2761d1bd-c882-55dc-96b7-09be710a875b> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a/fragment/1af626de-2e26-5d00-a078-9a27c98c55fa> crm:P67_refers_to <http://data.odeuropa.eu/experience/21185221-8aad-5629-9f8e-91d3929f2abb> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a/fragment/1af626de-2e26-5d00-a078-9a27c98c55fa> crm:P67_refers_to <http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a> crm:P67_refers_to <http://data.odeuropa.eu/emission/2761d1bd-c882-55dc-96b7-09be710a875b> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a> crm:P67_refers_to <http://data.odeuropa.eu/experience/21185221-8aad-5629-9f8e-91d3929f2abb> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a> crm:P67_refers_to <http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/896657ea-93d5-5ba8-92c9-324d39bcf10a/fragment/1af626de-2e26-5d00-a078-9a27c98c55fa> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fust"@en,
+        "of flowers"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2761d1bd-c882-55dc-96b7-09be710a875b>,
+        <http://data.odeuropa.eu/experience/21185221-8aad-5629-9f8e-91d3929f2abb>,
+        <http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> ;
+    rdf:value "He obeyed and entered .He found himself in a room which , to begin with , was fust of flowers .Flowers were in vases on the mantelshelf and on the table and on the low bookcase ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2761d1bd-c882-55dc-96b7-09be710a875b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/21185221-8aad-5629-9f8e-91d3929f2abb> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/771eb0e8-79dd-5ad6-93db-fb377161f038> a od:L11_Smell ;
+    rdfs:label "fust"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

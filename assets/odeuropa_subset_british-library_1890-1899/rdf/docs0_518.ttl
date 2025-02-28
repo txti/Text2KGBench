@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> .
+
+<http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P165_incorporates <http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/5fbc9d54-bd89-556e-814d-4255c73f2bb5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0>,
+        <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be>,
+        <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/5fbc9d54-bd89-556e-814d-4255c73f2bb5> crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/5fbc9d54-bd89-556e-814d-4255c73f2bb5> crm:P67_refers_to <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/5fbc9d54-bd89-556e-814d-4255c73f2bb5> crm:P67_refers_to <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P67_refers_to <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P67_refers_to <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> .
+
+<http://data.odeuropa.eu/object/ac51b26e-7677-53d8-8b8b-074227549272> a crmsci:S10_Material_Substantial ;
+    rdfs:label "grease"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/5fbc9d54-bd89-556e-814d-4255c73f2bb5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "grease"@en,
+        "stinking"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0>,
+        <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be>,
+        <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    rdf:value "He was allowed to take back his purse , put it in his pocket , when once more came the order , — ' Shake hands with her .' He seized the black girl ' s 96 LLFE IN AFRIKANDERLAND hand and shook it heartily , only to drop it in disgust , and call for soap , muttering something about , ' This is too much , shaking hands with the dirty , greasy thing ; soap will hardly wash the stinking grease off my hand again .' The others were lying on their backs shaking with laughter , and holding their sides ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/stinking_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "stinking"@en .
+
+<http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/ac51b26e-7677-53d8-8b8b-074227549272> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> a od:L11_Smell ;
+    rdfs:label "stinking"@en .
+

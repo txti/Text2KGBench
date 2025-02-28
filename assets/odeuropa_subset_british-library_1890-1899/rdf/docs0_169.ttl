@@ -1,0 +1,70 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "reeking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/reeking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "reeking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/reeking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P165_incorporates <http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/ba4f9441-17e7-5b85-a295-06b9bfc3d56c> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/ba4f9441-17e7-5b85-a295-06b9bfc3d56c> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/ba4f9441-17e7-5b85-a295-06b9bfc3d56c> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/ba4f9441-17e7-5b85-a295-06b9bfc3d56c> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/ba4f9441-17e7-5b85-a295-06b9bfc3d56c> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "reeking"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    rdf:value "Steadfast and buoyant , as they were ever , the masses of the South once more turned their backs upon Four Years in Rebel Capitals .143 felt an ax - helve plied it now as if for life ; eyes that were accus tomed to look softly into The sweetest eyes that ever in the pauses of a waltz , now peered curiously in the reeking stewpan .stewpan ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/reeking_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "reeking"@en .
+
+<http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> a od:L11_Smell ;
+    rdfs:label "reeking"@en .
+

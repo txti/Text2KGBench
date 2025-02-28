@@ -1,0 +1,84 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "delicious"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/delicious_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/972469c4-e2a7-56a4-9bbe-7765f778941f> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/c3109c95-ffcb-5136-b97f-ff7c0f9faa5d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/c3109c95-ffcb-5136-b97f-ff7c0f9faa5d> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/c3109c95-ffcb-5136-b97f-ff7c0f9faa5d> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/c3109c95-ffcb-5136-b97f-ff7c0f9faa5d> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/attribute/delicious_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "delicious"@en .
+
+<http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> a crmsci:S10_Material_Substantial ;
+    rdfs:label "a soft breeze"@en .
+
+<http://data.odeuropa.eu/object/ec8fbbc0-b977-59a0-940a-740c0d0e036a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "mingled gorse"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/c3109c95-ffcb-5136-b97f-ff7c0f9faa5d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "I"@en,
+        "a soft breeze"@en,
+        "delicious"@en,
+        "my"@en,
+        "of mingled gorse and flowers"@en,
+        "scent"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "Faint sounds came vaguely upon my ear .I was conscious that a soft breeze was fanning my cheek , bringing with it a delicious scent of mingled gorse and flowers .As fuller consciousness revived , I was aware that my head was resting on the kind breast of Mrs ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/972469c4-e2a7-56a4-9bbe-7765f778941f> a crm:E39_Actor ;
+    rdfs:label "I|my" .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/ec8fbbc0-b977-59a0-940a-740c0d0e036a>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/972469c4-e2a7-56a4-9bbe-7765f778941f> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

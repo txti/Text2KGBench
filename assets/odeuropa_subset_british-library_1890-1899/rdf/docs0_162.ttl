@@ -1,0 +1,103 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "intoxicating"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/intoxicating_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P165_incorporates <http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/cebcb4a6-733b-56ca-8268-bf13df533303> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/cebcb4a6-733b-56ca-8268-bf13df533303> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/cebcb4a6-733b-56ca-8268-bf13df533303> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/cebcb4a6-733b-56ca-8268-bf13df533303> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385> crm:P67_refers_to <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> .
+
+<http://data.odeuropa.eu/attribute/intoxicating_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "intoxicating"@en .
+
+<http://data.odeuropa.eu/object/0d0b555e-d8d2-50c3-acd2-fabb8f8d0064> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the air|the gentle land breeze"@en .
+
+<http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the fields of violets"@en .
+
+<http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "sweetness of the snowy flowers"@en .
+
+<http://data.odeuropa.eu/object/ec8fbbc0-b977-59a0-940a-740c0d0e036a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "sweetness"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d8c70e1f-1e19-5b56-a148-f2d267295385/fragment/cebcb4a6-733b-56ca-8268-bf13df533303> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "at this season"@en,
+        "each evening"@en,
+        "intoxicating"@en,
+        "of the fields of violets"@en,
+        "perfumed"@en,
+        "scent"@en,
+        "sweetness"@en,
+        "sweetness of the snowy flowers"@en,
+        "the air"@en,
+        "the gentle land breeze"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1>,
+        <http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6>,
+        <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    rdf:value "Must not every little sea - girt cave , every sunny headland stretching caressingly into the transparent water , be the abode of some fair sea - nymph or musicloving musicloving siren ? Where indeed should sirens sing , if not when floating on this translucent sea or lying halfhidden halfhidden in some sheltering cavern ? With what infinite sweetness must not their witching witching melodies fall upon the ear of the listener dreaming beneath the shadow of the ancient olive woods , or amid the fragrant richness of the orange and lemon groves whose leafy girdle borders the coast for miles .Is not this the land of the citron and myrtle , where the air is perfumed with the intoxicating sweetness of the snowy flowers , and the eye is fascinated by the clusters of golden fruit ? Although the March wind is howling amongst the old trees of our English homes , here roses are already entwining themselves over hedges bright with spring ' s earliest foliage , and the gentle land breeze that each evening is wafted from the mountain range brings with it the scent of the fields of violets that at this season fairly carpet the more distant valleys .THE SECRET OF WARDALE COURT 58 sorrowful , could be disliked , especially by her husband husband ; but so it was ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/4cc2b347-dbd9-50ae-9f12-b38b210fa7a1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/bc00bbfc-a879-53d4-bd93-2ceb7cf1f217>,
+        <http://data.odeuropa.eu/object/d9daa8db-5470-509d-91c8-6c81729bcc8e>,
+        <http://data.odeuropa.eu/object/ec8fbbc0-b977-59a0-940a-740c0d0e036a> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/0d0b555e-d8d2-50c3-acd2-fabb8f8d0064> ;
+    time:hasTime <http://data.odeuropa.eu/time/4bbdd458-c2fe-5968-854c-8a7e998af315>,
+        <http://data.odeuropa.eu/time/7ac7d51e-875b-5263-ba30-45e6cd3e57a6>,
+        <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/time/4bbdd458-c2fe-5968-854c-8a7e998af315> a time:TemporalEntity ;
+    rdfs:label "each evening" ;
+    rdfs:comment "evening"@en .
+
+<http://data.odeuropa.eu/time/7ac7d51e-875b-5263-ba30-45e6cd3e57a6> a time:TemporalEntity ;
+    rdfs:label "at this season" .
+
+<http://data.odeuropa.eu/experience/47b8db36-4a97-52ca-985d-73ac7e03f0f6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> ;
+    time:hasTime <http://data.odeuropa.eu/time/4bbdd458-c2fe-5968-854c-8a7e998af315>,
+        <http://data.odeuropa.eu/time/7ac7d51e-875b-5263-ba30-45e6cd3e57a6>,
+        <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/9fc4d39a-709b-5dd2-937b-4e02f4356ae6> a od:L11_Smell ;
+    rdfs:label "perfumed"@en,
+        "scent"@en,
+        "sweetness"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

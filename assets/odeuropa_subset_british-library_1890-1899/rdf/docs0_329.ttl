@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P165_incorporates <http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/c7a2600a-7542-5b78-807c-6ab27af52c46> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8>,
+        <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725>,
+        <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/c7a2600a-7542-5b78-807c-6ab27af52c46> crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/c7a2600a-7542-5b78-807c-6ab27af52c46> crm:P67_refers_to <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/c7a2600a-7542-5b78-807c-6ab27af52c46> crm:P67_refers_to <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0> crm:P67_refers_to <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> .
+
+<http://data.odeuropa.eu/object/c079aecd-6a2c-5bbb-8d29-cea8b5919efc> a crmsci:S10_Material_Substantial ;
+    rdfs:label "soup"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/08c12e53-80b8-57c5-a08a-5a0f456fc5d0/fragment/c7a2600a-7542-5b78-807c-6ab27af52c46> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "smells"@en,
+        "soup"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8>,
+        <http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725>,
+        <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    rdf:value "DORIS ' S OF THE IT is a lovely , warm day at the beginning of June , and Doris , having made the beds in conjunction with Molly , and afterwards drifted round the rooms with a duster in a desultory sort of fashion which , had she seen her , would have driven energetic Honor well - nigh crazy , presents herself in the kitchen where her sister is engaged in certain culinary matters .soup smells she remarks , as Honor , pepper - caster in hand , gives a final stir round the doris ' s of the 179 saucepan over which she is bending , and turns to confront confront her sister .There is not much in it besides the pea - flour , and a flavouring of carrots and onions — oh , and the bacon bone , which has been stewing ever since the early morning ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/59309aaf-f30b-5de6-99f0-d7103535eef8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c079aecd-6a2c-5bbb-8d29-cea8b5919efc> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/e122ec3e-d0ac-5429-aab9-ce7f54d3d725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/c3dd41cc-7ef1-5c68-af30-238e5b6e56a5> a od:L11_Smell ;
+    rdfs:label "smells"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

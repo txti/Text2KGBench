@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P165_incorporates <http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/c57d7090-b134-5e66-bc77-da227b71be05> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341>,
+        <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad>,
+        <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/c57d7090-b134-5e66-bc77-da227b71be05> crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/c57d7090-b134-5e66-bc77-da227b71be05> crm:P67_refers_to <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/c57d7090-b134-5e66-bc77-da227b71be05> crm:P67_refers_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e> crm:P67_refers_to <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> .
+
+<http://data.odeuropa.eu/object/5f0724c6-4b65-5b17-9f1e-baea22e44d44> a crmsci:S10_Material_Substantial ;
+    rdfs:label "With the dew"@en .
+
+<http://data.odeuropa.eu/object/b5388043-acad-54f5-ae5c-d9976b4e5283> a crmsci:S10_Material_Substantial ;
+    rdfs:label "damp of meadows"@en .
+
+<http://data.odeuropa.eu/object/c5380717-e7be-5e63-bd0b-ea3553fac972> a crmsci:S10_Material_Substantial ;
+    rdfs:label "wigwams"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/983ba5e9-2d3a-594c-b6b4-550c29cc108e/fragment/c57d7090-b134-5e66-bc77-da227b71be05> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "With the dew and damp of meadows"@en,
+        "odors"@en,
+        "of the forest"@en,
+        "of wigwams"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341>,
+        <http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad>,
+        <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    rdf:value "application .As Longfellow has poetically phrased it , in his introduction to Song of Should you ask me whence these stories ? Whence these legends and traditions , With the odors of the forest , With the dew and damp of meadows , With the curling smoke of wigwams .With the rushing of great rivers , With their frequent repetitions , And their wild reverberations As of thunder in the mountains ? I should answer , I should tell you , ' From the forests and the prairies , From the great lakes of the Northland , From the land of the Ojibways , From the land of the Dacotahs , From the mountains , moors and fenlands , Where the heron , the Shuh - shuh - gah , Feeds among the reeds and rushes ; In the birds ' - nests of the sorest , In the lodges of the beaver , In the hoof - prints of the bison , In the eyry of the Indian legends abound concerning the curious rock formation along Lake Superior , at the dalles of the St ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2cf9f6ae-24c8-54e9-b5de-65ead4938341> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5f0724c6-4b65-5b17-9f1e-baea22e44d44>,
+        <http://data.odeuropa.eu/object/b5388043-acad-54f5-ae5c-d9976b4e5283>,
+        <http://data.odeuropa.eu/object/c5380717-e7be-5e63-bd0b-ea3553fac972>,
+        <http://data.odeuropa.eu/vocabulary/fragrant-spaces/19> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/1e2e27fd-f134-5eb8-a4e4-387208275dad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/bc732770-c542-5bfc-8e4d-41a682eea89a> a od:L11_Smell ;
+    rdfs:label "odors"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

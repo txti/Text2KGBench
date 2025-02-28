@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P165_incorporates <http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/b5fc5c25-9f3c-52b0-bee1-2ab5241d1585> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f>,
+        <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8>,
+        <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/b5fc5c25-9f3c-52b0-bee1-2ab5241d1585> crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/b5fc5c25-9f3c-52b0-bee1-2ab5241d1585> crm:P67_refers_to <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/b5fc5c25-9f3c-52b0-bee1-2ab5241d1585> crm:P67_refers_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1> crm:P67_refers_to <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> .
+
+<http://data.odeuropa.eu/actor/2ed93046-55d2-56b1-b567-236a28555e8c> a crm:E39_Actor ;
+    rdfs:label "to the messenger sitting" .
+
+<http://data.odeuropa.eu/object/c9578e67-77b4-5eb7-8e80-e21c9671530a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "pine"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/abb03988-936e-54e0-b4db-e27ca69210d1/fragment/b5fc5c25-9f3c-52b0-bee1-2ab5241d1585> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of pine"@en,
+        "of water"@en,
+        "smell"@en,
+        "to the messenger sitting"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f>,
+        <http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8>,
+        <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    rdf:value "The door at his back , and next the canon wall , was closed and barred .The opposite door , overlooking the little river , was thrown wide open , and to the messenger sitting there came the splash of water and the smell of pine .He remembered that the agent , running alongside of his car as he was leaving the junction , had pointed to the iron safe , and said : Keep your eye on the The little safe held forty thousand dollars in paper , and over in one corner of the car , in an old clay - stained ore sack , were ten thousand dollars in gold ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/92cc62d6-5550-5dc1-97af-8e3bc901aa9f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c9578e67-77b4-5eb7-8e80-e21c9671530a>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/126> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/1f9d73e4-473b-5ac2-abe8-6df46931c8f8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/2ed93046-55d2-56b1-b567-236a28555e8c> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/2777c3c3-9a19-5e73-b331-b4ba75432538> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

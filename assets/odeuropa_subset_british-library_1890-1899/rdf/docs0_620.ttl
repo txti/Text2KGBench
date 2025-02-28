@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "reprehensible"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/reprehensible_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P165_incorporates <http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/86881a59-7c46-56ee-89c2-6e439eb57fa2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/86881a59-7c46-56ee-89c2-6e439eb57fa2> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/86881a59-7c46-56ee-89c2-6e439eb57fa2> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/86881a59-7c46-56ee-89c2-6e439eb57fa2> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/attribute/reprehensible_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "reprehensible"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/86881a59-7c46-56ee-89c2-6e439eb57fa2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "odour"@en,
+        "of the place"@en,
+        "reprehensible"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    rdf:value "do they dare with this odoriferous record of cowardice and deceit to come before the free and etc .The odour of the place is reprehensible .Almost from the first , a dozen tiny streams of tobacco juice course tortuously between the seats , and by degrees reach the aisle ; and a current visible to all , swollen from a hundred sources , courses silently to the door ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/c60ba144-0d74-5fbf-a0a1-68c3a5910d07> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/place/c60ba144-0d74-5fbf-a0a1-68c3a5910d07> a crm:E53_Place ;
+    rdfs:label "of the place" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/121> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/c60ba144-0d74-5fbf-a0a1-68c3a5910d07> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

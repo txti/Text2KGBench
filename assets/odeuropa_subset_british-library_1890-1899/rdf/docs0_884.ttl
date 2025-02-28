@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "very evil"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/very%20evil_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> ;
+    rdfs:comment "very"@en .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P165_incorporates <http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/e3b9d923-cf1b-5303-b8a5-e559a9e5be6b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/e3b9d923-cf1b-5303-b8a5-e559a9e5be6b> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/e3b9d923-cf1b-5303-b8a5-e559a9e5be6b> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/e3b9d923-cf1b-5303-b8a5-e559a9e5be6b> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/attribute/very%20evil_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "very evil"@en .
+
+<http://data.odeuropa.eu/object/e93b6f84-27a4-558d-848d-84246c20171a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Buckingham"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/e3b9d923-cf1b-5303-b8a5-e559a9e5be6b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Buckingham"@en,
+        "odour"@en,
+        "very evil"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    rdf:value "The Houses went into committee to consider the state of the kingdom , and the Commons declined to discuss at present the question of supply .Buckingham was now in very evil odour .The king caused irritation by declaring that he would not allow any of his servants to be called in question by Parliament , Parliament , and that it would be worse for the Commons if they did not for his The Commons then locked their doors , and resolved to impeach Buckingham ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e93b6f84-27a4-558d-848d-84246c20171a> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

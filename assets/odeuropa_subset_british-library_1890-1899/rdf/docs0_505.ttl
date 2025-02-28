@@ -1,0 +1,82 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "very keen"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/very%20keen_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/2e7ebf09-3d60-5d40-8a0d-fdf6b7e70d76> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> ;
+    rdfs:comment "very"@en .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P165_incorporates <http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/2ecbe995-cb0a-50ea-ad27-6ef87cc5f5bb> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/2ecbe995-cb0a-50ea-ad27-6ef87cc5f5bb> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/2ecbe995-cb0a-50ea-ad27-6ef87cc5f5bb> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/2ecbe995-cb0a-50ea-ad27-6ef87cc5f5bb> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/attribute/very%20keen_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "very keen"@en .
+
+<http://data.odeuropa.eu/object/75f457d7-a740-5c37-bb22-f512540c3d25> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/2ecbe995-cb0a-50ea-ad27-6ef87cc5f5bb> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Bears"@en,
+        "an average Indian"@en,
+        "scent"@en,
+        "smell"@en,
+        "their"@en,
+        "very keen"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    rdf:value "All his life is spent among snows and glaciers , hence his polar characteristics .Bears as a rule are difficult to find owing to their powers of scent , though it must be allowed that it would not be necessary that their sense of smell should be very keen in order to wind an average Indian in his blanket .When they are caught sight of on the Alaskan mountains they are usually going or coming like a locomotive , as A RIDE TO TEHERAN IN 1888 ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/2e7ebf09-3d60-5d40-8a0d-fdf6b7e70d76> a crm:E39_Actor ;
+    rdfs:label "their|an average Indian" .
+
+<http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/75f457d7-a740-5c37-bb22-f512540c3d25>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/514> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/2e7ebf09-3d60-5d40-8a0d-fdf6b7e70d76> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> a od:L11_Smell ;
+    rdfs:label "scent"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

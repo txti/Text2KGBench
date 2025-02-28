@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P165_incorporates <http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/a83b3003-b0c6-5246-bfcd-452002734822> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0>,
+        <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be>,
+        <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/a83b3003-b0c6-5246-bfcd-452002734822> crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/a83b3003-b0c6-5246-bfcd-452002734822> crm:P67_refers_to <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/a83b3003-b0c6-5246-bfcd-452002734822> crm:P67_refers_to <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P67_refers_to <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60> crm:P67_refers_to <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> .
+
+<http://data.odeuropa.eu/actor/54698e93-119b-5f83-93a4-0d888226aaa0> a crm:E39_Actor ;
+    rdfs:label "in the nostrils of the English and European public" .
+
+<http://data.odeuropa.eu/object/ac51b26e-7677-53d8-8b8b-074227549272> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the Boer"@en .
+
+<http://data.odeuropa.eu/object/f9fd23fa-05ce-568c-b301-6dc5e246c020> a crmsci:S10_Material_Substantial ;
+    rdfs:label "his"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ec4441ea-3b12-5849-814b-131465fbbc60/fragment/a83b3003-b0c6-5246-bfcd-452002734822> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "his"@en,
+        "in the nostrils of the English and European public"@en,
+        "stink"@en,
+        "the Boer"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0>,
+        <http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be>,
+        <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    rdf:value "Ah ! this cowardly , strike - a - man - behind - hisback , strike - a - man - behind - hisback , blacken - a - dog ' s - name - and - then - kill - him , Boer - hating , Boer - hating , anti - freedom , anti - republican organisation knew well that England can yet boast of millions of honest , fairminded fairminded and well - meaning people , who would not allow a free , peace - loving and God - fearing people to be trampled under foot by a speculating , company - mongering , Matabele - exterminating Matabele - exterminating organisation .For this reason , the Boer must first be blackened , his name must be made to stink in the nostrils of the English and European public .It must be made to appear a great deed of chivalry to exterminate these women - killing ( ? ) , slavedealing slavedealing ( ? ) ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/3324f892-d475-55a9-a9d2-db242841c4f0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/ac51b26e-7677-53d8-8b8b-074227549272>,
+        <http://data.odeuropa.eu/object/f9fd23fa-05ce-568c-b301-6dc5e246c020> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/a9cc4a28-16bc-5b23-bccc-6092893d10be> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/54698e93-119b-5f83-93a4-0d888226aaa0> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/e5e5a73f-b4d0-50a0-9f27-9724508e553c> a od:L11_Smell ;
+    rdfs:label "stink"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

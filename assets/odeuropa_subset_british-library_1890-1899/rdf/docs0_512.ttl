@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P165_incorporates <http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/4e2140a4-632b-53d3-bd76-8cece41934db> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4>,
+        <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a>,
+        <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/4e2140a4-632b-53d3-bd76-8cece41934db> crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/4e2140a4-632b-53d3-bd76-8cece41934db> crm:P67_refers_to <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/4e2140a4-632b-53d3-bd76-8cece41934db> crm:P67_refers_to <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P67_refers_to <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b> crm:P67_refers_to <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> .
+
+<http://data.odeuropa.eu/actor/b9eadc02-3d56-5a37-a613-bd2f3f6a8543> a crm:E39_Actor ;
+    rdfs:label "the wolves" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/dbf3d51b-2e31-5780-a5be-9c59abaa663b/fragment/4e2140a4-632b-53d3-bd76-8cece41934db> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "smelt"@en,
+        "the flesh"@en,
+        "the wolves"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4>,
+        <http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a>,
+        <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> ;
+    rdf:value "While on the great Indian war - trail they killed a buffalo , and thenceforth lived on its jerked meat .One night the wolves smelt the flesh , and came up to the camp - fire ; the strong hunting - dogs rushed out AAdth clamorous barking to drive them aAvay , and the sudden alarm for a moment made the sleepy wayfarers wayfarers think that roving Indians had attacked them .When they reached Crab Orchard their dangers were for the moment past ; all travellers greAV to regard with affection the station by this little grove of vsdld apple - trees ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b94d23ae-59b9-55da-a06e-394cc24f19e4> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/534> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/ee3b2899-ce94-5141-9777-d6d3db8ec15a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b9eadc02-3d56-5a37-a613-bd2f3f6a8543> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/15c5fa36-54ea-5fe0-ac59-eb5185c96143> a od:L11_Smell ;
+    rdfs:label "smelt"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

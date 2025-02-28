@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b> crm:P165_incorporates <http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b/fragment/d4714402-adb7-51f1-a5a0-66e32042562f> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/6e038a25-f9f7-5e61-b745-e3fdedcf8007>,
+        <http://data.odeuropa.eu/experience/1c7c91e8-706e-52c5-b1b0-a619571343eb>,
+        <http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b/fragment/d4714402-adb7-51f1-a5a0-66e32042562f> crm:P67_refers_to <http://data.odeuropa.eu/emission/6e038a25-f9f7-5e61-b745-e3fdedcf8007> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b/fragment/d4714402-adb7-51f1-a5a0-66e32042562f> crm:P67_refers_to <http://data.odeuropa.eu/experience/1c7c91e8-706e-52c5-b1b0-a619571343eb> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b/fragment/d4714402-adb7-51f1-a5a0-66e32042562f> crm:P67_refers_to <http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b> crm:P67_refers_to <http://data.odeuropa.eu/emission/6e038a25-f9f7-5e61-b745-e3fdedcf8007> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b> crm:P67_refers_to <http://data.odeuropa.eu/experience/1c7c91e8-706e-52c5-b1b0-a619571343eb> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b> crm:P67_refers_to <http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> .
+
+<http://data.odeuropa.eu/object/684a3fe0-7e41-5235-a969-e1850132a15d> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Summer ' s gloAving air"@en .
+
+<http://data.odeuropa.eu/object/e7d122e9-2223-5a85-8f38-69a0aa5509fc> a crmsci:S10_Material_Substantial ;
+    rdfs:label "by the meadoAv breeze"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1b5d1f98-f547-5bd2-9df3-68bc8cc28c0b/fragment/d4714402-adb7-51f1-a5a0-66e32042562f> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "breath"@en,
+        "by the meadoAv breeze"@en,
+        "of Summer ' s gloAving air"@en,
+        "perfume"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/6e038a25-f9f7-5e61-b745-e3fdedcf8007>,
+        <http://data.odeuropa.eu/experience/1c7c91e8-706e-52c5-b1b0-a619571343eb>,
+        <http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> ;
+    rdf:value "178 # * # * — 16 — The Ocean SAvells its level with the tide , — And , from its height , is driven to recede .— The deep expanse , — incomparably wide , — Untamed in violence , — unchecked in speed , — which the proudest barrier is defied , — Which plays with Art as with its scum or weed , — May rise , by periods , to withdraw again , And seek the refuge of the caArern ' d main ! — 17 — The leaf that flutters , in luxuriant ease , Fanned by the breath of Summer ' s gloAving air , — And fed with perfume by the meadoAv breeze , — Has but one lot , — a dreary doom , — to share : — When Autumn ' s blasts begin to chill and freeze , And Equinoxial tempests lash and tear , — It drops or flies away to rot beloAv , Whence future verdure shall revive and grow .211 MATTERS AND MEN ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/6e038a25-f9f7-5e61-b745-e3fdedcf8007> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/684a3fe0-7e41-5235-a969-e1850132a15d> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/e7d122e9-2223-5a85-8f38-69a0aa5509fc> .
+
+<http://data.odeuropa.eu/experience/1c7c91e8-706e-52c5-b1b0-a619571343eb> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> .
+
+<http://data.odeuropa.eu/smell/0cc5a820-9f64-5ad2-88df-c533b6f83f39> a od:L11_Smell ;
+    rdfs:label "breath"@en,
+        "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

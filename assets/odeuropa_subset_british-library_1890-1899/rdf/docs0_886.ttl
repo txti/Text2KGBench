@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "Sundry"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/Sundry_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P165_incorporates <http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/5a005c77-3463-5de2-ae86-39f538b14631> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/5a005c77-3463-5de2-ae86-39f538b14631> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/5a005c77-3463-5de2-ae86-39f538b14631> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/5a005c77-3463-5de2-ae86-39f538b14631> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/attribute/Sundry_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "Sundry"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/5a005c77-3463-5de2-ae86-39f538b14631> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Sundry"@en,
+        "from below"@en,
+        "nearly breakfast hour"@en,
+        "odours"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    rdf:value "The time glided on but she did not move .Sundry sounds and odours came from below , telling of its being nearly breakfast hour , and the clear , sharp notes of the old - fashioned clock in the little hall at last began striking eight .The bard look and the lines disappeared ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/89f699d6-bd55-5db6-a895-ef325dd6a692> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a>,
+        <http://data.odeuropa.eu/time/9ed7d838-0f69-504e-8e3f-56a8641df4e6> .
+
+<http://data.odeuropa.eu/place/89f699d6-bd55-5db6-a895-ef325dd6a692> a crm:E53_Place ;
+    rdfs:label "from below" .
+
+<http://data.odeuropa.eu/time/9ed7d838-0f69-504e-8e3f-56a8641df4e6> a time:TemporalEntity ;
+    rdfs:label "nearly breakfast hour" .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/89f699d6-bd55-5db6-a895-ef325dd6a692> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a>,
+        <http://data.odeuropa.eu/time/9ed7d838-0f69-504e-8e3f-56a8641df4e6> .
+
+<http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> a od:L11_Smell ;
+    rdfs:label "odours"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

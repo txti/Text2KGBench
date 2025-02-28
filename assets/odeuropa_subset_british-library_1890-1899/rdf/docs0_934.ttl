@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P165_incorporates <http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/f39bd37a-6379-5ef3-9cc1-15fa2a1efaa9> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/f39bd37a-6379-5ef3-9cc1-15fa2a1efaa9> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/f39bd37a-6379-5ef3-9cc1-15fa2a1efaa9> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/f39bd37a-6379-5ef3-9cc1-15fa2a1efaa9> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/object/a6aa60da-674b-5580-8d70-d59cb6c5d5bf> a crmsci:S10_Material_Substantial ;
+    rdfs:label "heaven ' s clime"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/f39bd37a-6379-5ef3-9cc1-15fa2a1efaa9> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "all"@en,
+        "odors"@en,
+        "of heaven ' s clime"@en,
+        "of lilies"@en,
+        "perfumes"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    rdf:value "Love is more wise Than unbelief that , ever - doubting , tries All things before it trusts nor dares to be Wrong for the right ' s sake , foolish to be free From supreme folly in unfaith that lies ! Thrice blest is he who loves some shining star , Who lives his life by its celestial rule ; Happy though reckoned by all men a fool ; Thrice happy , though it shines in skies afar Beyond his sight , while in some shallow pool , He catches but its faint , reflected light ! THE LADIES OF OLD TIME .WHO does not love the ladies of old time ? Their heads erect , their sweet and stately grace , The mild , seraphic pride illumining each face Are music to the eyes , such fleet recurrent rhyme As lute - players make when every string keeps chime To a pure thought of some bright garden space Where smell of lilies perfumes all the place Till memory thrills with odors of heaven ' s clime .But they are gone like dew on last year ' s flowers That grew in crannies of the crumbling walls And mouldering stones of those proud , lonely halls Where once they reigned ! Their lands , their towers , And greater things than these the years make ours Whose mothers were their unconsidered thralls ! _ o STUDIES IN VERSE ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/a6aa60da-674b-5580-8d70-d59cb6c5d5bf>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/92> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> a od:L11_Smell ;
+    rdfs:label "odors"@en,
+        "perfumes"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

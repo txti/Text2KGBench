@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> .
+
+<http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P165_incorporates <http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/347205fd-6533-5b25-89b2-f9c756516449> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a>,
+        <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6>,
+        <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/347205fd-6533-5b25-89b2-f9c756516449> crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/347205fd-6533-5b25-89b2-f9c756516449> crm:P67_refers_to <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/347205fd-6533-5b25-89b2-f9c756516449> crm:P67_refers_to <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P67_refers_to <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968> crm:P67_refers_to <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> .
+
+<http://data.odeuropa.eu/object/21987f5d-3fdc-50cb-97ac-85f47700ae33> a crmsci:S10_Material_Substantial ;
+    rdfs:label "roasted apple"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/8d0290cb-38fb-5546-8a98-8a921446e968/fragment/347205fd-6533-5b25-89b2-f9c756516449> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant"@en,
+        "roasted apple"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a>,
+        <http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6>,
+        <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    rdf:value "Johnty made straight for home , and somewhat somewhat roughly demanded his supper .His plate of porridge was placed before him , and by its side , on a little white plate , was set a fragrant roasted apple , and his wife playfully plucked at his beard and called him owd Grumpy in a merry and altogether irresistible way .But Johnty was in no mood for sport , and after eating his ' porridge he left the apple as a silent protest against extravagance , and went out again , for if the truth must be told he was afraid to stay alone with his wife just then ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/22557e2b-7691-5faa-804d-858263c4331a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/21987f5d-3fdc-50cb-97ac-85f47700ae33> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/2c8bd559-c0f9-5680-906e-1a01bfeb61c6> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/14167c92-a2f0-5220-ac50-211bd9ce4a40> a od:L11_Smell ;
+    rdfs:label "fragrant"@en .
+

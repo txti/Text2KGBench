@@ -1,0 +1,70 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P165_incorporates <http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/2000fec3-3f45-561f-9c16-3c258a345bb5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/2000fec3-3f45-561f-9c16-3c258a345bb5> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/2000fec3-3f45-561f-9c16-3c258a345bb5> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/2000fec3-3f45-561f-9c16-3c258a345bb5> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> a crm:E39_Actor ;
+    rdfs:label "He" .
+
+<http://data.odeuropa.eu/object/47de67f3-8d62-51b2-9597-1b6991e8f5cb> a crmsci:S10_Material_Substantial ;
+    rdfs:label "bushes"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/2000fec3-3f45-561f-9c16-3c258a345bb5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "He"@en,
+        "bushes"@en,
+        "flowers"@en,
+        "scented"@en,
+        "the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    rdf:value "Gilbert sat silent beside his father , after the first spasm of chatter , and kept his eyes fixed on this handsome face , watching its every expression , every movement .He was perhaps vaguely conscious of the green lawn , in shadow now , edged all round with flowers and bushes , that scented the air delicately ; of the steps , still in the sunshine , with his father sprawling all his length in a bath of light ; of his dark , quiet mother in the shade of the doorway ; and of the little table laid out with dainty china , one of Mr .Strode ' s CHAPTER I This was the thoroughfare that Gilbert had passed along for some years every morning and evening ; yes , this was it , teaming with life ; — not the politest ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/47de67f3-8d62-51b2-9597-1b6991e8f5cb>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/c1a8e4ad-110d-5d48-95ef-eb9437cda2b2> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

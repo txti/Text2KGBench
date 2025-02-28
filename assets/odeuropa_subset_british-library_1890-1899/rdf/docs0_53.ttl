@@ -1,0 +1,58 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P165_incorporates <http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/187380d2-f04c-5d88-9764-a5d4f9c19f43> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/187380d2-f04c-5d88-9764-a5d4f9c19f43> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/187380d2-f04c-5d88-9764-a5d4f9c19f43> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/187380d2-f04c-5d88-9764-a5d4f9c19f43> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/187380d2-f04c-5d88-9764-a5d4f9c19f43> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "o ' tobacco"@en,
+        "snuff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    rdf:value "But if you ' d step roun ' an ' gie Willy and Tam yonner a wink into another room , I ' ll let you hear a blether I ' ve been stringing up on twa o ' these wechty personages .' Davie Sillers , with the springing step of a man whose heart is in his errand , went round to collect the chosen few among whom I flattered myself I was to be included ; so was rising hastily up to retire to ' the feast of reason and the flow of soul , ' when Jock ' s confounded application of snuff to my snout blew up the whole Sorrow be in ' t ; said Edie , snuff was never ony great favourite or pouch companion o ' mine , but I ' ll like it waur now than ever when I think that the best dream that ever the Linker dreamed , or is likely to dream , was blawn to bits by a snuff o ' tobacco .O ! wae be on ' t , its makers and takers While Edie was delivering , with his teeth set , this anathema against the staple of Virginia , the eastern or bell gable of Kirk Alloway burst upon them , and at one glance bound up for ever in the manufacturing cells of John ' s mentals , a spirited and excellent defence of black rappee ; seeing he was a considerable destroyer thereof , and conceiving not improperly that the sweeping cause of Edie ' s edict rather took him by the nose ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/519> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/530> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> a od:L11_Smell ;
+    rdfs:label "snuff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

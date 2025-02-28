@@ -1,0 +1,70 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fetid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fetid_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fetid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fetid_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P165_incorporates <http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/876e390c-303a-59c0-96a4-f7dfa0d35616> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/876e390c-303a-59c0-96a4-f7dfa0d35616> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/876e390c-303a-59c0-96a4-f7dfa0d35616> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/876e390c-303a-59c0-96a4-f7dfa0d35616> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/876e390c-303a-59c0-96a4-f7dfa0d35616> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fetid"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    rdf:value "The lesson thus given was not one against political freedom , but against the danger of permitting permitting any class of the population to grow up in the densest ignorance amidst enlightenment , and in the foulest vice amidst the national recognition of virtue and religion .The troubles of the time were heightened by the coming to our shores of a new and terrible disease called Asiatic cholera , which made most of its victims amidst the fetid squalor of the towns .Little heed was then paid to sanitary science , and medical knowledge was at first incapable of coping with the new disorder ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fetid_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fetid"@en .
+
+<http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> a od:L11_Smell ;
+    rdfs:label "fetid"@en .
+

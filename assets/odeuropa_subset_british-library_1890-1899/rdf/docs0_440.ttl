@@ -1,0 +1,86 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweetly scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/sweetly%20scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf> ;
+    rdfs:comment "sweetly"@en .
+
+<http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140> crm:P165_incorporates <http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140/fragment/12db3074-cd83-51c7-bd78-724e9aaa74a0> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/14fa507b-6f02-54be-b2aa-279eb0f100d2>,
+        <http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf>,
+        <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140/fragment/12db3074-cd83-51c7-bd78-724e9aaa74a0> crm:P67_refers_to <http://data.odeuropa.eu/emission/14fa507b-6f02-54be-b2aa-279eb0f100d2> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140/fragment/12db3074-cd83-51c7-bd78-724e9aaa74a0> crm:P67_refers_to <http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140/fragment/12db3074-cd83-51c7-bd78-724e9aaa74a0> crm:P67_refers_to <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140> crm:P67_refers_to <http://data.odeuropa.eu/emission/14fa507b-6f02-54be-b2aa-279eb0f100d2> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140> crm:P67_refers_to <http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140> crm:P67_refers_to <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/attribute/sweetly%20scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "sweetly scented"@en .
+
+<http://data.odeuropa.eu/object/b2cf4b28-06ac-5ba8-a85b-68832ad34255> a crmsci:S10_Material_Substantial ;
+    rdfs:label "arbour"@en .
+
+<http://data.odeuropa.eu/object/e84bdfa2-2764-5009-814b-570b86605e87> a crmsci:S10_Material_Substantial ;
+    rdfs:label "ivymantled ivymantled wall"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/cebb2b63-0851-56ca-ae7d-2609bbf69140/fragment/12db3074-cd83-51c7-bd78-724e9aaa74a0> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "arbour"@en,
+        "ivymantled ivymantled wall"@en,
+        "scented"@en,
+        "sweetly scented"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/14fa507b-6f02-54be-b2aa-279eb0f100d2>,
+        <http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf>,
+        <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> ;
+    rdf:value "As the ancestral home of an important branch of the Douglas family , Cavershas Cavershas borne its part and mingled in the best traditions of the country .In these latter days , when peace and amity shed their cheering influence over the homes of the people , hill anil valley catch up the glad refrain , and , from ivymantled ivymantled wall and sweetly scented arbour , the minstrel ' s song is borne in one unbroken wave of perfect harmony : — Sweet Teviot on thy silver tide The glaring balefires blaze no more ; No longer steel - clad warriors ride Along thy wild and willowed shore .All now ia changed : and halcyon years Succeed the feudal baron ' s sway ; And trade , with arts and peace , appears To bless fair Scotia ' s happier day ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/14fa507b-6f02-54be-b2aa-279eb0f100d2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b2cf4b28-06ac-5ba8-a85b-68832ad34255>,
+        <http://data.odeuropa.eu/object/e84bdfa2-2764-5009-814b-570b86605e87> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/15d49c14-dc1a-5941-8ab8-ba10a18b05bf> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/85ad7354-63bc-5d74-85d1-5202730fd440> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+

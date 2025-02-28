@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P165_incorporates <http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/4a4e0d8d-4fb4-5586-bf8b-98a05fbcbfa0> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/4a4e0d8d-4fb4-5586-bf8b-98a05fbcbfa0> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/4a4e0d8d-4fb4-5586-bf8b-98a05fbcbfa0> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/4a4e0d8d-4fb4-5586-bf8b-98a05fbcbfa0> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/object/2b0d8e38-b779-54fa-b742-49aaf3b9c088> a crmsci:S10_Material_Substantial ;
+    rdfs:label "it"@en .
+
+<http://data.odeuropa.eu/object/a6aa60da-674b-5580-8d70-d59cb6c5d5bf> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/object/f0237a6e-7cc0-554c-a44c-70e91f59b979> a crmsci:S10_Material_Substantial ;
+    rdfs:label "on the air"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/4a4e0d8d-4fb4-5586-bf8b-98a05fbcbfa0> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "it"@en,
+        "its"@en,
+        "odors"@en,
+        "on the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    rdf:value "I learned it from the hedge - rose in the spring That fear is foolish and a wasteful thing .Is not the wild phlox by the stream more fair Because it breathes its odors on the air , Taking no thought for what next year may bring , With soul unvext by aught of fear or care ! MARTHA .ALAS , for all who lead blind , burdened lives , Weary at morn with work of yesterday , With lame feet struggling on a stony way From birth to grave ! Bound in the gyves Of circumstances , awed by the whip that drives Doubt ' s slaves , the thralls of care grow gray Even in green youth because they say heaven nay , And strive forever as the coward strives ! What shall they win who lose the better part , Yet serve the worse with careful , constant heart , As Martha served , though truth she could not see ? Humble though their reward may be and low , Shall they not rest at last and surely know All mysteries that skies and stars can show ? THE GLORY OF THE GARDEN ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/2b0d8e38-b779-54fa-b742-49aaf3b9c088>,
+        <http://data.odeuropa.eu/object/a6aa60da-674b-5580-8d70-d59cb6c5d5bf> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/f0237a6e-7cc0-554c-a44c-70e91f59b979> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> a od:L11_Smell ;
+    rdfs:label "odors"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

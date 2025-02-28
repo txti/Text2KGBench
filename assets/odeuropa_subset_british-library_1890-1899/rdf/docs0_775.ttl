@@ -1,0 +1,80 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "perfumed"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/perfumed_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "perfumed"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/perfumed_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P165_incorporates <http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/206d0fb5-96fb-58f2-9a67-e8133824eeda> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/206d0fb5-96fb-58f2-9a67-e8133824eeda> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/206d0fb5-96fb-58f2-9a67-e8133824eeda> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/206d0fb5-96fb-58f2-9a67-e8133824eeda> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/object/e234a4ba-9830-556f-b2b6-498916e18d2b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "of"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/206d0fb5-96fb-58f2-9a67-e8133824eeda> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Oils"@en,
+        "odor"@en,
+        "of"@en,
+        "perfumed"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    rdf:value "461 distillate , treatment of the , wells , accumulations on the sur - face near , 89 flowing , 105 - 111 West Virginia , 592 Oils , Alscace lubricating , examina - tion of , 643 .645 307 - 325 filtration of , 325 - 328 industry , Russian , birth of the , 24 line corresponding to the oil - bearing stratum , 93 - 96 lines , 92 - 104 American crude , distilling exper - iments with , 253 - 256 cylinder , examiuation of , ( 142 - 044 corresponding to anticlinals and folds , 96 - 103 illuminating , classification of , 578 , 579 to a displacement 103 , 104 lubricating , 75 machine , examination of , 642 - 044 1 artificial , definition of , 252 INDEX 703 Oils : blue , 667 Oils , lubricating , from Russian resi duum , 350 Caucasian , results obtained by fractional distillation of , 41 1 - 413 commercial machine , flashing and burning points of , 457 , 458 conclusions regarding the direct testing of , as to their lubricat - power , 509 - 551 crude , difference in , 155 - 157 influence of metals on , 646 , 647 Marten ' s tester for , 450 - 452 odor of , 538 of different derivation , dis - tinction of , 550 , 551 old method of determining the flashing point of , 447 Pensky ' s tester for , 448 , 449 residuum for the manufac - shale , processes of refining , 385 , 386 cylinder , 642 determination of mineral salts in , 540 , 541 ture of , 348 , 349 stills for , 355 - 365 test for creosote , carbolic physical properties of , 405 acid and allied substances the specific gravity of , 405 - 409 in , 548 uses of , 636 - 647 fat , and fats , determination of , 545 - 548 viscosity of , 461 - 464 lustreless and perfumed , 656 methods of testing , 405 - 551 mineral , summary of properties of , 641 table for the reduction to the German lubricating , examination of , 643 .645 green , 667 heavy , 75 heavy , and residuum , lamps for , 585 - 592 hydrocarbon , early objection to , for lubrication , 637 illuminating , 75 classification of , 554 determination of acidity of , 539 , 540 normal temperature of the densities of , 259 Oelheim lubricating , examina - tion of , 643 , 645 paraffin , manufacture of , 383 - 387 minerals for the production of , 383 Pennsylvania , results obtained by fractional distillation of , 411 - 413 removal of fluorescence from , 656 results of testing , 494 , 495 odor of , 538 viscosity of , 458 , 461 light , 74 , 75 lubricating , apparatus for exam - ining , 414 , 416 , 417 behavior of , towards sul - Russian cylinder , examination of , 642 - 644 phuric acid , 538 , 539 chemical purification of , 365 - 368 machine , examination of , 642 - 644 solar or mixing , 641 , 642 substances used in perfuming , 657 volatile , classification of , 554 uses and properties of , 554 - 561 classification of , 554 cold test for , 543 - 545 color in judging , 537 , 538 determination of acidity of , 539 , 540 fat oils and fats in , wool , 642 545 - 548 Olefines , 62 - 64 Oleo - vapor lamp , 591 light , 585 Oligocene , distribution of bitumen in the , 115 Olszewski , K ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/perfumed_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "perfumed"@en .
+
+<http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e234a4ba-9830-556f-b2b6-498916e18d2b>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/109> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> a od:L11_Smell ;
+    rdfs:label "odor"@en,
+        "perfumed"@en .
+

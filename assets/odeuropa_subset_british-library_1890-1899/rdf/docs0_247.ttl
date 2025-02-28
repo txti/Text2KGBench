@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "bad"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/bad_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1f51f805-98fd-543f-a762-de44d9b07e37> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P165_incorporates <http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/baea4e9f-be74-5aab-8c3f-55a79b2c0051> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/baea4e9f-be74-5aab-8c3f-55a79b2c0051> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/baea4e9f-be74-5aab-8c3f-55a79b2c0051> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/baea4e9f-be74-5aab-8c3f-55a79b2c0051> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/attribute/bad_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "bad"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/baea4e9f-be74-5aab-8c3f-55a79b2c0051> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "bad"@en,
+        "he"@en,
+        "him"@en,
+        "near the public - house at the corner"@en,
+        "odours"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    rdf:value "Then instead of doing as sensible people do , and discarding them for something something more solid , Gilbert stuck to his poor ices : they were not very nourishing .A swish of swing doors , a sudden roar of voices and a gust of bad odours reminded him that he was near the public - house at the corner .A barman barman came to the door with a half - empty pot in his hand , and asked briskly of a respectable woman outside what she wanted ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/1f51f805-98fd-543f-a762-de44d9b07e37> a crm:E39_Actor ;
+    rdfs:label "him|he" .
+
+<http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/2b254bcb-c082-5d08-9d1e-1bbd3a8969ed> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/place/2b254bcb-c082-5d08-9d1e-1bbd3a8969ed> a crm:E53_Place ;
+    rdfs:label "near the public - house at the corner" .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1f51f805-98fd-543f-a762-de44d9b07e37> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/2b254bcb-c082-5d08-9d1e-1bbd3a8969ed> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> a od:L11_Smell ;
+    rdfs:label "odours"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

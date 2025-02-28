@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P165_incorporates <http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/0c26e5d5-b153-5386-9d74-a7ea48b8ffb0> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/0c26e5d5-b153-5386-9d74-a7ea48b8ffb0> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/0c26e5d5-b153-5386-9d74-a7ea48b8ffb0> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/0c26e5d5-b153-5386-9d74-a7ea48b8ffb0> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/actor/ad3c2e56-254c-5906-b466-1fa778820864> a crm:E39_Actor ;
+    rdfs:label "Alford" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/0c26e5d5-b153-5386-9d74-a7ea48b8ffb0> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Alford"@en,
+        "beginning to feel quite sick"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    rdf:value "Not seeing the man of whom he was in search , Alford went on into the adjoining room , where , in yet deeper darkness , scores more of men and women were lying on the floor , sleeping off the effects of their night ' s drinking till two o ' clock should strike , and they should be bundled out into the street .The gas was turned up by an attendant , and Alford passed through as quickly as possible , beginning to feel quite sick with the smell .He came back into the outer room , and at last , catching catching sight of the man he wanted , moved gingerly across the dirty floor to a table on the far side of the room ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/ad3c2e56-254c-5906-b466-1fa778820864> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

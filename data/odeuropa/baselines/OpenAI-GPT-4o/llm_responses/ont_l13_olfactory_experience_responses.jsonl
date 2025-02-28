@@ -1,0 +1,133 @@
+{"id": "ont_l13_olfactory_experience_test_1", "response": "perceived(death-scented, hair)", "triples": [["death-scented", "perceived", "hair"]]}
+{"id": "ont_l13_olfactory_experience_test_2", "response": "perceived(fresh, fresh)\nperceived(cool, cool)\nperceived(pungent, pungent)", "triples": [["fresh", "perceived", "fresh"], ["cool", "perceived", "cool"], ["pungent", "perceived", "pungent"]]}
+{"id": "ont_l13_olfactory_experience_test_3", "response": "perceived(evanescent, odours)", "triples": [["evanescent", "perceived", "odours"]]}
+{"id": "ont_l13_olfactory_experience_test_4", "response": "perceived(aromatic, odours)", "triples": [["aromatic", "perceived", "odours"]]}
+{"id": "ont_l13_olfactory_experience_test_5", "response": "perceived(dismal, interior)", "triples": [["dismal", "perceived", "interior"]]}
+{"id": "ont_l13_olfactory_experience_test_6", "response": "perceived(unbearable, smells)", "triples": [["unbearable", "perceived", "smells"]]}
+{"id": "ont_l13_olfactory_experience_test_7", "response": "perceived(loathsome, smell)  \ntook_place_at(loathsome, room of devotion)  \nhas_time(loathsome, towards the end)", "triples": [["loathsome", "perceived", "smell"], ["loathsome", "took_place_at", "room of devotion"], ["loathsome", "has_time", "towards the end"]]}
+{"id": "ont_l13_olfactory_experience_test_8", "response": "perceived(horrid, smelly)", "triples": [["horrid", "perceived", "smelly"]]}
+{"id": "ont_l13_olfactory_experience_test_9", "response": "perceived(stench, stench)\ntook_place_at(stench, down below)\nhas_time(stench, at times)", "triples": [["stench", "perceived", "stench"], ["stench", "took_place_at", "down below"], ["stench", "has_time", "at times"]]}
+{"id": "ont_l13_olfactory_experience_test_10", "response": "perceived(scentless, rose)", "triples": [["scentless", "perceived", "rose"]]}
+{"id": "ont_l13_olfactory_experience_test_11", "response": "perceived(heavenly, odours)\nperceived(sweet, laughter)", "triples": [["heavenly", "perceived", "odours"], ["sweet", "perceived", "laughter"]]}
+{"id": "ont_l13_olfactory_experience_test_12", "response": "perceived(sweet, odours)  \nperceived(Sweet odours, odours)  \nperceived(Sweet music, sounds)  ", "triples": [["sweet", "perceived", "odours"], ["Sweet odours", "perceived", "odours"], ["Sweet music", "perceived", "sounds"]]}
+{"id": "ont_l13_olfactory_experience_test_13", "response": "perceived(scented, fancies)", "triples": [["scented", "perceived", "fancies"]]}
+{"id": "ont_l13_olfactory_experience_test_14", "response": "perceived(revolting, odours)", "triples": [["revolting", "perceived", "odours"]]}
+{"id": "ont_l13_olfactory_experience_test_15", "response": "perceived(rich, perfume)", "triples": [["rich", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_16", "response": "perceived(sweet, sweet perfume)  \nperceived(sweet, perfume)  \nperceived(sweet, scent)  \nperceived(sweet, clouds of incense)", "triples": [["sweet", "perceived", "sweet perfume"], ["sweet", "perceived", "perfume"], ["sweet", "perceived", "scent"], ["sweet", "perceived", "clouds of incense"]]}
+{"id": "ont_l13_olfactory_experience_test_17", "response": "perceived(perfume, perfume)\nperceived(scent, scent)", "triples": [["perfume", "perceived", "perfume"], ["scent", "perceived", "scent"]]}
+{"id": "ont_l13_olfactory_experience_test_18", "response": "perceived(an aromatic, perfume)", "triples": [["an aromatic", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_19", "response": "perceived(thyme-scented, thyme-scented)", "triples": [["thyme-scented", "perceived", "thyme-scented"]]}
+{"id": "ont_l13_olfactory_experience_test_20", "response": "perceived(rich, scent)  \nperceived(perfume, grasses)", "triples": [["rich", "perceived", "scent"], ["perfume", "perceived", "grasses"]]}
+{"id": "ont_l13_olfactory_experience_test_21", "response": "perceived(perfumed, air)", "triples": [["perfumed", "perceived", "air"]]}
+{"id": "ont_l13_olfactory_experience_test_22", "response": "perceived(dear, scent)  \ntook_place_at(dear, Washington arena)  \ncarried_out_by(dear, their nostrils)", "triples": [["dear", "perceived", "scent"], ["dear", "took_place_at", "Washington arena"], ["dear", "carried_out_by", "their nostrils"]]}
+{"id": "ont_l13_olfactory_experience_test_23", "response": "perceived(short, short)", "triples": [["short", "perceived", "short"]]}
+{"id": "ont_l13_olfactory_experience_test_24", "response": "perceived(reeking, stewpan)", "triples": [["reeking", "perceived", "stewpan"]]}
+{"id": "ont_l13_olfactory_experience_test_25", "response": "perceived(keen-scented, keen-scented)", "triples": [["keen-scented", "perceived", "keen-scented"]]}
+{"id": "ont_l13_olfactory_experience_test_26", "response": "perceived(pungent, pungent)", "triples": [["pungent", "perceived", "pungent"]]}
+{"id": "ont_l13_olfactory_experience_test_27", "response": "perceived(deathly, sick)", "triples": [["deathly", "perceived", "sick"]]}
+{"id": "ont_l13_olfactory_experience_test_28", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_29", "response": "perceived(rale auld stench, stench)", "triples": [["rale auld stench", "perceived", "stench"]]}
+{"id": "ont_l13_olfactory_experience_test_30", "response": "perceived(smelling, smelling)", "triples": [["smelling", "perceived", "smelling"]]}
+{"id": "ont_l13_olfactory_experience_test_31", "response": "perceived(stinking, stinking)  \ncarried_out_by(stinking, under his nose)", "triples": [["stinking", "perceived", "stinking"], ["stinking", "carried_out_by", "under his nose"]]}
+{"id": "ont_l13_olfactory_experience_test_32", "response": "perceived(distasteful, smell)", "triples": [["distasteful", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_33", "response": "perceived(very musty, box)", "triples": [["very musty", "perceived", "box"]]}
+{"id": "ont_l13_olfactory_experience_test_34", "response": "perceived(dangerous, perfume)", "triples": [["dangerous", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_35", "response": "perceived(arrowy, odours)", "triples": [["arrowy", "perceived", "odours"]]}
+{"id": "ont_l13_olfactory_experience_test_36", "response": "perceived(scentless, scentless)", "triples": [["scentless", "perceived", "scentless"]]}
+{"id": "ont_l13_olfactory_experience_test_37", "response": "perceived(pungent, sponged)\nperceived(aromatic, sponged)\ncarried_out_by(pungent, Stella)\ncarried_out_by(aromatic, Stella)", "triples": [["pungent", "perceived", "sponged"], ["aromatic", "perceived", "sponged"], ["pungent", "carried_out_by", "Stella"], ["aromatic", "carried_out_by", "Stella"]]}
+{"id": "ont_l13_olfactory_experience_test_38", "response": "perceived(pungent, pungent)  \nperceived(pungent, pungent)", "triples": [["pungent", "perceived", "pungent"], ["pungent", "perceived", "pungent"]]}
+{"id": "ont_l13_olfactory_experience_test_39", "response": "perceived(imperceptible, sniff)\ncarried_out_by(imperceptible, Aunt Sophia)", "triples": [["imperceptible", "perceived", "sniff"], ["imperceptible", "carried_out_by", "Aunt Sophia"]]}
+{"id": "ont_l13_olfactory_experience_test_40", "response": "perceived(little, sniffs)", "triples": [["little", "perceived", "sniffs"]]}
+{"id": "ont_l13_olfactory_experience_test_41", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_42", "response": "perceived(inestimable, Perfume)", "triples": [["inestimable", "perceived", "Perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_43", "response": "I'm sorry, but the test sentence provided does not contain any elements related to the ontology concepts and relations specified for smell-related contexts. Therefore, no triples can be extracted from the test sentence based on the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_44", "response": "perceived(perfumed, flame)", "triples": [["perfumed", "perceived", "flame"]]}
+{"id": "ont_l13_olfactory_experience_test_45", "response": "perceived(aromatic, odours)", "triples": [["aromatic", "perceived", "odours"]]}
+{"id": "ont_l13_olfactory_experience_test_46", "response": "The test sentence does not contain any explicit mentions of qualities or smell words that align with the ontology relations provided. Therefore, no triples can be extracted from the test sentence based on the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_47", "response": "perceived(fresh, fragrance)\nperceived(fresh, perfume)", "triples": [["fresh", "perceived", "fragrance"], ["fresh", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_48", "response": "No triples can be extracted from the test sentence based on the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_49", "response": "perceived(pungent, odour)  \ncarried_out_by(pungent, Lena)", "triples": [["pungent", "perceived", "odour"], ["pungent", "carried_out_by", "Lena"]]}
+{"id": "ont_l13_olfactory_experience_test_50", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_51", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_52", "response": "perceived(perfume, trail of gasolem)", "triples": [["perfume", "perceived", "trail of gasolem"]]}
+{"id": "ont_l13_olfactory_experience_test_53", "response": "perceived(scentless, scentless)\nperceived(scentless, fragrance)", "triples": [["scentless", "perceived", "scentless"], ["scentless", "perceived", "fragrance"]]}
+{"id": "ont_l13_olfactory_experience_test_54", "response": "perceived(pungent, odour)  \ntook_place_at(pungent, in the kitchen)  \nhas_time(pungent, by the time our friends had dried themselves before the fire)", "triples": [["pungent", "perceived", "odour"], ["pungent", "took_place_at", "in the kitchen"], ["pungent", "has_time", "by the time our friends had dried themselves before the fire"]]}
+{"id": "ont_l13_olfactory_experience_test_55", "response": "perceived(faint, scent)  \nperceived(unmistakable, odour)  \nperceived(indescribably, appetising)", "triples": [["faint", "perceived", "scent"], ["unmistakable", "perceived", "odour"], ["indescribably", "perceived", "appetising"]]}
+{"id": "ont_l13_olfactory_experience_test_56", "response": "perceived(earthy, smell)", "triples": [["earthy", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_57", "response": "perceived(faintest, whiff)", "triples": [["faintest", "perceived", "whiff"]]}
+{"id": "ont_l13_olfactory_experience_test_58", "response": "perceived(aromatic, whiffs)\ncarried_out_by(aromatic, Miss Lavinia)", "triples": [["aromatic", "perceived", "whiffs"], ["aromatic", "carried_out_by", "Miss Lavinia"]]}
+{"id": "ont_l13_olfactory_experience_test_59", "response": "perceived(warm greasy, smell)  \ntook_place_at(warm greasy, over the kitchen)", "triples": [["warm greasy", "perceived", "smell"], ["warm greasy", "took_place_at", "over the kitchen"]]}
+{"id": "ont_l13_olfactory_experience_test_60", "response": "perceived(fresh, smell)", "triples": [["fresh", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_61", "response": "perceived(earthy, smell)", "triples": [["earthy", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_62", "response": "perceived(pleasant, smell)  \ntook_place_at(pleasant, gardens)  \ncarried_out_by(pleasant, hucksters)  \nhas_time(pleasant, summer)  \ntook_place_at(pleasant, town)  \ntook_place_at(pleasant, Heath)", "triples": [["pleasant", "perceived", "smell"], ["pleasant", "took_place_at", "gardens"], ["pleasant", "carried_out_by", "hucksters"], ["pleasant", "has_time", "summer"], ["pleasant", "took_place_at", "town"], ["pleasant", "took_place_at", "Heath"]]}
+{"id": "ont_l13_olfactory_experience_test_63", "response": "perceived(terrible, odour)", "triples": [["terrible", "perceived", "odour"]]}
+{"id": "ont_l13_olfactory_experience_test_64", "response": "perceived(rich, rank odour)  \ntook_place_at(rich, streets)", "triples": [["rich", "perceived", "rank odour"], ["rich", "took_place_at", "streets"]]}
+{"id": "ont_l13_olfactory_experience_test_65", "response": "perceived(reeking, reeking)", "triples": [["reeking", "perceived", "reeking"]]}
+{"id": "ont_l13_olfactory_experience_test_66", "response": "perceived(almost oppressive, perfume)", "triples": [["almost oppressive", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_67", "response": "perceived(fragrance, filled)  \nperceived(fragrance, perfumed)", "triples": [["fragrance", "perceived", "filled"], ["fragrance", "perceived", "perfumed"]]}
+{"id": "ont_l13_olfactory_experience_test_68", "response": "perceived(perfume, perfume)", "triples": [["perfume", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_69", "response": "There are no triples to extract from the test sentence based on the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_70", "response": "perceived(odoriferous, smelling)", "triples": [["odoriferous", "perceived", "smelling"]]}
+{"id": "ont_l13_olfactory_experience_test_71", "response": "perceived(pungent, perfume)", "triples": [["pungent", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_72", "response": "perceived(aromatic, leaf)", "triples": [["aromatic", "perceived", "leaf"]]}
+{"id": "ont_l13_olfactory_experience_test_73", "response": "perceived(scented, scented)\nperceived(scented, scented)", "triples": [["scented", "perceived", "scented"], ["scented", "perceived", "scented"]]}
+{"id": "ont_l13_olfactory_experience_test_74", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_75", "response": "perceived(aromatic, properties)", "triples": [["aromatic", "perceived", "properties"]]}
+{"id": "ont_l13_olfactory_experience_test_76", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_77", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_78", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology. \n\nOutput: (No triples extracted)", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_79", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_80", "response": "perceived(unbearable, odor)", "triples": [["unbearable", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_81", "response": "perceived(disagreeable, smell)", "triples": [["disagreeable", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_82", "response": "perceived(terrible, smell)", "triples": [["terrible", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_83", "response": "perceived(peculiar, odor)", "triples": [["peculiar", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_84", "response": "perceived(aromatic, odor)\nperceived(disagreeable, odor)", "triples": [["aromatic", "perceived", "odor"], ["disagreeable", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_85", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_86", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_87", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_88", "response": "No triples can be extracted from the test sentence based on the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_89", "response": "perceived(aromatic, bodies)", "triples": [["aromatic", "perceived", "bodies"]]}
+{"id": "ont_l13_olfactory_experience_test_90", "response": "The test sentence \"To the group of the aromatic Hydrocarbons.\" does not contain any explicit mention of a Quality or Smell Word that can be directly linked to the ontology relations provided. Therefore, no triples can be extracted from this sentence based on the given ontology and its relations. \n\nOutput: (No triples extracted)", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_91", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_92", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_93", "response": "There are no triples to extract from the test sentence based on the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_94", "response": "I'm sorry, but the provided sentence does not contain any information that can be directly mapped to the ontology relations given. Therefore, no triples can be extracted from the test sentence according to the specified ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_95", "response": "The test sentence does not contain any explicit mention of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology. \n\nOutput: (No triples extracted)", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_96", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology. \n\nOutput:", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_97", "response": "There are no triples to extract from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_98", "response": "perceived(agreeable, odor)", "triples": [["agreeable", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_99", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_100", "response": "perceived(dark brown, color)", "triples": [["dark brown", "perceived", "color"]]}
+{"id": "ont_l13_olfactory_experience_test_101", "response": "perceived(specific, odor)\nevoked(specific, camphor)\nevoked(specific, oil of turpentine)", "triples": [["specific", "perceived", "odor"], ["specific", "evoked", "camphor"], ["specific", "evoked", "oil of turpentine"]]}
+{"id": "ont_l13_olfactory_experience_test_102", "response": "perceived(not disagreeable, odor)", "triples": [["not disagreeable", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_103", "response": "The test sentence does not contain any explicit mention of a smell word or quality related to smell, so no triples can be extracted based on the given ontology and relations. Therefore, the output is empty.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_104", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_105", "response": "perceived(stronger, odor)", "triples": [["stronger", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_106", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_107", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_108", "response": "perceived(aromatic, aromatic)", "triples": [["aromatic", "perceived", "aromatic"]]}
+{"id": "ont_l13_olfactory_experience_test_109", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_110", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_111", "response": "perceived(aromatic, hydrocarbons)", "triples": [["aromatic", "perceived", "hydrocarbons"]]}
+{"id": "ont_l13_olfactory_experience_test_112", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_113", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology. \n\nOutput: (No triples to extract)", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_114", "response": "perceived(petroleum, odor)\nperceived(pine, odor)", "triples": [["petroleum", "perceived", "odor"], ["pine", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_115", "response": "perceived(perfumed, oils)", "triples": [["perfumed", "perceived", "oils"]]}
+{"id": "ont_l13_olfactory_experience_test_116", "response": "perceived(petroleum, odor)", "triples": [["petroleum", "perceived", "odor"]]}
+{"id": "ont_l13_olfactory_experience_test_117", "response": "The test sentence provided does not contain any explicit mentions of the ontology concepts or relations such as Smell Word, Smell Source, Quality, Odour Carrier, Evoked Odorant, Location, Perceiver, Time, Circumstances, or Effect. Therefore, no triples can be extracted from the sentence according to the given ontology relations. \n\nOutput: (No triples to extract)", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_118", "response": "The test sentence does not contain any clear references to the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_119", "response": "perceived(lustreless, perfumed)", "triples": [["lustreless", "perceived", "perfumed"]]}
+{"id": "ont_l13_olfactory_experience_test_120", "response": "The test sentence does not contain any explicit mentions of the ontology concepts or relations provided. Therefore, no triples can be extracted from the sentence according to the given ontology. \n\nOutput: (No triples extracted)", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_121", "response": "perceived(fresh, scent)", "triples": [["fresh", "perceived", "scent"]]}
+{"id": "ont_l13_olfactory_experience_test_122", "response": "perceived(harsh, smell)", "triples": [["harsh", "perceived", "smell"]]}
+{"id": "ont_l13_olfactory_experience_test_123", "response": "perceived(vague, perfume)", "triples": [["vague", "perceived", "perfume"]]}
+{"id": "ont_l13_olfactory_experience_test_124", "response": "perceived(stink, stink)", "triples": [["stink", "perceived", "stink"]]}
+{"id": "ont_l13_olfactory_experience_test_125", "response": "perceived(perfumed, scent of cassia)\ntook_place_at(perfumed, in a large reception-chamber)\ncarried_out_by(perfumed, I)", "triples": [["perfumed", "perceived", "scent of cassia"], ["perfumed", "took_place_at", "in a large reception-chamber"], ["perfumed", "carried_out_by", "I"]]}
+{"id": "ont_l13_olfactory_experience_test_126", "response": "perceived(perfumed, stink)", "triples": [["perfumed", "perceived", "stink"]]}
+{"id": "ont_l13_olfactory_experience_test_127", "response": "No triples can be extracted from the test sentence according to the given ontology relations.", "triples": []}
+{"id": "ont_l13_olfactory_experience_test_128", "response": "perceived(vile, vile)", "triples": [["vile", "perceived", "vile"]]}
+{"id": "ont_l13_olfactory_experience_test_129", "response": "took_place_at(thyme-scented, air of the little island)", "triples": [["thyme-scented", "took_place_at", "air of the little island"]]}
+{"id": "ont_l13_olfactory_experience_test_130", "response": "perceived(fragrant, fragrant)", "triples": [["fragrant", "perceived", "fragrant"]]}
+{"id": "ont_l13_olfactory_experience_test_131", "response": "perceived(transient, scent)", "triples": [["transient", "perceived", "scent"]]}
+{"id": "ont_l13_olfactory_experience_test_132", "response": "perceived(perfumed, dower)", "triples": [["perfumed", "perceived", "dower"]]}
+{"id": "ont_l13_olfactory_experience_test_133", "response": "perceived(tuneful, sweetness)", "triples": [["tuneful", "perceived", "sweetness"]]}

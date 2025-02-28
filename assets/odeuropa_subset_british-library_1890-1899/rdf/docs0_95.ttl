@@ -1,0 +1,81 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "strong"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-intensity/4> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/intensity> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P165_incorporates <http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/15cb7c68-c61e-5a65-8da2-9621168c51ea> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a>,
+        <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8>,
+        <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/15cb7c68-c61e-5a65-8da2-9621168c51ea> crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/15cb7c68-c61e-5a65-8da2-9621168c51ea> crm:P67_refers_to <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/15cb7c68-c61e-5a65-8da2-9621168c51ea> crm:P67_refers_to <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P67_refers_to <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P67_refers_to <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> .
+
+<http://data.odeuropa.eu/object/5000c43c-26c7-5b31-807c-a451aa8e6036> a crmsci:S10_Material_Substantial ;
+    rdfs:label "hothouse flowers"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/15cb7c68-c61e-5a65-8da2-9621168c51ea> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of hothouse flowers"@en,
+        "scent"@en,
+        "strong"@en,
+        "the much furnished villa"@en,
+        "you"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a>,
+        <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8>,
+        <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    rdf:value "Well , Jenny — sweet little loving he muttered to himself as he almost ran along the streets towards his home , I have murdered you , and you have gone to heaven ; you are an angel , my sweet one , and you shall be well 86 A FREAK OF FATE .the much furnished villa , strong with the scent of hothouse flowers , and positively blinding you with the newness of all it contained .As she stood for a moment gazing out upon the river her mysterious eyes met his , and the strong man shuddered with the strength of the feeling ing that urged up into what he called his heart ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> a crm:E39_Actor ;
+    rdfs:label "you" .
+
+<http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5000c43c-26c7-5b31-807c-a451aa8e6036> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/916e9974-8b12-519d-b5cb-b9c76e5bc134> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/place/916e9974-8b12-519d-b5cb-b9c76e5bc134> a crm:E53_Place ;
+    rdfs:label "the much furnished villa" .
+
+<http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/916e9974-8b12-519d-b5cb-b9c76e5bc134> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

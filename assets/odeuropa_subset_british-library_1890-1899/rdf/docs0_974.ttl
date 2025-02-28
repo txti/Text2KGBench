@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294> crm:P165_incorporates <http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294/fragment/86ad744e-6a7e-5613-96fd-e463b9d6d25a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b9a5d0b-c252-5df4-8735-839a2e3fa37b>,
+        <http://data.odeuropa.eu/experience/79f5b7ad-aa5e-5bd8-aeaf-4746985a483a>,
+        <http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294/fragment/86ad744e-6a7e-5613-96fd-e463b9d6d25a> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b9a5d0b-c252-5df4-8735-839a2e3fa37b> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294/fragment/86ad744e-6a7e-5613-96fd-e463b9d6d25a> crm:P67_refers_to <http://data.odeuropa.eu/experience/79f5b7ad-aa5e-5bd8-aeaf-4746985a483a> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294/fragment/86ad744e-6a7e-5613-96fd-e463b9d6d25a> crm:P67_refers_to <http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b9a5d0b-c252-5df4-8735-839a2e3fa37b> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294> crm:P67_refers_to <http://data.odeuropa.eu/experience/79f5b7ad-aa5e-5bd8-aeaf-4746985a483a> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294> crm:P67_refers_to <http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/75c919bc-1ba9-543d-b293-2df843608294/fragment/86ad744e-6a7e-5613-96fd-e463b9d6d25a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "many towns in England"@en,
+        "smells"@en,
+        "them"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b9a5d0b-c252-5df4-8735-839a2e3fa37b>,
+        <http://data.odeuropa.eu/experience/79f5b7ad-aa5e-5bd8-aeaf-4746985a483a>,
+        <http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> ;
+    rdf:value "The next transcript depicts the fiscal situation of the Vestry : — 23rd November , 1709 — It being Represented to this Vestry that the number and necessities of the poor of this Parish are abundantly Encreased & amp ; it being proposed that , an Additional Rate be made for the further and better Reliese of the poor 144 supply from these springs appears to have been restored , Public attention had meanwhile been called to the demand for improvement .A petition dated 17th January , 1687 8 was presented to the King ( Chnrles I ) reciting that many towns in England require a good water supply to keep them free from smells , infection and and praying his Majesty to grant licence to erect water works throu England and Wales upon payment to the King of £ 50 per annum from Lady Day , 1640 , when the proposed works were expected to be finished .A grant was made the following following year to Archbishop Laud and other Commissioners of his Majesty relative to a new aqueduct undertaken by Sir Edward Stradling and others to be constructed of brick or stone , for the bringing of water from Hoddesden to Westminster ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/7b9a5d0b-c252-5df4-8735-839a2e3fa37b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> ;
+    crm:P7_took_place_at <https://sws.geonames.org/4193431/> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/79f5b7ad-aa5e-5bd8-aeaf-4746985a483a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> ;
+    crm:P7_took_place_at <https://sws.geonames.org/4193431/> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<https://sws.geonames.org/4193431/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/smell/f6c6ed98-7652-5697-b180-d90bbfd968c3> a od:L11_Smell ;
+    rdfs:label "smells"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

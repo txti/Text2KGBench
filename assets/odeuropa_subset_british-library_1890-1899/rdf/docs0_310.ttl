@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P165_incorporates <http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/bab1aa96-b6b3-5622-9ac3-16c67c43f928> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/bab1aa96-b6b3-5622-9ac3-16c67c43f928> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/bab1aa96-b6b3-5622-9ac3-16c67c43f928> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/bab1aa96-b6b3-5622-9ac3-16c67c43f928> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/object/5dae0ddd-3d57-54e0-8bcf-f4ae1e8d1ae1> a crmsci:S10_Material_Substantial ;
+    rdfs:label "in the air"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/bab1aa96-b6b3-5622-9ac3-16c67c43f928> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "breath"@en,
+        "in the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    rdf:value "Surely no tree in the world flowers more generously , or pours its whole life out in fragrance more unreservedly , than the Australian wattle .Its breath in the air is like a potent cordial , poignant and exhilarating .The clusters of great , golden , woolly blossoms have in them the honey of roses , the pollen of lilies , the tints of sun - filled primroses , and the arrowy odours of opening daffodils ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/5dae0ddd-3d57-54e0-8bcf-f4ae1e8d1ae1> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> a od:L11_Smell ;
+    rdfs:label "breath"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

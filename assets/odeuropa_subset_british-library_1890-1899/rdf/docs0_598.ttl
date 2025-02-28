@@ -1,0 +1,64 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P165_incorporates <http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/18a8df88-c31d-5689-a6c2-5324c8539ce3> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/18a8df88-c31d-5689-a6c2-5324c8539ce3> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/18a8df88-c31d-5689-a6c2-5324c8539ce3> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/18a8df88-c31d-5689-a6c2-5324c8539ce3> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its warm air"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/18a8df88-c31d-5689-a6c2-5324c8539ce3> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "its warm air"@en,
+        "of flowers"@en,
+        "scent"@en,
+        "that at once dispelled dispelled all his childish fears"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    rdf:value "The inevitable inevitable reclining - chair , with its heap of cushions , the whatnot whatnot crowded with Japanese netsukes , the photographs in their frames of filigree , the three or four genre pictures , the lacquered boxes standing on the little table covered with its strip of Oriental silk , the flowers distributed here and there — who in Paris is unacquainted with this refinement of comfort now so stereotyped as to be quite commonplace ? But all that Rene knew of Society life he had learnt either from Balzac and other novelists of fifty years ago or from more modern authors who had never seen the inside of a drawing - room ; the ensemble G 2 A LIVING LIE 84 of this apartment , beautifully harmonised by the soft tints of the shaded lamp , was therefore to him like the revelation of a hidden trait peculiar to the woman who had presided over its arrangement .The charm of the moment was the more irresistible since the Madonna who dwelt in this shrine , with its subdued light and its warm air heavy with the scent of flowers , received him with a smile and a look in her eyes that at once dispelled dispelled all his childish fears .The men whom Nature has endowed with that inexplicable power of pleasing women , apart from whatever whatever other qualities they may possess , either mental or physical , are provided with a kind of antennae of the soul to warn them of the impressions they produce ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/a0d69109-d951-5379-8045-a522ad144bba> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

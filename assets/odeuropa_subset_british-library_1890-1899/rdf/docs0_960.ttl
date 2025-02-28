@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odorous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odorous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odorous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odorous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P165_incorporates <http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/410eabac-45be-58e5-b245-21b0349eb023> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/410eabac-45be-58e5-b245-21b0349eb023> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/410eabac-45be-58e5-b245-21b0349eb023> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/410eabac-45be-58e5-b245-21b0349eb023> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/410eabac-45be-58e5-b245-21b0349eb023> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "odorous"@en,
+        "oil"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    rdf:value "What are we set on earth for ? Say , to toil ; Nor seek to leave thy tending of the vines For all the heat o ' the day , till it declines , And Death ' s mild curfew shall from work assoil .God did anoint thee with His odorous oil , To wrestle , not to reign ; and He assigns All thy tears over , like pure crystallines , For younger fellow - workers of the soil To wear for amulets .So others shall Take patience , labour , to their heart and hand , From thy hand and thy heart and thy brave cheer , And God ' s grace fructify through thee to all ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/odorous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "odorous"@en .
+
+<http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/109> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> a od:L11_Smell ;
+    rdfs:label "odorous"@en .
+

@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P165_incorporates <http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/aa659106-d72c-5373-a89b-cbe4dfbc6c60> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/aa659106-d72c-5373-a89b-cbe4dfbc6c60> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/aa659106-d72c-5373-a89b-cbe4dfbc6c60> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/aa659106-d72c-5373-a89b-cbe4dfbc6c60> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/actor/f678b79c-7687-531a-ad12-dd2ecc69fe25> a crm:E39_Actor ;
+    rdfs:label "the vicomte" .
+
+<http://data.odeuropa.eu/object/540e77bf-fa27-5ebe-9335-960b11d113a1> a crmsci:S10_Material_Substantial ;
+    rdfs:label "conspiracy"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/aa659106-d72c-5373-a89b-cbe4dfbc6c60> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "conspiracy"@en,
+        "smelt"@en,
+        "the vicomte"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    rdf:value "It seemed as if I might have gone too far , and revealed secrets I Avas bound in honour and safety to keep sacred .Versed as he was in politics , the vicomte smelt conspiracy as SAvift as a hound noses blood .Ha ! he said , taking up the ring , Avhat is Royal Game , I ansAvered to the odorous log in the chimney ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/540e77bf-fa27-5ebe-9335-960b11d113a1> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/f678b79c-7687-531a-ad12-dd2ecc69fe25> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> a od:L11_Smell ;
+    rdfs:label "smelt"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

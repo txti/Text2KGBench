@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P165_incorporates <http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/dc65bfde-7be0-5f9b-b147-75edb5de45b6> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/dc65bfde-7be0-5f9b-b147-75edb5de45b6> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/dc65bfde-7be0-5f9b-b147-75edb5de45b6> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/dc65bfde-7be0-5f9b-b147-75edb5de45b6> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/object/e2bf71be-d0bc-5244-8eb3-728238ff8901> a crmsci:S10_Material_Substantial ;
+    rdfs:label "from the linden trees"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/dc65bfde-7be0-5f9b-b147-75edb5de45b6> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Perfume"@en,
+        "butterflies"@en,
+        "from the linden trees"@en,
+        "insects"@en,
+        "through the summer day"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    rdf:value "Mark me , ' ware her , all of us , should she come home to the Red Court ! The June roses were in bloom , and the nightingales sang in the branches .Perfume was exhaled from the linden trees ; butterflies floated in the air ; insects hummed through the summer day .Out at sea the fishing - boats lay idly on the sparkling waves that gently rippled in the sun ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e2bf71be-d0bc-5244-8eb3-728238ff8901>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/466>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/471> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/4d3d1ffc-3f1e-53c3-b2fc-3606ba91c44d> .
+
+<http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/4d3d1ffc-3f1e-53c3-b2fc-3606ba91c44d> .
+
+<http://data.odeuropa.eu/time/4d3d1ffc-3f1e-53c3-b2fc-3606ba91c44d> a time:TemporalEntity ;
+    rdfs:label "XXXX-22" ;
+    rdfs:comment "day"@en .
+
+<http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> a od:L11_Smell ;
+    rdfs:label "Perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

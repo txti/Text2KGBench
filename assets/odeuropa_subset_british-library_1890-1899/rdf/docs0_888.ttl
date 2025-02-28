@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P165_incorporates <http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/c263000c-85d8-5835-bc18-c57648fcdfb3> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/c263000c-85d8-5835-bc18-c57648fcdfb3> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/c263000c-85d8-5835-bc18-c57648fcdfb3> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/c263000c-85d8-5835-bc18-c57648fcdfb3> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> a crm:E39_Actor ;
+    rdfs:label "you" .
+
+<http://data.odeuropa.eu/object/30d5d8ac-4e66-5212-ba35-02606532dc7b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "brandy"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/c263000c-85d8-5835-bc18-c57648fcdfb3> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of brandy"@en,
+        "smell"@en,
+        "you"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    rdf:value "I ' m not drunk .Nothmg of the What ! When you fill the whole room with the smell of brandy ; when your legs are unsteady , and your hands trembling ? Bah ! a man of your ability to be such a sot ! Well , it isn ' t immoral ! I tell you I ' m not drunk — only my legs .Head ' s as clear as a bell ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/30d5d8ac-4e66-5212-ba35-02606532dc7b> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/740b30dd-0827-51a2-bb06-9effb6d164b1> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

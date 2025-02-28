@@ -1,0 +1,60 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P165_incorporates <http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/1f4165eb-bc93-5a10-ab7f-9f4e50d7901b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/1f4165eb-bc93-5a10-ab7f-9f4e50d7901b> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/1f4165eb-bc93-5a10-ab7f-9f4e50d7901b> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/1f4165eb-bc93-5a10-ab7f-9f4e50d7901b> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/actor/7b8ba399-df4d-5bf5-876d-183abaacdd1c> a crm:E39_Actor ;
+    rdfs:label "the neighbour" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/1f4165eb-bc93-5a10-ab7f-9f4e50d7901b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "snuff"@en,
+        "the neighbour"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    rdf:value "Silas saw them coming , and , taking his rifle in his hand , went and stood beneath the flag , for which he had an almost MEANUTIILE 259 to their neighbour about the w * onderful thing which had come to pass , that the Boers were beating the great white people , who came out of the sea and shook the earth with their tread .Whereon the neighbour would take the opportunity to relax from toil , squat down , have a pinch of snuff , and relate in what particular collection collection of rocks on the hillside he and his wives slept the last night — for when the Boers are out on commando the Kafirs will not sleep in their huts for fear of being surprised surprised and shot down .Then the pair would spend half an hour or so in speculating on w * hat would be their fate when the Boer had eaten up the Englishman and taken back the country , and finally come to the conclusion that they had better emigrate to Natal ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/7b8ba399-df4d-5bf5-876d-183abaacdd1c> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> a od:L11_Smell ;
+    rdfs:label "snuff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

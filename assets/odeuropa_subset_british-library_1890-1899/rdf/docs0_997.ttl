@@ -1,0 +1,81 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P165_incorporates <http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/d867c496-2a16-5033-8533-c0a30f8be6a5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/d867c496-2a16-5033-8533-c0a30f8be6a5> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/d867c496-2a16-5033-8533-c0a30f8be6a5> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/d867c496-2a16-5033-8533-c0a30f8be6a5> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/object/39f9fbef-a758-56c1-9df2-5ea066fcfb1a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Through the open window"@en .
+
+<http://data.odeuropa.eu/object/5ecf33bf-a311-5229-84dc-d51c758c1852> a crmsci:S10_Material_Substantial ;
+    rdfs:label "under the dewy elm"@en .
+
+<http://data.odeuropa.eu/object/b275c180-0b36-56fd-8e6a-a2aa40522400> a crmsci:S10_Material_Substantial ;
+    rdfs:label "stephanotis"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/d867c496-2a16-5033-8533-c0a30f8be6a5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Through the open window"@en,
+        "from the cottage garden"@en,
+        "mignonette"@en,
+        "odour"@en,
+        "of stephanotis"@en,
+        "roses"@en,
+        "under the dewy elm"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    rdf:value "33 Amy sat amid the gloaming ( as the Scots call the after - glow of eve ) playing chess in the recess of a window — he rather affecting to do so , being wholly intent on the sweet , soft face and downcast looks of his companion , and the lingering motions of her slim little hands , for already the twilight had so deepened that they , in their whiteness , were more visible than were the ivory pieces , the position of which it was almost difficult to discern .Through the open window came the odour of stephanotis , mignonette , and roses from the cottage garden , under the dewy elm branches .And ere long Reginald Talbot crept off to bed , happy and radiant , with a rose - bud Amy had given him from the bouquet at her bosom , to treasure carefully carefully in a glass near his pillow , as a relic her hand had touched ; and with her soft good - night to mingle with his dreams , if he had any , which was pretty often the case with this helpless lover now ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5ecf33bf-a311-5229-84dc-d51c758c1852>,
+        <http://data.odeuropa.eu/object/b275c180-0b36-56fd-8e6a-a2aa40522400>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/138>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/550> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/39f9fbef-a758-56c1-9df2-5ea066fcfb1a> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/3665aa32-cdf6-5378-a13b-03bc6a0a2082> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/3665aa32-cdf6-5378-a13b-03bc6a0a2082> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/place/3665aa32-cdf6-5378-a13b-03bc6a0a2082> a crm:E53_Place ;
+    rdfs:label "from the cottage garden" .
+
+<http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

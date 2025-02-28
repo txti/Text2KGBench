@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P165_incorporates <http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/ac28a513-0e11-5ddd-8806-a46e21fc1f7c> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708>,
+        <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f>,
+        <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/ac28a513-0e11-5ddd-8806-a46e21fc1f7c> crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/ac28a513-0e11-5ddd-8806-a46e21fc1f7c> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/ac28a513-0e11-5ddd-8806-a46e21fc1f7c> crm:P67_refers_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05> crm:P67_refers_to <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/15b5e15d-dd6d-59eb-8515-114a3a212c05/fragment/ac28a513-0e11-5ddd-8806-a46e21fc1f7c> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "a rat"@en,
+        "he"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708>,
+        <http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f>,
+        <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    rdf:value "vengeance .That pompous ass Swansdown is no fool — he is bound to smell a rat .Or take it they have got luck ; then , if they marry , Kavanagh is bound to act , and Mother Church will swoop down and strip them of every farthing ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/679fb118-b199-57bb-91c5-c38309a86708> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/500> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/6f1c3ac0-7f25-5fa4-8368-bc7baa5d1d0f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/2eccd6a4-44e4-539d-a5af-c33fc702ca77> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

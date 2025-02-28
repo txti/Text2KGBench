@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P165_incorporates <http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/976868e1-a251-5d33-9252-49917be97a76> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1>,
+        <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc>,
+        <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/976868e1-a251-5d33-9252-49917be97a76> crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/976868e1-a251-5d33-9252-49917be97a76> crm:P67_refers_to <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/976868e1-a251-5d33-9252-49917be97a76> crm:P67_refers_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> .
+
+<http://data.odeuropa.eu/object/5a47ffa6-350f-5f70-8a3c-e30408ce753f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "dough"@en .
+
+<http://data.odeuropa.eu/object/fcbb30f7-b8d6-57c6-bdd6-aeac835f2b4a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "rice cakes"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a36bd74e-674c-591b-99b9-dd554c9663e5/fragment/976868e1-a251-5d33-9252-49917be97a76> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "dough"@en,
+        "rice cakes"@en,
+        "smelling"@en,
+        "unlike anything out of China"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1>,
+        <http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc>,
+        <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    rdf:value "Vexed at the slight conveyed by Ong Tu - pao ' s manner and words , he reflected also , that it was mean of Master Pei to have saddled him with the whole cost of the entertainment .Poor little Ong Tu - pao , merriest of mortals , her appreciation of what best suited her boyish cast of THE CLOUDS GATHER 207 front , over which dough or rice cakes were constantly kept simmering in oil , in an iron pan , smelling unlike anything out of China .On the opposite side was an oil and wine shop , a curious but common combination ; a tea - shop was next door , from which the noise of shouting and chattering seemed unceasing ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/thing/787a1804-4460-543c-b94d-1e7427a69e18> a crm:E70_Thing ;
+    rdfs:label "anything out of china"@en .
+
+<http://data.odeuropa.eu/emission/e09d6046-2f12-58fb-94af-12323b75a9b1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5a47ffa6-350f-5f70-8a3c-e30408ce753f>,
+        <http://data.odeuropa.eu/object/fcbb30f7-b8d6-57c6-bdd6-aeac835f2b4a> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/eccbbf97-d9c0-5e83-94c8-c92cf3d257fc> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> ;
+    od:F6_evoked <http://data.odeuropa.eu/thing/787a1804-4460-543c-b94d-1e7427a69e18> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/870b9024-dc8d-5638-bab0-fa430660ce88> a od:L11_Smell ;
+    rdfs:label "smelling"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

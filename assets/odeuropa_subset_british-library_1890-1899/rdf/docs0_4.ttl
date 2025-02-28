@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P165_incorporates <http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/e6034011-cbd6-5b52-93dd-25af6d9f78fc> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b>,
+        <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f>,
+        <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/e6034011-cbd6-5b52-93dd-25af6d9f78fc> crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/e6034011-cbd6-5b52-93dd-25af6d9f78fc> crm:P67_refers_to <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/e6034011-cbd6-5b52-93dd-25af6d9f78fc> crm:P67_refers_to <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/e6034011-cbd6-5b52-93dd-25af6d9f78fc> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "coffees"@en,
+        "liqueurs"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b>,
+        <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f>,
+        <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    rdf:value "Down on the full tide , with its gentle ripple , that lapped against the Palace walls , gleamed the bright lamps here and there , while in the darkened sky above the stars were glittering , and the moon shone bright on the throng of England ' s chosen .Here and there the people chattered , and the waiters hurried to and fro with coffees and liqueurs .In open doorways the whips , known without their hats , still lounged , and around was the perfume of the ' plants ' mixing with that of blossoms worn by the grave and fair ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/50> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> a od:L11_Smell ;
+    rdfs:label "liqueurs"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

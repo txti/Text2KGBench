@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P165_incorporates <http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/3f908e11-1a5a-5fec-aeea-24a0de671df2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c>,
+        <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758>,
+        <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/3f908e11-1a5a-5fec-aeea-24a0de671df2> crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/3f908e11-1a5a-5fec-aeea-24a0de671df2> crm:P67_refers_to <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/3f908e11-1a5a-5fec-aeea-24a0de671df2> crm:P67_refers_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/3f908e11-1a5a-5fec-aeea-24a0de671df2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "In the disfurnished chamber of dim"@en,
+        "flowers"@en,
+        "scented"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c>,
+        <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758>,
+        <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    rdf:value "There her small commerce in the chill March weather She plied with accents miserably mild ; It was a frightful thought to set together Those healthy blossoms and that fading child : — — Those luxuries and largess of the earth , Beauty and pleasure to the sense of man , And this poor sorry weed cast loosely forth On Life ' s wild waste to struggle as it can ! To me that odorous pui - ple ministers Hope - bearing memories and inspiring glee , While meanest images alone are hers , The sordid wants of bare humanity .Think after all this lapse of hungry hours , In the disfurnished chamber of dim cold , How she must loathe the very scented flowers That on the squalid table lie unsold ! Rest on your woodland banks and wither there , Sweet preluders of iSpring ! far better so , Than live misused to till the grasp of care , And serve the piteous purposes of woe .Ye are no longer Nature ' s gracious gift , Yourselves so much and harbingers of more , But a most bitter irony to lift The veil that hides our vilest mortal sore ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/05913251-6918-5c5d-b3fa-99fe4b2494d8> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/place/05913251-6918-5c5d-b3fa-99fe4b2494d8> a crm:E53_Place ;
+    rdfs:label "In the disfurnished chamber of dim" .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/05913251-6918-5c5d-b3fa-99fe4b2494d8> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+

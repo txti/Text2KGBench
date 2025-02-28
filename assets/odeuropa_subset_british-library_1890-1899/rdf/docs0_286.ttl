@@ -1,0 +1,83 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odorous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odorous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odorous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odorous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P165_incorporates <http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/9bfd74e1-5594-5879-be8d-abf0f38a5e9a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/9bfd74e1-5594-5879-be8d-abf0f38a5e9a> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/9bfd74e1-5594-5879-be8d-abf0f38a5e9a> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/9bfd74e1-5594-5879-be8d-abf0f38a5e9a> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/object/abaea57e-b8ee-542c-a122-d72a30a08e5d> a crmsci:S10_Material_Substantial ;
+    rdfs:label "golden fruit"@en .
+
+<http://data.odeuropa.eu/object/f4cdfae4-8903-5ee3-8c18-b1e7e8252959> a crmsci:S10_Material_Substantial ;
+    rdfs:label "green"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/9bfd74e1-5594-5879-be8d-abf0f38a5e9a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "flowers"@en,
+        "golden fruit"@en,
+        "green"@en,
+        "odorous"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    rdf:value "It was very solidly built of brown stone , and , with the exception of the waggon - shed and other outbuildings which were roofed with galvanised iron , that shone and glistened in the rays of the morning sun in a way that w * ould have made an eagle blink , was covered with rich brown thatch .All along its front ran a wide verandah , up the trellis - work of which green vines and blooming creepers trailed pleasantly , and beyond was the broad carriage - drive of red soil , bordered with bushy orange - trees laden with odorous flowers and green and golden fruit .On the farther side of the orange - trees were the gardens , fenced in with low walls of rough stone , and the orchard planted with standard fruit - trees , and beyond these again the oxen and ostrich kraals , the latter JOHN HAS AN ESCAPE 93 the room stood a table made of the pretty ' buckenhout ' wood , which has the appearance of having been industriously industriously pricked all over with a darning - needle , and round it were chairs and couches of stinkwood , and seated with rimpis or strips of hide ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/odorous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "odorous"@en .
+
+<http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/abaea57e-b8ee-542c-a122-d72a30a08e5d>,
+        <http://data.odeuropa.eu/object/f4cdfae4-8903-5ee3-8c18-b1e7e8252959>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> a od:L11_Smell ;
+    rdfs:label "odorous"@en .
+

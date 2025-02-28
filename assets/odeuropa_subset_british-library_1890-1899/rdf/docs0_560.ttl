@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P165_incorporates <http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/689c587b-720e-522c-b04f-eb9a4bb6f95f> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1>,
+        <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895>,
+        <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/689c587b-720e-522c-b04f-eb9a4bb6f95f> crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/689c587b-720e-522c-b04f-eb9a4bb6f95f> crm:P67_refers_to <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/689c587b-720e-522c-b04f-eb9a4bb6f95f> crm:P67_refers_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c> crm:P67_refers_to <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/e6209cf7-e24e-5876-940b-a1060444c25c/fragment/689c587b-720e-522c-b04f-eb9a4bb6f95f> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "scented"@en,
+        "scented essences"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1>,
+        <http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895>,
+        <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    rdf:value "Beautiful statues of youths stood round the room , holding in their bands lamps of gold , which filled the house with the fragrance of perfumed oil .Other cressets of fantastic fantastic workmanship hung by golden chains from the gilded fretwork of the roof , which was so constructed that its aspect and colouring could be altered between each course , and that scented essences and little presents of flowers and ornaments could be showered down upon the guests .The great triclinia and sigma - tables of Mauretanian citron and ivory blazed with gold and silver ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/2142fb7e-93ce-50c6-a6b4-3869967b1dc1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/969fae76-8d61-5d0e-a68f-679467576895> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/923d43ff-bfd9-59c9-83a1-7cf8d501a91d> a od:L11_Smell ;
+    rdfs:label "scented"@en,
+        "scented essences"@en .
+

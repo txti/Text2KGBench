@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P165_incorporates <http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/594aa72a-f82e-5c3a-812e-973d13a3828c> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/594aa72a-f82e-5c3a-812e-973d13a3828c> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/594aa72a-f82e-5c3a-812e-973d13a3828c> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/594aa72a-f82e-5c3a-812e-973d13a3828c> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/actor/62c9954e-8373-5eb4-a7d9-13ca4a3691a6> a crm:E39_Actor ;
+    rdfs:label "he|his" .
+
+<http://data.odeuropa.eu/object/e2bf71be-d0bc-5244-8eb3-728238ff8901> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the fresh breeze"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/594aa72a-f82e-5c3a-812e-973d13a3828c> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "from the"@en,
+        "he"@en,
+        "his"@en,
+        "sniff"@en,
+        "the fresh breeze"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    rdf:value "Had he been questioned why , he probably could not have told .The most probable conjecture is , speaking speaking according to human reason , that he intended to stand a few moments on its brow , and sniff the fresh breeze from the sea , so grateful to his heated senses .He had taken more wine than usual ; certainly not to anything like intoxication , for he was by habit and principle a sober man ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/e2bf71be-d0bc-5244-8eb3-728238ff8901> ;
+    crm:P7_took_place_at <https://sws.geonames.org/3573374/> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/62c9954e-8373-5eb4-a7d9-13ca4a3691a6> ;
+    crm:P7_took_place_at <https://sws.geonames.org/3573374/> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<https://sws.geonames.org/3573374/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> a od:L11_Smell ;
+    rdfs:label "sniff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

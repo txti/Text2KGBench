@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "bad"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/bad_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509> crm:P165_incorporates <http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509/fragment/35f8422b-7290-5070-9199-031ae482cfaf> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/dfc58b2d-9c96-51ba-aeb3-cf656876b742>,
+        <http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275>,
+        <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509/fragment/35f8422b-7290-5070-9199-031ae482cfaf> crm:P67_refers_to <http://data.odeuropa.eu/emission/dfc58b2d-9c96-51ba-aeb3-cf656876b742> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509/fragment/35f8422b-7290-5070-9199-031ae482cfaf> crm:P67_refers_to <http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509/fragment/35f8422b-7290-5070-9199-031ae482cfaf> crm:P67_refers_to <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509> crm:P67_refers_to <http://data.odeuropa.eu/emission/dfc58b2d-9c96-51ba-aeb3-cf656876b742> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509> crm:P67_refers_to <http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509> crm:P67_refers_to <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> .
+
+<http://data.odeuropa.eu/attribute/bad_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "bad"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/00e9d602-3370-51b3-bb17-ead80ae5c509/fragment/35f8422b-7290-5070-9199-031ae482cfaf> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "bad"@en,
+        "from factories"@en,
+        "odours"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/dfc58b2d-9c96-51ba-aeb3-cf656876b742>,
+        <http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275>,
+        <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> ;
+    rdf:value "117 polis , and as the land on each side slopes down to it , the drainage of the streets is good .The air , too , is very healthy , in spite of the smoke of many chimneys , and the bad odours given off from factories .London is liable to sudden fogs , especially in winter , but they seldom last long ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/dfc58b2d-9c96-51ba-aeb3-cf656876b742> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/29b04dae-1af7-5474-bbff-bd1a322c29d7> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/place/29b04dae-1af7-5474-bbff-bd1a322c29d7> a crm:E53_Place ;
+    rdfs:label "from factories" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/23> .
+
+<http://data.odeuropa.eu/experience/b00e856f-aa57-5427-8690-1828e6ee5275> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/29b04dae-1af7-5474-bbff-bd1a322c29d7> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/627c3aa2-a733-58ab-9bcf-c0bdccd94932> a od:L11_Smell ;
+    rdfs:label "odours"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

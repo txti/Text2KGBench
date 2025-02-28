@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "magic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/magic_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P165_incorporates <http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/ce9b2f0d-4cb6-5b03-b01d-c788e4b3726d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1>,
+        <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317>,
+        <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/ce9b2f0d-4cb6-5b03-b01d-c788e4b3726d> crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/ce9b2f0d-4cb6-5b03-b01d-c788e4b3726d> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/ce9b2f0d-4cb6-5b03-b01d-c788e4b3726d> crm:P67_refers_to <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P67_refers_to <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229> crm:P67_refers_to <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/attribute/magic_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "magic"@en .
+
+<http://data.odeuropa.eu/object/4d034c13-b627-5e6e-bfcf-fa6dd135e9cb> a crmsci:S10_Material_Substantial ;
+    rdfs:label "every sweetest flower"@en .
+
+<http://data.odeuropa.eu/object/ba9cc052-204c-5175-8a69-40466b5482e2> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Its"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2dad7057-62a9-579e-b683-dc70f6df5229/fragment/ce9b2f0d-4cb6-5b03-b01d-c788e4b3726d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Its"@en,
+        "every sweetest flower"@en,
+        "fragrance"@en,
+        "magic"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1>,
+        <http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317>,
+        <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> ;
+    rdf:value "RHADAMANTHUS .O Rhadamanthus , glowing as with gold , Who sits to give reward to purity , What are the gifts , we question wonderingly , Thou bringest from the isles none can behold , Where every sweetest flower doth unfold Its magic fragrance forth perpetually ? What dost thou give to those whose lives were Who lived for others , and themselves controlled ? Yet , Rhadamanthus , if thou wert not there , If there were no blest isles beyond the wave , No water - lilies and no golden fruit , Still we should strive to find that secret stair , That silver pathway leading through the grave .We know not , count not , ask not our pursuit » XV ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/1bb8353f-cd75-544b-b723-fd8a2708b3c1> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/4d034c13-b627-5e6e-bfcf-fa6dd135e9cb>,
+        <http://data.odeuropa.eu/object/ba9cc052-204c-5175-8a69-40466b5482e2> .
+
+<http://data.odeuropa.eu/experience/6f51e26e-dbc2-5677-adbb-b8cf6fef7317> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> .
+
+<http://data.odeuropa.eu/smell/cce54dbb-aff0-5953-be1b-b72df0d73bbc> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,99 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "pungent"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/19n> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odoriferous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odoriferous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odoriferous odoriferous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odoriferous%20odoriferous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8/assignment/4> a crm:E13_Attribute_Assignment ;
+    rdfs:label "odoriferous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/odoriferous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P165_incorporates <http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/446150c3-fa3f-5d60-94da-adef95e130f5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/446150c3-fa3f-5d60-94da-adef95e130f5> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/446150c3-fa3f-5d60-94da-adef95e130f5> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/446150c3-fa3f-5d60-94da-adef95e130f5> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/attribute/odoriferous%20odoriferous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "odoriferous odoriferous"@en .
+
+<http://data.odeuropa.eu/object/f22aa4ce-ac88-51c8-be6c-7535450c8971> a crmsci:S10_Material_Substantial ;
+    rdfs:label "an"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/446150c3-fa3f-5d60-94da-adef95e130f5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "odoriferous"@en,
+        "odoriferous odoriferous"@en,
+        "of an"@en,
+        "perfume"@en,
+        "pungent"@en,
+        "stew"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    rdf:value "But to the Labradian it is his As Dr THE TENTH ISLAND 72 been straightened out , or even put right side up .In the vicinity of each is a strip of herbage , herbage , upon which a goat browses ; while from an open window comes the robust squalling of an infant , and the pungent perfume of an odoriferous odoriferous stew .Such is Quidi Vidi , a typical fishing village ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/odoriferous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "odoriferous"@en .
+
+<http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f22aa4ce-ac88-51c8-be6c-7535450c8971>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/183> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> a od:L11_Smell ;
+    rdfs:label "odoriferous"@en,
+        "odoriferous odoriferous"@en,
+        "perfume"@en .
+

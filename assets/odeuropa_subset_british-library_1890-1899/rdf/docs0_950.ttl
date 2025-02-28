@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "rare"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/rare_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "faint"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/faint_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P165_incorporates <http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/218a30f1-a421-5248-8242-16a8f4743579> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/218a30f1-a421-5248-8242-16a8f4743579> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/218a30f1-a421-5248-8242-16a8f4743579> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/218a30f1-a421-5248-8242-16a8f4743579> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222> crm:P67_refers_to <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/attribute/faint_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "faint"@en .
+
+<http://data.odeuropa.eu/attribute/rare_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "rare"@en .
+
+<http://data.odeuropa.eu/object/2b0d8e38-b779-54fa-b742-49aaf3b9c088> a crmsci:S10_Material_Substantial ;
+    rdfs:label "May"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f659e1f7-8207-53a1-9250-b23ce220b222/fragment/218a30f1-a421-5248-8242-16a8f4743579> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "faint"@en,
+        "of May"@en,
+        "rare"@en,
+        "scents"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e>,
+        <http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35>,
+        <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    rdf:value "HEAVEN ' S highest strength lies in the law of grace She may be brave who cuts away the breast To draw the bow , but love and truth are best , And naught is stronger than the smiling face Of beauty when pursuing blushes chase Joy from low - lying coverts till they rest On rose - red cheeks , all trembling from their quest , But with their quarry caught and victors in the race ! Though force gives law to earth ; though blood be spilt Though love with shackled hands must kneel to fear , Yet steel is weaker still than pity ' s tear , Shed for the sake of shamed and suffering guilt ; For still shall grace prevail and love endear Though sword - blades break and hands fail from the hilt CLYTIE .THROUGH all the skies by mortal eyes unseen , Fair shapes of light throng always , night and day Upward and downward on their shining way , The vast , winged hosts of beauty , pure , serene , Pass and repass , the earth and sky between ! Giving June dawns their charm of azure gray ; Filling the spring with rare , faint scents of May ; Blending on autumn hills their gold and green ! The sky ' s best gift of grace is light — more light ! Can you not guess why Clyde prays for sight , Turning her face forever towards the sun ? Who can express what wonders should be done .Could we but see and know and feel aright The glories we shall know when light is won ? STUDIES IN VERSE ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/62e09c0a-7847-5e21-9067-77268409a23e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/2b0d8e38-b779-54fa-b742-49aaf3b9c088> .
+
+<http://data.odeuropa.eu/experience/259f0bb6-6de6-577b-99d6-71aa50c74b35> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/de01f5e9-ff6c-5730-8080-066a2265fccd> a od:L11_Smell ;
+    rdfs:label "scents"@en .
+

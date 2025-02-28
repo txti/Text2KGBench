@@ -1,0 +1,71 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "nauseous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/nauseous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "nauseous"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/nauseous_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P165_incorporates <http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/5a461923-a39c-55eb-b8cf-4597a792144d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/5a461923-a39c-55eb-b8cf-4597a792144d> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/5a461923-a39c-55eb-b8cf-4597a792144d> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/5a461923-a39c-55eb-b8cf-4597a792144d> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/5a461923-a39c-55eb-b8cf-4597a792144d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "as often to condemn"@en,
+        "nauseous"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    rdf:value "The dark oily liquid with its disagreeable odor was not then a marketable product .The streams of water were polluted with its nauseous taste , and where wells were dug , the same manifestations were observed to such a degree as often to condemn them .In 1857 , these surface marks attracted the attention of more skillful and better informed men , and a man by the name of Shaw , who dug an ordinary well , as for water , struck , after several days digging , a tremendous flow of oil , which ran in a stream into the creek ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/nauseous_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "nauseous"@en .
+
+<http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> a od:L11_Smell ;
+    rdfs:label "nauseous"@en .
+

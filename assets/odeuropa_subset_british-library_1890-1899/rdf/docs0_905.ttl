@@ -1,0 +1,91 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "rich"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/rich_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9/assignment/3> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P165_incorporates <http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/404b7846-f0ed-55a3-86ec-e19b24ae8337> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/404b7846-f0ed-55a3-86ec-e19b24ae8337> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/404b7846-f0ed-55a3-86ec-e19b24ae8337> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/404b7846-f0ed-55a3-86ec-e19b24ae8337> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> .
+
+<http://data.odeuropa.eu/attribute/rich_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "rich"@en .
+
+<http://data.odeuropa.eu/object/f1922977-8c66-50d1-9113-7257e137cd4a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "drops of a neigh - boring fountain"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f8669193-1ec5-553d-b306-dfbf2f6075dd/fragment/404b7846-f0ed-55a3-86ec-e19b24ae8337> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "drops of a neigh - boring fountain"@en,
+        "fragrant"@en,
+        "incense"@en,
+        "orange - tree"@en,
+        "rich"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae>,
+        <http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9>,
+        <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    rdf:value "superiority in comfort of the latter , by which I would be understood to mean all those resemblances to one ' s own home which an English hotel so eminently possesses , and every other one so markedly wants ; but I mean that in contrivances to elevate the spirit , cheer the jaded and tired wayfarer by objects which , however they may appeal to the mere senses , seem , at least , but little sensual , give me a foreign inn .Let me have a large , spacious salon , with its lofty walls and its airy , large - paned windows ( I shall not object if the cornices and mouldings be gilded , because such is usually the case ) ; let the sun and heat of a summer ' s day come tempered through the deep lattices of a well - fitting jalousie bearing upon them the rich incense of a fragrant orange - tree in blossom , and the sparkling drops of a neigh - boring fountain , the gentle plash of which is faintly audible amid the hum of the drone - bee ; let such be the agrements without ; while within , let the more substantial joys of the table await , in such guise as only a French cuisine can pre - sent them , — give me these , I say , and I shall never sigh for the far - famed and long - deplored comforts of a box in a coffee - room like a pew in a parish church , though certainly not so well cushioned , and fully as dull , with a hot waiter and a cold beefsteak ; the only thing higher than your game being your bill , and the only thing less drinkable than your port being the porter .With such exotic notions , imagine , my dear reader , whether or not I felt happy as I found myself seated between my two fair friends doing the honors of a little supper , and assisting the exhilaration of our champagne by such efforts of wit as , under favorable circumstances like these , are ever successful , and which , being like the foaming foaming liquid which washes them down , to be swallowed without without waiting , are ever esteemed good from the excitement that results , and never seriously canvassed for any more sterling merit ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/5b714196-e4ee-5ee2-8638-f18a58a270ae> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f1922977-8c66-50d1-9113-7257e137cd4a>,
+        <http://data.odeuropa.eu/vocabulary/fragrant-spaces/44>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/269> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/dd363d98-c9d2-5246-b341-a344d07af4b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/7a26c1d1-8eeb-5b12-bb78-4bfc76c4367d> a od:L11_Smell ;
+    rdfs:label "fragrant"@en,
+        "incense"@en .
+

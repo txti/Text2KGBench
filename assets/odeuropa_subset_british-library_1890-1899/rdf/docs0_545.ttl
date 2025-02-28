@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "almost oppressive"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/almost%20oppressive_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> ;
+    rdfs:comment "almost"@en .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P165_incorporates <http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/2492d11c-8750-5adb-893a-7400371cc4a2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c>,
+        <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e>,
+        <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/2492d11c-8750-5adb-893a-7400371cc4a2> crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/2492d11c-8750-5adb-893a-7400371cc4a2> crm:P67_refers_to <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/2492d11c-8750-5adb-893a-7400371cc4a2> crm:P67_refers_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/attribute/almost%20oppressive_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "almost oppressive"@en .
+
+<http://data.odeuropa.eu/object/cd75e323-b7be-58e5-a20f-17bd110a9f3f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the costly flowers"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/2492d11c-8750-5adb-893a-7400371cc4a2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "almost oppressive"@en,
+        "perfume"@en,
+        "the costly flowers"@en,
+        "the room"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c>,
+        <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e>,
+        <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    rdf:value "For a Kins : ■ ' 121 stronghold ; he had looked with boyish enthusiasm to his first meeting with the Royalist chiefs , and he had hoped to find in Lord de Clare a willing and safe exponent of those principles of loyalty in which he had been reared , and which now , in his own person , he was eager and anxious to fulfil .His eye glanced round , not so much upon the splendid furniture , the magnificent tapestry , the hangings of tawny and murray - coloured velvet , with which doors and win - dows were profusely draped ; the costly flowers that overflowed from the rich vases , and filled the room with almost oppressive perfume — as on the guests themselves .It was the sight of a Royalist badge that Roland longed for ; the sound of a loyal name ; some tidings of his King , or of the Palatine , or of the ■ Queen — some mention of the war that was at hand ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/cd75e323-b7be-58e5-a20f-17bd110a9f3f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/13eaa40e-8fc5-5cc6-9e8e-93880836c86d> .
+
+<http://data.odeuropa.eu/place/13eaa40e-8fc5-5cc6-9e8e-93880836c86d> a crm:E53_Place ;
+    rdfs:label "the room" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/117> .
+
+<http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/13eaa40e-8fc5-5cc6-9e8e-93880836c86d> .
+
+<http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

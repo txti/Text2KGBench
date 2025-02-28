@@ -1,0 +1,69 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "aromatic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/edwards/aromatic> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/character> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P165_incorporates <http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/053a64b8-a61b-51bf-907b-9cdfb080087d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/053a64b8-a61b-51bf-907b-9cdfb080087d> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/053a64b8-a61b-51bf-907b-9cdfb080087d> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/053a64b8-a61b-51bf-907b-9cdfb080087d> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/object/fc0ffc14-b9e4-5fcd-a206-710e33b478e1> a crmsci:S10_Material_Substantial ;
+    rdfs:label "gloom"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/053a64b8-a61b-51bf-907b-9cdfb080087d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aromatic"@en,
+        "fragrance"@en,
+        "gloom"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    rdf:value "FISHER UNWIN PATERNOSTER SQUARE I 89 I 120 A ROYAL PHYSICIAN .of his native Carpathians , pressing clown upon the hut in dark billows of aromatic fragrance and gloom — pines distorted , ragged , fantastic in growth from bearing the weight of wdnter snows , and braving the rude sport of the tempest .He gazed again , a poor waif in foreign lands , and after the lapse of years , at the native mountains , veined wdth gold and salt , at the fields of wheat ripening to rich yellow in the warm sunshine , at the vast plains where horsemen occasionally emerged from the slowly curling clouds of dust ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/fc0ffc14-b9e4-5fcd-a206-710e33b478e1> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "inestimable"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/inestimable_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac> crm:P165_incorporates <http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac/fragment/4c113fcc-81c7-57a1-9086-30b5febe7812> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/18edbfc8-82b4-51de-bf57-e7445526274f>,
+        <http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe>,
+        <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac/fragment/4c113fcc-81c7-57a1-9086-30b5febe7812> crm:P67_refers_to <http://data.odeuropa.eu/emission/18edbfc8-82b4-51de-bf57-e7445526274f> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac/fragment/4c113fcc-81c7-57a1-9086-30b5febe7812> crm:P67_refers_to <http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac/fragment/4c113fcc-81c7-57a1-9086-30b5febe7812> crm:P67_refers_to <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac> crm:P67_refers_to <http://data.odeuropa.eu/emission/18edbfc8-82b4-51de-bf57-e7445526274f> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac> crm:P67_refers_to <http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac> crm:P67_refers_to <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> .
+
+<http://data.odeuropa.eu/attribute/inestimable_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "inestimable"@en .
+
+<http://data.odeuropa.eu/object/7d8862e3-d945-5ed9-b4aa-80b67c351f5d> a crmsci:S10_Material_Substantial ;
+    rdfs:label "HANNAY"@en .
+
+<http://data.odeuropa.eu/object/9bed212a-849b-55ac-8f21-9232d5bf7a85> a crmsci:S10_Material_Substantial ;
+    rdfs:label "RONDELETIA"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/c8e0606f-595d-5f9c-bb59-ad3dfac750ac/fragment/4c113fcc-81c7-57a1-9086-30b5febe7812> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "HANNAY"@en,
+        "Perfume"@en,
+        "RONDELETIA"@en,
+        "inestimable"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/18edbfc8-82b4-51de-bf57-e7445526274f>,
+        <http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe>,
+        <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> ;
+    rdf:value "PER BOTTLE .D1ETRICHSEN 4 HANNAY ' S Celebrated Essence of RONDELETIA , An inestimable Perfume for tbe Toilet or Handkerchief .Prepared for the use of HER MAJESTY Œ be © ueen , HER LATS MAJESTY The QUEEN DOWAGER , AND HER LATE ROYAL HIGHNESS The DUCHESS of KENT ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/18edbfc8-82b4-51de-bf57-e7445526274f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/7d8862e3-d945-5ed9-b4aa-80b67c351f5d>,
+        <http://data.odeuropa.eu/object/9bed212a-849b-55ac-8f21-9232d5bf7a85> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/769d74e5-740e-5fc1-a43d-110cce0cf0fe> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/d6402664-4337-505b-a196-ea17a169b745> a od:L11_Smell ;
+    rdfs:label "Perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

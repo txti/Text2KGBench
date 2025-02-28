@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P165_incorporates <http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/85cdebe9-5fd7-5418-84a0-93e3ff60e193> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/85cdebe9-5fd7-5418-84a0-93e3ff60e193> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/85cdebe9-5fd7-5418-84a0-93e3ff60e193> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/85cdebe9-5fd7-5418-84a0-93e3ff60e193> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d> crm:P67_refers_to <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d36e7aab-66d6-5436-8619-ce0f79ddbf0d/fragment/85cdebe9-5fd7-5418-84a0-93e3ff60e193> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "a cauliflower"@en,
+        "snuff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31>,
+        <http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb>,
+        <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    rdf:value "This one ghost is enough for us without any more .I shall never like to go up to bed alone The candle gave as good as no light , for the snuff was a yard long a ' most , with a cauliflower on the continued Mrs .Copp , who persisted in telling her tale , supremely indifferent to her daughter - in - law ' s fears and her own robes ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ad7bd397-9606-5e14-838b-566c29da2a31> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/494> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/15a63cca-810e-5cc3-b23f-08959dc84ccb> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/b1de736d-e200-5224-9f62-1b9209181a55> a od:L11_Smell ;
+    rdfs:label "snuff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

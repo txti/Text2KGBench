@@ -1,0 +1,67 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P165_incorporates <http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/40b8baa5-2b26-519d-b1e3-5b0c07b784f5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b>,
+        <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f>,
+        <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/40b8baa5-2b26-519d-b1e3-5b0c07b784f5> crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/40b8baa5-2b26-519d-b1e3-5b0c07b784f5> crm:P67_refers_to <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/40b8baa5-2b26-519d-b1e3-5b0c07b784f5> crm:P67_refers_to <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/object/2e7e1397-2d6c-5cb5-8ac5-657cf738d478> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the summer roses"@en .
+
+<http://data.odeuropa.eu/object/c116fa07-850d-5fc5-89cd-283dd6bdf7cf> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the breeze"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/40b8baa5-2b26-519d-b1e3-5b0c07b784f5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "could carry her away"@en,
+        "of the summer roses"@en,
+        "scent"@en,
+        "the breeze"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b>,
+        <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f>,
+        <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    rdf:value "' existence .' Katherine looked as if the breeze that brought the scent of the summer roses round her could carry her away .' You want a complete change ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/2e7e1397-2d6c-5cb5-8ac5-657cf738d478> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/c116fa07-850d-5fc5-89cd-283dd6bdf7cf> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

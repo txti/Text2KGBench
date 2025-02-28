@@ -1,0 +1,39 @@
+{
+  "model_config": {
+    "name": "qwen2.5-coder-1.5b-instruct",
+    "tag": "qwen2.5-coder:1.5b-instruct",
+    "temperature": 0.0,
+    "provider": "ollama",
+    "base_url": "http://localhost:11434",
+    "api_key": "sk-1234"
+  },
+  "onto_list": [
+    "1_writtenwork",
+    "2_airport",
+    "3_artist",
+    "4_film",
+    "5_monument",
+    "6_comicscharacter",
+    "7_scientist",
+    "8_astronaut",
+    "9_building",
+    "10_city",
+    "11_meanoftransportation",
+    "12_company",
+    "13_celestialbody",
+    "14_musicalwork",
+    "15_athlete",
+    "16_university",
+    "17_sportsteam",
+    "18_politician",
+    "19_food"
+  ],
+  "path_patterns": {
+    "prompt": "./data/dbpedia_webnlg/prompts/ont_$$onto$$_prompts.jsonl",
+    "sys": "./data/dbpedia_webnlg/baselines/qwen2.5-coder-1.5b-instruct/llm_responses/ont_$$onto$$_responses.jsonl",
+    "gt": "./data/dbpedia_webnlg/ground_truth/ont_$$onto$$_ground_truth.jsonl",
+    "onto": "./data/dbpedia_webnlg/ontologies/$$onto$$_ontology.json",
+    "output": "./data/dbpedia_webnlg/baselines/qwen2.5-coder-1.5b-instruct/eval_metrics/ont_$$onto$$_eval_metrics.jsonl"
+  },
+  "avg_out_file": "./data/dbpedia_webnlg/baselines/qwen2.5-coder-1.5b-instruct/eval_metrics/avg_eval_metrics.jsonl"
+}

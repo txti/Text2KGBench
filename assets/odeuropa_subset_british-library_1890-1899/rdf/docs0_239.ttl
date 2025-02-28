@@ -1,0 +1,91 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "savoury"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/savoury_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P165_incorporates <http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/723fd70d-221c-5c16-bea4-771fbac6bbb4> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2>,
+        <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9>,
+        <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/723fd70d-221c-5c16-bea4-771fbac6bbb4> crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/723fd70d-221c-5c16-bea4-771fbac6bbb4> crm:P67_refers_to <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/723fd70d-221c-5c16-bea4-771fbac6bbb4> crm:P67_refers_to <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P67_refers_to <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425> crm:P67_refers_to <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> .
+
+<http://data.odeuropa.eu/attribute/savoury_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "savoury"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2d6fd3d4-ec05-59c0-8549-cb7368343425/fragment/723fd70d-221c-5c16-bea4-771fbac6bbb4> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "a cold"@en,
+        "cold"@en,
+        "of food"@en,
+        "on"@en,
+        "on a"@en,
+        "savoury"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2>,
+        <http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9>,
+        <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    rdf:value "How much beauty owes to good feeding — the pink cheeks , the sparkling eyes ; yes , the dainty lady likes her rump - steak underdone with the blood in it .We are animals — why try to deceive ourselves ? Rot the future ! Which is the most satisfactory — a full belly , or an empty belief ? Give me a full belly ! What more pleasant on a cold day than the savoury smell of food ? THE PSALM OF THE FLESH 115 Mr .Telfer ' s language at times was rude , but charged with much common sense ; often when he had offended the taste of some of those who courted his society , he would put his hands in his pockets and jingle the loose cash there , watching the while humble servility creep over the faces of the Mammon - worshippers ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/ed54b417-0870-5797-9e56-0b009bfbd9b2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/405> ;
+    time:hasTime <http://data.odeuropa.eu/time/110e1903-9a7f-5dfb-ade1-638370840d6c>,
+        <http://data.odeuropa.eu/time/2085310b-d251-571d-ba89-9ae54e2cfd04>,
+        <http://data.odeuropa.eu/time/2447a01e-21f6-595f-8ca0-b719ba368065>,
+        <http://data.odeuropa.eu/time/5ac50664-d7bd-5761-982c-0fc88dfa28d6>,
+        <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/time/110e1903-9a7f-5dfb-ade1-638370840d6c> a time:TemporalEntity ;
+    rdfs:label "on" .
+
+<http://data.odeuropa.eu/time/2085310b-d251-571d-ba89-9ae54e2cfd04> a time:TemporalEntity ;
+    rdfs:label "a cold" .
+
+<http://data.odeuropa.eu/time/2447a01e-21f6-595f-8ca0-b719ba368065> a time:TemporalEntity ;
+    rdfs:label "cold" .
+
+<http://data.odeuropa.eu/time/5ac50664-d7bd-5761-982c-0fc88dfa28d6> a time:TemporalEntity ;
+    rdfs:label "on a" .
+
+<http://data.odeuropa.eu/experience/e165bb27-c0aa-56b8-b09e-b14dbd5079b9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> ;
+    time:hasTime <http://data.odeuropa.eu/time/110e1903-9a7f-5dfb-ade1-638370840d6c>,
+        <http://data.odeuropa.eu/time/2085310b-d251-571d-ba89-9ae54e2cfd04>,
+        <http://data.odeuropa.eu/time/2447a01e-21f6-595f-8ca0-b719ba368065>,
+        <http://data.odeuropa.eu/time/5ac50664-d7bd-5761-982c-0fc88dfa28d6>,
+        <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/3ebe4fae-3d67-5d3f-8959-e1801f32076c> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

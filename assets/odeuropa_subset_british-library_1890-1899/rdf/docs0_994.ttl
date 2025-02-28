@@ -1,0 +1,85 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P165_incorporates <http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/8c2957b2-b28f-551c-b1df-1d924866a441> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/8c2957b2-b28f-551c-b1df-1d924866a441> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/8c2957b2-b28f-551c-b1df-1d924866a441> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/8c2957b2-b28f-551c-b1df-1d924866a441> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa> crm:P67_refers_to <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> .
+
+<http://data.odeuropa.eu/object/39f9fbef-a758-56c1-9df2-5ea066fcfb1a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the air|in the soft breeze of the mist"@en .
+
+<http://data.odeuropa.eu/object/5ecf33bf-a311-5229-84dc-d51c758c1852> a crmsci:S10_Material_Substantial ;
+    rdfs:label "long ferns"@en .
+
+<http://data.odeuropa.eu/object/c076b1bc-9f24-59ef-a44a-3d8e7bb86bcc> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the elms"@en .
+
+<http://data.odeuropa.eu/object/c57b5e49-4872-5ef5-a511-eb95ee72b79e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "beeches"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1532ee76-b35d-5cf6-a62b-6951a5788cfa/fragment/8c2957b2-b28f-551c-b1df-1d924866a441> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "in the garden"@en,
+        "in the soft breeze of the mist"@en,
+        "long ferns"@en,
+        "perfume"@en,
+        "the air"@en,
+        "the elms and beeches"@en,
+        "the roses"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb>,
+        <http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4>,
+        <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    rdf:value "A silence that was full of a great awkwardness and a great pain fell upon them .The summer gloaming was deepening in its golden light and purple shadows ; the roses in the garden loaded the air with perfume ; the elms and beeches that grew thereby tossed their branches in the soft breeze of the mist , and long ferns waved their fronds to and fro , and the hour seemed full of whispers , as Amy rose , and in some haste , to take her departure for home — knowing who would meet her on the way .' Oh , it cannot be , it must not be , that you love me more than a friend — more than a brother ! ' wailed the girl , in her kind heart , as she withdrew ; ' poor fellow — poor darling Reggie — that would be too terrible ! ' To Reginald it soon became apparent that Musgrave ' s visits to the Vicarage became more frequent and protracted , and that there was no necessity for visiting Rose Cottage if he sought to see Amy ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9ad9e3e2-472c-59b1-a83a-9748982e53eb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/5ecf33bf-a311-5229-84dc-d51c758c1852>,
+        <http://data.odeuropa.eu/object/c076b1bc-9f24-59ef-a44a-3d8e7bb86bcc>,
+        <http://data.odeuropa.eu/object/c57b5e49-4872-5ef5-a511-eb95ee72b79e>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/138> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/39f9fbef-a758-56c1-9df2-5ea066fcfb1a> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/86cb52d5-0d70-5071-83e6-552b112c6a20> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/experience/752bfd07-b694-50a5-b693-92e296f293c4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/86cb52d5-0d70-5071-83e6-552b112c6a20> ;
+    time:hasTime <http://data.odeuropa.eu/time/77eaceae-19a4-5e67-b506-23fd9422d6ac> .
+
+<http://data.odeuropa.eu/place/86cb52d5-0d70-5071-83e6-552b112c6a20> a crm:E53_Place ;
+    rdfs:label "in the garden" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/27> .
+
+<http://data.odeuropa.eu/smell/ef702161-05d6-5a89-90c9-0c23f6685f6e> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

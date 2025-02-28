@@ -1,0 +1,59 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P165_incorporates <http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/415c5fa8-3d2a-5439-b4ad-ed768e280742> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/415c5fa8-3d2a-5439-b4ad-ed768e280742> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/415c5fa8-3d2a-5439-b4ad-ed768e280742> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/415c5fa8-3d2a-5439-b4ad-ed768e280742> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4> crm:P67_refers_to <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7897c93b-6650-5c0b-aa7a-eb25c17074e4/fragment/415c5fa8-3d2a-5439-b4ad-ed768e280742> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "cluds"@en,
+        "reeks"@en,
+        "scuffed"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d>,
+        <http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e>,
+        <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    rdf:value "' Excellent auld sangs , ca ' ye them ! Auld they may be , ye may take that wi ' ye , but excellent ! O , dear ! — ' Noted men an ' nice men , Men o ' wit an ' wise men , Gree aft in the mite , an ' aye in the main ; But gouks hae a gab an ' a gate o ' their ain .' But what say ye , Linker , to Edie ' s auld heart reeks , as he calls them ? Whether , think ye , are they kin to thae cluds that fa ' in refreshing showers , or them that are scuffed by wi ' the win ' — mere empty vapours ? As the referee was putting on the guise of a sapient oversman by lodging a few wise wrinkles in his front , and rubbing them with his hand as if to feel how they sat , and as Edie was boring into the silver mine of his notto - be - named ' s notto - be - named ' s in search of specie to take on John ' s bet , breakfast was declared ready , from which declaration there instantly sprang another — a declaration of peace .Indeed , we would ask — not the man , or rather brute , of scientific stomach , whose glory lives in A PILGRIMAGE TO THE LAND OF BURNS ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/9845b7c3-5071-5bc9-8543-d5a4700b172d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/cd734944-b541-5661-8a89-add11c795f1e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/1a9264d6-22f6-5f54-b9e9-e0460d56fc61> a od:L11_Smell ;
+    rdfs:label "cluds"@en,
+        "reeks"@en,
+        "scuffed"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,82 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P165_incorporates <http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/fb7ffd30-5dc8-54a3-b750-1ff08f6360c2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/fb7ffd30-5dc8-54a3-b750-1ff08f6360c2> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/fb7ffd30-5dc8-54a3-b750-1ff08f6360c2> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/fb7ffd30-5dc8-54a3-b750-1ff08f6360c2> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/object/562e25d9-5019-5ec5-a3cc-ef3c75bb2572> a crmsci:S10_Material_Substantial ;
+    rdfs:label "from each leaf"@en .
+
+<http://data.odeuropa.eu/object/69e18abb-1db4-59d6-97ce-b6a75f0fdd2b> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/object/eb0b7b15-a2d9-588c-8853-236e738f278a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "midst the swelling trees"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/fb7ffd30-5dc8-54a3-b750-1ff08f6360c2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "From daylight"@en,
+        "fragrance"@en,
+        "from each leaf"@en,
+        "its"@en,
+        "midst the swelling trees"@en,
+        "odours"@en,
+        "sweetness"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    rdf:value "6 I careless wander ' d with companions gay , The truant rambler of a summer ' s day ; Pursuing pleasure , midst the charms that fed My wavering fancy , wheresoe ' er I stray ' d ; No care oppressing , on my feeble mind , I laugh ' d and sported as the playful wind , That heedless wafts the sailor ' s bark at sea ; The meads my ocean — happy home to me .And may ' st thou happier be to them who dwell , Amid the beauties of thy flow ' ry dell , Diffusing fragrance from each leaf and bower , From daylight ' s dawn , till evening ' s stilly hour ; That maids and matrons from the busy town , May silent worship ere the sun goes down ; Imbibe the sweetness from the luscious breeze , That wafts its odours midst the swelling trees ; There , while one ling ' ring ray the sun may cast , Muse I in song , a poet , on the past ; And should approving smiles on soft lips play , ' Twill crown the efforts of my humble lay .NEDDY AND SALLY ; OR , THE STATUTE DAY ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/562e25d9-5019-5ec5-a3cc-ef3c75bb2572>,
+        <http://data.odeuropa.eu/object/69e18abb-1db4-59d6-97ce-b6a75f0fdd2b>,
+        <http://data.odeuropa.eu/object/eb0b7b15-a2d9-588c-8853-236e738f278a> ;
+    time:hasTime <http://data.odeuropa.eu/time/3ba622f9-89ff-507a-b714-6991a0b29737>,
+        <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    time:hasTime <http://data.odeuropa.eu/time/3ba622f9-89ff-507a-b714-6991a0b29737>,
+        <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/time/3ba622f9-89ff-507a-b714-6991a0b29737> a time:TemporalEntity ;
+    rdfs:label "From daylight" ;
+    rdfs:comment "day"@en .
+
+<http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> a od:L11_Smell ;
+    rdfs:label "fragrance"@en,
+        "odours"@en,
+        "sweetness"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

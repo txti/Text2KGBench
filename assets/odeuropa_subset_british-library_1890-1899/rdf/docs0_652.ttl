@@ -1,0 +1,98 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P165_incorporates <http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/c73e2fd6-d556-569e-9cab-5007370070ba> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/c73e2fd6-d556-569e-9cab-5007370070ba> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/c73e2fd6-d556-569e-9cab-5007370070ba> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/c73e2fd6-d556-569e-9cab-5007370070ba> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d> crm:P67_refers_to <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> .
+
+<http://data.odeuropa.eu/object/0e852f02-7965-532a-83b9-d52efdd326ed> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the juice of the wild onion"@en .
+
+<http://data.odeuropa.eu/object/2d6f760e-957d-5b89-ba16-cbee0c6937e3> a crmsci:S10_Material_Substantial ;
+    rdfs:label "mango"@en .
+
+<http://data.odeuropa.eu/object/4ed3bbf3-6b10-55ce-9388-9d379fd35980> a crmsci:S10_Material_Substantial ;
+    rdfs:label "masur"@en .
+
+<http://data.odeuropa.eu/object/b56f43ba-2f8f-541e-909d-1cdced15b5f9> a crmsci:S10_Material_Substantial ;
+    rdfs:label "jdmbhul bark"@en .
+
+<http://data.odeuropa.eu/object/d4ba2548-b031-5dd2-a003-8861a12bcee0> a crmsci:S10_Material_Substantial ;
+    rdfs:label "clarified butter"@en .
+
+<http://data.odeuropa.eu/object/dc5f3d2a-62d0-5aeb-b9ed-8b6c215e0542> a crmsci:S10_Material_Substantial ;
+    rdfs:label "black pepper"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f735c5ce-5518-5786-b187-2042149d538d/fragment/c73e2fd6-d556-569e-9cab-5007370070ba> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aromatics"@en,
+        "black pepper"@en,
+        "carraways"@en,
+        "chillies"@en,
+        "clarified butter"@en,
+        "ginger"@en,
+        "jdmbhul bark"@en,
+        "mango"@en,
+        "masur"@en,
+        "mustard"@en,
+        "salt"@en,
+        "the juice of the wild onion"@en,
+        "turmeric"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d>,
+        <http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16>,
+        <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    rdf:value "Karnatak 1 KOLHAPUR .289 head either with hot iron or charred young bamboo ; internally aromatics and astringents are given consisting of turmeric , chillies , carraways , ginger , black pepper , mango , jdmbhul bark , clarified butter , salt , mustard , ndchni , masur , and the juice of the wild onion .Care is taken to give no water ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/8ae81394-47b6-55c1-a278-2100e56e2b2d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/0e852f02-7965-532a-83b9-d52efdd326ed>,
+        <http://data.odeuropa.eu/object/2d6f760e-957d-5b89-ba16-cbee0c6937e3>,
+        <http://data.odeuropa.eu/object/4ed3bbf3-6b10-55ce-9388-9d379fd35980>,
+        <http://data.odeuropa.eu/object/b56f43ba-2f8f-541e-909d-1cdced15b5f9>,
+        <http://data.odeuropa.eu/object/d4ba2548-b031-5dd2-a003-8861a12bcee0>,
+        <http://data.odeuropa.eu/object/dc5f3d2a-62d0-5aeb-b9ed-8b6c215e0542>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/150>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/156>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/318>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/319>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/326>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/677> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/39b84cf1-c6be-5f36-8ba6-10fd31fecc16> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/74e9745f-3dc8-5305-998b-babd627f122c> a od:L11_Smell ;
+    rdfs:label "aromatics"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

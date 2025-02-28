@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "fragrant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/fragrant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P165_incorporates <http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/143c1a67-0215-59b9-b191-af3eeada759e> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/143c1a67-0215-59b9-b191-af3eeada759e> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/143c1a67-0215-59b9-b191-af3eeada759e> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/143c1a67-0215-59b9-b191-af3eeada759e> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/143c1a67-0215-59b9-b191-af3eeada759e> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrant"@en,
+        "hay"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    rdf:value "Michael had youth .Now the narrow paved way was blocked by a waggon heaped wdth fragrant hay .Three girls , merry and handsome , sat enthroned on the hay , wearing handkerchiefs on their heads of red and yellow ^ tints , wdiich made them resemble gigantic flowers of the field ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/fragrant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "fragrant"@en .
+
+<http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/87> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> a od:L11_Smell ;
+    rdfs:label "fragrant"@en .
+

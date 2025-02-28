@@ -1,0 +1,60 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P165_incorporates <http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/d0708fef-3a93-5715-b4a4-fe3e8637d1f9> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c>,
+        <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0>,
+        <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/d0708fef-3a93-5715-b4a4-fe3e8637d1f9> crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/d0708fef-3a93-5715-b4a4-fe3e8637d1f9> crm:P67_refers_to <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/d0708fef-3a93-5715-b4a4-fe3e8637d1f9> crm:P67_refers_to <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P67_refers_to <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P67_refers_to <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> .
+
+<http://data.odeuropa.eu/actor/0b3d6446-09ff-55db-bd6e-aca2264b99cf> a crm:E39_Actor ;
+    rdfs:label "Robbie" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/d0708fef-3a93-5715-b4a4-fe3e8637d1f9> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Robbie"@en,
+        "snuff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c>,
+        <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0>,
+        <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> ;
+    rdf:value "Mr .Robbie took snuff .Ronald went red in the face , and Major Chevenix white ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/0b3d6446-09ff-55db-bd6e-aca2264b99cf> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> a od:L11_Smell ;
+    rdfs:label "snuff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

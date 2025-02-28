@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P165_incorporates <http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/a70b5c17-5b16-558d-9350-8e41738572ed> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/a70b5c17-5b16-558d-9350-8e41738572ed> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/a70b5c17-5b16-558d-9350-8e41738572ed> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/a70b5c17-5b16-558d-9350-8e41738572ed> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70> crm:P67_refers_to <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/d47dce1f-15e0-5cb5-a350-7e16fb6eec70/fragment/a70b5c17-5b16-558d-9350-8e41738572ed> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of Arabia"@en,
+        "perfumes"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207>,
+        <http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85>,
+        <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    rdf:value "One of the black and bloody spots , Avhich foul the chronicles of the world , and sodden the mind Avith an ineffaceable stain , so , to those Avho have heard it , lingers the cry of Mrs .Siddons , in Lady Macbeth Macbeth — All the perfumes of Arabia will not sweeten this little hand ! I have ventured before to tear a leaf from history .history ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/f4719083-d8b5-5dfb-9e48-9ded2b35e207> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/e783c780-6b0a-59ff-a32a-90087227bbbb> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/8342f64f-8d3a-5c34-b77c-55a59d15bb85> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/e783c780-6b0a-59ff-a32a-90087227bbbb> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/place/e783c780-6b0a-59ff-a32a-90087227bbbb> a crm:E53_Place ;
+    rdfs:label "of Arabia" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/109> .
+
+<http://data.odeuropa.eu/smell/e486952e-3229-5c08-a3f5-bd50275af57f> a od:L11_Smell ;
+    rdfs:label "perfumes"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

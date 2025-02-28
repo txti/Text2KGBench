@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P165_incorporates <http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/585d2012-9d63-5981-a341-990317111051> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a>,
+        <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8>,
+        <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/585d2012-9d63-5981-a341-990317111051> crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/585d2012-9d63-5981-a341-990317111051> crm:P67_refers_to <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/585d2012-9d63-5981-a341-990317111051> crm:P67_refers_to <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P67_refers_to <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a> crm:P67_refers_to <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2df524bd-a791-5a4e-9411-99733ccee53a/fragment/585d2012-9d63-5981-a341-990317111051> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of oil"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a>,
+        <http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8>,
+        <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    rdf:value "Her vow — her broken life — her revenge so close at hand — his love — hers too ! hers too ! Would it not be cruel ? must not she too bear her burden — the agony of her necessary crime — alone — alone to the end ? A SWIM AND ITS CONSEQUENCES .85 and with some steam and smell of oil superadded .superadded ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/8fe22ab0-849f-5c5e-ac68-14f50191787a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/109> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/e6c202cb-eff8-5381-aaba-1634aa93a0f8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/30f5f673-41b9-59e8-89d1-1f7ead7f9bc3> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

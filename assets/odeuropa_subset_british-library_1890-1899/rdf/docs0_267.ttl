@@ -1,0 +1,90 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "disagreeable"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/disagreeable_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P165_incorporates <http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/c09b9a4c-4d0b-517a-976c-8002a93f93aa> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/c09b9a4c-4d0b-517a-976c-8002a93f93aa> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/c09b9a4c-4d0b-517a-976c-8002a93f93aa> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/c09b9a4c-4d0b-517a-976c-8002a93f93aa> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/attribute/disagreeable_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "disagreeable"@en .
+
+<http://data.odeuropa.eu/object/3ad8d431-b119-5224-8490-17f8ab60eb75> a crmsci:S10_Material_Substantial ;
+    rdfs:label "sodden vegetation"@en .
+
+<http://data.odeuropa.eu/object/6fa3fc79-c3b4-5f45-ad26-6f26bd218ff5> a crmsci:S10_Material_Substantial ;
+    rdfs:label "soaking clay - soil"@en .
+
+<http://data.odeuropa.eu/object/964d3905-4f21-509e-a4cd-384c1c2c54ef> a crmsci:S10_Material_Substantial ;
+    rdfs:label "White"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/c09b9a4c-4d0b-517a-976c-8002a93f93aa> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "White"@en,
+        "disagreeable"@en,
+        "of sodden vegetation and soaking clay - soil"@en,
+        "over the lawn"@en,
+        "smell"@en,
+        "the air"@en,
+        "vapour"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    rdf:value "Sometimes , as a glare of extra light shone out from the furnaces , the bare tree - tops would catch the reflection , and their wet branches glowed red and crimson .White vapour hung over the lawn , flower - beds , and woods beyond , and a disagreeable smell of sodden vegetation and soaking clay - soil filled the air .There was a dance apparently at the village inn , for the wind brought strains of dance music from that direction , and Alford , as he listened , thought of the village folk yonder dancing , laughing , joking ; of my Lord Stratton Stratton lying near by him , sick and weary in mind and body ; and then of himself , whom , just at present , he pitied almost as much ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/3ad8d431-b119-5224-8490-17f8ab60eb75>,
+        <http://data.odeuropa.eu/object/6fa3fc79-c3b4-5f45-ad26-6f26bd218ff5>,
+        <http://data.odeuropa.eu/object/964d3905-4f21-509e-a4cd-384c1c2c54ef> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/31ea2a99-290d-598e-abfd-02285a144291> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/place/31ea2a99-290d-598e-abfd-02285a144291> a crm:E53_Place ;
+    rdfs:label "over the lawn" .
+
+<http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/31ea2a99-290d-598e-abfd-02285a144291> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> a od:L11_Smell ;
+    rdfs:label "smell"@en,
+        "vapour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

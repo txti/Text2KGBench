@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "corrupt"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/corrupt_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P165_incorporates <http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/03539c57-2b2f-5a32-8df3-f9d282bd72e4> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/03539c57-2b2f-5a32-8df3-f9d282bd72e4> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/03539c57-2b2f-5a32-8df3-f9d282bd72e4> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/03539c57-2b2f-5a32-8df3-f9d282bd72e4> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728> crm:P67_refers_to <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> .
+
+<http://data.odeuropa.eu/attribute/corrupt_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "corrupt"@en .
+
+<http://data.odeuropa.eu/object/d8f9923b-abc8-57f5-bcf0-eed428b8f9f2> a crmsci:S10_Material_Substantial ;
+    rdfs:label "its"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/8ed60ada-2eb9-5431-930a-62f63f35b728/fragment/03539c57-2b2f-5a32-8df3-f9d282bd72e4> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "breath"@en,
+        "corrupt"@en,
+        "its"@en,
+        "the atmosphere"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6>,
+        <http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a>,
+        <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    rdf:value "That misdirection — and its twin , mismanagement mismanagement of finance — aided to strangle prematurely the young giant they might have nourished into strength ; — the spirit of murder worked in the very means of life ! But the Chinese - wall blockade was tripartite ; not confined to closing of the ocean ports .The black shadow of Washington had not yet begun to spread itself , and its corrupt breath had not yet polluted the atmosphere of the good old town .."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/3145f160-44a3-52bf-aa5c-7f9d58ab1df6> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/d8f9923b-abc8-57f5-bcf0-eed428b8f9f2> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/1ed42e44-863e-586f-a845-6f457b415c4a> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/22b8a51c-1192-57a0-983d-4313ca486e1d> a od:L11_Smell ;
+    rdfs:label "breath"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,82 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "downright ' orrible"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/downright%20%27%20orrible_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33> crm:P165_incorporates <http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33/fragment/05909346-5dea-5947-8674-21d45a386500> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/89e7a301-5f1b-5744-9b1c-84726698de72>,
+        <http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379>,
+        <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33/fragment/05909346-5dea-5947-8674-21d45a386500> crm:P67_refers_to <http://data.odeuropa.eu/emission/89e7a301-5f1b-5744-9b1c-84726698de72> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33/fragment/05909346-5dea-5947-8674-21d45a386500> crm:P67_refers_to <http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33/fragment/05909346-5dea-5947-8674-21d45a386500> crm:P67_refers_to <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33> crm:P67_refers_to <http://data.odeuropa.eu/emission/89e7a301-5f1b-5744-9b1c-84726698de72> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33> crm:P67_refers_to <http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33> crm:P67_refers_to <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> .
+
+<http://data.odeuropa.eu/attribute/downright%20%27%20orrible_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "downright ' orrible"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/9131a485-2d60-5e00-b064-172faa185d33/fragment/05909346-5dea-5947-8674-21d45a386500> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Port Said"@en,
+        "at times"@en,
+        "down below"@en,
+        "downright ' orrible"@en,
+        "stench"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/89e7a301-5f1b-5744-9b1c-84726698de72>,
+        <http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379>,
+        <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> ;
+    rdf:value "We had no room to spare , and I must say as how I think Government crowds its soldiers shameful on them ships .Still , it had to be put up with , tho ' we was right glad when we reached Port Said , for we had a terrible rough passage all the way there , and the stench down below at times was downright ' orrible .At Port Said we entered the Suez Canal , and there learnt for the first time that we was to go on to Suakim straight , at which the old ' uns from the 1st Battalion weren ' t best pleased , nor some of the young ' uns either ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/89e7a301-5f1b-5744-9b1c-84726698de72> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/3517cb24-e41f-57d4-9be3-08a90bce2de1>,
+        <https://sws.geonames.org/358619/> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/bab4c98c-6a7d-5204-b2ee-33c67d704d10> .
+
+<http://data.odeuropa.eu/place/3517cb24-e41f-57d4-9be3-08a90bce2de1> a crm:E53_Place ;
+    rdfs:label "down below" .
+
+<http://data.odeuropa.eu/time/bab4c98c-6a7d-5204-b2ee-33c67d704d10> a time:TemporalEntity ;
+    rdfs:label "at times" .
+
+<https://sws.geonames.org/358619/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/experience/80455109-0550-55bb-b53f-5507bc926379> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/3517cb24-e41f-57d4-9be3-08a90bce2de1>,
+        <https://sws.geonames.org/358619/> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae>,
+        <http://data.odeuropa.eu/time/bab4c98c-6a7d-5204-b2ee-33c67d704d10> .
+
+<http://data.odeuropa.eu/smell/4f9fe1a5-98bb-5525-bd4e-03880b501b07> a od:L11_Smell ;
+    rdfs:label "stench"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

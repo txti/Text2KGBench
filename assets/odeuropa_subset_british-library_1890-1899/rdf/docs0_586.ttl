@@ -1,0 +1,96 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P165_incorporates <http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/8d41a257-dcf5-5a56-9a84-97b68e3d8363> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/8d41a257-dcf5-5a56-9a84-97b68e3d8363> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/8d41a257-dcf5-5a56-9a84-97b68e3d8363> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/8d41a257-dcf5-5a56-9a84-97b68e3d8363> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/object/10f5138e-c68c-5315-abac-206c9560df80> a crmsci:S10_Material_Substantial ;
+    rdfs:label "primroses"@en .
+
+<http://data.odeuropa.eu/object/457e7c37-9411-5ea9-ae50-6b64b2dfeecd> a crmsci:S10_Material_Substantial ;
+    rdfs:label "foxgloves"@en .
+
+<http://data.odeuropa.eu/object/57d162a5-8ddd-563f-923c-10db64546a57> a crmsci:S10_Material_Substantial ;
+    rdfs:label "cowslips"@en .
+
+<http://data.odeuropa.eu/object/65a1f209-fee6-5edb-905b-9fddb5ee3f0c> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/object/b56f307a-ec22-5de9-a61c-bf260eb40e59> a crmsci:S10_Material_Substantial ;
+    rdfs:label "ferns"@en .
+
+<http://data.odeuropa.eu/object/ce707717-6e93-5baf-86b2-4701aecdb0c0> a crmsci:S10_Material_Substantial ;
+    rdfs:label "wild roses"@en .
+
+<http://data.odeuropa.eu/object/d8aa2ecd-ed5c-5bfd-9a3f-e2356849ad53> a crmsci:S10_Material_Substantial ;
+    rdfs:label "foxgloves"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/8d41a257-dcf5-5a56-9a84-97b68e3d8363> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "cowslips"@en,
+        "ferns"@en,
+        "foxgloves"@en,
+        "honeysuckle"@en,
+        "hyacinths"@en,
+        "perfume"@en,
+        "primroses"@en,
+        "the air"@en,
+        "their"@en,
+        "wild roses"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    rdf:value "The highroad passes Bailey Hill , and along Maesydre , and leads past the Tin - plate .Works , and the Lodge - gates of Gwysauey , along the Rhydymwyn road for two miles , and shortly after passing a smithy , called Efel branches off to the right , along a narrow lane that will prove attractive to the botanist , ami the lover of wild flowers , for here nature displays her varied according to the season of the year , primroses , hyacinths , cowslips , wild roses , honeysuckle , ferns , foxgloves , foxgloves , and innumerable other wayside flowers gladden the sight , and give the air the redolence of their perfume .The ever - varying landscape , too , is not to be lightly esteemed ; for its scenes yvill compare favourably with those of more popular localities ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/10f5138e-c68c-5315-abac-206c9560df80>,
+        <http://data.odeuropa.eu/object/457e7c37-9411-5ea9-ae50-6b64b2dfeecd>,
+        <http://data.odeuropa.eu/object/57d162a5-8ddd-563f-923c-10db64546a57>,
+        <http://data.odeuropa.eu/object/65a1f209-fee6-5edb-905b-9fddb5ee3f0c>,
+        <http://data.odeuropa.eu/object/b56f307a-ec22-5de9-a61c-bf260eb40e59>,
+        <http://data.odeuropa.eu/object/ce707717-6e93-5baf-86b2-4701aecdb0c0>,
+        <http://data.odeuropa.eu/object/d8aa2ecd-ed5c-5bfd-9a3f-e2356849ad53>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/226>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/661> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

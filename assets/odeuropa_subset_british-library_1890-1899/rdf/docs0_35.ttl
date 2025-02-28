@@ -1,0 +1,98 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "strong"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-intensity/4> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/intensity> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P165_incorporates <http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2b56ad6a-2283-5f35-b019-8e6b5517109a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2b56ad6a-2283-5f35-b019-8e6b5517109a> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2b56ad6a-2283-5f35-b019-8e6b5517109a> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2b56ad6a-2283-5f35-b019-8e6b5517109a> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f> crm:P67_refers_to <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> .
+
+<http://data.odeuropa.eu/attribute-type/intensity> a crm:E55_Type ;
+    rdfs:label "intensity" .
+
+<http://data.odeuropa.eu/object/0f06900b-65f1-5384-9ea3-783dddd0083f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "of"@en .
+
+<http://data.odeuropa.eu/object/de0bb0f5-924e-5031-8e8d-2fd81ae97d79> a crmsci:S10_Material_Substantial ;
+    rdfs:label "from the oakbark oakbark"@en .
+
+<http://data.odeuropa.eu/object/f1cac319-b295-5123-b411-16ca7654957d> a crmsci:S10_Material_Substantial ;
+    rdfs:label "burning peat"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/83a764c5-7fda-5bb2-82c7-f3d65768b99f/fragment/2b56ad6a-2283-5f35-b019-8e6b5517109a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Now"@en,
+        "from the oakbark oakbark"@en,
+        "he"@en,
+        "odour"@en,
+        "of"@en,
+        "of burning peat"@en,
+        "scent"@en,
+        "strong"@en,
+        "the air"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0>,
+        <http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd>,
+        <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    rdf:value "As Cosmo passed along , he saw every craftsman in the place at work ; from blacksmith to tailor all were busy .Now and then he was met by a strong scent , as of burning leather , from the oakbark oakbark which , after its astringent power had been exhausted in the tanpit some of the housewives used for fuel ; but mostly the air was filled with the odour of burning peat .He knew almost everybody , and was kindly greeted as he went along — nor the less that some of them , when they heard he was not at school the day before , had remarked that his birthday hardly brought him enough to keep it with ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/emission/29139c29-61ba-5bca-839b-75a3ffeb4fc0> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/0f06900b-65f1-5384-9ea3-783dddd0083f>,
+        <http://data.odeuropa.eu/object/de0bb0f5-924e-5031-8e8d-2fd81ae97d79>,
+        <http://data.odeuropa.eu/object/f1cac319-b295-5123-b411-16ca7654957d> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409>,
+        <http://data.odeuropa.eu/time/f3bd3f15-103e-592e-be7f-da173c30478e> .
+
+<http://data.odeuropa.eu/time/f3bd3f15-103e-592e-be7f-da173c30478e> a time:TemporalEntity ;
+    rdfs:label "Now" .
+
+<http://data.odeuropa.eu/experience/6e37d3f8-4097-5355-9ac7-8cb7866622dd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409>,
+        <http://data.odeuropa.eu/time/f3bd3f15-103e-592e-be7f-da173c30478e> .
+
+<http://data.odeuropa.eu/smell/f0d1e15d-9ec2-5c10-b3f6-b760076f6af8> a od:L11_Smell ;
+    rdfs:label "odour"@en,
+        "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

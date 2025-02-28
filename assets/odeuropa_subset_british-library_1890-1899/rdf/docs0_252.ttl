@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P165_incorporates <http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/270ef37a-df87-536d-870b-9b85a029a495> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/270ef37a-df87-536d-870b-9b85a029a495> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/270ef37a-df87-536d-870b-9b85a029a495> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/270ef37a-df87-536d-870b-9b85a029a495> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/object/47de67f3-8d62-51b2-9597-1b6991e8f5cb> a crmsci:S10_Material_Substantial ;
+    rdfs:label "it"@en .
+
+<http://data.odeuropa.eu/object/abfb091c-f492-5e7d-a97c-5594deaff45c> a crmsci:S10_Material_Substantial ;
+    rdfs:label "life"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/270ef37a-df87-536d-870b-9b85a029a495> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of it"@en,
+        "of life"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    rdf:value "Afterwards Afterwards it came back to him very vividly , all wrapped in that golden sunshine , and with the peculiar fragrance of old things , the aroma that lingers round remembrances and makes them sweet .The smell of life when it was new ; yes , the smell of it .."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/47de67f3-8d62-51b2-9597-1b6991e8f5cb>,
+        <http://data.odeuropa.eu/object/abfb091c-f492-5e7d-a97c-5594deaff45c> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

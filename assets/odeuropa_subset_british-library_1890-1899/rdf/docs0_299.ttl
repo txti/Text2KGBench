@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "stinking"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/stinking_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P165_incorporates <http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/355ffae1-c6c2-5ab4-a4ec-35a1b1219056> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/355ffae1-c6c2-5ab4-a4ec-35a1b1219056> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/355ffae1-c6c2-5ab4-a4ec-35a1b1219056> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/355ffae1-c6c2-5ab4-a4ec-35a1b1219056> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/object/562e25d9-5019-5ec5-a3cc-ef3c75bb2572> a crmsci:S10_Material_Substantial ;
+    rdfs:label "idoll"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/355ffae1-c6c2-5ab4-a4ec-35a1b1219056> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "idoll"@en,
+        "stinking"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    rdf:value "The following condemnatory condemnatory description of the follies and enormities of the may - pole ceremonies of olden times by the Puritan , Philip Stubbs , may not be uninteresting .Having premised that Sathan , prince of hell , presideth over their pastynies and he proceeds , But their cheapest jewell is their Maie poole , which they bringe with greate veneration , as thus : they have twentie or fourtie yoke of oxen , everyone oxe havyng a sweete nosegaie of flowers tyed on the tippe of his homes ; and these oxen drawe this Maie poole — this stinking idoll rather — which is covered all over with flowers and herbes bounde rounde aboute with stringes , from the top to the bottom , and sometyme painted with variable colours , with two or three hundred men , women , and children , followyng it with greate devotion .And thus beyng reared up , with hankercheifes and flagges streamyng on the toppe , they strawe the grounde aboute , binde greene boughes aboute it , sett up sommer haulles , bowers , and arbours hard by it ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/stinking_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "stinking"@en .
+
+<http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/562e25d9-5019-5ec5-a3cc-ef3c75bb2572> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> a od:L11_Smell ;
+    rdfs:label "stinking"@en .
+

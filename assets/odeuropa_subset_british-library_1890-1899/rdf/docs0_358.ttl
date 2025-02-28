@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "dreamy"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/dreamy_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P165_incorporates <http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/0310f825-a7f0-5298-8f8f-fa5b340ce215> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001>,
+        <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974>,
+        <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/0310f825-a7f0-5298-8f8f-fa5b340ce215> crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/0310f825-a7f0-5298-8f8f-fa5b340ce215> crm:P67_refers_to <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/0310f825-a7f0-5298-8f8f-fa5b340ce215> crm:P67_refers_to <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P67_refers_to <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P67_refers_to <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> .
+
+<http://data.odeuropa.eu/attribute/dreamy_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "dreamy"@en .
+
+<http://data.odeuropa.eu/object/11ebb789-6ba6-56d5-aee1-37c4d9dfdec8> a crmsci:S10_Material_Substantial ;
+    rdfs:label "giant serpent - flower"@en .
+
+<http://data.odeuropa.eu/object/a9a323d3-862b-57e6-850f-d1f579b2a457> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the blossom of a tromo ,"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/0310f825-a7f0-5298-8f8f-fa5b340ce215> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "dreamy"@en,
+        "fragrance"@en,
+        "giant serpent - flower"@en,
+        "the blossom of a tromo ,"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001>,
+        <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974>,
+        <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    rdf:value "Upon a small enamelled table lay a highly - ornamented dagger , slim and shapely as its owner , ancl by its side was a round gold box .In the centre of the room a tiny fountain splashed into a marble basin , clashing its sparkling spray against the blossom of a tromo , or giant serpent - flower , that diffused dreamy fragrance from a silver jar .On the floor of an alcove were spread costly rugs and cushions from Khartoum ; by their side glowed the skin of the lion that I had shot seven days before , and a large lamp of curiously wrought iron swinging from the roof , withheld rather than diffused the rays of the perfumed flame within ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/11ebb789-6ba6-56d5-aee1-37c4d9dfdec8>,
+        <http://data.odeuropa.eu/object/a9a323d3-862b-57e6-850f-d1f579b2a457> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

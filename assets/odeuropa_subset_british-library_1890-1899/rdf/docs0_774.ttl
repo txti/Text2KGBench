@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P165_incorporates <http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/7dfd8bc9-edfc-5c45-b445-ed70c34fde71> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/7dfd8bc9-edfc-5c45-b445-ed70c34fde71> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/7dfd8bc9-edfc-5c45-b445-ed70c34fde71> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/7dfd8bc9-edfc-5c45-b445-ed70c34fde71> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc> crm:P67_refers_to <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> .
+
+<http://data.odeuropa.eu/object/3c098a78-859a-5977-899c-8cea2d063923> a crmsci:S10_Material_Substantial ;
+    rdfs:label "of"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/574e01b1-2fa2-5df5-8505-505f525723cc/fragment/7dfd8bc9-edfc-5c45-b445-ed70c34fde71> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "odor"@en,
+        "of"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8>,
+        <http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078>,
+        <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    rdf:value ", mention of petro - leum by , 5 , 6 Lower Devonian , distribution of bitu - 541 - 543 the con - stancy .of , 549 , 550 examination of , 414 417 flashing point of , 447 - 458 from residuum by simple dis - tillation , 349 Russian residuum , 350 men in the , 120 Eocene , distribution of bitumen in the , 116 German , examination of , 643 , 645 influence of , on metals , 646 , Jura , distribution of bitumen in the , 118 647 Silurian , distribution of bitumen in the , 120 Marten ' s tester for , 450 - 452 odor of , 538 Lubricant , general guides for the choice of a , 498 of different derivation , dis - tinction of , 550 , 551 old method of determining the flashing point of , 447 Pensky ' s tester for , 448 , 449 residuum for the manufac - Lubricants , Duprez and Napoli ' s ma - chine for testing , 491 - 494 good , characteristics of , 637 , 638 Ingham and Stapfer ' s machine for testing , 486 Paris - Lyons Mediterranean Rail - way , machine for testing , 494 - 497 ture of , 34s .: ; 4 ' ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d6e50074-3b00-5f4e-830f-b2421305aed8> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/3c098a78-859a-5977-899c-8cea2d063923> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/536230ed-7bc9-5587-9c9a-8b3dfd934078> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/2e7008a5-7349-568b-a2c6-eca50ea40e8f> a od:L11_Smell ;
+    rdfs:label "odor"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

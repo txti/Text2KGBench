@@ -1,0 +1,72 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "scented"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/scented_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P165_incorporates <http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/dc8fc6c1-5f9a-5454-9f8f-c0587063f3f6> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/dc8fc6c1-5f9a-5454-9f8f-c0587063f3f6> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/dc8fc6c1-5f9a-5454-9f8f-c0587063f3f6> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/dc8fc6c1-5f9a-5454-9f8f-c0587063f3f6> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6> crm:P67_refers_to <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/f3e7f519-8abe-5d6d-af9a-8dbac5cb0ea6/fragment/dc8fc6c1-5f9a-5454-9f8f-c0587063f3f6> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "handkerchief"@en,
+        "scented"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696>,
+        <http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df>,
+        <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    rdf:value "She began to weep like a child , and her tears fell faster and faster , unaccompanied now by any thoughts of simulation .She felt a desire to write , but no sooner had she found some paper in the blotting - book left by her lover and dipped the pen in the ink than she pushed the things away , exclaiming , ' What is the good of it ? ' To show that she had been there in case Rend should come after she was gone she THE HAPPIEST OF THE FOUR 263 left behind her the scented handkerchief with which she had dried her bitter tears .She murmured to herself , ' He used to like this scent ! ' and by the side of the handkerchief she laid the gloves that he had always buttoned for her as she was going ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/attribute/scented_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "scented"@en .
+
+<http://data.odeuropa.eu/emission/61834d6c-9e67-5ae1-8ac1-4b71826bf696> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/86> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/0161375a-a558-51cc-a281-d2167c9559df> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/1ceaf836-a4c0-55cc-b282-5869b146b3f9> a od:L11_Smell ;
+    rdfs:label "scented"@en .
+

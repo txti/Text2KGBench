@@ -1,0 +1,10 @@
+name: kgbench
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.16
+  - pip
+  - ipykernel
+  - pandas
+  - pip:
+    - -r requirements.txt

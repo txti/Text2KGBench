@@ -1,0 +1,63 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P165_incorporates <http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/82d7a73b-927d-5ab7-980b-6593d6c48c5b> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b>,
+        <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f>,
+        <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/82d7a73b-927d-5ab7-980b-6593d6c48c5b> crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/82d7a73b-927d-5ab7-980b-6593d6c48c5b> crm:P67_refers_to <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/82d7a73b-927d-5ab7-980b-6593d6c48c5b> crm:P67_refers_to <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d> crm:P67_refers_to <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> .
+
+<http://data.odeuropa.eu/actor/25591e39-6a8f-5c12-9289-5935eeaa641f> a crm:E39_Actor ;
+    rdfs:label "them|to their" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7a894fd6-f63e-5c4c-b9c0-b757399a408d/fragment/82d7a73b-927d-5ab7-980b-6593d6c48c5b> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fluff"@en,
+        "nostrils"@en,
+        "them"@en,
+        "to their"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b>,
+        <http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f>,
+        <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    rdf:value "Now , you know 112 + S The Radical ' s Wife admitted .It was so much pleasanter for them , sitting on a stool , drawing threads through a machine , the fluff of which was as good as snuff to their nostrils , than to do odd jobs in the open air or in the rooms at home .It added so much to their importance and well - being to bring grist to the paternal mill , of which they had no part or parcel , but were merely apprentices , many years too young , with the hours of seance childhood sacrificed of these poor beings thrust upon the soil ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0fa12618-7cfc-569e-9600-df9fd02ed93b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/5d547c66-3aa4-5063-b436-7b6a6d39047f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/25591e39-6a8f-5c12-9289-5935eeaa641f> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/bcc9d1fe-ba17-5bf3-aa36-579d94b7439a> a od:L11_Smell ;
+    rdfs:label "fluff"@en,
+        "nostrils"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P165_incorporates <http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/c4c1ebaa-0582-558b-a62b-0def8e886b00> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/c4c1ebaa-0582-558b-a62b-0def8e886b00> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/c4c1ebaa-0582-558b-a62b-0def8e886b00> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/c4c1ebaa-0582-558b-a62b-0def8e886b00> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306> crm:P67_refers_to <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> .
+
+<http://data.odeuropa.eu/actor/affbbe4c-3b6f-5311-85f0-a5191e179435> a crm:E39_Actor ;
+    rdfs:label "They|the rural folks" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/7b79fc08-d385-5e64-9d64-3369dc5f9306/fragment/c4c1ebaa-0582-558b-a62b-0def8e886b00> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "They"@en,
+        "scenting"@en,
+        "the rural folks"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79>,
+        <http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246>,
+        <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    rdf:value "Having been mortgaged , mortgaged , beyond its value , as a property , and being disused , and falling into decay , the sails were removed in the year 1889 , as a precaution for the safety of the houses standing near .2 They smile to hear the noise and Like the war - steed , scenting the battle from afar , the rural folks as they approach the town , are exhilarated by the sounds of the melee , in which they are about to be involved .involved ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/50363485-9389-5687-a8f9-36afca0fcb79> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/4d76329f-608d-50ee-92a1-8fca91933246> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/affbbe4c-3b6f-5311-85f0-a5191e179435> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/f95e9993-ac32-5513-b9d3-2a468b7f8880> a od:L11_Smell ;
+    rdfs:label "scenting"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

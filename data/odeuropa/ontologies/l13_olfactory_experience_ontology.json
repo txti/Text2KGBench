@@ -1,0 +1,78 @@
+{
+  "title": "Olfactory Experience Ontology",
+  "id": "ont_l13_olfactory_experience",
+  "concepts": [
+    {
+      "qid": "Smell_Word",
+      "label": "Smell Word"
+    },
+    {
+      "qid": "Smell_Source",
+      "label": "Smell Source"
+    },
+    {
+      "qid": "Quality",
+      "label": "Quality"
+    },
+    {
+      "qid": "Odour_Carrier",
+      "label": "Odour Carrier"
+    },
+    {
+      "qid": "Evoked_Odorant",
+      "label": "Evoked Odorant"
+    },
+    {
+      "qid": "Location",
+      "label": "Location"
+    },
+    {
+      "qid": "Perceiver",
+      "label": "Perceiver"
+    },
+    {
+      "qid": "Time",
+      "label": "Time"
+    },
+    {
+      "qid": "Circumstances",
+      "label": "Circumstances"
+    },
+    {
+      "qid": "Effect",
+      "label": "Effect"
+    }
+  ],
+  "relations": [
+    {
+      "pid": "F2_perceived",
+      "label": "perceived",
+      "domain": "Quality",
+      "range": "Smell_Word"
+    },
+    {
+      "pid": "F6_evoked",
+      "label": "evoked",
+      "domain": "Quality",
+      "range": "Evoked_Odorant"
+    },
+    {
+      "pid": "P7_took_place_at",
+      "label": "took place at",
+      "domain": "Quality",
+      "range": "Location"
+    },
+    {
+      "pid": "P14_carried_out_by",
+      "label": "carried out by",
+      "domain": "Quality",
+      "range": "Perceiver"
+    },
+    {
+      "pid": "hasTime",
+      "label": "has time",
+      "domain": "Quality",
+      "range": "Time"
+    }	
+  ]
+}

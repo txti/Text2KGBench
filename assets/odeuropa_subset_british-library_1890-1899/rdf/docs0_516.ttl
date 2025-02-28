@@ -1,0 +1,80 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P165_incorporates <http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/e95f55fe-7e2f-5532-8c1c-29cd9e0cad1a> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86>,
+        <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af>,
+        <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/e95f55fe-7e2f-5532-8c1c-29cd9e0cad1a> crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/e95f55fe-7e2f-5532-8c1c-29cd9e0cad1a> crm:P67_refers_to <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/e95f55fe-7e2f-5532-8c1c-29cd9e0cad1a> crm:P67_refers_to <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/object/200057a5-0a78-54bd-b107-b876b3574d98> a crmsci:S10_Material_Substantial ;
+    rdfs:label "by|by the|the evening|evening air|air"@en .
+
+<http://data.odeuropa.eu/object/b7e67010-22b4-5a9c-8ae2-b88ffd025482> a crmsci:S10_Material_Substantial ;
+    rdfs:label "from their leaves"@en .
+
+<http://data.odeuropa.eu/object/f215ed4c-2906-5f3a-b779-35625bdd8a14> a crmsci:S10_Material_Substantial ;
+    rdfs:label "scarlet geraniums"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/563d6e81-d731-584f-91a9-f897e366c0e5/fragment/e95f55fe-7e2f-5532-8c1c-29cd9e0cad1a> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "air"@en,
+        "by"@en,
+        "by the"@en,
+        "evening air"@en,
+        "fragrance"@en,
+        "from their leaves"@en,
+        "he"@en,
+        "of scarlet geraniums"@en,
+        "the evening"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86>,
+        <http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af>,
+        <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    rdf:value "240 house , and entered the little parlour where Jean and he had passed so many happy hours .It was almost dark in there — for the window was small , and filled up by a great stand of scarlet geraniums , the fragrance from their leaves just stirred by the evening air — and at first he thought the room was empty ; then something rose up suddenly out of the dimmest corner , a slender figure with white , shadowy face and stretched - out hands , and Keith said hoarsely , Jean , come to and took it in his arms , and let it cling to him as though nothing , not even death , should ever tear it away .Neither of them spoke ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0bc3f736-b200-5915-bd41-fae8a775db86> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b7e67010-22b4-5a9c-8ae2-b88ffd025482>,
+        <http://data.odeuropa.eu/object/f215ed4c-2906-5f3a-b779-35625bdd8a14> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/200057a5-0a78-54bd-b107-b876b3574d98> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/406d77f2-af2c-54a5-804c-73f1068bf6af> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/f79928d7-5e2c-5dd9-af5a-52ec1321443d> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

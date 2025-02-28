@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P165_incorporates <http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/58e6ad8a-d1e1-554e-b288-cae1f505031c> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c>,
+        <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758>,
+        <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/58e6ad8a-d1e1-554e-b288-cae1f505031c> crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/58e6ad8a-d1e1-554e-b288-cae1f505031c> crm:P67_refers_to <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/58e6ad8a-d1e1-554e-b288-cae1f505031c> crm:P67_refers_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8> crm:P67_refers_to <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> .
+
+<http://data.odeuropa.eu/object/21a6ecd5-2375-5cd3-bae1-df9eac83bff2> a crmsci:S10_Material_Substantial ;
+    rdfs:label "heroic deeds"@en .
+
+<http://data.odeuropa.eu/object/aa062a49-8d66-58df-9cce-ee9deaee0ae6> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Fame"@en .
+
+<http://data.odeuropa.eu/object/dd6357fb-84ef-5de3-93b4-3ee497540f0f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Of flowers of chivalry"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/76e4fb9a-3159-5ed6-bdb5-b3f90a3336c8/fragment/58e6ad8a-d1e1-554e-b288-cae1f505031c> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Fame"@en,
+        "Of flowers of chivalry"@en,
+        "fragrance"@en,
+        "of heroic deeds"@en,
+        "of weeds"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c>,
+        <http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758>,
+        <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    rdf:value "The Knight was called and questioned ; in reply Did not confess the fact , did not deny ; Treated the matter as a pleasant jest , And set at nought the Syndic and the rest , Maintaining in au angry undertone , That he should do what pleased him with his own .And thereupon the Syndic gravely read The proclamation of the King ; then said : ' Pride goeth forth on horseback grand and gay , But cometh back on foot , and begs its way ; Fame is the fragrance of heroic deeds , Of flowers of chivalry and not of weeds ! These are familiar proverbs ; but I fear They never yet have reached your knightly ear .What fair renown , what honour , what repute Can come to you from starving this poor brute ? He who serves well and speaks not , merits more Than they who clamour loudest at the door ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/e4b7f533-76ad-5b0b-8991-b1f377e2b64c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/21a6ecd5-2375-5cd3-bae1-df9eac83bff2>,
+        <http://data.odeuropa.eu/object/aa062a49-8d66-58df-9cce-ee9deaee0ae6>,
+        <http://data.odeuropa.eu/object/dd6357fb-84ef-5de3-93b4-3ee497540f0f>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/645> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/9f762957-2552-5acc-bb7d-cfae60470758> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/02b5a454-7cfa-5d2a-a10b-95352d3aea15> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

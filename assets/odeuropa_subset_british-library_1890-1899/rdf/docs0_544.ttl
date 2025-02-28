@@ -1,0 +1,58 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P165_incorporates <http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/ae872a47-b9b0-5cc9-bf03-6b625f54c348> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c>,
+        <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e>,
+        <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/ae872a47-b9b0-5cc9-bf03-6b625f54c348> crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/ae872a47-b9b0-5cc9-bf03-6b625f54c348> crm:P67_refers_to <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/ae872a47-b9b0-5cc9-bf03-6b625f54c348> crm:P67_refers_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369> crm:P67_refers_to <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/object/cd75e323-b7be-58e5-a20f-17bd110a9f3f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "John"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/acd9eceb-1741-5313-8b76-c2b039d14369/fragment/ae872a47-b9b0-5cc9-bf03-6b625f54c348> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "John"@en,
+        "perfumes"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c>,
+        <http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e>,
+        <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    rdf:value "At the opposite end a single window similarly draped , commanded a view of a small garden laid out with narrow walks , and quaintly - shaped beds filled with the same old - fashioned flowers as might be seen in front , but with a certain admixture of other plants , such as pansies , York and Lancaster roses , and gilly - flowers , each in their season ; while encircling all , a broad border of plants and herbs — lavender , St .John ' s wort , and others , useful for medicine or perfumes , showed .that the mysteries of the still - room and herbarium were not unknown to the possessor ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/2c533cf9-19de-5e20-95fe-19b6edf7c53c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/cd75e323-b7be-58e5-a20f-17bd110a9f3f> .
+
+<http://data.odeuropa.eu/experience/265c5af5-22bb-5c76-953a-6eed52b6385e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> .
+
+<http://data.odeuropa.eu/smell/87a77317-a55d-5da3-801d-8e70b6443d4a> a od:L11_Smell ;
+    rdfs:label "perfumes"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,13 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "diffEditor.ignoreTrimWhitespace": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.fixAll.ruff": "explicit"
+        }
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.autoImportCompletions": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
+}

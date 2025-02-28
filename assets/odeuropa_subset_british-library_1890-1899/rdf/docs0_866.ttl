@@ -1,0 +1,116 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "vile"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/vile_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "SAveet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/SAveet_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P165_incorporates <http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/d1378d2f-8d00-5ba9-9a1a-4b228d473cab> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/d1378d2f-8d00-5ba9-9a1a-4b228d473cab> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/d1378d2f-8d00-5ba9-9a1a-4b228d473cab> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/d1378d2f-8d00-5ba9-9a1a-4b228d473cab> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c> crm:P67_refers_to <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> .
+
+<http://data.odeuropa.eu/attribute/SAveet_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "SAveet"@en .
+
+<http://data.odeuropa.eu/attribute/vile_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "vile"@en .
+
+<http://data.odeuropa.eu/object/6a3f07c1-e139-543c-a3c2-522402a4fd0e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "in|in the|the fever|fever -|- laden|laden atmosphere"@en .
+
+<http://data.odeuropa.eu/object/b22b1c2b-671a-5e43-acff-667f46dca33a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "a gale"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/bdeb188f-c6ba-5884-90b7-531758099c0c/fragment/d1378d2f-8d00-5ba9-9a1a-4b228d473cab> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "- laden"@en,
+        "I"@en,
+        "SAveet"@en,
+        "breath"@en,
+        "breathed"@en,
+        "fever -"@en,
+        "from the streets"@en,
+        "fumed"@en,
+        "in"@en,
+        "in the"@en,
+        "laden atmosphere"@en,
+        "odors"@en,
+        "of Rio Janeiro"@en,
+        "of a gale"@en,
+        "off the snoAv - capped ranges of the far south"@en,
+        "the fever"@en,
+        "vile"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce>,
+        <http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b>,
+        <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    rdf:value "The conduct of Jemmy Button , Admiral 260 CHAPTER XIV THE JOURNEY ALONGSHORE IT was in the month of April — and that is to say in the * fall of the year — that I started on my voyage in the Avake of the old - time explorers Magellan , Wallis , Cook , Bougainville , and the others whose names are associated Avith the Cape Horn region .I had passed the previous summer in the fever - laden atmosphere of Rio Janeiro — had sweltered and fumed under torrid heats and breathed the odors from the streets that are too vile for description description until the thoughts of ice floes and of the SAveet breath of a gale from off the snoAv - capped ranges of the far south were like dreams of heaven .But just where I was to go — what points in the Patagonia coast and southward I was to visit — and how I Avas to make the journey , I did not know ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/7b152406-3095-55c2-b4d0-f779615bebce> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/b22b1c2b-671a-5e43-acff-667f46dca33a> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/6a3f07c1-e139-543c-a3c2-522402a4fd0e> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/50d1f2cb-0aec-56ac-9f75-90c8f24ec085>,
+        <http://data.odeuropa.eu/place/771e6dc7-8e84-5532-ab9f-e8cde6571759>,
+        <https://sws.geonames.org/3451190/> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/place/50d1f2cb-0aec-56ac-9f75-90c8f24ec085> a crm:E53_Place ;
+    rdfs:label "off the snoAv - capped ranges of the far south" .
+
+<http://data.odeuropa.eu/place/771e6dc7-8e84-5532-ab9f-e8cde6571759> a crm:E53_Place ;
+    rdfs:label "from the streets" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/64> .
+
+<https://sws.geonames.org/3451190/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/experience/8b155d45-85b2-54e1-b7cc-db9cfb27656b> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/50d1f2cb-0aec-56ac-9f75-90c8f24ec085>,
+        <http://data.odeuropa.eu/place/771e6dc7-8e84-5532-ab9f-e8cde6571759>,
+        <https://sws.geonames.org/3451190/> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/7a2bec28-2e20-515c-babe-a4a3f22a9e7d> a od:L11_Smell ;
+    rdfs:label "breath"@en,
+        "breathed"@en,
+        "fumed"@en,
+        "odors"@en .
+

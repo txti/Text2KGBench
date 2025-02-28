@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "new"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/new_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P165_incorporates <http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/435f85bc-4c0c-544c-96e7-860d00bfb2ec> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b>,
+        <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9>,
+        <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/435f85bc-4c0c-544c-96e7-860d00bfb2ec> crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/435f85bc-4c0c-544c-96e7-860d00bfb2ec> crm:P67_refers_to <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/435f85bc-4c0c-544c-96e7-860d00bfb2ec> crm:P67_refers_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P67_refers_to <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6> crm:P67_refers_to <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> .
+
+<http://data.odeuropa.eu/attribute/new_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "new"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/b0072231-cd14-523c-9912-df02e15b61e6/fragment/435f85bc-4c0c-544c-96e7-860d00bfb2ec> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "new"@en,
+        "scents"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b>,
+        <http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9>,
+        <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    rdf:value "Thoreau found it employment enough to watch the progress of the seasons at Walden , but he could not have so occupied himself at sea .For , unlike the rest of Nature , the ocean has no seasons — no spring , or summer , or autumn , or winter ; no fresh life and growth , no new scents , no birth or death .It has been well called ever - On Traits in General 61 substance , are more than the best trophies that learning or sport can produce ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/c41eb7b4-cc9c-5792-b48e-d34209af5f3b> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/eea52c6a-4265-5cb4-82cf-c412349b62e9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/c0033aa0-d5db-5ba3-bce3-ab8eca7671a1> a od:L11_Smell ;
+    rdfs:label "scents"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

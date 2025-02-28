@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P165_incorporates <http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/489e713f-5478-5f3c-8765-ce3fa3a912c5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/489e713f-5478-5f3c-8765-ce3fa3a912c5> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/489e713f-5478-5f3c-8765-ce3fa3a912c5> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/489e713f-5478-5f3c-8765-ce3fa3a912c5> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/object/f22aa4ce-ac88-51c8-be6c-7535450c8971> a crmsci:S10_Material_Substantial ;
+    rdfs:label "prosperity"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/489e713f-5478-5f3c-8765-ce3fa3a912c5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "cafes"@en,
+        "odour"@en,
+        "of prosperity"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    rdf:value "It is the French character .There are cafes — even cafes chantant — to drop into of an evening , and a general good - humouredness and odour of prosperity prosperity about .In the old days the government was entrusted to a distinguished admiral ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f22aa4ce-ac88-51c8-be6c-7535450c8971> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/d904005e-e313-5319-94bc-81bee4bfe33e> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/d904005e-e313-5319-94bc-81bee4bfe33e> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/place/d904005e-e313-5319-94bc-81bee4bfe33e> a crm:E53_Place ;
+    rdfs:label "cafes" ;
+    crm:P137_exemplifies <http://data.odeuropa.eu/vocabulary/fragrant-spaces/36> .
+
+<http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

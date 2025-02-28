@@ -1,0 +1,65 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P165_incorporates <http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/02ea7128-9b0d-5936-abce-06e80a380e68> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/02ea7128-9b0d-5936-abce-06e80a380e68> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/02ea7128-9b0d-5936-abce-06e80a380e68> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/02ea7128-9b0d-5936-abce-06e80a380e68> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/object/964d3905-4f21-509e-a4cd-384c1c2c54ef> a crmsci:S10_Material_Substantial ;
+    rdfs:label "white lilac"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/02ea7128-9b0d-5936-abce-06e80a380e68> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "of white lilac"@en,
+        "scent"@en,
+        "the wind"@en,
+        "verbena"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    rdf:value "A sudden gust of wind caught one of the petals , drawing it up into the air till the scarlet shewed quite black against the brilliant blue sky .George watched it swaying unevenly down again , while the wind which had caught it up swept past them , scattering the scent of white lilac and verbena .Jim nodded approvingly : Well done , Baby ; now I ' ll cut the stalk in two ; I ' ll take it — Who ' s this A man had come through the trees on their left , 28 RICHARD ESCOTT ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/964d3905-4f21-509e-a4cd-384c1c2c54ef>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/670> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/379> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

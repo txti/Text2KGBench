@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "good strong"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-intensity/4> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/d68dcaef-1a6b-5b91-af3b-a9902af51b23> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/intensity> ;
+    rdfs:comment "good"@en .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P165_incorporates <http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/5729b38c-02fa-55bc-8eb6-39eda463e4a2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/5729b38c-02fa-55bc-8eb6-39eda463e4a2> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/5729b38c-02fa-55bc-8eb6-39eda463e4a2> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/5729b38c-02fa-55bc-8eb6-39eda463e4a2> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/5729b38c-02fa-55bc-8eb6-39eda463e4a2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The people"@en,
+        "good strong"@en,
+        "smell"@en,
+        "their"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    rdf:value "Harding .The people here seem to think that unless their medicine has a good strong taste and a good strong smell , it cannot produce any effect whatever .Bolton told me once when he was here , that a man rode in from the Bush one day to consult him ; he had not much the matter with him , but he was so insulted on being told so that Bolton had to retract pretty quickly ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/d68dcaef-1a6b-5b91-af3b-a9902af51b23> a crm:E39_Actor ;
+    rdfs:label "The people" .
+
+<http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/d68dcaef-1a6b-5b91-af3b-a9902af51b23> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

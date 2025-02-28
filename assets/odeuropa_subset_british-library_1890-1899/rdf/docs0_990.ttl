@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P165_incorporates <http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/f0298035-50f6-5242-9ed3-e1c6fdd6aede> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d>,
+        <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c>,
+        <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/f0298035-50f6-5242-9ed3-e1c6fdd6aede> crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/f0298035-50f6-5242-9ed3-e1c6fdd6aede> crm:P67_refers_to <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/f0298035-50f6-5242-9ed3-e1c6fdd6aede> crm:P67_refers_to <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P67_refers_to <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922> crm:P67_refers_to <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> .
+
+<http://data.odeuropa.eu/object/01b93420-7736-54ae-9bf2-9bcb5fe9cc92> a crmsci:S10_Material_Substantial ;
+    rdfs:label "fried onions"@en .
+
+<http://data.odeuropa.eu/object/65d68f7b-1935-5a32-ac56-d67867a2581a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "on the breeze"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/36c4ae06-5dfe-544f-b537-2ca8c9261922/fragment/f0298035-50f6-5242-9ed3-e1c6fdd6aede> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "odour"@en,
+        "of fried onions"@en,
+        "on the breeze"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d>,
+        <http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c>,
+        <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> ;
+    rdf:value "Then a few spread out a cloth and pray with their faces turned eastward towards Mecca , rising and bowing and touching the earth with their brows .Now , the village among the tall , straight date - palms , with their scaled trunks , begins to grow misty with the rising smoke of the fires , and the odour of fried onions is on the breeze .The goats and kids , and cocks and hens , climbing about on the thatch or walls of the houses , protest against the smoke after the manner of their kind , but no one heeds them , for the talk down below concerning the cooking ofthe supper is animated ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/a8057722-7cf4-592f-9678-79576ececf0d> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/01b93420-7736-54ae-9bf2-9bcb5fe9cc92> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/65d68f7b-1935-5a32-ac56-d67867a2581a> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/69898863-deab-54fa-9de3-57272dacaa0c> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/9f31530a-651e-547b-a821-41c7d0a7316c> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

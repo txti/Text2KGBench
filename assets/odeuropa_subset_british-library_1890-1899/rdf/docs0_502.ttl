@@ -1,0 +1,81 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "such"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/such_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "terrible"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/terrible_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P165_incorporates <http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/479ee434-bddb-5026-97e2-7a1653efc99c> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/479ee434-bddb-5026-97e2-7a1653efc99c> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/479ee434-bddb-5026-97e2-7a1653efc99c> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/479ee434-bddb-5026-97e2-7a1653efc99c> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9> crm:P67_refers_to <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> .
+
+<http://data.odeuropa.eu/attribute/such_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "such"@en .
+
+<http://data.odeuropa.eu/attribute/terrible_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "terrible"@en .
+
+<http://data.odeuropa.eu/object/4b72a58d-0685-5f41-a3ac-86361089e2cb> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/ad8668b7-3d0b-5421-9eb3-9d2f8a3f88e9/fragment/479ee434-bddb-5026-97e2-7a1653efc99c> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "odour"@en,
+        "such"@en,
+        "terrible"@en,
+        "their"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2>,
+        <http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd>,
+        <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    rdf:value "The bears were taking their final meals of rotting salmon before saying good night .The salmon themselves were well - nigh extinct in the rivers ; their carcases strewed the banks , lay in festoons on every branch along the water ' s edge , and diffused such a terrible odour that nothing but the abundance of mallards up the whole length of the river would have tempted me ( as it did , and to which I yielded ) to follow the course of the stream .I take the opportunity of here inserting some interesting interesting particulars about these salmon , from the observations of Mr ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/5b5b5bcb-2135-5dd4-bec4-9aa339723cc2> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/4b72a58d-0685-5f41-a3ac-86361089e2cb> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/31726abb-f8a3-587e-af62-5b994bffeebd> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/b6170034-7ca6-5da8-a954-17abbc678112> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+

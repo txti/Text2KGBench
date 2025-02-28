@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1050f5f4-a1b0-5458-964a-64c9ac8670a2> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P165_incorporates <http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/b0fb26fb-7a61-5a08-a906-eed28a4e3a53> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f>,
+        <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9>,
+        <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/b0fb26fb-7a61-5a08-a906-eed28a4e3a53> crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/b0fb26fb-7a61-5a08-a906-eed28a4e3a53> crm:P67_refers_to <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/b0fb26fb-7a61-5a08-a906-eed28a4e3a53> crm:P67_refers_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/object/0f1d3faa-6880-50ce-abd4-3b875d76e920> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the stephanotis flowers"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/b0fb26fb-7a61-5a08-a906-eed28a4e3a53> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "She"@en,
+        "of the stephanotis flowers"@en,
+        "scent"@en,
+        "smell"@en,
+        "sweet"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f>,
+        <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9>,
+        <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    rdf:value "She Avould know all in a moment .She could already smell the sweet scent of the stephanotis flowers .On the little table in the porch lay her fate in a cracked Japanese tray ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/1050f5f4-a1b0-5458-964a-64c9ac8670a2> a crm:E39_Actor ;
+    rdfs:label "She" .
+
+<http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/0f1d3faa-6880-50ce-abd4-3b875d76e920> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/1050f5f4-a1b0-5458-964a-64c9ac8670a2> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> a od:L11_Smell ;
+    rdfs:label "scent"@en,
+        "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

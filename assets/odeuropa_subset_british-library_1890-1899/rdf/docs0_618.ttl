@@ -1,0 +1,90 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "vivid"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/vivid_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/249d65d4-9323-5d65-b8f8-5a878a2c9a89> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P165_incorporates <http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/24f7b822-4f4b-578f-881a-2e8ca0c01599> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/24f7b822-4f4b-578f-881a-2e8ca0c01599> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/24f7b822-4f4b-578f-881a-2e8ca0c01599> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/24f7b822-4f4b-578f-881a-2e8ca0c01599> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6> crm:P67_refers_to <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> .
+
+<http://data.odeuropa.eu/attribute/vivid_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "vivid"@en .
+
+<http://data.odeuropa.eu/object/02d2e3e5-5e39-52fc-83d5-4002df66f8db> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the breeze"@en .
+
+<http://data.odeuropa.eu/object/f22aa4ce-ac88-51c8-be6c-7535450c8971> a crmsci:S10_Material_Substantial ;
+    rdfs:label "Irish peat"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/0f8d4c70-1005-5571-8556-42fb1d0c64d6/fragment/24f7b822-4f4b-578f-881a-2e8ca0c01599> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "I"@en,
+        "odours"@en,
+        "of Irish peat"@en,
+        "scented"@en,
+        "the breeze"@en,
+        "the harbour of the colonial capital"@en,
+        "vivid"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb>,
+        <http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8>,
+        <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    rdf:value "A passage by a fast steamer of three and a half days is all that separates Queenstown from St John ' s .Approaching the harbour of the colonial capital I fancied , as I stood in the stern of the vessel , and scented the breeze , that I was being pursued pursued by the vivid odours of Irish peat .And what a new area this proximity to England may open up for this colony ! Why should she not become one of the highways of Empire Empire to the West ? The great British North American — nay , the great Imperial dream of the future is Newfoundland received into the bosom of the other Confederated provinces : a fast alternative steamship service from Milford Haven to Bonavista Bay accomplishing the journey in three days ; a Pullman express train across the island ; and so via packet to Sydney , and from thence to Quebec and Montreal by THE TENTH ISLAND 30 Daily News I would find sentences directed against the Government , in the following amiable vein : — Whiteway party is a shameless gang of boodlers , rogues , and jobbers ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/249d65d4-9323-5d65-b8f8-5a878a2c9a89> a crm:E39_Actor ;
+    rdfs:label "I|I|I" .
+
+<http://data.odeuropa.eu/emission/55fa3807-c776-5cd7-9b3a-063f79ca78fb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f22aa4ce-ac88-51c8-be6c-7535450c8971> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/object/02d2e3e5-5e39-52fc-83d5-4002df66f8db> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/79a95f43-0bca-559c-860d-d4a44b847101> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/place/79a95f43-0bca-559c-860d-d4a44b847101> a crm:E53_Place ;
+    rdfs:label "the harbour of the colonial capital" .
+
+<http://data.odeuropa.eu/experience/b63fb02f-c068-523f-913b-b9feabae94d8> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/249d65d4-9323-5d65-b8f8-5a878a2c9a89> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/79a95f43-0bca-559c-860d-d4a44b847101> ;
+    time:hasTime <http://data.odeuropa.eu/time/cb54252a-be33-5558-87cd-77f4c3a184a5> .
+
+<http://data.odeuropa.eu/smell/5f32c189-8498-528c-8050-2f296af84c71> a od:L11_Smell ;
+    rdfs:label "odours"@en,
+        "scented"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

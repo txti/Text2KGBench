@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86> crm:P165_incorporates <http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86/fragment/6cdd178f-eef3-531a-979a-d50ff0b8bc83> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ad17c4f-8b6e-53c2-9c92-016115b306cf>,
+        <http://data.odeuropa.eu/experience/1ff75576-8334-5acc-8572-a853ae69659b>,
+        <http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86/fragment/6cdd178f-eef3-531a-979a-d50ff0b8bc83> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ad17c4f-8b6e-53c2-9c92-016115b306cf> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86/fragment/6cdd178f-eef3-531a-979a-d50ff0b8bc83> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ff75576-8334-5acc-8572-a853ae69659b> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86/fragment/6cdd178f-eef3-531a-979a-d50ff0b8bc83> crm:P67_refers_to <http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86> crm:P67_refers_to <http://data.odeuropa.eu/emission/8ad17c4f-8b6e-53c2-9c92-016115b306cf> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86> crm:P67_refers_to <http://data.odeuropa.eu/experience/1ff75576-8334-5acc-8572-a853ae69659b> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86> crm:P67_refers_to <http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> .
+
+<http://data.odeuropa.eu/object/150abdfa-92fb-5f9b-87e6-ad7f989eca0c> a crmsci:S10_Material_Substantial ;
+    rdfs:label "del guarango"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/27f05f74-e6b7-591e-a220-1efaa763ee86/fragment/6cdd178f-eef3-531a-979a-d50ff0b8bc83> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "aroma"@en,
+        "del guarango"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/8ad17c4f-8b6e-53c2-9c92-016115b306cf>,
+        <http://data.odeuropa.eu/experience/1ff75576-8334-5acc-8572-a853ae69659b>,
+        <http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> ;
+    rdf:value "El guarango no es sino sino el aromo ( acacia farnesiana ) farnesiana ) y da como él una flor fragante en forma de pequeña pequeña mota .La aroma del guarango es de un amarillo amarillo más subido y de un olor más intenso ; revela su procedencia procedencia agreste .Bajo el epígrafe de Sombras horizontales describíamos describíamos así , más de veinticinco año há , ambos arbolitos : Y si estos del jardín habitadores Nos placen con su sombra y con sus flores , De los parajes solitarios gala , ¿ Quién del aromo iguala La vaguedad y el natural donaire ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/8ad17c4f-8b6e-53c2-9c92-016115b306cf> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/150abdfa-92fb-5f9b-87e6-ad7f989eca0c> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/experience/1ff75576-8334-5acc-8572-a853ae69659b> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> ;
+    time:hasTime <http://data.odeuropa.eu/time/df862698-973c-58f0-a534-b7120964a68a> .
+
+<http://data.odeuropa.eu/smell/843f13d9-bf57-5035-9f08-b0aebee2d222> a od:L11_Smell ;
+    rdfs:label "aroma"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

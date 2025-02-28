@@ -1,0 +1,79 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "agreeable"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/agreeable_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P165_incorporates <http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/041d563f-a889-5311-963d-4735cd432071> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/041d563f-a889-5311-963d-4735cd432071> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/041d563f-a889-5311-963d-4735cd432071> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/041d563f-a889-5311-963d-4735cd432071> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326> crm:P67_refers_to <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> .
+
+<http://data.odeuropa.eu/attribute/agreeable_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "agreeable"@en .
+
+<http://data.odeuropa.eu/object/4d0d7a2d-ba97-5cf1-9bf5-99e8ef97e944> a crmsci:S10_Material_Substantial ;
+    rdfs:label "rock - oil"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/84dce1a1-1fe2-5a45-ad7a-b2a409ef0326/fragment/041d563f-a889-5311-963d-4735cd432071> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The Petroleum"@en,
+        "agreeable"@en,
+        "in crevices of the mines"@en,
+        "rock - oil"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022>,
+        <http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee>,
+        <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    rdf:value "The usual produce is fourteen ounces ; sixteen have been obtained , but such results in this circuit are extremely uncommon .The Petroleum , or rock - oil , yvhich is found sometimes in crevices of the mines , has an agreeable smell , and is esteemed serviceable in rheumatic cases , if rubbed on the parts affected .The miners call it Ymenyn Tylwyth Ti - g , or the fairies ' which leads me also to speak of another superstition yvhich they entertain , namely , that of the As they imagine this & # 34 ; fairies ' butter to have been placed there by some benign spirits , so they also believe that certain mysterious sounds yvhich they sometimes hear whilst searching for the lead , are the same good fays directing the miners byrepeated byrepeated strokes , or knocks , to a rich vein ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/311c7899-ca0e-5ce0-9105-4c98311dc022> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/4d0d7a2d-ba97-5cf1-9bf5-99e8ef97e944>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/383> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/52d8d3ad-f159-581f-a041-78e33d3bfc22> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/place/52d8d3ad-f159-581f-a041-78e33d3bfc22> a crm:E53_Place ;
+    rdfs:label "in crevices of the mines" .
+
+<http://data.odeuropa.eu/experience/58ac8b11-72cd-53a5-88cc-909a15a400ee> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/52d8d3ad-f159-581f-a041-78e33d3bfc22> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/0dbfb005-c97f-5918-a2d9-224c59832321> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

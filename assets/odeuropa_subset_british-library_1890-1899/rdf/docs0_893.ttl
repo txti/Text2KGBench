@@ -1,0 +1,68 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P165_incorporates <http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/9277200b-c35f-52ae-9434-368f5159b125> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/9277200b-c35f-52ae-9434-368f5159b125> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/9277200b-c35f-52ae-9434-368f5159b125> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/9277200b-c35f-52ae-9434-368f5159b125> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0> crm:P67_refers_to <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> .
+
+<http://data.odeuropa.eu/actor/36947351-355f-5053-90e8-9c12da514952> a crm:E39_Actor ;
+    rdfs:label "Dave" .
+
+<http://data.odeuropa.eu/object/1dafd0e4-7528-52a1-aa9a-916b1a84afe4> a crmsci:S10_Material_Substantial ;
+    rdfs:label "CASE OF AILSA"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/a22b0e58-6945-5bd2-b3e0-30c817c33ba0/fragment/9277200b-c35f-52ae-9434-368f5159b125> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "CASE OF AILSA"@en,
+        "Dave"@en,
+        "odour"@en,
+        "of the tobacco"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676>,
+        <http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e>,
+        <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    rdf:value "Ay , you ' U get something better soon , master ; I ' ve just dropped in a bag of bits of fish with a stone Dave fished on , having good luck , and various inhabitants inhabitants of the rocky bay were drawn up and thrown into the well of the boat ; but the young man ' s thoughts were ashore , now at the doctor ' s house , now at the Vicarage , and all his actions were automatic ; he hardly saw his captures , the dense fog might not have existed , and he had ceased to hear the slapping and hissing of the tide among the rocks and the sharp report made by a bigger wave than usual rushing into one of the granite caves and filling it to the long , narrow roof .Old Chad lit his pipe and sat and smoked in silence , and the odour of the tobacco suggested to Dave that he 364 THE CASE OF AILSA GRAY There was no rock at that spot just at the harbour mouth where Dave ' s boat had jarred and shivered from head to heel — only a portion of a Uttle cutter like his own — a portion of the stern and keel seen next morning when the tide was down and easUy recognisable as the remains of Britten Ranee ' s cutter , riven to pieces as he raced back to escape the rising storm , just missing the harbour entrance in the fog .Of its master ' s fate the sea alone could teU , and it whispered much in the sunshine that next morning , whUe the vicar sat beside a calm , dead face in his darkened room ; but the wavelets whispered only to the pebbles of the shore where there were none to hear ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d506f733-a7e7-55d3-bb61-55817fc2f676> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/1dafd0e4-7528-52a1-aa9a-916b1a84afe4>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/227> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/cb644c67-b452-554a-86c0-e6bdc030c73e> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/36947351-355f-5053-90e8-9c12da514952> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/fd16683a-287c-54df-aaf1-3de444d67313> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

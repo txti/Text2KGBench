@@ -1,0 +1,76 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "their richest balsamic"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/their%20richest%20balsamic_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P165_incorporates <http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/ad3085bd-6bf1-5af6-a6fb-87c082a857c9> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/ad3085bd-6bf1-5af6-a6fb-87c082a857c9> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/ad3085bd-6bf1-5af6-a6fb-87c082a857c9> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/ad3085bd-6bf1-5af6-a6fb-87c082a857c9> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8> crm:P67_refers_to <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> .
+
+<http://data.odeuropa.eu/attribute/their%20richest%20balsamic_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "their richest balsamic"@en .
+
+<http://data.odeuropa.eu/object/e89af8e6-e974-5a64-9fec-ae28a444746f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the fir trees"@en .
+
+<http://data.odeuropa.eu/object/fc0ffc14-b9e4-5fcd-a206-710e33b478e1> a crmsci:S10_Material_Substantial ;
+    rdfs:label "the"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/63ea0f5e-c2d4-541d-86d5-5e3a181dc0f8/fragment/ad3085bd-6bf1-5af6-a6fb-87c082a857c9> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "the"@en,
+        "the fir trees"@en,
+        "their richest balsamic"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193>,
+        <http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf>,
+        <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    rdf:value "Now he beheld her born amidst the glacier snows of the loftiest crags , wdiere the crystals of the ice - world decked her cradle , and springing thence down the ravines , clothed in the dewy freshness of dawn , flinging wide her mantle of glittering foam over the vines and bushes of cliff and fissure , as she passed , to launch from the brink of rock hundreds of feet , forming little transparent pools on successive ledges , and finally gaining the river in the valley far below .Again , when the golden sun of noon had burned up the delicious coolness of earlier hours , the flowers drooped , parched by heat , and the fir trees yielded their richest balsamic fragrance , fragrance , the water spirit lured her slave beneath a projecting rock , and spread her veil of silver , as a curtain from airy heights to sullen depths , rendering remote and vague , a part of dissolving tree and hill and swirling vapour , all external objects .Wayward and tremulous , the cascade awaited the sun ' s kiss — the regal salute of a God who bent from the skies to find her hidden in the ravine ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/c8371e99-665f-57d4-b862-af336f3ce193> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e89af8e6-e974-5a64-9fec-ae28a444746f>,
+        <http://data.odeuropa.eu/object/fc0ffc14-b9e4-5fcd-a206-710e33b478e1> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/experience/9ed10500-9ffa-5094-8759-ad0bae157ebf> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> ;
+    time:hasTime <http://data.odeuropa.eu/time/72add0cc-1e58-5a2b-8924-76c2aadd8ea4> .
+
+<http://data.odeuropa.eu/smell/7cf45b45-d995-5adf-89a3-a75593a6744b> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

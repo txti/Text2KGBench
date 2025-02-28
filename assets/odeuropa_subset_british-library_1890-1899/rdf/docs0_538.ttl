@@ -1,0 +1,61 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "more sweet"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-hedonic/11n> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/hedonic> ;
+    rdfs:comment "more"@en .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772> crm:P165_incorporates <http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772/fragment/05db5843-285a-58d5-ba6c-21ef54db0b94> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d3b40f2e-a681-52f6-847d-1c725a847977>,
+        <http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85>,
+        <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772/fragment/05db5843-285a-58d5-ba6c-21ef54db0b94> crm:P67_refers_to <http://data.odeuropa.eu/emission/d3b40f2e-a681-52f6-847d-1c725a847977> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772/fragment/05db5843-285a-58d5-ba6c-21ef54db0b94> crm:P67_refers_to <http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772/fragment/05db5843-285a-58d5-ba6c-21ef54db0b94> crm:P67_refers_to <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772> crm:P67_refers_to <http://data.odeuropa.eu/emission/d3b40f2e-a681-52f6-847d-1c725a847977> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772> crm:P67_refers_to <http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772> crm:P67_refers_to <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/2fe1274b-1bfc-50ed-80c5-5f97a6788772/fragment/05db5843-285a-58d5-ba6c-21ef54db0b94> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "more sweet"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/d3b40f2e-a681-52f6-847d-1c725a847977>,
+        <http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85>,
+        <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> ;
+    rdf:value "So doth the very Fatherhood of Love In vast compassion most divinely move Those eyes , alas ! we may no longer see ; But was not I that best and truest friend , Who saw them from their very infancy , And saw them beautiful unto the end ? And were they not so always wont to shine , With fuller sweetness in their youthful light , CHARLES DARWIN A MEMORIAL POEM B A MEMORIAL POEM 23 In yonder ever - whispering shade The birds still twitter , flit , and sing ; And can that mavis on the glade The one great change be pondering ? It runs , and peeps , and listening stands , Then runs a space , and lists again : No more , sweet bird , those bounteous hands On thee , or me , their gifts shall rain .Again I walk in his own fields , And in their blossom bathe my feet ; I bless the fragrance that it yields , And feel the sweetness is more sweet Than ever breathed from meadow floor ; For , like the charm of magic spell , It opens wide a fastened door , Which closed on scenes I knew so well It seems I need but turn around To see him somewhere far or near , And that I soon shall hear the sound Of his bright voice break on mine ear .The jangle of a world ' s discordant strife Hath slowly been resolved to harmony ; 36 SONNETS to THE MUSE I heard a poet to the gods complain , ' My muse is all so fitful , coy a maid That when my court most earnestly is paid She smileth at my ecstasies of pain , And shows her virgin shield of proud disdain : Yet , when abandoned , gentle and afraid Her voice will follow me o ' er hill and glade , To light anew a fever in my brain ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/d3b40f2e-a681-52f6-847d-1c725a847977> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> .
+
+<http://data.odeuropa.eu/experience/2899f98b-5898-5041-992f-65faee814e85> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> .
+
+<http://data.odeuropa.eu/smell/50532cac-3efa-5c43-8153-3dee603ef836> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P165_incorporates <http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/e4ffcf54-3030-5115-bd16-63858d67c3a2> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001>,
+        <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974>,
+        <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/e4ffcf54-3030-5115-bd16-63858d67c3a2> crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/e4ffcf54-3030-5115-bd16-63858d67c3a2> crm:P67_refers_to <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/e4ffcf54-3030-5115-bd16-63858d67c3a2> crm:P67_refers_to <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P67_refers_to <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db> crm:P67_refers_to <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> .
+
+<http://data.odeuropa.eu/object/a9a323d3-862b-57e6-850f-d1f579b2a457> a crmsci:S10_Material_Substantial ;
+    rdfs:label "their hookahs"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/1b5f0051-0b47-5380-b9be-84d4b548e8db/fragment/e4ffcf54-3030-5115-bd16-63858d67c3a2> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "me"@en,
+        "of their hookahs"@en,
+        "whiff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001>,
+        <http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974>,
+        <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    rdf:value "Well , my life was attempted in every conceivable fashion .Patriarchal old gentlemen sitting under shady trees pressed me to take shelter from the noon - day sun ; honest travellers entered unaffectedly into conversation with me , offered me the most beautiful sweetmeats , sweetmeats , and in frank good - fellowship begged me to take a whiff of their hookahs ; beautiful young damsels , in the direst distress , implored my assistance ; wounded men rolled in agony on the road , and besought me , in the name of Vishnu , to give them a drink of water .But by this time I was proof against the whole box and dice of them ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/44b38bb4-33d5-5eb0-8c42-437d6311b001> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/a9a323d3-862b-57e6-850f-d1f579b2a457> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/0c423eb6-ea0d-5a4b-ac76-2a8024d01974> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/9a33c0f4-3dc9-54b3-b859-8e8a710ff368> a od:L11_Smell ;
+    rdfs:label "whiff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

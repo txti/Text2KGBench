@@ -1,0 +1,60 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P165_incorporates <http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/807dac20-2de9-5999-bdc3-8c14008ebf10> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/807dac20-2de9-5999-bdc3-8c14008ebf10> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/807dac20-2de9-5999-bdc3-8c14008ebf10> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/807dac20-2de9-5999-bdc3-8c14008ebf10> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59> crm:P67_refers_to <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> .
+
+<http://data.odeuropa.eu/actor/9544a148-4bd2-597f-9216-d16806b3abf5> a crm:E39_Actor ;
+    rdfs:label "Gilbert" .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/39ca552c-e6cc-5d52-9d09-43d211633b59/fragment/807dac20-2de9-5999-bdc3-8c14008ebf10> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Gilbert"@en,
+        "sniffing"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613>,
+        <http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f>,
+        <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    rdf:value "But so many people are miserable .' Dog ! Is that you ? ' said Gilbert , returning to his chair , and becoming aware of a moist black thing , a sniffing , muzzly , affectionate nose at his elbow .He embraced the beast with the silly effusion that comes of sitting up late at night , and meditating in solitude over the littleness of life , the coldness and dirtiness of the Thames ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/db646b2b-cede-5e19-a4e1-ea3b64515613> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/721efa4f-7c1b-5b6a-a071-4630a9049f3f> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/9544a148-4bd2-597f-9216-d16806b3abf5> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/d4e56c37-3c65-5bea-8444-282f9d947928> a od:L11_Smell ;
+    rdfs:label "sniffing"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

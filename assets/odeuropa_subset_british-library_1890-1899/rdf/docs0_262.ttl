@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P165_incorporates <http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/969dc775-713e-5f90-884c-e0ad590033dd> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/969dc775-713e-5f90-884c-e0ad590033dd> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/969dc775-713e-5f90-884c-e0ad590033dd> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/969dc775-713e-5f90-884c-e0ad590033dd> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f> crm:P67_refers_to <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/cfca2439-a0b6-5104-8403-3370769b048f/fragment/969dc775-713e-5f90-884c-e0ad590033dd> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "The room"@en,
+        "perfume"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c>,
+        <http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4>,
+        <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    rdf:value "In her hand she carried another bunch of roses , and Beatrix came in too , bringing more roses .The room seemed to be suddenly filled with perfume and colour , and as Villiers looked 69 A GAME OF POKER .at the children ' s sweet faces a sudden feeling of disgust came over him at the purpose of his visit here to - night ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/0a21da51-c968-5a89-82d2-1630d7ee126c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/fragrant-spaces/117> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/a1cf84ae-e849-5b18-bcd2-02bd4b1335d4> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/e1f26c8b-2823-53f9-9af2-ac2dbcb42079> a od:L11_Smell ;
+    rdfs:label "perfume"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

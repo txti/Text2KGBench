@@ -1,0 +1,111 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "unmistakable unmistakable"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/unmistakable%20unmistakable_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad/assignment/2> a crm:E13_Attribute_Assignment ;
+    rdfs:label "indescribably appetising"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/indescribably%20appetising_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> ;
+    rdfs:comment "indescribably"@en .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P165_incorporates <http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/6cd0adc1-f728-55e7-b4f0-5ff3469d2e9d> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/6cd0adc1-f728-55e7-b4f0-5ff3469d2e9d> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/6cd0adc1-f728-55e7-b4f0-5ff3469d2e9d> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/6cd0adc1-f728-55e7-b4f0-5ff3469d2e9d> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493> crm:P67_refers_to <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> .
+
+<http://data.odeuropa.eu/attribute/indescribably%20appetising_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "indescribably appetising"@en .
+
+<http://data.odeuropa.eu/attribute/unmistakable%20unmistakable_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "unmistakable unmistakable"@en .
+
+<http://data.odeuropa.eu/object/08ae9c7f-79ba-51c6-8f57-40acb801311a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "broiled ham"@en .
+
+<http://data.odeuropa.eu/object/e397ebbf-f4da-50d5-a40f-0cd110b71a70> a crmsci:S10_Material_Substantial ;
+    rdfs:label "sedges"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/01d06597-e25f-54d9-a48c-d0e7b3b30493/fragment/6cd0adc1-f728-55e7-b4f0-5ff3469d2e9d> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "from the adjacent gardens"@en,
+        "indescribably appetising"@en,
+        "into the long , straggling High Street"@en,
+        "odour"@en,
+        "of broiled ham"@en,
+        "of flowers"@en,
+        "of sedges"@en,
+        "presently"@en,
+        "savour"@en,
+        "scent"@en,
+        "unmistakable unmistakable"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364>,
+        <http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad>,
+        <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    rdf:value "Then she seemed to float with the current and be gently wafted along ; the hoarse voice of the river seemed to die away into a soothing lullaby .So faint , so distant , so musical , so restful did it seem , so warm the sunshine , so beautiful A TALE OF THE THAMES 42 scent of flowers from the adjacent gardens , and presently a savour of sedges from the river , and as they turned into the long , straggling High Street there was an unmistakable unmistakable odour of broiled ham that was indescribably appetising .The odd gables , the quaint chimneys , and the irregular buildings looked doubly picturesque against the clear twilight ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/bd55fed9-64d8-52c3-a775-fec5e9210364> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/08ae9c7f-79ba-51c6-8f57-40acb801311a>,
+        <http://data.odeuropa.eu/object/e397ebbf-f4da-50d5-a40f-0cd110b71a70>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/88f0ef06-47db-56e8-a3eb-85acb72f02cf>,
+        <http://data.odeuropa.eu/place/c4c06888-d369-5be2-a137-db6fa18a464d> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a>,
+        <http://data.odeuropa.eu/time/a7b33a7f-24c7-571f-84ac-c7afd49c2ba3> .
+
+<http://data.odeuropa.eu/place/88f0ef06-47db-56e8-a3eb-85acb72f02cf> a crm:E53_Place ;
+    rdfs:label "into the long , straggling High Street" .
+
+<http://data.odeuropa.eu/place/c4c06888-d369-5be2-a137-db6fa18a464d> a crm:E53_Place ;
+    rdfs:label "from the adjacent gardens" .
+
+<http://data.odeuropa.eu/time/a7b33a7f-24c7-571f-84ac-c7afd49c2ba3> a time:TemporalEntity ;
+    rdfs:label "presently" .
+
+<http://data.odeuropa.eu/experience/d4f61a99-7374-51b0-a43d-6c5fb6a3d2ad> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/88f0ef06-47db-56e8-a3eb-85acb72f02cf>,
+        <http://data.odeuropa.eu/place/c4c06888-d369-5be2-a137-db6fa18a464d> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a>,
+        <http://data.odeuropa.eu/time/a7b33a7f-24c7-571f-84ac-c7afd49c2ba3> .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
+<http://data.odeuropa.eu/smell/f8fd8800-6984-52a1-9a08-851a3a4f0192> a od:L11_Smell ;
+    rdfs:label "odour"@en,
+        "savour"@en,
+        "scent"@en .
+

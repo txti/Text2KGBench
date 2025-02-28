@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P165_incorporates <http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/4eb1c4b2-4126-5f49-b3ce-0e7028453070> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/4eb1c4b2-4126-5f49-b3ce-0e7028453070> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/4eb1c4b2-4126-5f49-b3ce-0e7028453070> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/4eb1c4b2-4126-5f49-b3ce-0e7028453070> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d> crm:P67_refers_to <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> .
+
+<http://data.odeuropa.eu/object/e93b6f84-27a4-558d-848d-84246c20171a> a crmsci:S10_Material_Substantial ;
+    rdfs:label "grapeshot fired"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/69cffd87-1afc-5ae6-920a-9cfcfc99240d/fragment/4eb1c4b2-4126-5f49-b3ce-0e7028453070> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "in Paris"@en,
+        "of grapeshot fired"@en,
+        "whiff"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65>,
+        <http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78>,
+        <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    rdf:value "At home , the Revolution , after the execution of Danton and Desmoulins by Robespierre , the extinction on the scaffold of Robespierre , Coutbon , and Saint - Just , and the banishment of Collot , Billaud , and Barere , ended its second stage , in October 1795 , with the establishment of a Council of Five Hundred , a Senate , and an executive body of five members called the Directory , of whom the chief were Carnot and Barras .Anarchy had come to an end in Paris with the whiff of grapeshot fired by the rising artillery - officer , Buonaparte , who was coming before the world as the most striking figure of modern history .The French Revolution had a vast influence upon both the internal condition and the external policy of the British people ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b7db0bf6-32b7-577a-8b8f-c3cd4b22ad65> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/e93b6f84-27a4-558d-848d-84246c20171a> ;
+    crm:P7_took_place_at <https://sws.geonames.org/2988507/> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/experience/3c28776b-1f37-5743-b1d5-51e785e91f78> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> ;
+    crm:P7_took_place_at <https://sws.geonames.org/2988507/> ;
+    time:hasTime <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<https://sws.geonames.org/2988507/> a crm:E53_Place .
+
+<http://data.odeuropa.eu/smell/913484a9-1237-5f23-a4d1-0a327162e7ac> a od:L11_Smell ;
+    rdfs:label "whiff"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

@@ -1,0 +1,57 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P165_incorporates <http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/2b7d6d33-4f4d-588f-996e-1ea8a3120b51> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495>,
+        <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c>,
+        <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/2b7d6d33-4f4d-588f-996e-1ea8a3120b51> crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/2b7d6d33-4f4d-588f-996e-1ea8a3120b51> crm:P67_refers_to <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/2b7d6d33-4f4d-588f-996e-1ea8a3120b51> crm:P67_refers_to <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P67_refers_to <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P67_refers_to <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/2b7d6d33-4f4d-588f-996e-1ea8a3120b51> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "of flowers"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495>,
+        <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c>,
+        <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> ;
+    rdf:value "She sat at the window , smiling towards us .The birds were singing ; the fragrance of flowers was in the air .Mother has fallen said Ellen ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/72> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

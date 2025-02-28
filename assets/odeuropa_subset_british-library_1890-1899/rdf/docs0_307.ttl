@@ -1,0 +1,75 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "poignant"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/poignant_en> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P165_incorporates <http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/0e41fdfb-3c92-5687-9b0a-610a9cb8123c> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/0e41fdfb-3c92-5687-9b0a-610a9cb8123c> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/0e41fdfb-3c92-5687-9b0a-610a9cb8123c> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/0e41fdfb-3c92-5687-9b0a-610a9cb8123c> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847> crm:P67_refers_to <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> .
+
+<http://data.odeuropa.eu/attribute/poignant_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "poignant"@en .
+
+<http://data.odeuropa.eu/object/3a226165-5712-5537-a27a-cdb88f258eb6> a crmsci:S10_Material_Substantial ;
+    rdfs:label "whose racemes of tufted gold"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/df550b51-bca2-5678-bf2a-c997e0b82847/fragment/0e41fdfb-3c92-5687-9b0a-610a9cb8123c> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "fragrance"@en,
+        "of acacias"@en,
+        "poignant"@en,
+        "the air"@en,
+        "whose racemes of tufted gold"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4>,
+        <http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725>,
+        <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    rdf:value "' So utterly maimed and defeated did they look as they dragged one quivering , shrunken leg after another , the only 32 — 2 152 AN AUSTRALIAN GIRL .depths of acacias , whose racemes of tufted gold censed the air with poignant fragrance ; the clear song of the little brown fly - catcher perched on the orchard - palings vied in sweetness with the halfbrooding halfbrooding carol of the flame - breasted robin flitting from bush to bush ; away in the woods rose the calls of the wild gray pigeons , soft and musical as the notes of the ring - dove which was stolen by the lover of old for a love - gift when it brooded in the juniper - tree ; everywhere the hum of the tawny , hairy bees might be heard as they flitter from pear to peach tree , or among the wide branches of the white gum - trees , now sprinkled with pale - cream myrtle - blossoms , whose exquisite cups were full of honey and pollen .Each sight and sound was so far removed from the vulgar bustle and throng of life that one became unconsciously unconsciously steeped in a sense of large quiet leisure , as if all the world and all the days to come were part of one unbroken holiday ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/b98b7b9d-6f55-56e1-8cc7-c79b53439ce4> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/3a226165-5712-5537-a27a-cdb88f258eb6>,
+        <http://data.odeuropa.eu/vocabulary/olfactory-objects/221> ;
+    od:F4_had_carrier <http://data.odeuropa.eu/vocabulary/olfactory-objects/417> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/experience/0fa45329-d876-55d6-8515-517b82f37725> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> ;
+    time:hasTime <http://data.odeuropa.eu/time/5dbd256e-a390-518d-b174-22e53e66f319> .
+
+<http://data.odeuropa.eu/smell/9296cc44-7d7b-5051-8b8e-337aae81d811> a od:L11_Smell ;
+    rdfs:label "fragrance"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

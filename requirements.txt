@@ -1,0 +1,16 @@
+cmake
+huggingface-hub
+ipykernel
+lancedb
+litellm
+llama-cpp-python
+ninja
+nltk
+numpy
+openai
+pandas
+requests
+sentence-transformers
+SPARQLWrapper
+torch==2.5.1
+tqdm

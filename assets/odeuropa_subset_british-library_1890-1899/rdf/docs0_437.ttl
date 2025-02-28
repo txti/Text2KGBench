@@ -1,0 +1,73 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P165_incorporates <http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/735dc0ac-ac83-5667-a04d-018539541e11> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f>,
+        <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9>,
+        <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/735dc0ac-ac83-5667-a04d-018539541e11> crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/735dc0ac-ac83-5667-a04d-018539541e11> crm:P67_refers_to <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/735dc0ac-ac83-5667-a04d-018539541e11> crm:P67_refers_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2> crm:P67_refers_to <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> .
+
+<http://data.odeuropa.eu/object/0f1d3faa-6880-50ce-abd4-3b875d76e920> a crmsci:S10_Material_Substantial ;
+    rdfs:label "fried bacon"@en .
+
+<http://data.odeuropa.eu/object/74b3c1c8-c203-58db-8151-e741880deb2f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "liniment"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/04e8ae35-394e-55e1-a7a0-8a58ec326ac2/fragment/735dc0ac-ac83-5667-a04d-018539541e11> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "liniment"@en,
+        "made the remaining members of the family very fractious"@en,
+        "of fried bacon"@en,
+        "of their small sittingroom , sittingroom"@en,
+        "smell"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f>,
+        <http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9>,
+        <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    rdf:value "Lucilla had chilblains , and a bad cold in her head , and her mother had a fresh attack of rheumatism .There was an all - prevailing smell of fried bacon and liniment in the hot , stuffy atmosphere of their small sittingroom , sittingroom , and all these causes combined made the remaining members of the family very fractious .By contrast , the thought of lying in a luxurious hammock , and being fanned by several attentive black servants , and liA7ing principally on delicious pine - apples and guavajelly , guavajelly , was not devoid of charm ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/eb453bd3-0adf-577e-aa4d-5ff6bdd9fe9f> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/0f1d3faa-6880-50ce-abd4-3b875d76e920>,
+        <http://data.odeuropa.eu/object/74b3c1c8-c203-58db-8151-e741880deb2f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/04b94750-4e32-5a88-b3ff-96de39bb2878> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/987f3b3c-addf-5f45-ab64-9887889639d9> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/04b94750-4e32-5a88-b3ff-96de39bb2878> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/place/04b94750-4e32-5a88-b3ff-96de39bb2878> a crm:E53_Place ;
+    rdfs:label "of their small sittingroom , sittingroom" .
+
+<http://data.odeuropa.eu/smell/84915d98-5177-5a8b-83c5-75bc1863726f> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

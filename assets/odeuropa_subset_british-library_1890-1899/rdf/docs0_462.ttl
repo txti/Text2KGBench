@@ -1,0 +1,89 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "cheap"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/cheap_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fc971db6-2436-5ecc-85e6-22b77865207e> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P165_incorporates <http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/7ac459ec-69cc-5b57-87d4-3f6ddc80ecbd> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/7ac459ec-69cc-5b57-87d4-3f6ddc80ecbd> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/7ac459ec-69cc-5b57-87d4-3f6ddc80ecbd> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/7ac459ec-69cc-5b57-87d4-3f6ddc80ecbd> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac> crm:P67_refers_to <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> .
+
+<http://data.odeuropa.eu/attribute/cheap_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "cheap"@en .
+
+<http://data.odeuropa.eu/object/c9a34db8-29a6-5e41-b252-4db0010ee72f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "which"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/fb318f5b-608e-5fcb-b393-3194d81956ac/fragment/7ac459ec-69cc-5b57-87d4-3f6ddc80ecbd> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Sometimes"@en,
+        "cheap"@en,
+        "smell"@en,
+        "the pit of the theatre"@en,
+        "we"@en,
+        "which"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e>,
+        <http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29>,
+        <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    rdf:value "We look into the glittering windows of the jewellers ' shops ; and I show Sophy which of the diamond - eyed serpents , coiled up on white satin rising grounds , I would give her if I could afford it ; and Sophy shows me which of the gold watches that are capped and jewelled and engine - turned , and possessed of the horizontal lever - escape - movement , lever - escape - movement , and all sorts of things , she would buy for me if she could afford it ; and we pick out the spoons and forks , fish - slices , butter - knives , andsugar - tongs , we should both prefer if we could both afford it ; and really we go away as if we had got them ! Then , when we stroll into the squares , and great streets , and see a house to let , sometimes we look up at it , and say , how would that do , if I was made a judge ? And we parcel it out — such a room for us , such rooms for the girls , and so forth ; until we settle to our satisfaction that it would do , or it wouldn ' t do , as the case may be .Sometimes , we go at half - price to the pit of the theatre — the very smell of which is cheap , in my opinion , at the money — and there we thoroughly enjoy the play : which Sophy believes every word of , andsodol In walking home , perhaps we buy a little bit of something at a cook ' s - shop , & gt ; r a little lobster at the fishmonger ' s , and fishmonger ' s , and bringithere , andmakeasplendidsupper , ciiatteringabout what we have seen .Now , you know , Copperfield , if I was Lord Chancellor , we couldn ' t do this You would do something , whatever you were , my dear thought I , that would be pleasant and amiable ! And by the I said aloud , I suppose you pever draw any skeletons now ? replied Traddles , laughing , and reddening , can ' t wholly deny that I do , my dear Copperfield ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/fc971db6-2436-5ecc-85e6-22b77865207e> a crm:E39_Actor ;
+    rdfs:label "we" .
+
+<http://data.odeuropa.eu/emission/273b4a00-1d57-5bbb-b0a6-72dcede2058e> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c9a34db8-29a6-5e41-b252-4db0010ee72f> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/20df8e7f-f562-5376-a904-215bb47bb85c> ;
+    time:hasTime <http://data.odeuropa.eu/time/0ede325a-d9e5-5856-b902-0d723b8c49b0>,
+        <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/place/20df8e7f-f562-5376-a904-215bb47bb85c> a crm:E53_Place ;
+    rdfs:label "the pit of the theatre" .
+
+<http://data.odeuropa.eu/time/0ede325a-d9e5-5856-b902-0d723b8c49b0> a time:TemporalEntity ;
+    rdfs:label "Sometimes" .
+
+<http://data.odeuropa.eu/experience/c2b14711-d9d2-56b9-85db-57944e902e29> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/fc971db6-2436-5ecc-85e6-22b77865207e> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/20df8e7f-f562-5376-a904-215bb47bb85c> ;
+    time:hasTime <http://data.odeuropa.eu/time/0ede325a-d9e5-5856-b902-0d723b8c49b0>,
+        <http://data.odeuropa.eu/time/5de7592d-5d13-5dac-8d5e-348bf33a90b7> .
+
+<http://data.odeuropa.eu/smell/5982f4b4-a908-5801-a054-74b3adccf89b> a od:L11_Smell ;
+    rdfs:label "smell"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

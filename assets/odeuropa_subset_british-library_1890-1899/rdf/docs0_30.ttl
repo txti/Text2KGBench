@@ -1,0 +1,62 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P165_incorporates <http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/084a87c2-5c5b-52ab-8420-e8a0ae52a080> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde>,
+        <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d>,
+        <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/084a87c2-5c5b-52ab-8420-e8a0ae52a080> crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/084a87c2-5c5b-52ab-8420-e8a0ae52a080> crm:P67_refers_to <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/084a87c2-5c5b-52ab-8420-e8a0ae52a080> crm:P67_refers_to <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P67_refers_to <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd> crm:P67_refers_to <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> .
+
+<http://data.odeuropa.eu/object/f581b768-7ce2-54d3-9c46-65a9db394058> a crmsci:S10_Material_Substantial ;
+    rdfs:label "they"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/719bd478-9745-5683-9d03-800e079f00cd/fragment/084a87c2-5c5b-52ab-8420-e8a0ae52a080> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "stenches"@en,
+        "that would make a European European ill ."@en,
+        "they"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde>,
+        <http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d>,
+        <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    rdf:value "Thus the Embassies to the West have been a factor in China ' s aAvakening , RECONSTRUCTIVE FORCES — CONTINUED .227 poor are minus everything that makes for comfort or conduces to health , and in times of sickness the condition of the sufferers , especially if they have the misfortune to be women , is extremely The nasal organs of the Chinese seem to be deficient deficient in sensitiveness , and they endure with apparent apparent impunity stenches that would make a European European ill .Many of their rooms are dark and damp ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/daac8f35-15ec-513e-a35e-e0c3be1e3fde> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/f581b768-7ce2-54d3-9c46-65a9db394058> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/experience/66604a54-2a4f-5591-9c44-65e753ce8f9d> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> ;
+    time:hasTime <http://data.odeuropa.eu/time/37ef26f6-7f0d-572e-9752-94524f8e97ae> .
+
+<http://data.odeuropa.eu/smell/dcd7e8f2-28ac-52da-bdb0-bb2b68a225b5> a od:L11_Smell ;
+    rdfs:label "stenches"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

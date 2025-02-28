@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P165_incorporates <http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/5b77af68-f305-5bfb-b44f-18342a006078> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c>,
+        <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0>,
+        <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/5b77af68-f305-5bfb-b44f-18342a006078> crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/5b77af68-f305-5bfb-b44f-18342a006078> crm:P67_refers_to <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/5b77af68-f305-5bfb-b44f-18342a006078> crm:P67_refers_to <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P67_refers_to <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c> crm:P67_refers_to <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> .
+
+<http://data.odeuropa.eu/actor/e5d85f00-2948-5032-a013-d5ae6602afb5> a crm:E39_Actor ;
+    rdfs:label "Sim" .
+
+<http://data.odeuropa.eu/object/3bfdb079-7310-56f7-8859-f6fee1a41004> a crmsci:S10_Material_Substantial ;
+    rdfs:label "ye"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/13239181-2430-555d-a692-e0b73203bc7c/fragment/5b77af68-f305-5bfb-b44f-18342a006078> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Sim"@en,
+        "stench"@en,
+        "ye"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c>,
+        <http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0>,
+        <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> ;
+    rdf:value "' And I made my piece of holly , Ronald ' s gift , the value of which I now appreciated , sing about my head .' Ay , man ? Are ye stench ? ' inquired Sim , with a gleam of approval in his wooden countenance .The same evening , somewhat wearied with our day - 103 I MEET TWO OF MY COUNTRYMEN ' The hour approaches when we have to part , ' said I ; ' and I shall be obliged if you will tell your servant to drop me at the nearest point for Dunstable ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/20e43a03-a202-50a9-8211-00c63ec6e84c> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/3bfdb079-7310-56f7-8859-f6fee1a41004> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/experience/52c16130-5b88-5505-bed0-425d432020b0> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/e5d85f00-2948-5032-a013-d5ae6602afb5> ;
+    time:hasTime <http://data.odeuropa.eu/time/8b887aab-7f5f-5800-996d-0e09e84c2409> .
+
+<http://data.odeuropa.eu/smell/354a94bc-9862-5012-bb8d-75a05b64fe07> a od:L11_Smell ;
+    rdfs:label "stench"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

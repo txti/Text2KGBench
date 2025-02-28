@@ -1,0 +1,78 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "too strong"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    crm:P141_assigned <http://data.odeuropa.eu/vocabulary/vdi-intensity/4> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> ;
+    crm:P2_has_type <http://data.odeuropa.eu/attribute-type/intensity> ;
+    rdfs:comment "too"@en .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P165_incorporates <http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/c94c47db-a85d-5515-ba06-a9ddd9d820e6> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/c94c47db-a85d-5515-ba06-a9ddd9d820e6> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/c94c47db-a85d-5515-ba06-a9ddd9d820e6> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/c94c47db-a85d-5515-ba06-a9ddd9d820e6> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4> crm:P67_refers_to <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/004eb08c-3ff7-5484-bd84-8db4337b99a4/fragment/c94c47db-a85d-5515-ba06-a9ddd9d820e6> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "he"@en,
+        "near the verandah"@en,
+        "odour"@en,
+        "of the moonflowers"@en,
+        "too strong"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb>,
+        <http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204>,
+        <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    rdf:value "The old man smiled , jerked the stem of his pipe over his shoulder after her , and winked in a way that , no doubt , meant unutterable things , but which did not convey convey much to his astonished guest , who sat still and said nothing .Then Bessie rose and bade him good - night in her pleasant voice , and with housewifely care inquired as to whether his room was to his taste , and how many blankets he liked upon his bed , telling him that if he found the odour of the moonflowers which grew near the verandah too strong , he had better shut the right - hand window and open that on the other side of the room .Then at length , with a piquant little nod of her golden head , she went off , looking , John thought as he watched her retreating figure , about as healthy , graceful , and generally satisfactory a young woman as a man could wish to see ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> a crm:E39_Actor ;
+    rdfs:label "he" .
+
+<http://data.odeuropa.eu/emission/b4859c3d-f13c-5f99-9512-7162a4716adb> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    od:F3_had_source <http://data.odeuropa.eu/vocabulary/olfactory-objects/391> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/716c456f-edc8-57ee-9660-0da8d01455dc> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/place/716c456f-edc8-57ee-9660-0da8d01455dc> a crm:E53_Place ;
+    rdfs:label "near the verandah" .
+
+<http://data.odeuropa.eu/experience/65176dad-49ee-5c43-93f6-a13d0d585204> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/b7a480b5-265a-5cbc-a07e-0426d8499b45> ;
+    crm:P7_took_place_at <http://data.odeuropa.eu/place/716c456f-edc8-57ee-9660-0da8d01455dc> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/b79235a3-71af-5600-9423-4d7593cd7d2b> a od:L11_Smell ;
+    rdfs:label "odour"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

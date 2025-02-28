@@ -1,0 +1,66 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P165_incorporates <http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/da165cc4-8d7c-5040-a355-e564ffde4902> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495>,
+        <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c>,
+        <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/da165cc4-8d7c-5040-a355-e564ffde4902> crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/da165cc4-8d7c-5040-a355-e564ffde4902> crm:P67_refers_to <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/da165cc4-8d7c-5040-a355-e564ffde4902> crm:P67_refers_to <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P67_refers_to <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28> crm:P67_refers_to <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> .
+
+<http://data.odeuropa.eu/object/449cfba8-f7d4-5a22-83cd-2bfd55bd99e4> a crmsci:S10_Material_Substantial ;
+    rdfs:label "gore"@en .
+
+<http://data.odeuropa.eu/object/b84bf2f5-26ea-5e0b-a0d3-8bd8b15f4d2f> a crmsci:S10_Material_Substantial ;
+    rdfs:label "His"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/c4a0e59f-0285-5289-95e1-193b0243bb28/fragment/da165cc4-8d7c-5040-a355-e564ffde4902> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "His"@en,
+        "reek"@en,
+        "with gore"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495>,
+        <http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c>,
+        <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> ;
+    rdf:value "dreadfully .His pages absolutely reek with gore .Now , you can ' t convince me that he is describing real life ; he is describing things he never saw , things that never occurred ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/emission/575ce8d1-4c6d-5cb9-b359-dda543871495> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/449cfba8-f7d4-5a22-83cd-2bfd55bd99e4>,
+        <http://data.odeuropa.eu/object/b84bf2f5-26ea-5e0b-a0d3-8bd8b15f4d2f> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/experience/6b5b850c-2319-5139-adff-421c16e3578c> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> ;
+    time:hasTime <http://data.odeuropa.eu/time/9b29f9a9-44e6-53db-a132-322e536a2c4a> .
+
+<http://data.odeuropa.eu/smell/cfe7fbfb-75aa-5c2b-babf-1549a03e2763> a od:L11_Smell ;
+    rdfs:label "reek"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+

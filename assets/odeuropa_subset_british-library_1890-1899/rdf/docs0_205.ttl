@@ -1,0 +1,77 @@
+@prefix crm: <http://erlangen-crm.org/current/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix od: <http://data.odeuropa.eu/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084/assignment/1> a crm:E13_Attribute_Assignment ;
+    rdfs:label "such"@en ;
+    crm:P140_assigned_attribute_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    crm:P141_assigned <http://data.odeuropa.eu/attribute/such_en> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/3ca7ea12-3ecc-54cd-841c-b8042b3266bd> ;
+    crm:P17_was_motivated_by <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P165_incorporates <http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/b0d1ade6-722e-52c6-84af-967995ecf4e5> ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/b0d1ade6-722e-52c6-84af-967995ecf4e5> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/b0d1ade6-722e-52c6-84af-967995ecf4e5> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/b0d1ade6-722e-52c6-84af-967995ecf4e5> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb> crm:P67_refers_to <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> .
+
+<http://data.odeuropa.eu/attribute/such_en> a crm:E90_Symbolic_Object ;
+    rdfs:label "such"@en .
+
+<http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> a crmsci:S10_Material_Substantial ;
+    rdfs:label "from the wood"@en .
+
+<http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> a prov:SoftwareAgent ;
+    rdfs:label "SmellClassifier" ;
+    schema:url <https://github.com/Odeuropa/wp3-information-extraction-system> .
+
+<http://data.odeuropa.eu/source/29b23f89-e099-5c4d-99f9-d1280b6de6fb/fragment/b0d1ade6-722e-52c6-84af-967995ecf4e5> a crm:E33_Linguistic_Object ;
+    crm:P106_is_composed_of "Edith"@en,
+        "from the wood"@en,
+        "scent"@en,
+        "such"@en ;
+    crm:P67_refers_to <http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a>,
+        <http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084>,
+        <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    rdf:value "As Ludlow had warned them , there was not much to see in the sandal - wood sheds , but the odour of the piled - up logs greeted them as they approached , and seemed to fill all the air with its fragrance .Why is there such a scent from the wood ? asked Edith as he broke off some splinters and handed to them .comes from the essential said Ludlow ; we like it , but insects cannot bear it , it stifles and kills Why is it not more used then for boxes and cupboards ? It would be a relief to 212 DENIS ONEIL ."@en ;
+    schema:position 1 .
+
+<http://data.odeuropa.eu/actor/3ca7ea12-3ecc-54cd-841c-b8042b3266bd> a crm:E39_Actor ;
+    rdfs:label "Edith" .
+
+<http://data.odeuropa.eu/emission/a1e0dc65-42a1-5d71-9b4d-ba1d9ad2da3a> a od:L12_Smell_Emission ;
+    od:F1_generated <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    od:F3_had_source <http://data.odeuropa.eu/object/c13b2bba-4ae5-57c7-b212-317696e1907e> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/experience/c46a8874-b35a-50ab-ada2-67a7f839b084> a od:L13_Olfactory_Experience ;
+    od:F2_perceived <http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> ;
+    crm:P14_carried_out_by <http://data.odeuropa.eu/actor/3ca7ea12-3ecc-54cd-841c-b8042b3266bd> ;
+    time:hasTime <http://data.odeuropa.eu/time/9d67ed54-fc4e-5dd3-9e81-8cf97ee284c7> .
+
+<http://data.odeuropa.eu/smell/5a31e1a0-941b-5170-ab87-cd503f5f7b83> a od:L11_Smell ;
+    rdfs:label "scent"@en .
+
+<http://data.odeuropa.eu/provenance/c9e99626-da52-5118-9c3d-f766275e37e7> a prov:Activity ;
+    rdfs:label "Automatic annotation" ;
+    rdfs:comment "Automatic Annotation within the Odeuropa project" ;
+    prov:wasAssociatedWith <http://data.odeuropa.eu/odeuropa>,
+        <http://data.odeuropa.eu/software/d3c92f59-a7e7-5f3a-9ddf-d3c898ebc59e> .
+
