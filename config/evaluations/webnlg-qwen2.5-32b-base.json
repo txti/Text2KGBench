@@ -1,4 +1,12 @@
 {
+  "model_config": {
+    "name": "qwen2.5-32b",
+    "tag": "qwen2.5:32b",
+    "temperature": 0.0,
+    "provider": "ollama",
+    "base_url": "http://localhost:11434",
+    "api_key": "sk-1234"
+  },
   "onto_list": [
     "10_city",
     "11_meanoftransportation",

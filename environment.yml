@@ -2,9 +2,10 @@ name: kgbench
 channels:
   - conda-forge
 dependencies:
-  - python=3.10.16
+  - python=3.12.8
   - pip
   - ipykernel
   - pandas
+  - libsqlite=3.48.0  # Needed to workaround issue in sglang
   - pip:
     - -r requirements.txt

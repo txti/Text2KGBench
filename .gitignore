@@ -2,7 +2,12 @@ __pycache__
 .idea
 .ipynb_checkpoints
 .pytest_cache
+*.tgz
 *.zip
+config
+ext
+notebooks
+scripts
 sparql_cache
 venv
 virtualenv

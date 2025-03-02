@@ -12,7 +12,7 @@ def get_llm_response(
         prompt: str,
         model: str,
         temperature: float = 0.0,
-        prefix: str = "ollama",
+        provider: str = "ollama",
         base_url: str = "http://localhost:11434",
         api_key="sk-1234") -> Dict[str, Any]:
     try:
@@ -21,7 +21,7 @@ def get_llm_response(
 
         # Generate response
         response = litellm.completion(
-            model=f"{prefix}/{model}",
+            model=f"{provider}/{model}",
             temperature=temperature,
             api_key=api_key,
             api_base=base_url,

@@ -56,18 +56,18 @@ The data is released under under a Creative Commons Attribution-ShareAlike 4.0 I
 The structure of the repo is as the following.
 
 - Text2KGBench
-  - [src](src): the source code used for nlp, llm calls, and other support functions
-  - [scripts](scripts): the source code used for generation and evaluation, and baseline
-    - [benchmark](scripts) the code used to generate the benchmark
-    - [evaluation](scripts) evaluation scripts for calculating the results
-    - [baseline](scripts) code for generating the baselines including prompts, sentence similarities, and LLM client.
-  - data: the benchmark datasets and baseline data. There are two datasets: wikidata_tekgen and dbpedia_webnlg.
+  - [assets](assets) contains raw source data, papers, and other assets
+  - [config](config) contains the experiment configuration files for running the experiments
+  - [src](src) contains the source code used for nlp, llm calls, and other support functions
+  - [scripts](scripts) contains scripts used for generation and evaluation, and baseline
+    - [evaluate_responses.py](scripts/evaluate_responses.py) evaluation script for calculating the results
+    - [generate_prompts.py](scripts/generate_prompts.py) script for generating the baselines including prompts, and sentence similarities
+    - [generate_responses.py](scripts/generate_responses.py) script used to generate the benchmark results
+  - [data](data) : the benchmark corpora. The original repo had two datasets: wikidata_tekgen and dbpedia_webnlg.
       - [wikidata_tekgen](data/wikidata_tekgen) Wikidata-TekGen Dataset
-        - [ontologies](data/wikidata_tekgen/ontologies) 10 ontologies used by this dataset
+        - [ontologies](data/wikidata_tekgen/ontologies) ontologies used by this dataset
         - [train](data/wikidata_tekgen/train) training data
         - [test](data/wikidata_tekgen/test) test data
-        - [manually_verified_sentences](data/wikidata_tekgen/manually_verified_sentences) ids of a subset of test cases manually validated
-        Wikipedia
         - [ground_truth](data/wikidata_tekgen/ground_truth) ground truth for the test data
         - [test_train_sent_similarity](data/wikidata_tekgen/test_train_sent_similarity) for each test case, 5 most similar train sentences generated using SBERT T5-XXL model.
         - [prompts](data/wikidata_tekgen/prompts) prompts corresponding to each test file
@@ -75,8 +75,12 @@ The structure of the repo is as the following.
           - [OpenAI-GPT-4o](data/wikidata_tekgen/baselines/OpenAI-GPT-4o) data related to the OpenAI-GPT-4o model
             - [llm_responses](data/wikidata_tekgen/baselines/OpenAI-GPT-4o/llm_responses) raw LLM responses and extracted triples
             - [eval_metrics](data/wikidata_tekgen/baselines/OpenAI-GPT-4o/eval_metrics) ontology-level and aggregated evaluation results
-          - [Qwen2_5-32B-Instruct-Q4KM](data/dbpedia_webnlg/baselines/Qwen2_5-32B-Instruct-Q4KM) structure of this and other baseline folders is the same as OpenAI-GPT-4o
-      - [dbpedia_webnlg](data/dbpedia_webnlg) The structure of DBpedia dataset and others is the same as wikidata_tekgen
+          - [Qwen2_5-32B-Instruct-Q4KM](data/dbpedia_webnlg/baselines/Qwen2_5-32B-Instruct-Q4KM)
+            - The structure of this and other baseline folders is the same as [OpenAI-GPT-4o](data/wikidata_tekgen/baselines/OpenAI-GPT-4o)
+          - ...other model baselines
+      - [dbpedia_webnlg](data/dbpedia_webnlg)
+        - The structure of DBpedia dataset and others is the same as [wikidata_tekgen](data/wikidata_tekgen)
+    - ...other corpora
 
 This benchmark contains data derived from TekGen corpus (part of  the KELM corpus) [1] released under CC BY-SA 2.0 license
 and WebNLG 3.0 corpus [2] released under CC BY-NC-SA 4.0 license.
